@@ -46,9 +46,9 @@
 
 
 <meta name="keywords" content="Exastro, Exastro Suite, OSS">
-<meta name="description" content="Operation Autonomy Support Engineとは・・・・・・・・・・・・">
+<meta name="description" content="Exastro Operation Autonomy Support Engineは、システム運用業務の自動化・効率化・省力化を実現するためのソフトウェアです。システム運用におけるノウハウやドキュメントをルールとして一元管理し、運用情報から対処方法を自動で判断します。さらにExastro IT Automation等の自動化ソフトウェアをコントロールできるため、対処を自動で実行することも可能です。">
 <meta name="thumbnail" content="https://exastro-suite.github.io/docs/asset/img/ogp_twitter_image.jpg" />
-<meta property="og:description" content="Operation Autonomy Support Engineとは・・・・・・・・・・・・">
+<meta property="og:description" content="Exastro Operation Autonomy Support Engineは、システム運用業務の自動化・効率化・省力化を実現するためのソフトウェアです。システム運用におけるノウハウやドキュメントをルールとして一元管理し、運用情報から対処方法を自動で判断します。さらにExastro IT Automation等の自動化ソフトウェアをコントロールできるため、対処を自動で実行することも可能です。">
 <link rel="image_src" href="https://exastro-suite.github.io/oase-docs/asset/img/ogp_image.jpg">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://exastro-suite.github.io/oase-docs/index_ja.html">
@@ -167,12 +167,23 @@ Overview</h1>
     <h2><em>Exastro OASE</em> の概要</h2>
     <p><span class="loupe touch"><span class="exImage"><img src="../oase-docs/asset/img/oase_overview_ja.png" alt="概要イメージ図"></span></span></p>
     
-    <h3 id="feature1" class="toggleHeading">監視ソフトウェアや作業自動化ソフトウェアとのマルチに連携する</h3>
+    <h3 id="feature6" class="toggleHeading">ルールリストをステージングで確認する</h3>
+    
+    <div class="toggleText">
+      <div class="rightImage">
+        <span class="loupe touch"><img src="../oase-docs/asset/img/staging_confirmation.png" alt="ステージングで確認"></span>
+      </div>
+      <p>本番環境内にステージングとプロダクションの<em>2面をコンテナで切り分けて管理</em>しています。<br>
+      ステージング確認ではルールリストを適用前に実際のアクションの直前までを実行し妥当性を確認できます。</p>
+    </div>
+
+    <h3 id="feature1" class="toggleHeading">監視ソフトウェアや作業自動化ソフトウェアとマルチに連携する</h3>
     
     <div class="toggleText">
       <div class="rightImage">
           <span class="loupe touch"><img src="../oase-docs/asset/img/oase_chain_image.png" alt="マルチに連携"></span>
           <span class="note">※プロジェクト独自のツールであってもドライバを作成すれば連携可能</span>
+					<span class="note">※COMMING SOONのソフトウェアについては後日連携予定です</span>
       </div>
       <p>様々なツールとの連携ドライバやRestAPIを具備しているため<em>マルチな連携</em>ができます。</p>
     </div>
@@ -192,6 +203,7 @@ Overview</h1>
     <div class="toggleText">
       <div class="rightImage">
           <span class="loupe touch"><img src="../oase-docs/asset/img/control_execution_image.png" alt="実行回数を制御"></span>
+					<span class="note">※アクション実行回数の制御については後日実装予定です</span>
       </div>
       <p>監視ツールから複数メッセージを受けても対処に応じて<em>実行回数</em>や<em>実行間隔</em>を設定できます。</p>
     </div>
@@ -219,15 +231,7 @@ Overview</h1>
       <p>ロールベースアクセス制御機能を備えているため<em>参照・更新・実行</em>をグループ毎に割当てて管理できます。</p>
     </div>
     
-    <h3 id="feature6" class="toggleHeading">ルールリストをステージングで確認する</h3>
-    
-    <div class="toggleText">
-      <div class="rightImage">
-        <span class="loupe touch"><img src="../oase-docs/asset/img/staging_confirmation.png" alt="ステージングで確認"></span>
-      </div>
-      <p>本番環境内にステージングとプロダクションの<em>2面をコンテナで切り分けて管理</em>しています。<br>
-      ステージング確認ではルールリストを適用前に実際のアクションの直前までを実行し妥当性を確認できます。</p>
-    </div>
+
    
   </div>
 </section>
