@@ -155,13 +155,15 @@ Documents</h1>
 
 <div id="articleBody">
 <!-- InstanceBeginEditable name="EditContentBodyArea" -->
-<section>
+<section class="iframe">
 <div class="sectionInner">
 
-    <h2>ドキュメント一覧</h2>
-
-    <div class="leftImage image25"><img src="../it-automation-docs/asset/img/coming_soon.png" alt="Coming soon."></div>
-    <p>Exastro OASE ドキュメントについては後日公開予定です。</p>
+<iframe src="https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/settings/index.html"></iframe>
+<script>
+$('iframe').on('load', function(){
+  $( this ).contents().find('#logo').hide();
+});
+</script>
 
 </div>
 </section>
