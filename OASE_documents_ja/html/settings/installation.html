@@ -1,0 +1,1889 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>インストール手順 &#8212; OASE_docs 1.1.0 ドキュメント</title>
+    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="環境設定" href="environmental_setting.html" />
+    <link rel="prev" title="構築フロー" href="construction_flow.html" /> 
+  </head>
+<body id="page" class="ja">
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../index.html">OASE_docs</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>1.1.0</dd>
+      </dl>
+    </div>
+    
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="construction_flow.html" title="構築フロー">前へ</a></li>
+        <li class="next"><a href="environmental_setting.html" title="環境設定">次へ</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../system_construction/index.html">システム構成ガイド</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">環境構築マニュアル -基本編-</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">はじめに</a></li>
+<li class="toctree-l2"><a class="reference internal" href="construction_flow.html">構築フロー</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">インストール手順</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">1. 事前準備</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">2. 汎用ツール追加</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">3. 必須ソフトウェアインストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16">4. 各サービスの登録と起動</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="environmental_setting.html">環境設定</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../active_directory/index.html">環境構築マニュアル -ActiveDirectory編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/index.html">利用手順マニュアル -共通編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../login/index.html">利用手順マニュアル -ログイン画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../decision_table/index.html">利用手順マニュアル -ディシジョンテーブル画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../group/index.html">利用手順マニュアル -グループ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">利用手順マニュアル -ユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../action/index.html">利用手順マニュアル -アクション設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../locked_user/index.html">利用手順マニュアル -アカウントロックユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../blacklist/index.html">利用手順マニュアル -ブラックリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitelist/index.html">利用手順マニュアル -ホワイトリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../personal_config/index.html">利用手順マニュアル -個人設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">RestAPI機能 利用マニュアル</a></li>
+</ul>
+
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">HOME</a></li>
+    <li><a href="index.html">環境構築マニュアル -基本編-</a></li>
+    
+    <li>インストール手順</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <div class="section" id="id1">
+<h1>インストール手順<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>OASEのインストール手順を下記に示します。</p>
+<div class="section" id="id2">
+<h2>1. 事前準備<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id3">
+<h3>1.1 ファイアーウォール停止<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>・ステータス確認</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl status firewalld
+</pre></div>
+</div>
+<p>★Active: activeの場合</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl stop firewalld
+# systemctl disable firewalld
+</pre></div>
+</div>
+</div>
+<div class="section" id="selinux">
+<h3>1.2. SELinux無効化<a class="headerlink" href="#selinux" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>・ステータス確認</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># getenforce
+</pre></div>
+</div>
+<p>★Enforcingの場合</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># vi /etc/sysconfig/selinux
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">SELINUX</span><span class="o">=</span>disabled
+
+※ Enforcing から disabled へ変更
+</pre></div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># reboot
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>1.3. タイムゾーンを設定する<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># timedatectl status
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Time zone: Asia/Tokyo <span class="o">(</span>JST, +0900<span class="o">)</span>
+</pre></div>
+</div>
+<p>★Time zone: Asia/Tokyo 以外の場合</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># timedatectl set-timezone Asia/Tokyo
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h3>1.4. 自分自身のホスト名について名前解決できること<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># ping {自ホスト名}
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ping: <span class="o">{</span>自ホスト名<span class="o">}</span>: 名前またはサービスが不明です
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">★「名前またはサービスが不明です」となる場合</div>
+<div class="line"><br /></div>
+<div class="line">hostsで指定するなど、名前解決が可能な状態にすること</div>
+</div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>2. 汎用ツール追加<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>後続の手順で必要になるツールを先にインストールしておく</p>
+</div>
+<div class="section" id="wget">
+<h3>2.1. wgetインストール<a class="headerlink" href="#wget" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum list | grep wget
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget.x86_64    <span class="m">1</span>.14-18.el7_6.1    @updates
+</pre></div>
+</div>
+<p>★インストールされていない場合</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum install -y wget
+</pre></div>
+</div>
+</div>
+<div class="section" id="gcc">
+<h3>2.2. gccインストール<a class="headerlink" href="#gcc" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum list | grep gcc
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gcc.x86_64     <span class="m">4</span>.8.5-36.el7_6.2    @updates
+</pre></div>
+</div>
+<p>★インストールされていない場合</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum install -y gcc
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>3. 必須ソフトウェアインストール<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="python-v3-6">
+<h3>3.1 python v3.6 インストール<a class="headerlink" href="#python-v3-6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="ius">
+<h4>3.1.1. iusリポジトリの設定<a class="headerlink" href="#ius" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="line-block">
+<div class="line">※CentOS のより新しいバージョンのパッケージを提供。</div>
+<div class="line">1. リポジトリのダウンロード</div>
+<div class="line">以下のコマンドを実行し、２つrpmファイルを取得する</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cd /tmp
+# wget --no-check-certificate https://centos7.iuscommunity.org/ius-release.rpm
+# wget --no-check-certificate https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. iusリポジトリのインストール</div>
+<div class="line">以下のコマンドを実行し、iusリポジトリをインストールする</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># rpm -Uvh ius-release.rpm epel-release-latest-7.noarch.rpm
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">3. /etc/yum.repos.d/epel.repoの編集</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cat /etc/yum.repos.d/epel.repo
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>epel<span class="o">]</span>
+<span class="nv">name</span><span class="o">=</span>Extra Packages <span class="k">for</span> Enterprise Linux <span class="m">7</span> - <span class="nv">$basearch</span>
+<span class="nv">baseurl</span><span class="o">=</span>http://download.fedoraproject.org/pub/epel/7/<span class="nv">$basearch</span>
+<span class="c1">#metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-7&amp;arch=$basearch</span>
+<span class="nv">failovermethod</span><span class="o">=</span>priority
+<span class="nv">enabled</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">gpgcheck</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">gpgkey</span><span class="o">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+<span class="nv">sslverify</span><span class="o">=</span><span class="m">0</span>
+
+<span class="o">[</span>epel-debuginfo<span class="o">]</span>
+<span class="nv">name</span><span class="o">=</span>Extra Packages <span class="k">for</span> Enterprise Linux <span class="m">7</span> - <span class="nv">$basearch</span> - Debug
+<span class="c1">#baseurl=http://download.fedoraproject.org/pub/epel/7/$basearch/debug</span>
+<span class="nv">metalink</span><span class="o">=</span>https://mirrors.fedoraproject.org/metalink?repo<span class="o">=</span>epel-debug-7<span class="p">&amp;</span><span class="nv">arch</span><span class="o">=</span><span class="nv">$basearch</span>
+<span class="nv">failovermethod</span><span class="o">=</span>priority
+<span class="nv">enabled</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">gpgkey</span><span class="o">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+<span class="nv">gpgcheck</span><span class="o">=</span><span class="m">1</span>
+
+<span class="o">[</span>epel-source<span class="o">]</span>
+<span class="nv">name</span><span class="o">=</span>Extra Packages <span class="k">for</span> Enterprise Linux <span class="m">7</span> - <span class="nv">$basearch</span> - Source
+<span class="c1">#baseurl=http://download.fedoraproject.org/pub/epel/7/SRPMS</span>
+<span class="nv">metalink</span><span class="o">=</span>https://mirrors.fedoraproject.org/metalink?repo<span class="o">=</span>epel-source-7<span class="p">&amp;</span><span class="nv">arch</span><span class="o">=</span><span class="nv">$basearch</span>
+<span class="nv">failovermethod</span><span class="o">=</span>priority
+<span class="nv">enabled</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">gpgkey</span><span class="o">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+<span class="nv">gpgcheck</span><span class="o">=</span><span class="m">1</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">[epel]セクションの以下3点</div>
+<div class="line">・baseurlがコメントアウトされていないこと</div>
+<div class="line">・metalinkをコメントアウトしていること</div>
+<div class="line">・sslverify=0を設定していること</div>
+</div>
+<div class="line-block">
+<div class="line">★上記以外の場合</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp /etc/yum.repos.d/epel.repo /etc/yum.repos.d/20190708_epel.repo
+# vi /etc/yum.repos.d/epel.repo
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>epel<span class="o">]</span>
+<span class="nv">name</span><span class="o">=</span>Extra Packages <span class="k">for</span> Enterprise Linux <span class="m">7</span> - <span class="nv">$basearch</span>
+<span class="nv">baseurl</span><span class="o">=</span>http://download.fedoraproject.org/pub/epel/7/<span class="nv">$basearch</span>
+<span class="c1">#metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-7&amp;arch=$basearch</span>
+<span class="nv">failovermethod</span><span class="o">=</span>priority
+<span class="nv">enabled</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">gpgcheck</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">gpgkey</span><span class="o">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+<span class="nv">sslverify</span><span class="o">=</span><span class="m">0</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">[epel-debuginfo]、[epel-source]はenabled=0にする。</div>
+<div class="line">4. /etc/yum.repos.d/epel-testing.repoの編集</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cat /etc/yum.repos.d/epel-testing.repo | grep enabled
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">enabled</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">enabled</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">enabled</span><span class="o">=</span><span class="m">0</span>
+</pre></div>
+</div>
+<p>★enabled=0以外があった場合</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp /etc/yum.repos.d/epel-testing.repo /etc/yum.repos.d/20190708_epel-testing.repo
+# vi /etc/yum.repos.d/epel-testing.repo
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">[epel-testing]、[epel-testing-debuginfo]、[epel-testing-source]セッション全てをenabled=0にする。</div>
+<div class="line">5. /etc/yum.repos.d/ius-archive.repoの編集</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cat /etc/yum.repos.d/ius-archive.repo | grep enabled
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">enabled</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">enabled</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">enabled</span><span class="o">=</span><span class="m">0</span>
+</pre></div>
+</div>
+<p>★enabled=0以外があった場合</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp /etc/yum.repos.d/ius-archive.repo /etc/yum.repos.d/20190708_ius-archive.repo
+# vi /etc/yum.repos.d/ius-archive.repo
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">[ius-archive]、[ius-archive-debuginfo]、[ius-archive-source]セッション全てをenabled=0にする。</div>
+<div class="line">6. /etc/yum.repos.d/ius.repoの編集</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cat /etc/yum.repos.d/ius.repo
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>ius<span class="o">]</span>
+<span class="nv">name</span> <span class="o">=</span> IUS <span class="k">for</span> Enterprise Linux <span class="m">7</span> - <span class="nv">$basearch</span>
+<span class="nv">baseurl</span> <span class="o">=</span> https://repo.ius.io/7/<span class="nv">$basearch</span>/
+<span class="nv">enabled</span> <span class="o">=</span> <span class="m">1</span>
+<span class="nv">repo_gpgcheck</span> <span class="o">=</span> <span class="m">0</span>
+<span class="nv">gpgcheck</span> <span class="o">=</span> <span class="m">1</span>
+<span class="nv">gpgkey</span> <span class="o">=</span> file:///etc/pki/rpm-gpg/RPM-GPG-KEY-IUS-7
+<span class="nv">sslverify</span><span class="o">=</span><span class="m">0</span>
+
+<span class="o">[</span>ius-debuginfo<span class="o">]</span>
+<span class="nv">name</span><span class="o">=</span>IUS Community Packages <span class="k">for</span> Enterprise Linux <span class="m">7</span> - <span class="nv">$basearch</span> - Debug
+<span class="c1">#baseurl=https://dl.iuscommunity.org/pub/ius/stable/CentOS/7/$basearch/debuginfo</span>
+<span class="nv">mirrorlist</span><span class="o">=</span>https://mirrors.iuscommunity.org/mirrorlist?repo<span class="o">=</span>ius-centos7-debuginfo<span class="p">&amp;</span><span class="nv">arch</span><span class="o">=</span><span class="nv">$basearch</span><span class="p">&amp;</span><span class="nv">protocol</span><span class="o">=</span>http
+<span class="nv">failovermethod</span><span class="o">=</span>priority
+<span class="nv">enabled</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">gpgcheck</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">gpgkey</span><span class="o">=</span>file:///etc/pki/rpm-gpg/IUS-COMMUNITY-GPG-KEY
+
+<span class="o">[</span>ius-source<span class="o">]</span>
+<span class="nv">name</span><span class="o">=</span>IUS Community Packages <span class="k">for</span> Enterprise Linux <span class="m">7</span> - <span class="nv">$basearch</span> - Source
+<span class="c1">#baseurl=https://dl.iuscommunity.org/pub/ius/stable/CentOS/7/SRPMS</span>
+<span class="nv">mirrorlist</span><span class="o">=</span>https://mirrors.iuscommunity.org/mirrorlist?repo<span class="o">=</span>ius-centos7-source<span class="p">&amp;</span><span class="nv">arch</span><span class="o">=</span>source<span class="p">&amp;</span><span class="nv">protocol</span><span class="o">=</span>http
+<span class="nv">failovermethod</span><span class="o">=</span>priority
+<span class="nv">enabled</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">gpgcheck</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">gpgkey</span><span class="o">=</span>file:///etc/pki/rpm-gpg/IUS-COMMUNITY-GPG-KEY
+</pre></div>
+</div>
+<p>★上記以外の場合</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp /etc/yum.repos.d/ius.repo /etc/yum.repos.d/20190708_ius.repo
+# vi /etc/yum.repos.d/ius.repo
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">[ius]セッションをenabled=1に、それ以外のセッション全てをenabled=0にする。</div>
+<div class="line">[ius]セッションにsslverify=0を付与する。</div>
+<div class="line">7. /etc/yum.repos.d/ius-testing.repo の編集</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cat /etc/yum.repos.d/ius-testing.repo | grep enabled
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">enabled</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">enabled</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">enabled</span><span class="o">=</span><span class="m">0</span>
+</pre></div>
+</div>
+<p>★enabled=0以外があった場合</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp /etc/yum.repos.d/ius-testing.repo /etc/yum.repos.d/20190708_ius-testing.repo
+# vi /etc/yum.repos.d/ius-testing.repo
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">[ius-testing]、[ius-testing-debuginfo]、[ius-testing-source]セッション全てをenabled=0にする。</div>
+<div class="line">8. yum clean allを実行</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum clean all
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">9. yum updateを実行</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum update
+   ～省略～
+   Is this ok [y/d/N]: y
+</pre></div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum repolist
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>epel/x86_64
+ius/x86_64
+</pre></div>
+</div>
+<p>が表示されることを確認する</p>
+</div>
+<div class="section" id="id8">
+<h4>3.1.2. python v3.6 インストール<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="line-block">
+<div class="line">1. yum search python36 を実行し、以下の内容が表示がされること</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum search python36
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python36u.x86_64
+python36u-libs.x86_64
+python36u-devel.x86_64
+python36u-pip.noarch
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. 以下のコマンドを実行し、pythonをインストールする</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum -y install python36u python36u-libs  python36u-devel python36u-pip
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">3. リンクの設定</div>
+<div class="line">以下のコマンドでリンクを設定する</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># ls -l /bin/python*
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/bin/python -&gt; python2
+</pre></div>
+</div>
+<p>★/bin/python -&gt; python2の場合</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># ln -s /bin/python3.6 /bin/python3
+# ln -sf /bin/python3 /bin/python
+# ls -l /bin/python*
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/bin/python -&gt; /bin/python3
+</pre></div>
+</div>
+</div>
+<div class="section" id="pip">
+<h4>3.1.3. pipのバージョン更新<a class="headerlink" href="#pip" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>pip バージョン確認</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># python3 -m pip --version
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip <span class="m">19</span>.1.1 from /usr/lib/python3.6/site-packages/pip <span class="o">(</span>python <span class="m">3</span>.6<span class="o">)</span>
+</pre></div>
+</div>
+<p>★19.1.1でない場合</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># python3.6 -m pip install --upgrade pip
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>ここから、pip3が実行できるようになる。</p>
+</div>
+</div>
+<div class="section" id="pika-v1-1-0">
+<h4>3.1.4. pika v1.1.0 インストール<a class="headerlink" href="#pika-v1-1-0" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="line-block">
+<div class="line">1. 以下のコマンドを実行し、pikaをインストールする</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># pip3 install pika
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. pip3 listを実行</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># pip3 list
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>～省略～
+pika <span class="m">1</span>.1.0
+</pre></div>
+</div>
+</div>
+<div class="section" id="retry-v0-9-2">
+<h4>3.1.5. retry v0.9.2 インストール<a class="headerlink" href="#retry-v0-9-2" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="line-block">
+<div class="line">1. 以下のコマンドを実行し、retryをインストールする</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># pip3 install retry
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. pip3 listを実行</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># pip3 list
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>～省略～
+retry <span class="m">0</span>.9.2
+</pre></div>
+</div>
+</div>
+<div class="section" id="yum2-x">
+<h4>3.1.6. yumの実行バージョンは2.x系に戻す<a class="headerlink" href="#yum2-x" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>yum本体</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp /usr/bin/yum /usr/bin/20190708_yum
+# vi /usr/bin/yum
+</pre></div>
+</div>
+<p>以下の修正をおこなう</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python → #!/usr/bin/python2.7</span>
+</pre></div>
+</div>
+<p>利用ライブラリ</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp /usr/libexec/urlgrabber-ext-down /usr/libexec/20190708_urlgrabber-ext-down
+# vi /usr/libexec/urlgrabber-ext-down
+</pre></div>
+</div>
+<p>以下の修正をおこなう</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python → #!/usr/bin/python2.7</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="memcache">
+<h3>3.2. memcacheインストール<a class="headerlink" href="#memcache" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">1. memcacheをインストールする</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum -y install memcached
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. memcacheを起動する。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl status memcached
+# systemctl start memcached
+# systemctl enable memcached
+</pre></div>
+</div>
+</div>
+<div class="section" id="rabbitmq-server">
+<h3>3.3. RabbitMQ Serverインストール<a class="headerlink" href="#rabbitmq-server" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">1. EPELリポジトリからErlangをインストールする</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum install erlang
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>インストールエラーになる場合、何度か実行すると成功します。</p>
+</div>
+<div class="line-block">
+<div class="line">2. RabbitMQ Serverをインストールする</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum -y install rabbitmq-server --enablerepo=epel
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>インストールエラーになる場合、何度か実行すると成功します。</p>
+</div>
+<div class="line-block">
+<div class="line">3. rabbitmq_managementを追加する</div>
+</div>
+<div class="line-block">
+<div class="line">3-1. プラグインリストの確認</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># rabbitmq-plugins list
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span> <span class="o">]</span> amqp_client                       <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> cowboy                            <span class="m">0</span>.5.0-rmq3.3.5-git4b93c2d
+<span class="o">[</span> <span class="o">]</span> eldap                             <span class="m">3</span>.3.5-gite309de4
+<span class="o">[</span> <span class="o">]</span> mochiweb                          <span class="m">2</span>.7.0-rmq3.3.5-git680dba8
+<span class="o">[</span> <span class="o">]</span> rabbitmq_amqp1_0                  <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_auth_backend_ldap        <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_auth_mechanism_ssl       <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_consistent_hash_exchange <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_federation               <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_federation_management    <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_management               <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_management_agent         <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_management_visualiser    <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_mqtt                     <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_shovel                   <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_shovel_management        <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_stomp                    <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_test                     <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_tracing                  <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_web_dispatch             <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_web_stomp                <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_web_stomp_examples       <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> sockjs                            <span class="m">0</span>.3.4-rmq3.3.5-git3132eb9
+<span class="o">[</span> <span class="o">]</span> webmachine                        <span class="m">1</span>.10.3-rmq3.3.5-gite9359c7
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">3-2. rabbitmq_managementを追加</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># rabbitmq-plugins enable rabbitmq_management
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">3-3. プラグインリストの確認</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># rabbitmq-plugins list
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>e<span class="o">]</span> amqp_client                       <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> cowboy                            <span class="m">0</span>.5.0-rmq3.3.5-git4b93c2d
+<span class="o">[</span> <span class="o">]</span> eldap                             <span class="m">3</span>.3.5-gite309de4
+<span class="o">[</span>e<span class="o">]</span> mochiweb                          <span class="m">2</span>.7.0-rmq3.3.5-git680dba8
+<span class="o">[</span> <span class="o">]</span> rabbitmq_amqp1_0                  <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_auth_backend_ldap        <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_auth_mechanism_ssl       <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_consistent_hash_exchange <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_federation               <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_federation_management    <span class="m">3</span>.3.5
+<span class="o">[</span>E<span class="o">]</span> rabbitmq_management               <span class="m">3</span>.3.5
+<span class="o">[</span>e<span class="o">]</span> rabbitmq_management_agent         <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_management_visualiser    <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_mqtt                     <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_shovel                   <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_shovel_management        <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_stomp                    <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_test                     <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_tracing                  <span class="m">3</span>.3.5
+<span class="o">[</span>e<span class="o">]</span> rabbitmq_web_dispatch             <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_web_stomp                <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> rabbitmq_web_stomp_examples       <span class="m">3</span>.3.5
+<span class="o">[</span> <span class="o">]</span> sockjs                            <span class="m">0</span>.3.4-rmq3.3.5-git3132eb9
+<span class="o">[</span>e<span class="o">]</span> webmachine                        <span class="m">1</span>.10.3-rmq3.3.5-gite9359c7
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">4. rabbitmq-serverを起動する</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl start rabbitmq-server
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">5. rabbitmq-serverをサービス自動起動有効にする。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl enable rabbitmq-server
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">6. ユーザの作成</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># rabbitmqctl add_user {RabbitMQユーザ名} {RabbitMQパスワード}
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>RabbitMQユーザ名とRabbitMQパスワードは任意で設定して下さい。</p>
+</div>
+<div class="line-block">
+<div class="line">7. ユーザの権限</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># rabbitmqctl set_user_tags {RabbitMQユーザ名} administrator
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">8. ユーザのパーミッション</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># rabbitmqctl set_permissions -p / {RabbitMQユーザ名} &quot;.<span class="ge">*&quot; &quot;.*</span>&quot; &quot;.*&quot;
+</pre></div>
+</div>
+</div>
+<div class="section" id="mysql">
+<h3>3.4. MySQLインストール<a class="headerlink" href="#mysql" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="mysql-server">
+<h4>3.4.1. MySQL Serverインストール<a class="headerlink" href="#mysql-server" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="line-block">
+<div class="line">1. リポジトリの取得</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cd /tmp
+# wget --no-check-certificate https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. リポジトリの設定</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># rpm -Uvh mysql80-community-release-el7-3.noarch.rpm
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">3. インストール</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum -y --enablerepo mysql80-community install mysql-server
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">4. 起動と初期パスワードの確認</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl status mysqld
+# systemctl start  mysqld
+# systemctl enable mysqld
+</pre></div>
+</div>
+<p>/var/log/mysqld.logからパスワードを確認</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># grep -i password /var/log/mysqld.log
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">2019</span>-07-08T01:27:09.721259Z <span class="m">5</span> <span class="o">[</span>Note<span class="o">]</span> <span class="o">[</span>MY-010454<span class="o">]</span> <span class="o">[</span>Server<span class="o">]</span> A temporary password is generated <span class="k">for</span> root@localhost: <span class="o">{</span>初期パスワード<span class="o">}</span>
+                                                                                                                ^^^^^^^^^^^^^^^^
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">5. 初期パスワードの変更</div>
+<div class="line">以下のコマンドでMySQLに接続</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># mysql -u root -p
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Enter password: <span class="o">[</span>5で確認したパスワードを入力<span class="o">]</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">ちなみに</p>
+<p>簡易なパスワードにする場合</p>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mysql&gt; ALTER USER <span class="s1">&#39;root&#39;</span>@<span class="s1">&#39;localhost&#39;</span> IDENTIFIED WITH mysql_native_password BY <span class="s1">&#39;passwordPASSWORD@999&#39;</span><span class="p">;</span> ※ 一時変更用パスワード
+
+※一度パスワード変更しないと以降の設定変更ができない
+
+以下がパスワード難易度を下げる設定
+
+mysql&gt; SET GLOBAL validate_password.length<span class="o">=</span><span class="m">4</span><span class="p">;</span>
+mysql&gt; SET GLOBAL validate_password.mixed_case_count<span class="o">=</span><span class="m">0</span><span class="p">;</span>
+mysql&gt; SET GLOBAL validate_password.number_count<span class="o">=</span><span class="m">0</span><span class="p">;</span>
+mysql&gt; SET GLOBAL validate_password.special_char_count<span class="o">=</span><span class="m">0</span><span class="p">;</span>
+mysql&gt; SET GLOBAL validate_password.policy<span class="o">=</span>LOW<span class="p">;</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">設定状態確認</div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mysql&gt; show variables like <span class="s1">&#39;%validate_password%&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>パスワード変更</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mysql&gt; ALTER USER <span class="s1">&#39;root&#39;</span>@<span class="s1">&#39;localhost&#39;</span> IDENTIFIED WITH mysql_native_password BY <span class="s1">&#39;hogehoge&#39;</span><span class="p">;</span> ※hogehoge ここに任意のパスワードを入れる
+</pre></div>
+</div>
+<p>バージョン確認</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mysql&gt; status
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mysql  Ver <span class="m">8</span>.0.16 <span class="k">for</span> Linux on x86_64 <span class="o">(</span>MySQL Community Server - GPL<span class="o">)</span>
+</pre></div>
+</div>
+<p>ログアウト</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mysql&gt; quit
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">6. Mysqlユーザ作成</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># mysql -u root -phogehoge ※hogehoge 直前の手順で設定した初期パスワード
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mysql&gt; CREATE DATABASE <span class="o">{</span>データベース名<span class="o">}</span> CHARACTER SET utf8<span class="p">;</span>
+mysql&gt; CREATE USER <span class="s1">&#39;{DBユーザ名}&#39;</span> IDENTIFIED BY <span class="s1">&#39;{DBパスワード}&#39;</span><span class="p">;</span>
+mysql&gt; GRANT ALL ON <span class="o">{</span>データベース名<span class="o">}</span>.* TO <span class="s1">&#39;{DBユーザ名}&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>ログアウト</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mysql&gt; quit
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">7. Mysqlの設定ファイルの変更</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp /etc/my.cnf /etc/20190708_my.cnf
+# vi /etc/my.cnf
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>mysqld<span class="o">]</span>
+～ 省略 ～
+<span class="c1"># https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_default_authentication_plugin</span>
+default-authentication-plugin<span class="o">=</span>mysql_native_password
+
+<span class="nv">datadir</span><span class="o">=</span>/var/lib/mysql
+<span class="nv">socket</span><span class="o">=</span>/var/lib/mysql/mysql.sock
+
+log-error<span class="o">=</span>/var/log/mysqld.log
+pid-file<span class="o">=</span>/var/run/mysqld/mysqld.pid
+
+<span class="nv">log_timestamps</span><span class="o">=</span>SYSTEM
+character-set-server <span class="o">=</span> utf8
+<span class="nv">max_connections</span><span class="o">=</span><span class="m">100</span>
+<span class="nv">sql_mode</span><span class="o">=</span>NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
+<span class="nv">innodb_buffer_pool_size</span> <span class="o">=</span> 512MB
+innodb_file_per_table
+<span class="nv">innodb_log_buffer_size</span><span class="o">=</span>32M
+<span class="nv">innodb_log_file_size</span><span class="o">=</span>128M
+<span class="nv">min_examined_row_limit</span><span class="o">=</span><span class="m">100</span>
+<span class="nv">key_buffer_size</span><span class="o">=</span>128M
+<span class="nv">join_buffer_size</span><span class="o">=</span>64M
+<span class="nv">max_heap_table_size</span><span class="o">=</span>32M
+<span class="nv">tmp_table_size</span><span class="o">=</span>32M
+<span class="nv">max_sp_recursion_depth</span><span class="o">=</span><span class="m">20</span>
+transaction-isolation<span class="o">=</span>READ-COMMITTED
+
+<span class="o">[</span>client<span class="o">]</span>
+default-character-set<span class="o">=</span>utf8
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">8. Mysqlの再起動</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl status mysqld
+# systemctl restart mysqld
+# systemctl status mysqld
+# mysql -u root -phogehoge ※hogehoge 直前の手順で設定した初期パスワード
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mysql&gt; status
+   ～省略～
+   Server characterset:    utf8
+   Db     characterset:    utf8
+   Client characterset:    utf8
+   Conn.  characterset:    utf8
+</pre></div>
+</div>
+<p>ログアウト</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mysql&gt; quit
+</pre></div>
+</div>
+</div>
+<div class="section" id="mysqlclient">
+<h4>3.4.2. mysqlclient インストール<a class="headerlink" href="#mysqlclient" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="line-block">
+<div class="line">1. 必要なパッケージをインストール</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum -y --enablerepo mysql80-community install mysql-community-devel
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. mysqlclient(django推奨ドライバ)インストール</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># pip3 install mysqlclient
+</pre></div>
+</div>
+</div>
+<div class="section" id="mysql-connector-python">
+<h4>3.4.3. mysql-connector-pythonインストール<a class="headerlink" href="#mysql-connector-python" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>1インストール</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># pip3 install mysql_connector_python
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">3. pip3 listを実行</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># pip3 list
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>～省略～
+mysql-connector-python <span class="m">8</span>.0.16
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="nginx">
+<h3>3.5. Nginxインストール<a class="headerlink" href="#nginx" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id9">
+<h4>3.5.1. リポジトリの作成<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># vi /etc/yum.repos.d/nginx.repo
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>以下を追加
+<span class="o">[</span>nginx<span class="o">]</span>
+<span class="nv">name</span><span class="o">=</span>nginx repo
+<span class="nv">baseurl</span><span class="o">=</span>http://nginx.org/packages/mainline/centos/7/<span class="nv">$basearch</span>/
+<span class="nv">gpgcheck</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">enabled</span><span class="o">=</span><span class="m">1</span>
+</pre></div>
+</div>
+<p>yumアップデート</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum update
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h4>3.5.2. nginxインストール<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum -y install nginx
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>nginxの起動確認</p>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl status nginx
+# systemctl start nginx
+</pre></div>
+</div>
+<p>PC端末から、<a class="reference external" href="http:/">http:/</a>/IPアドレス へアクセス、画面が表示されること</p>
+<p>・サービス停止</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl stop nginx
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="uwsgi">
+<h3>3.6. uWSGIインストール<a class="headerlink" href="#uwsgi" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id11">
+<h4>3.6.1. uWSGIインストール<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="line-block">
+<div class="line">1. 以下のコマンドで、uwsgiをインストール</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># pip3 install uwsgi
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. 以下のコマンドでバージョンを確認</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># uwsgi --version
+</pre></div>
+</div>
+<p>uWSGIが 2.0.18となっていることを確認</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>サンプルのWSGIアプリケーション作成</p>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># mkdir -p /home/centos/work/uwsgi
+</pre></div>
+</div>
+<p>サンプル用pyファイル作成</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># vi /home/centos/work/uwsgi/foovar.py
+</pre></div>
+</div>
+<p>以下を追加</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># def application(env, start_response):</span>
+      start_response<span class="o">(</span><span class="s1">&#39;200 OK&#39;</span>, <span class="o">[(</span><span class="s1">&#39;Content-Type&#39;</span>,<span class="s1">&#39;text/html&#39;</span><span class="o">)])</span>
+      <span class="k">return</span> <span class="o">[</span>b<span class="s2">&quot;Hello World&quot;</span><span class="o">]</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">・サンプルWSGIアプリケーションの起動</div>
+<div class="line">以下のコマンドを実行し、サンプルWSGIアプリケーションを起動する</div>
+<div class="line">別にTeratermを立ち上げ、rootユーザ以外のユーザで以下を実行。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># uwsgi --http :9090 --wsgi-file /home/centos/work/uwsgi/foovar.py
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">・サンプルWSGIアプリケーションの確認</div>
+<div class="line">PC端末から、<a class="reference external" href="http:/">http:/</a>/IPアドレス:9090/ へアクセスし、Hello Worldが表示されること</div>
+<div class="line">確認後、起動したコンソールでCtrl＋Cで サンプルWSGIアプリケーションを一旦終了させる。</div>
+</div>
+</div>
+</div>
+<div class="section" id="java-openjdk">
+<h3>3.7. java（openJDK）インストール<a class="headerlink" href="#java-openjdk" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>java（openJDK）インストール</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel
+</pre></div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum list | grep java-1.8.0
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>java-1.8.0-openjdk.x86_64
+java-1.8.0-openjdk-devel.x86_64
+</pre></div>
+</div>
+</div>
+<div class="section" id="jboss-eap">
+<h3>3.8. JBoss EAPインストール<a class="headerlink" href="#jboss-eap" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">1. FTPで/tmp 配下に置く</div>
+<div class="line">jboss-eap-7.2.0-installer.jar</div>
+</div>
+<div class="line-block">
+<div class="line">・Jboss EAPインストール</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># java -jar /tmp/jboss-eap-7.2.0-installer.jar
+</pre></div>
+</div>
+<p>以下、対話形式での入力</p>
+<div class="admonition danger">
+<p class="admonition-title">危険</p>
+<p>ここにMAS固有設定アリ</p>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>以下で言語を選択してください。 :
+<span class="m">0</span>: English
+<span class="m">1</span>: 中文
+<span class="m">2</span>: Deutsch
+<span class="m">3</span>: francais
+<span class="m">4</span>: 日本語
+<span class="m">5</span>: portugues
+<span class="m">6</span>: espanol
+Please choose <span class="o">[</span><span class="m">4</span><span class="o">]</span> :
+<span class="m">4</span>
+
+継続するには <span class="m">1</span> を、終了するには <span class="m">2</span> を、再表示するには <span class="m">3</span> を押してください。
+<span class="m">1</span>
+
+インストールパスの選択: <span class="o">[</span>/root/EAP-7.2.0<span class="o">]</span>
+<span class="o">{</span>jbossルートパス<span class="o">}</span>  例<span class="o">)</span> /home/mas/JBoss/EAP-7.2.0
+継続するには <span class="m">1</span> を、終了するには <span class="m">2</span> を、再表示するには <span class="m">3</span> を押してください。
+<span class="m">1</span>
+
+インストールしたいパッケージを選択してください:
+<span class="m">1</span>    <span class="o">[</span>x<span class="o">]</span> <span class="o">[</span>必須<span class="o">]</span> <span class="o">[</span>Red Hat JBoss Enterprise Application Platform<span class="o">]</span> <span class="o">(</span><span class="m">30</span>.73 MB<span class="o">)</span>
+<span class="m">2</span>    <span class="o">[</span>x<span class="o">]</span>        <span class="o">[</span>AppClient<span class="o">]</span> <span class="o">(</span><span class="m">39</span>.72 KB<span class="o">)</span>
+<span class="m">3</span>    <span class="o">[</span>x<span class="o">]</span>        <span class="o">[</span>Docs<span class="o">]</span> <span class="o">(</span><span class="m">13</span>.65 MB<span class="o">)</span>
+<span class="m">4</span>    <span class="o">[</span>x<span class="o">]</span> <span class="o">[</span>必須<span class="o">]</span> <span class="o">[</span>モジュール<span class="o">]</span> <span class="o">(</span><span class="m">183</span>.75 MB<span class="o">)</span>
+<span class="m">5</span>    <span class="o">[</span>x<span class="o">]</span> <span class="o">[</span>必須<span class="o">]</span> <span class="o">[</span>Welcome コンテンツ<span class="o">]</span> <span class="o">(</span><span class="m">2</span>.16 MB<span class="o">)</span>
+Total Size Required: <span class="m">230</span>.34 MB
+<span class="m">0</span> を押して選択を確認
+インストールしたいパックを選択してください
+<span class="m">0</span>
+パックの選択完了
+継続するには <span class="m">1</span> を、終了するには <span class="m">2</span> を、再表示するには <span class="m">3</span> を押してください。
+<span class="m">1</span>
+
+管理ユーザー名: <span class="o">[</span>admin<span class="o">]</span>
+<span class="o">{</span>RHDM管理ユーザー名<span class="o">}</span>  例<span class="o">)</span> admin0000
+
+管理パスワード: <span class="o">[]</span>
+<span class="o">{</span>RHDM管理パスワード<span class="o">}</span>  例<span class="o">)</span> password@1
+管理パスワードを再入力:  <span class="o">[</span>**********<span class="o">]</span>
+<span class="o">{</span>RHDM管理パスワード<span class="o">}</span>  例<span class="o">)</span> password@1
+継続するには <span class="m">1</span> を、終了するには <span class="m">2</span> を、再表示するには <span class="m">3</span> を押してください。
+<span class="m">1</span>
+
+ランタイム環境の設定
+<span class="m">0</span>  <span class="o">[</span>x<span class="o">]</span> デフォルト設定の実行
+<span class="m">1</span>  <span class="o">[</span> <span class="o">]</span> 詳細設定の実行
+入力事項の選択:
+<span class="m">0</span>
+
+継続するには <span class="m">1</span> を、終了するには <span class="m">2</span> を、再表示するには <span class="m">3</span> を押してください。
+<span class="m">1</span>
+
+自動インストールスクリプトとプロパティーファイルを生成しますか? <span class="o">(</span>y/n<span class="o">)</span> <span class="o">[</span>n<span class="o">]</span>:
+n
+</pre></div>
+</div>
+</div>
+<div class="section" id="decision-manager">
+<h3>3.9. Decision Managerインストール<a class="headerlink" href="#decision-manager" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="git">
+<h4>3.9.1. gitインストール<a class="headerlink" href="#git" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>gitインストール</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum install git
+</pre></div>
+</div>
+<p>gitがインストールされたことを確認</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># git --version
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git version <span class="m">1</span>.8.3.1
+</pre></div>
+</div>
+</div>
+<div class="section" id="id12">
+<h4>3.9.2. インストール実行<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="line-block">
+<div class="line">1. FTPで/tmp 配下に置く</div>
+<div class="line">rhdm-installer-7.3.1.jar</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># java -jar /tmp/rhdm-installer-7.3.1.jar
+</pre></div>
+</div>
+<p>以下、対話形式での入力</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Press <span class="m">1</span> to <span class="k">continue</span>, <span class="m">2</span> to quit, <span class="m">3</span> to redisplay.
+<span class="m">1</span>
+
+Red Hat JBoss EAP <span class="m">7</span>.2 or Red Hat JBoss Web Server <span class="m">5</span>.0 <span class="o">(</span>JWS <span class="m">5</span>.0.1 or newer is supported<span class="o">)</span>. <span class="o">[</span>/root/RHDM-7.3.1/jboss-eap-7.2<span class="o">]</span>
+<span class="o">{</span>jbossルートパス<span class="o">}</span>
+
+Press <span class="m">1</span> to <span class="k">continue</span>, <span class="m">2</span> to quit, <span class="m">3</span> to redisplay.
+<span class="m">1</span>
+
+Select the components you want to install:
+<span class="m">1</span>    <span class="o">[</span>x<span class="o">]</span>                 <span class="o">[</span>Decision Central<span class="o">]</span> <span class="o">(</span><span class="m">275</span>.65 MB<span class="o">)</span>
+<span class="m">2</span>    <span class="o">[</span>x<span class="o">]</span>                 <span class="o">[</span>Decision Server<span class="o">]</span> <span class="o">(</span><span class="m">94</span>.1 MB<span class="o">)</span>
+Total Size Required: <span class="m">369</span>.75 MB
+Press <span class="m">0</span> to confirm your selections
+<span class="m">0</span>
+Component selection <span class="k">done</span>
+Press <span class="m">1</span> to <span class="k">continue</span>, <span class="m">2</span> to quit, <span class="m">3</span> to redisplay.
+<span class="m">1</span>
+
+User Name: <span class="o">[</span>rhdmAdmin<span class="o">]</span>
+<span class="o">{</span>RHDM管理ユーザー名<span class="o">}</span>
+
+Password: <span class="o">[]</span>
+<span class="o">{</span>RHDM管理パスワード<span class="o">}</span>
+Confirm Password: <span class="o">[</span>**********<span class="o">]</span>
+<span class="o">{</span>RHDM管理パスワード<span class="o">}</span>
+Press <span class="m">1</span> to <span class="k">continue</span>, <span class="m">2</span> to quit, <span class="m">3</span> to redisplay.
+<span class="m">1</span>
+
+Would you like to generate an automatic installation script and properties file? <span class="o">(</span>y/n<span class="o">)</span> <span class="o">[</span>n<span class="o">]</span>:
+n
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="maven">
+<h3>3.10. Mavenインストール<a class="headerlink" href="#maven" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id13">
+<h4>3.10.1. 資材配置<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cd /tmp
+# wget https://archive.apache.org/dist/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
+# tar -xzvf apache-maven-3.6.1-bin.tar.gz
+# mv apache-maven-3.6.1 /opt/
+# cd /opt
+# ln -s /opt/apache-maven-3.6.1 apache-maven
+# ls -l
+</pre></div>
+</div>
+</div>
+<div class="section" id="id14">
+<h4>3.10.2. 環境変数設定<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp /etc/profile /etc/20190708_profile.bk
+# vi /etc/profile
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> PATH USER LOGNAME MAIL HOSTNAME HISTSIZE HISTCONTROL
+</pre></div>
+</div>
+<p>以下を追加</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">M2_HOME</span><span class="o">=</span>/opt/apache-maven
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$M2_HOME</span>/bin
+</pre></div>
+</div>
+<p>設定読み込みなおし</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># source /etc/profile
+# mvn --version
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Apache Maven <span class="m">3</span>.6.1
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="django">
+<h3>3.11. Djangoインストール<a class="headerlink" href="#django" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>以下のコマンドを実行し、Djangoをインストール</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># pip3 install django==2.2.3 django-crispy-forms django-filter django-pure-pagination
+# pip3 list
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>※Djangoが表示されていることを確認
+Package                Version
+---------------------- -------
+Django                 <span class="m">2</span>.2.3
+django-crispy-forms    <span class="m">1</span>.7.2    ← 入力フォームのHTMLをBootstrapに対応させる
+django-filter          <span class="m">2</span>.1.0    ← 検索機能を追加する
+django-pure-pagination <span class="m">0</span>.3.0    ← 標準のページング機能を高機能にする
+</pre></div>
+</div>
+<p>requestsモジュールのインストール</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># pip3 install requests ldap3 pycrypto openpyxl==2.5.14 xlrd configparser fasteners djangorestframework python-memcached django-simple-history pyyaml
+# pip3 list
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Package                Version
+---------------------- -------
+certifi                <span class="m">2019</span>.6.16
+chardet                <span class="m">3</span>.0.4
+configparser           <span class="m">3</span>.7.4
+Django                 <span class="m">2</span>.2.3
+django-crispy-forms    <span class="m">1</span>.7.2
+django-filter          <span class="m">2</span>.1.0
+django-pure-pagination <span class="m">0</span>.3.0
+django-simple-history  <span class="m">2</span>.7.2
+djangorestframework    <span class="m">3</span>.9.4
+et-xmlfile             <span class="m">1</span>.0.1
+fasteners              <span class="m">0</span>.15
+idna                   <span class="m">2</span>.8
+jdcal                  <span class="m">1</span>.4.1
+ldap3                  <span class="m">2</span>.6
+monotonic              <span class="m">1</span>.5
+openpyxl               <span class="m">2</span>.5.14
+pip                    <span class="m">19</span>.1.1
+pyasn1                 <span class="m">0</span>.4.5
+pycrypto               <span class="m">2</span>.6.1
+python-memcached       <span class="m">1</span>.59
+pytz                   <span class="m">2019</span>.1
+PyYAML                 <span class="m">5</span>.1.1
+requests               <span class="m">2</span>.22.0
+setuptools             <span class="m">39</span>.0.1
+six                    <span class="m">1</span>.12.0
+sqlparse               <span class="m">0</span>.3.0
+urllib3                <span class="m">1</span>.25.3
+xlrd                   <span class="m">1</span>.2.0
+</pre></div>
+</div>
+<p>★pytzがない場合</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># pip3 install pytz
+</pre></div>
+</div>
+</div>
+<div class="section" id="oase">
+<h3>3.12. OASEインストール<a class="headerlink" href="#oase" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id15">
+<h4>3.12.1. OASEソース配置<a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="line-block">
+<div class="line">1. 配置フォルダを作成</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># mkdir /home/centos  ※配置フォルダは別タスクで修正
+# cd /home/centos
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. FTPで/home/centos 配下に[OASE_Ver1.0.tar.gz]を配置</div>
+</div>
+<p>ファイル名はお持ちのファイルに合わせて指定してください。</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># ll /home/centos
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>-rw-r--r-- <span class="m">1</span> root root <span class="m">3738247</span>  7月  <span class="m">4</span> <span class="m">20</span>:08 OASE_Ver1.0.tar.gz
+</pre></div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># tar zxvf OASE_Ver1.0.tar.gz
+# rm OASE_Ver1.0.tar.gz
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">3. OASE settings.pyの設定</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cd OASE/oase-root/
+# cp confs/frameworkconfs/settings.py.sample confs/frameworkconfs/settings.py
+# vi confs/frameworkconfs/settings.py
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">HOST_NAME</span> <span class="o">=</span> <span class="s1">&#39;https://xxx.xxx.xxx.xxx&#39;</span>
+
+<span class="o">(</span>中略<span class="o">)</span>
+
+<span class="nv">EVTIMER_SERVER</span> <span class="o">=</span> <span class="o">{</span>
+   <span class="s2">&quot;type&quot;</span>     : <span class="s2">&quot;cron&quot;</span>,
+   <span class="s2">&quot;protocol&quot;</span> : <span class="s2">&quot;https:&quot;</span>,
+   <span class="s2">&quot;location&quot;</span> : <span class="s2">&quot;xxx.xxx.xxx.xxx&quot;</span>,
+   <span class="s2">&quot;path&quot;</span>     : <span class="s2">&quot;oase_web/event/evtimer/%s/%s/%s/&quot;</span>,
+<span class="o">}</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">xxx ： webサーバを立ち上げるIPアドレス</div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">DATABASES</span> <span class="o">=</span> <span class="o">{</span>
+   <span class="s1">&#39;default&#39;</span> : <span class="o">{</span>
+       <span class="s1">&#39;ENGINE&#39;</span>   : <span class="s1">&#39;django.db.backends.mysql&#39;</span>,
+       <span class="s1">&#39;NAME&#39;</span>     : <span class="s1">&#39;{データベース名}&#39;</span>,
+       <span class="s1">&#39;USER&#39;</span>     : <span class="s1">&#39;{DBユーザ名}&#39;</span>,
+       <span class="s1">&#39;PASSWORD&#39;</span> : <span class="s1">&#39;{DBパスワード}&#39;</span>,
+       <span class="s1">&#39;HOST&#39;</span>     : <span class="s1">&#39;127.0.0.1&#39;</span>,
+       <span class="s1">&#39;PORT&#39;</span>     : <span class="s1">&#39;3306&#39;</span>,
+   <span class="o">}</span>,
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="db">
+<h4>3.12.2. DBへマイグレーション<a class="headerlink" href="#db" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="line-block">
+<div class="line">1. マイグレーション実行準備</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cd /home/centos/OASE/oase-root/web_app
+# mkdir migrations
+# cd migrations/
+# touch __init__.py
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. init_custom.yamlのvalue値を環境によって適切に変更する</div>
+</div>
+<p>init_custom.yamlのValue値はデフォルト空白となっていますので、適切な値を記入してください。</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cd /home/centos/OASE/oase-root/web_app/fixtures
+# vi init_custom.yaml
+</pre></div>
+</div>
+<p>MQ_PASSWORDのvalue値は以下のコマンドを実行して表示された値を設定して下さい。
+password&#64;1の箇所は&quot;3.3. RabbitMQ Serverインストール&quot;で設定した{RabbitMQパスワード}に置き換えてください。</p>
+<p>DM_PASSWDのvalue値は以下のコマンドを実行して表示された値を設定して下さい。
+password&#64;1の箇所は&quot;3.7. JBoss EAPインストール&quot;で設定した{RHDM管理パスワード}に置き換えてください。</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># python /home/centos/OASE/tool/encrypter.py &#39;password@1&#39;
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">3. マイグレーション実行</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cd /home/centos/OASE/oase-root
+# python manage.py makemigrations web_app
+# python manage.py migrate
+# python manage.py loaddata init init_custom
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">4. DB確認</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># mysql -u {DBユーザ名} -p{DBパスワード} {データベース名}
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mysql&gt; show tables<span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id16">
+<h2>4. 各サービスの登録と起動<a class="headerlink" href="#id16" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="nginx-uwsgi">
+<h3>4.1. Nginx+uWSGI連携<a class="headerlink" href="#nginx-uwsgi" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">1. uwsgi.sock格納フォルダ作成</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># mkdir /home/uWSGI
+# chmod 755 /home/uWSGI
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. uwsgi.log格納フォルダ作成</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># mkdir /var/log/uwsgi
+# chmod 644 /var/log/uwsgi
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">3. カーネルパラメータ変更</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp -pi /etc/sysctl.conf /etc/sysctl.conf.bk
+# vi /etc/sysctl.conf
+# net.core.somaxconn = 16384
+# less /etc/sysctl.conf
+# sysctl -p
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">4. Nginx設定</div>
+<div class="line">簡易動作確認用としてソース内(/home/centos/OASE/oase-root/)に証明書ファイルを用意しています。</div>
+<div class="line">こちらを元に説明を続けます。</div>
+<div class="line">本番運用時には各サーバでの正式な証明書ファイルを使用してください。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp /etc/nginx/nginx.conf /etc/nginx/20190708_nginx.conf.bk
+# vi /etc/nginx/nginx.conf
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user  root<span class="p">;</span>
+<span class="c1">#user  nginx;</span>
+worker_processes  auto<span class="p">;</span>
+<span class="c1">#worker_processes  1;</span>
+
+worker_rlimit_nofile <span class="m">65000</span><span class="p">;</span>
+
+error_log  /var/log/nginx/error.log warn<span class="p">;</span>
+pid        /var/run/nginx.pid<span class="p">;</span>
+
+events <span class="o">{</span>
+    worker_connections  <span class="m">16000</span><span class="p">;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>以下のファイルを開く</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/20190708_default.conf.bk
+# mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/oase.conf
+# vi /etc/nginx/conf.d/oase.conf
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>server <span class="o">{</span>
+    listen <span class="m">80</span><span class="p">;</span>
+    server_name exastro-oase<span class="p">;</span>
+    <span class="k">return</span> <span class="m">301</span> https://<span class="nv">$host$request_uri</span><span class="p">;</span>
+<span class="o">}</span>
+
+server <span class="o">{</span>
+   listen  <span class="m">443</span>  ssl<span class="p">;</span>
+
+   ssl_certificate  /home/centos/OASE/oase-root/exastro-oase.crt<span class="p">;</span>
+   ssl_certificate_key  /home/centos/OASE/oase-root/cakey-nopass.pem<span class="p">;</span>
+
+   ssl_prefer_server_ciphers  on<span class="p">;</span>
+   ssl_protocols  TLSv1 TLSv1.1 TLSv1.2<span class="p">;</span>
+   ssl_ciphers  <span class="s1">&#39;ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128:AES256:AES:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK&#39;</span><span class="p">;</span>
+
+   ssl_session_cache    shared:SSL:1m<span class="p">;</span>
+   ssl_session_tickets  on<span class="p">;</span>
+
+   location / <span class="o">{</span>
+       include uwsgi_params<span class="p">;</span>
+       uwsgi_pass unix:///home/uWSGI/uwsgi.sock<span class="p">;</span>
+   <span class="o">}</span>
+
+   <span class="nv">location</span> <span class="o">=</span> / <span class="o">{</span>
+       include uwsgi_params<span class="p">;</span>
+       uwsgi_pass unix:///home/uWSGI/uwsgi.sock<span class="p">;</span>
+       <span class="k">return</span> <span class="m">301</span> /oase_web/top/login<span class="p">;</span>
+   <span class="o">}</span>
+
+   location /static <span class="o">{</span>
+       <span class="nb">alias</span> /home/centos/OASE/oase-root/web_app/static<span class="p">;</span>
+   <span class="o">}</span>
+
+   error_page   <span class="m">500</span> <span class="m">502</span> <span class="m">503</span> <span class="m">504</span>  /50x.html<span class="p">;</span>
+   <span class="nv">location</span> <span class="o">=</span> /50x.html <span class="o">{</span>
+       root   /usr/share/nginx/html<span class="p">;</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">5. uwsgi.iniの修正</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># vi /home/centos/OASE/oase-root/uwsgi.ini
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>uwsgi<span class="o">]</span>
+<span class="nv">chdir</span><span class="o">=</span>/home/centos/OASE/oase-root
+<span class="nv">module</span><span class="o">=</span>web_app
+<span class="nv">master</span><span class="o">=</span><span class="nb">true</span>
+<span class="nv">socket</span><span class="o">=</span>/home/uWSGI/uwsgi.sock
+chmod-socket<span class="o">=</span><span class="m">666</span>
+wsgi-file<span class="o">=</span>/home/centos/OASE/oase-root/confs/frameworkconfs/wsgi.py
+log-format <span class="o">=</span> <span class="o">[</span>pid: %<span class="o">(</span>pid<span class="o">)</span><span class="p">|</span>app: -<span class="p">|</span>req: -/-<span class="o">]</span> %<span class="o">(</span>addr<span class="o">)</span> <span class="o">(</span>%<span class="o">(</span>user<span class="o">))</span> <span class="o">{</span>%<span class="o">(</span>vars<span class="o">)</span> vars in %<span class="o">(</span>pktsize<span class="o">)</span> bytes<span class="o">}</span> <span class="o">[</span> %<span class="o">(</span>ctime<span class="o">)</span> <span class="o">]</span> %<span class="o">(</span>method<span class="o">)</span> %<span class="o">(</span>uri<span class="o">)</span> <span class="o">=</span>&gt; generated %<span class="o">(</span>rsize<span class="o">)</span> bytes in %<span class="o">(</span>msecs<span class="o">)</span> msecs <span class="o">(</span>%<span class="o">(</span>proto<span class="o">)</span> %<span class="o">(</span>status<span class="o">))</span> %<span class="o">(</span>headers<span class="o">)</span> headers in %<span class="o">(</span>hsize<span class="o">)</span> bytes <span class="o">(</span>%<span class="o">(</span>switches<span class="o">)</span> switches on core %<span class="o">(</span>core<span class="o">))</span>
+<span class="nv">logto</span><span class="o">=</span>/var/log/uwsgi/uwsgi.log
+<span class="nv">processes</span><span class="o">=</span><span class="m">4</span>
+<span class="nv">threads</span><span class="o">=</span><span class="m">2</span>
+<span class="nv">listen</span><span class="o">=</span><span class="m">16384</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">6. /etc/systemd/system/ 配下に[nginx.service]と[uwsgi.service]を配置</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cd /home/centos/OASE/tool/service
+# cp nginx.service /etc/systemd/system/
+# cp uwsgi.service /etc/systemd/system/
+# ll /etc/systemd/system/
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nginx.service
+uwsgi.service
+</pre></div>
+</div>
+</div>
+<div class="section" id="id17">
+<h3>4.2. JBoss EAP の設定<a class="headerlink" href="#id17" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">1. jboss-eap.conf ファイルの起動オプションをカスタマイズ</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cd {Jbossルートパス}
+# cp -p bin/init.d/jboss-eap.conf bin/init.d/20190708_jboss-eap.conf.bk
+# vi bin/init.d/jboss-eap.conf
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">## Location of JDK</span>
+<span class="c1"># JAVA_HOME=&quot;/usr/lib/jvm/default-java&quot;</span>
+<span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/lib/jvm/java-1.8.0-openjdk
+
+<span class="c1">## Location of JBoss EAP</span>
+<span class="c1"># JBOSS_HOME=&quot;/opt/jboss-eap&quot;</span>
+<span class="nv">JBOSS_HOME</span><span class="o">={</span>jbossルートパス<span class="o">}</span>
+
+<span class="c1">## The username who should own the process.</span>
+<span class="c1"># JBOSS_USER=jboss-eap</span>
+<span class="nv">JBOSS_USER</span><span class="o">=</span>root
+
+<span class="c1">## The mode JBoss EAP should start, standalone or domain</span>
+<span class="nv">JBOSS_MODE</span><span class="o">=</span>standalone
+
+<span class="c1">## Configuration for standalone mode</span>
+<span class="nv">JBOSS_CONFIG</span><span class="o">=</span>standalone-full.xml
+
+<span class="c1">## Location to keep the console log</span>
+<span class="nv">JBOSS_CONSOLE_LOG</span><span class="o">=</span><span class="s2">&quot;/var/log/jboss-eap/console.log&quot;</span>
+
+<span class="c1">## Additionals args to include in startup</span>
+<span class="c1"># JBOSS_OPTS=&quot;--admin-only -b 127.0.0.1&quot;</span>
+<span class="nv">JBOSS_OPTS</span><span class="o">=</span><span class="s2">&quot;-Dfile.encoding=UTF-8 -Djboss.bind.address=0.0.0.0&quot;</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. ファイル権限変更</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># chmod 755 {jbossルートパス}/bin/init.d/jboss-eap.conf
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">3. jboss-eap.confを/etc/default配下にコピー</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp {jbossルートパス}/bin/init.d/jboss-eap.conf /etc/default/
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">4. サービス起動スクリプトを /etc/init.d ディレクトリーにコピーし、実行パーミッションを付与します。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp {jbossルートパス}/bin/init.d/jboss-eap-rhel.sh /etc/init.d/jboss-eap-rhel.sh
+# chmod +x /etc/init.d/jboss-eap-rhel.sh
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">5. chkconfig サービス管理コマンドを使用して、自動的に起動されるサービスのリストに新しい jboss-eap-rhel.sh サービスを追加します。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># chkconfig --add jboss-eap-rhel.sh
+</pre></div>
+</div>
+</div>
+<div class="section" id="oasemaven">
+<h3>4.3. OASE用のMaven設定<a class="headerlink" href="#oasemaven" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">1. settings.xmlの修正</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp /opt/apache-maven-3.6.1/conf/settings.xml /opt/apache-maven-3.6.1/conf/20190708_settings.xml
+# vi /opt/apache-maven-3.6.1/conf/settings.xml
+</pre></div>
+</div>
+<p>以下を追加</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&lt;proxies&gt;
+  &lt;!-- proxy
+   <span class="p">|</span> Specification <span class="k">for</span> one proxy, to be used in connecting to the network.
+   <span class="p">|</span>
+  &lt;proxy&gt;
+    &lt;id&gt;optional&lt;/id&gt;
+    &lt;active&gt;true&lt;/active&gt;
+    &lt;protocol&gt;http&lt;/protocol&gt;
+    &lt;username&gt;proxyuser&lt;/username&gt;
+    &lt;password&gt;proxypass&lt;/password&gt;
+    &lt;host&gt;proxy.host.net&lt;/host&gt;
+    &lt;port&gt;80&lt;/port&gt;
+    &lt;nonProxyHosts&gt;local.net<span class="p">|</span>some.host.com&lt;/nonProxyHosts&gt;
+  &lt;/proxy&gt;
+  --&gt;
+  *- 追加 ここから -*
+  &lt;proxy&gt;
+    &lt;id&gt;http_proxy&lt;/id&gt;
+    &lt;active&gt;true&lt;/active&gt;
+    &lt;protocol&gt;http&lt;/protocol&gt;
+    &lt;host&gt;proxygate2.nic.nec.co.jp&lt;/host&gt;
+    &lt;nonProxyHosts&gt;localhost<span class="p">|</span><span class="m">10</span>.197.19.*<span class="p">|</span>proxygate2.nic.nec.co.jp&lt;/nonProxyHosts&gt;
+    &lt;port&gt;8080&lt;/port&gt;
+  &lt;/proxy&gt;
+  *- ここまで -*
+&lt;/proxies&gt;
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>既存の上部記述に続けて下部を追記する
+   &lt;profile&gt;
+     &lt;id&gt;jdk-1.4&lt;/id&gt;
+
+     &lt;activation&gt;
+       &lt;jdk&gt;1.4&lt;/jdk&gt;
+     &lt;/activation&gt;
+
+     &lt;repositories&gt;
+       &lt;repository&gt;
+         &lt;id&gt;jdk14&lt;/id&gt;
+         &lt;name&gt;Repository <span class="k">for</span> JDK <span class="m">1</span>.4 builds&lt;/name&gt;
+         &lt;url&gt;http://www.myhost.com/maven/jdk14&lt;/url&gt;
+         &lt;layout&gt;default&lt;/layout&gt;
+         &lt;snapshotPolicy&gt;always&lt;/snapshotPolicy&gt;
+       &lt;/repository&gt;
+     &lt;/repositories&gt;
+   &lt;/profile&gt;
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>既存の上部記述に続けて下部を追記する
+   &lt;profile&gt;
+     &lt;id&gt;jboss-ga&lt;/id&gt;
+     &lt;repositories&gt;
+       &lt;repository&gt;
+         &lt;id&gt;jboss-ga-repository&lt;/id&gt;
+         &lt;name&gt;JBoss GA Tech Preview Maven Repository&lt;/name&gt;
+         &lt;url&gt;https://maven.repository.redhat.com/ga/&lt;/url&gt;
+         &lt;layout&gt;default&lt;/layout&gt;
+         &lt;releases&gt;
+           &lt;enabled&gt;true&lt;/enabled&gt;
+           &lt;updatePolicy&gt;never&lt;/updatePolicy&gt;
+         &lt;/releases&gt;
+         &lt;snapshots&gt;
+           &lt;enabled&gt;false&lt;/enabled&gt;
+           &lt;updatePolicy&gt;never&lt;/updatePolicy&gt;
+         &lt;/snapshots&gt;
+       &lt;/repository&gt;
+     &lt;/repositories&gt;
+     &lt;pluginRepositories&gt;
+       &lt;pluginRepository&gt;
+         &lt;id&gt;jboss-ga-plugin-repository&lt;/id&gt;
+         &lt;name&gt;JBoss <span class="m">7</span> Maven Plugin Repository&lt;/name&gt;
+         &lt;url&gt;https://maven.repository.redhat.com/ga/&lt;/url&gt;
+         &lt;layout&gt;default&lt;/layout&gt;
+         &lt;releases&gt;
+           &lt;enabled&gt;true&lt;/enabled&gt;
+           &lt;updatePolicy&gt;never&lt;/updatePolicy&gt;
+         &lt;/releases&gt;
+         &lt;snapshots&gt;
+           &lt;enabled&gt;false&lt;/enabled&gt;
+           &lt;updatePolicy&gt;never&lt;/updatePolicy&gt;
+         &lt;/snapshots&gt;
+       &lt;/pluginRepository&gt;
+     &lt;/pluginRepositories&gt;
+   &lt;/profile&gt;
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. /root/.m2/配下にsettings.xmlを作成</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># mkdir /root/.m2
+# cd /root/.m2
+# vi settings.xml
+</pre></div>
+</div>
+<p>以下を追加</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&lt;?xml <span class="nv">version</span><span class="o">=</span><span class="s2">&quot;1.0&quot;</span> <span class="nv">encoding</span><span class="o">=</span><span class="s2">&quot;UTF-8&quot;</span> <span class="nv">standalone</span><span class="o">=</span><span class="s2">&quot;no&quot;</span>?&gt;
+&lt;settings <span class="nv">xmlns</span><span class="o">=</span><span class="s2">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span> xmlns:xsi<span class="o">=</span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> xsi:schemaLocation<span class="o">=</span><span class="s2">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;
+
+    &lt;localRepository/&gt;
+
+    &lt;proxies&gt;
+      &lt;proxy&gt;
+        &lt;id&gt;http_proxy&lt;/id&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;protocol&gt;http&lt;/protocol&gt;
+        &lt;host&gt;proxygate2.nic.nec.co.jp&lt;/host&gt;
+        &lt;nonProxyHosts&gt;localhost<span class="p">|</span><span class="m">10</span>.197.19.*<span class="p">|</span>proxygate2.nic.nec.co.jp&lt;/nonProxyHosts&gt;
+        &lt;port&gt;8080&lt;/port&gt;
+      &lt;/proxy&gt;
+      &lt;proxy&gt;
+        &lt;id&gt;https_proxy&lt;/id&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;protocol&gt;https&lt;/protocol&gt;
+        &lt;host&gt;proxygate2.nic.nec.co.jp&lt;/host&gt;
+        &lt;nonProxyHosts&gt;localhost<span class="p">|</span><span class="m">10</span>.197.19.*<span class="p">|</span>proxygate2.nic.nec.co.jp&lt;/nonProxyHosts&gt;
+        &lt;port&gt;8080&lt;/port&gt;
+      &lt;/proxy&gt;
+    &lt;/proxies&gt;
+
+    &lt;profiles&gt;
+        &lt;profile&gt;
+            &lt;id&gt;jboss-ga&lt;/id&gt;
+            &lt;repositories&gt;
+                &lt;repository&gt;
+                    &lt;id&gt;jboss-ga-repository&lt;/id&gt;
+                    &lt;name&gt;JBoss GA Tech Preview Maven Repository&lt;/name&gt;
+                    &lt;url&gt;file:/root/.m2/repository/&lt;/url&gt;
+                    &lt;layout&gt;default&lt;/layout&gt;
+                    &lt;releases&gt;
+                        &lt;enabled&gt;true&lt;/enabled&gt;
+                        &lt;updatePolicy&gt;never&lt;/updatePolicy&gt;
+                    &lt;/releases&gt;
+                    &lt;snapshots&gt;
+                        &lt;enabled&gt;false&lt;/enabled&gt;
+                        &lt;updatePolicy&gt;never&lt;/updatePolicy&gt;
+                    &lt;/snapshots&gt;
+                &lt;/repository&gt;
+            &lt;/repositories&gt;
+            &lt;pluginRepositories&gt;
+                &lt;pluginRepository&gt;
+                    &lt;id&gt;jboss-ga-plugin-repository&lt;/id&gt;
+                    &lt;name&gt;JBoss <span class="m">7</span> Maven Plugin Repository&lt;/name&gt;
+                    &lt;url&gt;file:/root/.m2/repository/&lt;/url&gt;
+                    &lt;layout&gt;default&lt;/layout&gt;
+                    &lt;releases&gt;
+                        &lt;enabled&gt;true&lt;/enabled&gt;
+                        &lt;updatePolicy&gt;never&lt;/updatePolicy&gt;
+                    &lt;/releases&gt;
+                    &lt;snapshots&gt;
+                        &lt;enabled&gt;false&lt;/enabled&gt;
+                        &lt;updatePolicy&gt;never&lt;/updatePolicy&gt;
+                    &lt;/snapshots&gt;
+                &lt;/pluginRepository&gt;
+            &lt;/pluginRepositories&gt;
+        &lt;/profile&gt;
+    &lt;/profiles&gt;
+    &lt;activeProfiles&gt;
+        &lt;activeProfile&gt;jboss-ga&lt;/activeProfile&gt;
+    &lt;/activeProfiles&gt;
+&lt;/settings&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="decision-server">
+<h3>4.4. Decision Server の設定<a class="headerlink" href="#decision-server" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp {jbossルートパス}/standalone/configuration/standalone-full.xml {jbossルートパス}/standalone/configuration/20190708_standalone-full.xml
+# vi {jbossルートパス}/standalone/configuration/standalone-full.xml
+</pre></div>
+</div>
+<p>&lt;system-properties&gt; を修正</p>
+<p>・before</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&lt;property <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;org.kie.server.controller.user&quot;</span> <span class="nv">value</span><span class="o">=</span><span class="s2">&quot;controllerUser&quot;</span>/&gt;
+&lt;property <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;org.kie.server.controller.pwd&quot;</span> <span class="nv">value</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">VAULT</span><span class="p">::</span><span class="nv">vaulted</span><span class="p">::</span><span class="nv">controller</span><span class="p">.password::</span><span class="nv">1</span><span class="si">}</span><span class="s2">&quot;</span>/&gt;
+&lt;property <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;org.kie.server.user&quot;</span> <span class="nv">value</span><span class="o">=</span><span class="s2">&quot;controllerUser&quot;</span>/&gt;
+&lt;property <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;org.kie.server.pwd&quot;</span> <span class="nv">value</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">VAULT</span><span class="p">::</span><span class="nv">vaulted</span><span class="p">::</span><span class="nv">controller</span><span class="p">.password::</span><span class="nv">1</span><span class="si">}</span><span class="s2">&quot;</span>/&gt;
+</pre></div>
+</div>
+<p>・after</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&lt;property <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;org.kie.server.controller.user&quot;</span> <span class="nv">value</span><span class="o">=</span><span class="s2">&quot;{RHDM管理ユーザー名}&quot;</span>/&gt;
+&lt;property <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;org.kie.server.controller.pwd&quot;</span> <span class="nv">value</span><span class="o">=</span><span class="s2">&quot;{RHDM管理パスワード}&quot;</span>/&gt;
+&lt;property <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;org.kie.server.user&quot;</span> <span class="nv">value</span><span class="o">=</span><span class="s2">&quot;{RHDM管理ユーザー名}&quot;</span>/&gt;
+&lt;property <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;org.kie.server.pwd&quot;</span> <span class="nv">value</span><span class="o">=</span><span class="s2">&quot;{RHDM管理パスワード}&quot;</span>/&gt;
+&lt;property <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;kie.maven.settings.custom&quot;</span> <span class="nv">value</span><span class="o">=</span><span class="s2">&quot;/opt/apache-maven/conf/settings.xml&quot;</span>/&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="oase-env">
+<h3>4.5. oase_env<a class="headerlink" href="#oase-env" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cp /home/centos/OASE/oase-root/confs/backyardconfs/services/oase_env /home/centos/OASE/oase-root/confs/backyardconfs/services/20190708_oase_env.bk
+# vi /home/centos/OASE/oase-root/confs/backyardconfs/services/oase_env
+</pre></div>
+</div>
+<p>以下を追加</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># DM settings</span>
+<span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/lib/jvm/java-1.8.0-openjdk
+<span class="nv">PATH</span><span class="o">=</span>/opt/apache-maven/bin:JAVA_HOME/bin:/usr/bin
+<span class="nv">CLASSPATH</span><span class="o">=</span>JAVA_HOME/jre/lib:JAVA_HOME/lib:JAVA_HOME/lib/tools.jar
+<span class="nv">M2_HOME</span><span class="o">=</span>/opt/apache-maven-3.6.1
+<span class="nv">JBOSS_HOME</span><span class="o">={</span>jbossルートパス<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id18">
+<h3>4.6. OASEサービスの登録<a class="headerlink" href="#id18" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">1. OASE環境設定ファイルのリンク作成</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># ll /home/centos/OASE/oase-root/confs/backyardconfs/services/oase_env
+# ln -s /home/centos/OASE/oase-root/confs/backyardconfs/services/oase_env /etc/sysconfig/oase_env
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. oase-action.serviceの登録</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># ll /home/centos/OASE/oase-root/confs/backyardconfs/services/oase_action_env
+# ln -s /home/centos/OASE/oase-root/confs/backyardconfs/services/oase_action_env /etc/sysconfig/oase_action_env
+
+# ll /home/centos/OASE/oase-root/backyards/action_driver/oase-action.service
+# cp /home/centos/OASE/oase-root/backyards/action_driver/oase-action.service /usr/lib/systemd/system/oase-action.service
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">3. oase-agent.serviceの登録</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># ll /home/centos/OASE/oase-root/confs/backyardconfs/services/oase_agent_env
+# ln -s /home/centos/OASE/oase-root/confs/backyardconfs/services/oase_agent_env /etc/sysconfig/oase_agent_env
+
+# ll /home/centos/OASE/oase-root/backyards/agent_driver/oase-agent.service
+# cp /home/centos/OASE/oase-root/backyards/agent_driver/oase-agent.service /usr/lib/systemd/system/oase-agent.service
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">4. oase-apply.serviceの登録</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># ll /home/centos/OASE/oase-root/confs/backyardconfs/services/oase_apply_env
+# ln -s /home/centos/OASE/oase-root/confs/backyardconfs/services/oase_apply_env /etc/sysconfig/oase_apply_env
+
+# ll /home/centos/OASE/oase-root/backyards/apply_driver/oase-apply.service
+# cp /home/centos/OASE/oase-root/backyards/apply_driver/oase-apply.service /usr/lib/systemd/system/oase-apply.service
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">5. oase-accept.serviceの登録</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># ll /home/centos/OASE/oase-root/confs/backyardconfs/services/oase_accept_env
+# ln -s /home/centos/OASE/oase-root/confs/backyardconfs/services/oase_accept_env /etc/sysconfig/oase_accept_env
+
+# ll /home/centos/OASE/oase-root/backyards/accept_driver/oase-accept.service
+# cp /home/centos/OASE/oase-root/backyards/accept_driver/oase-accept.service /usr/lib/systemd/system/oase-accept.service
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">6. oase-action.serviceの起動</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl status oase-action.service
+# systemctl start oase-action.service
+# systemctl enable oase-action.service
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">7. oase-agent.serviceの起動</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl status oase-agent.service
+# systemctl start oase-agent.service
+# systemctl enable oase-agent.service
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">8. oase-apply.serviceの起動</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl status oase-apply.service
+# systemctl start oase-apply.service
+# systemctl enable oase-apply.service
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">9. oase-accept.serviceの起動</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl status oase-accept.service
+# systemctl start oase-accept.service
+# systemctl enable oase-accept.service
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">■各サービスの起動</div>
+</div>
+<div class="line-block">
+<div class="line">1. JBoss EAPサービス登録と起動</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># service jboss-eap-rhel start
+# chkconfig jboss-eap-rhel.sh on
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. JBoss EAPサービス確認</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl status jboss-eap-rhel.service
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>★下記のサイトが見れることを確認</p>
+<p><a class="reference external" href="http://XXX.XXX.XXX.XXX:PORT/decision-central">http://XXX.XXX.XXX.XXX:PORT/decision-central</a></p>
+<div class="line-block">
+<div class="line">xxx ： webサーバを立ち上げるIPアドレス</div>
+<div class="line">PORT： Decision Managerが起動しているPORT番号(default: 8080)</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">3. Nginx サービス再起動</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl status nginx
+# systemctl start nginx
+# systemctl enable nginx
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">4. uwsgi サービス再起動</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl status uwsgi
+# systemctl start uwsgi
+# systemctl enable uwsgi
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="construction_flow.html" title="前の章へ"><span>前のトピックへ</span>構築フロー</a></li>
+    <li class="next"><a href="environmental_setting.html" title="次の章へ"><span>次のトピックへ</span>環境設定</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2019 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>
