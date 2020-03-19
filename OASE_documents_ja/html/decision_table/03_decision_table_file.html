@@ -76,6 +76,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../system_construction/index.html">システム構成ガイド</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../settings/index.html">環境構築マニュアル -基本編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../active_directory/index.html">環境構築マニュアル -ActiveDirectory編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../driver_install/index.html">環境構築マニュアル -ドライバインストール編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../adapter_install/index.html">環境構築マニュアル -アダプタインストール編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../common/index.html">利用手順マニュアル -共通編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../login/index.html">利用手順マニュアル -ログイン画面編-</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">利用手順マニュアル -ディシジョンテーブル画面編-</a><ul class="current">
@@ -214,6 +216,10 @@
 <p class="admonition-title">注釈</p>
 <p>ディシジョンテーブル画面で新規追加および複製時に入力した&quot;時間[HH:mm](From-to)&quot;は、エクセルファイルでは&quot;[HH:mm](from)&quot;と&quot;[HH:mm](to)&quot;の2列に分かれます。開始日時と終了日時をそれぞれ入力して下さい。</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>条件部を空欄にすると、どのような値でも条件にマッチします。しかし、１つのルールに対して全ての条件部を空欄にすることはできません。</p>
+</div>
 </div>
 <div class="section" id="id4">
 <h3>(4)アクション部<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
@@ -266,12 +272,17 @@
 <li><p>2つ以上、送信したいアドレスがある場合は「;」でつなげてください。</p></li>
 <li><p>MAIL_TEMPLATEはOASE画面のシステム-アクション設定-メールテンプレートのテンプレート名と紐づけます。</p></li>
 <li><p>不要の場合はXを記述してください。</p></li>
+<li><p>MAIL_TO、MAIL_CC、MAIL_BCCの値に {{ VAR_条件名 }} と記入すると条件部の値を当てはめることができます。</p></li>
+<li><p>{{ VAR_条件名 }} の条件名には <a class="reference internal" href="02_screen_structure.html"><span class="doc">2 OASE ディシジョンテーブル画面のメニュー 、画面構成</span></a> の新規追加画面にて入力された条件名を記入してください。</p></li>
 </ul>
 <p><strong>記述例</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MAIL_NAME</span><span class="o">=</span><span class="n">oasetest</span><span class="p">,</span><span class="n">MAIL_TO</span><span class="o">=</span><span class="n">aaa</span><span class="nd">@aaa</span><span class="o">.</span><span class="n">com</span><span class="p">;</span><span class="n">bbb</span><span class="nd">@bbb</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_CC</span><span class="o">=</span><span class="n">ccc</span><span class="nd">@ccc</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_BCC</span><span class="o">=</span><span class="n">ddd</span><span class="nd">@ddd</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_TEMPLATE</span><span class="o">=</span><span class="n">test_template</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MAIL_NAME</span><span class="o">=</span><span class="n">oasetest</span><span class="p">,</span><span class="n">MAIL_TO</span><span class="o">=</span><span class="p">,</span><span class="n">MAIL_CC</span><span class="o">=</span><span class="p">,</span><span class="n">MAIL_BCC</span><span class="o">=</span><span class="p">,</span><span class="n">MAIL_TEMPLATE</span><span class="o">=</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MAIL_NAME</span><span class="o">=</span><span class="n">oasetest</span><span class="p">,</span><span class="n">MAIL_TO</span><span class="o">=</span><span class="p">{{</span> <span class="n">VAR_条件名</span> <span class="p">}},</span><span class="n">MAIL_CC</span><span class="o">=</span><span class="n">ccc</span><span class="nd">@ccc</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_BCC</span><span class="o">=</span><span class="n">ddd</span><span class="nd">@ddd</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_TEMPLATE</span><span class="o">=</span><span class="n">test_template</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span>
@@ -299,24 +310,24 @@
 </pre></div>
 </div>
 <div class="line-block">
-<div class="line"><strong>アクション抑止間隔（必須）※「1」以上を定義して下さい。</strong></div>
+<div class="line"><strong>アクション抑止間隔（必須）※「0」以上を定義して下さい。</strong></div>
 </div>
 <ul class="simple">
 <li><p>アクションの抑止間隔を記述します。</p></li>
 <li><p>抑止間隔の単位は秒になります。</p></li>
 </ul>
 <p><strong>記述例</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span>
 </pre></div>
 </div>
 <div class="line-block">
-<div class="line"><strong>アクション抑止回数（必須）※「1」以上を定義して下さい。</strong></div>
+<div class="line"><strong>アクション抑止回数（必須）※「0」以上を定義して下さい。</strong></div>
 </div>
 <ul class="simple">
 <li><p>アクションの抑止回数を記述します。</p></li>
 </ul>
 <p><strong>記述例</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span>
 </pre></div>
 </div>
 </div>
@@ -326,13 +337,39 @@
 <div class="line"><strong>アクションパラメータ情報（必須）※ダブルクオーテーションは使用不可</strong></div>
 </div>
 <ul class="simple">
+<li><p>ITA_NAMEおよびSYMPHONY_CLASS_IDは必須です。</p></li>
 <li><p>ITA_NAMEはOASE画面のシステム-アクション設定-ITA_driverの名前と紐づけます。</p></li>
 <li><p>SYMPHONY_CLASS_IDはITA画面の基本コンソール-Symphonyクラス一覧のSymphonyクラスIDと紐づけます。</p></li>
 <li><p>OPERATION_IDはITA画面の基本コンソール-投入オペレーション一覧のオペレーションIDと紐づけます。</p></li>
+<li><p>SYMPHONY_CLASS_ID、OPERATION_IDの値に {{ VAR_条件名 }} と記入すると条件部の値を当てはめることができます。</p></li>
+<li><p>{{ VAR_条件名 }} の条件名には <a class="reference internal" href="02_screen_structure.html"><span class="doc">2 OASE ディシジョンテーブル画面のメニュー 、画面構成</span></a> の新規追加画面にて入力された条件名を記入してください。</p></li>
+<li><p>SERVER_LISTは実行対象となるホスト名を記述します。ホスト名はITA画面の基本コンソール-機器一覧のホスト名と紐づけます。複数記載する場合はコロン(:)で区切って記述します。</p></li>
 </ul>
+<div class="line-block">
+<div class="line"><strong>OPERATION_IDを指定した場合</strong></div>
+<div class="line">ITAに事前に準備しておいた [ オペレーション - Symphony ] で作業を実行できます。</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>SERVER_LISTを指定した場合</strong></div>
+<div class="line">ITAのSymphonyに対して、OASEから作業対象ホストを指定して作業を実行できます。</div>
+<div class="line">（ITAでのオペレーションは自動払い出しになります）</div>
+</div>
 <p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="p">{{</span> <span class="n">VAR_条件名</span> <span class="p">}},</span><span class="n">OPERATION_ID</span><span class="o">=</span><span class="mi">10</span>
+</pre></div>
+</div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">OPERATION_ID</span><span class="o">=</span><span class="mi">10</span>
 </pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">SERVER_LIST</span><span class="o">=</span><span class="n">hostname1</span><span class="p">:</span><span class="n">hostname2</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>OPERATION_IDとSERVER_LISTの両方を設定した場合エラーとなります。</p>
 </div>
 </div>
 <div class="section" id="mail">
@@ -347,12 +384,17 @@
 <li><p>宛先やテンプレート名は空白でも良いですが、記述例のように、「MAIL_TO=,MAIL_CC=,MAIL_BCC=,AIL_TEMPLATE=」の記述は必要です。また、MAIL_TOにメールアドレスの指定、またはMAIL_TEMPLATEで指定したテンプレートに宛先があること、のどちらかが必要です。</p></li>
 <li><p>2つ以上、送信したいアドレスがある場合は「;」でつなげてください。</p></li>
 <li><p>MAIL_TEMPLATEはOASE画面のシステム-アクション設定-メールテンプレートのテンプレート名と紐づけます。</p></li>
+<li><p>MAIL_TO、MAIL_CC、MAIL_BCCの値に {{ VAR_条件名 }} と記入すると条件部の値を当てはめることができます。</p></li>
+<li><p>{{ VAR_条件名 }} の条件名には <a class="reference internal" href="02_screen_structure.html"><span class="doc">2 OASE ディシジョンテーブル画面のメニュー 、画面構成</span></a> の新規追加画面にて入力された条件名を記入してください。</p></li>
 </ul>
 <p><strong>記述例</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MAIL_NAME</span><span class="o">=</span><span class="n">oasetest</span><span class="p">,</span><span class="n">MAIL_TO</span><span class="o">=</span><span class="n">aaa</span><span class="nd">@aaa</span><span class="o">.</span><span class="n">com</span><span class="p">;</span><span class="n">bbb</span><span class="nd">@bbb</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_CC</span><span class="o">=</span><span class="n">ccc</span><span class="nd">@ccc</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_BCC</span><span class="o">=</span><span class="n">ddd</span><span class="nd">@ddd</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_TEMPLATE</span><span class="o">=</span><span class="n">test_template</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MAIL_NAME</span><span class="o">=</span><span class="n">oasetest</span><span class="p">,</span><span class="n">MAIL_TO</span><span class="o">=</span><span class="p">,</span><span class="n">MAIL_CC</span><span class="o">=</span><span class="p">,</span><span class="n">MAIL_BCC</span><span class="o">=</span><span class="p">,</span><span class="n">MAIL_TEMPLATE</span><span class="o">=</span><span class="n">test_template</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MAIL_NAME</span><span class="o">=</span><span class="n">oasetest</span><span class="p">,</span><span class="n">MAIL_TO</span><span class="o">=</span><span class="p">{{</span> <span class="n">VAR_条件名</span> <span class="p">}},</span><span class="n">MAIL_CC</span><span class="o">=</span><span class="n">ccc</span><span class="nd">@ccc</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_BCC</span><span class="o">=</span><span class="n">ddd</span><span class="nd">@ddd</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_TEMPLATE</span><span class="o">=</span><span class="n">test_template</span>
 </pre></div>
 </div>
 </div>
@@ -372,10 +414,11 @@
 <ul class="simple">
 <li><p>ルールの有効日を設定できます。</p></li>
 <li><p>有効日を設定しない場合は空欄にします。</p></li>
-<li><p>yyyy-mm-dd形式で入力して下さい。</p></li>
+<li><p>yyyy-mm-dd HH:mm形式で入力して下さい。</p></li>
+<li><p>有効日を2020-01-01 01:00に設定した場合、2020-01-01 01:00:01以降のイベントにマッチします。</p></li>
 </ul>
 <p><strong>記述例</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2010</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2010</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span> <span class="mi">01</span><span class="p">:</span><span class="mi">00</span>
 </pre></div>
 </div>
 <div class="line-block">
@@ -384,10 +427,11 @@
 <ul class="simple">
 <li><p>ルールの無効日を設定できます。</p></li>
 <li><p>無効日を設定しない場合は空欄にします。</p></li>
-<li><p>yyyy-mm-dd形式で入力して下さい。</p></li>
+<li><p>yyyy-mm-dd HH:mm形式で入力して下さい。</p></li>
+<li><p>無効日を2020-01-01 01:00に設定した場合2020-01-01 01:00:00以降のイベントはマッチしません。</p></li>
 </ul>
 <p><strong>記述例</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2020</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2020</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span> <span class="mi">23</span><span class="p">:</span><span class="mi">59</span>
 </pre></div>
 </div>
 </div>

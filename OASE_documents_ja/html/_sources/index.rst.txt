@@ -19,6 +19,8 @@ OASEをより深く知りたい場合は、ここにあるドキュメントを�
    system_construction/index
    settings/index
    active_directory/index
+   driver_install/index
+   adapter_install/index
    common/index
    login/index
    decision_table/index
