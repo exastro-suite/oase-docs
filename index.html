@@ -87,8 +87,7 @@
     <li class="exastro"><a href="../docs/index.html">Exastro Home</a></li>
     <li class="ita"><a href="../it-automation-docs/index.html">IT Automation</a></li>
     <li class="pc"><a href="https://github.com/exastro-suite/playbook-collection-docs/blob/master/README.md" target="_blank" rel="noopener">Playbook Collection</a></li>
-    <!--<li class="oase"><a href="../oase-docs/index.html">Operation Autonomy Support Engine</a></li>-->
-		<li class="oase"><span>Operation Autonomy Support Engine</span></li>
+    <li class="oase"><a href="index.html">Operation Autonomy Support Engine</a></li>
     
   </ul>
 </div>
@@ -126,7 +125,7 @@
 </ul>
 
 <ul id="languageMenu">
-<li><!-- InstanceBeginEditable name="EditHeaderLanguageMenuArea" --><a href="./index_ja.html" class="en">Japanese</a>
+<li><!-- InstanceBeginEditable name="EditHeaderLanguageMenuArea" --><a href="./index_ja.html" class="ja">Japanese</a>
 <!-- InstanceEndEditable --></li>
 <li><span>English</span></li>
 </ul>
@@ -149,9 +148,9 @@
 <!-- InstanceBeginEditable name="EditContentHeaderArea" --><h1><small>Exastro</small><br>
 Operation Autonomy<br>
 Support Engine</h1>
-<p>Exastro OASEは<br>
-システム運用の自律化・効率化・省力化を<br>
-支援するためのOSSです。</p>
+<p>Exastro OASE is a Open-source software <br>
+that supports autonomination, efficiency, <br>
+and effortlessness for system operation. </p>
 <ul>
   <!--<li><a href="downloads_ja.html" class="touch">Download</a></li>-->
   <li><a href="#why" class="touch anker">Description</a></li>
@@ -162,8 +161,70 @@ Support Engine</h1>
 
 <div id="articleBody">
 <!-- InstanceBeginEditable name="EditContentBodyArea" -->
+<section id="why">
+  <div class="sectionInner">
+  <h2><em>Exastro OASE</em> solves 3 problems during system operation.</h2>
+    <ul>
+      <li>
+        <dl>
+          <dt><i class="fas fa-times-circle"></i>Problem breakdown and solution finding relys on experts.</dt>
+          <dd class="text"><i class="fas fa-check-circle"></i>The system will determine the solution automatically by the rules that has already been set.</dd>
+          <dd class="image"><span class="loupe touch"><img src="./asset/img/header_oase_home_slide01.jpg" alt="Exastro Operation Autonomy Support Engine screen1"></span></dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><i class="fas fa-times-circle"></i>Operation errors according to complicated manual work.</dt>
+          <dd class="text"><i class="fas fa-check-circle"></i>Eliminate human errors by linking with work automation software and executing troubleshooting  automatically.</dd>
+          <dd class="image"><span class="loupe touch"><img src="./asset/img/header_oase_home_slide02.jpg" alt="Exastro Operation Autonomy Support Engine screen2"></span></dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><i class="fas fa-times-circle"></i>Expansion of service effect due to the delay of problem recovery.</dt>
+          <dd class="text"><i class="fas fa-check-circle"></i>The effect is minimized since solution is applied right after problem examination.</dd>
+          <dd class="image"><span class="loupe touch"><img src="./asset/img/header_oase_home_slide03.jpg" alt="Exastro Operation Autonomy Support Engine screen3"></span></dd>
+        </dl>
+      </li>
+    </ul>
+    <p class="linkArea"><a href="./overview.html" class="move"><span>Exastro OASE overview <i class="fas fa-angle-right"></i></span></a></p>
+  </div>
+</section>
+<script>
+let whyTextHeight = 0;
+$('#why').find('.text').each(function(){
+  if( whyTextHeight < $(this).outerHeight() ) whyTextHeight = $(this).outerHeight();
+}).css('height', whyTextHeight );
+</script>
+
+<section id="features">
+  <div class="sectionInner">
+    <h2>"6 Features" of <em>Exastro OASE</em></h2>
+    <div id="featuresList">
+      <svg id="svgArea" width="100%" height="100%" >
+      </svg>
+      <ol>
+        <li><a href="overview.html#feature6"><i class="fas fa-cog"></i>　Confirm rule list in staging environment</a></li>
+        <li><a href="overview.html#feature1"><i class="fas fa-cog"></i>　Link with multiple monitoring software and automation software</a></li>
+        <li><a href="overview.html#feature2"><i class="fas fa-cog"></i>　Define the rules without coding</a></li>
+        <li><a href="overview.html#feature3"><i class="fas fa-cog"></i>　Control the number of action execution</a></li>
+        <li><a href="overview.html#feature4"><i class="fas fa-cog"></i>　Manage multiple rule list</a></li>
+        <li><a href="overview.html#feature5"><i class="fas fa-cog"></i>　Role-based access control</a></li>
+      </ol>
+    </div>
+    <p class="linkArea"><a href="./learn.html" class="move"><span>Start using Exastro OASE <i class="fas fa-angle-right"></i></span></a></p>
+  </div>
+</section>
 
 
+<section id="documentation">
+  <div class="sectionInner">
+    <h2>Do you want to know more about <em>Exastro OASE</em>?</h2>
+    <div class="rightImage"><img src="./asset/img/home_documents_image.jpg" alt="ドキュメント"></div>
+    <p>Various documents are available.</p>
+    <p class="linkArea"><a href="./documents.html" class="move"><span>Documents <i class="fas fa-angle-right"></i></span></a></p>
+  </div>
+</section>
 <!-- InstanceEndEditable -->
 </div>
 
@@ -216,7 +277,17 @@ Support Engine</h1>
             
           </ul>
         </li>
-				
+				<li id="footerOase">
+          <div class="footerMainMenuHome"><a href="index.html"><img src="asset/img/oase.svg" alt="OASE | Operation Autonomy Support Engine"></a></div>
+          <ul class="footerMainMenuChildren">
+            <li><a href="overview.html" class="overview">Overview</a></li>
+            <li><a href="learn.html" class="learn">Learn</a></li>
+            <li><a href="case.html" class="learn">Case</a></li>
+            <li><a href="documents.html" class="documents">Documents</a></li>
+            <li><a href="downloads.html" class="downloads">Downloads</a></li>
+            
+          </ul>
+        </li>
       </ul>
 
       <ul id="footerSubMenu">
@@ -244,7 +315,7 @@ Support Engine</h1>
   </div><!-- /#footerInner -->
 
   <div id="copyright">
-    <p><small>Copyright © 2019 NEC Corporation</small></p>
+    <p><small>Copyright © NEC Corporation 2019-2020</small></p>
   </div>
 
 </footer>

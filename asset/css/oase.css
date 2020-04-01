@@ -3,8 +3,8 @@
 
 
 
-.documents #articleTitle,
-.documents footer{
+.documents.ja #articleTitle,
+.documents.ja footer{
 display: none;
 }
 .documents #articleBody iframe {
@@ -92,7 +92,6 @@ animation: monitorAnimation 0.1s linear infinite;
 
 
 #website.index #articleTitle .background { background-image: url("../img/header_oase_home.jpg"); }
-#website.en.index #articleTitle .background { background-image: url("../img/en_header_oase_home.jpg"); }
 #article.overview #articleTitle .background { background-image: url("../img/header_overview.jpg"); }
 #article.learn #articleTitle .background { background-image: url("../img/header_learn.jpg"); }
 #article.case #articleTitle .background { background-image: url("../img/header_case.jpg"); }
@@ -164,7 +163,9 @@ background-color: rgba( 0, 169, 172, 0.04 );
 
 
 
-
+.en #articleBody #features li a {
+    font-size: 1.25rem;
+}
 #articleBody #features li:nth-child(1),
 #articleBody #features li:nth-child(6) { transform: translateX(-10%); }
 #articleBody #features li:nth-child(2),
