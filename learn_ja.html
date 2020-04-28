@@ -60,6 +60,13 @@
 
 
 <!-- InstanceBeginEditable name="head" -->
+<script src="../docs/asset/js/slide_loading.js"></script>
+<script>
+$(function(){
+  var url = 'https://exastro-suite.github.io/oase-docs/asset/json/google_slide_urls.json';
+  slideLoading( url );
+});
+</script>
 <!-- InstanceEndEditable -->
 
 </head>
@@ -161,7 +168,9 @@ Learn</h1>
 
     <h2><em>Exastro Operation Autonomy Support Engine</em> を触ってみよう</h2>
     <h3><em>Exastro Operation Autonomy Support Engine</em> クイックスタート</h3>
-    <div class="slide"><img src="asset/img/under_construction.jpg" alt="Under Construction" style="vertical-align: middle;"></div>
+    <div class="slide">
+      <div class="slideView" data-slide-name="Quick_start"></div>
+    </div>
     <p>Operation Autonomy Support Engineのインタフェースをスムーズに体感頂くために、クイックスタートをご用意しました。</p>
     <p>Operation Autonomy Support Engineではいくつかのソフトウェアと連携が可能ですが、それらの中で設定が簡易であるメールソフトとの連携を体感頂けます。</p>
     <p>また Operation Autonomy Support Engineは「監視アダプタによるキック」および「ITAと連動したアクション実行」といった最重要な機能を提供していますが、クイックスタートではスムーズに体感頂くために、敢えてこれらの機能の活用を割愛しています。</p>
