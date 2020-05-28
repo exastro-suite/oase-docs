@@ -1,9 +1,11 @@
 {
 	"en": {
-		"Quick_start": "none"
+		"Quick_start": "none",
+    "Install_Online": "none"
 	},
 	"ja": {
-		"Quick_start": "2PACX-1vSo8Yo11Kh-fGBjTp484Lfrfn8XoAfKH8JA8uL1ozkqMNlsxdXEnujjAtoIny2m7pX5ljTTjh1rxnir"
+		"Quick_start": "2PACX-1vSo8Yo11Kh-fGBjTp484Lfrfn8XoAfKH8JA8uL1ozkqMNlsxdXEnujjAtoIny2m7pX5ljTTjh1rxnir",
+    "Install_Online": "2PACX-1vSaNhD3hCaA2cc-PqISYMLLktGehyfuAthRYeIZYt9ey5k64rvAwFksQ4ASZoDKIte9lnphm_tm93pT"
 	},
 	"config": {
 		"URL": "https://docs.google.com/presentation/d/e/",
