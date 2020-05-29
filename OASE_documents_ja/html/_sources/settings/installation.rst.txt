@@ -982,8 +982,6 @@ java（openJDK）インストール
 
 以下、対話形式での入力
 
-.. danger:: ここにMAS固有設定アリ
-
 
 .. code-block:: bash
 

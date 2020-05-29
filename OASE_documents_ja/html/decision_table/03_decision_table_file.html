@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>3 OASE ディシジョンテーブルファイルの説明 &#8212; OASE_docs 1.1.0 ドキュメント</title>
+    <title>3 OASE ディシジョンテーブルファイルの説明 &#8212; OASE_docs 1.0.1 ドキュメント</title>
     <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     
@@ -53,7 +53,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.1.0</dd>
+        <dd>1.0.1</dd>
       </dl>
     </div>
     
@@ -96,12 +96,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../group/index.html">利用手順マニュアル -グループ画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user/index.html">利用手順マニュアル -ユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../monitoring_adapter/index.html">利用手順マニュアル -監視アダプタ編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../action/index.html">利用手順マニュアル -アクション設定画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../locked_user/index.html">利用手順マニュアル -アカウントロックユーザ画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../blacklist/index.html">利用手順マニュアル -ブラックリスト画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../whitelist/index.html">利用手順マニュアル -ホワイトリスト画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../personal_config/index.html">利用手順マニュアル -個人設定画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/index.html">RestAPI機能 利用マニュアル</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameter_sheet/index.html">利用手順マニュアル-【ITAドライバ】メッセージ抽出定義画面編-</a></li>
 </ul>
 
   </aside>
@@ -341,9 +343,13 @@
 <li><p>ITA_NAMEはOASE画面のシステム-アクション設定-ITA_driverの名前と紐づけます。</p></li>
 <li><p>SYMPHONY_CLASS_IDはITA画面の基本コンソール-Symphonyクラス一覧のSymphonyクラスIDと紐づけます。</p></li>
 <li><p>OPERATION_IDはITA画面の基本コンソール-投入オペレーション一覧のオペレーションIDと紐づけます。</p></li>
-<li><p>SYMPHONY_CLASS_ID、OPERATION_IDの値に {{ VAR_条件名 }} と記入すると条件部の値を当てはめることができます。</p></li>
-<li><p>{{ VAR_条件名 }} の条件名には <a class="reference internal" href="02_screen_structure.html"><span class="doc">2 OASE ディシジョンテーブル画面のメニュー 、画面構成</span></a> の新規追加画面にて入力された条件名を記入してください。</p></li>
 <li><p>SERVER_LISTは実行対象となるホスト名を記述します。ホスト名はITA画面の基本コンソール-機器一覧のホスト名と紐づけます。複数記載する場合はコロン(:)で区切って記述します。</p></li>
+<li><p>MENU_IDはITAで作成されたパラメータシートのメニューIDと紐づけます。メニューIDはITA画面の管理コンソール-メニュー管理から確認できます。複数記載する場合はコロン(:)で区切って記述します。</p></li>
+<li><p>HOSTGROUP_NAMEはMENU_IDに紐づいたホストグループIDを記載します。MENU_IDと併せてコロン（:）で区切って記載します。1つのMENU_IDに複数のホストグループを紐づける場合はアンド（&amp;）で区切って記載します。</p></li>
+<li><p>複数のMENU_IDを設定する場合はパイプ（|）で区切って記載します。HOST_NAMEにつきましても、HOSTGROUP_NAMEと同様です。</p></li>
+<li><p>CONVERT_FLGはTRUEまたはFALSEを設定します。MENU_ID指定の時に必須になります。</p></li>
+<li><p>SYMPHONY_CLASS_ID,OPERATION_ID,SERVER_LIST,MENU_IDの値に {{ VAR_条件名 }} と記入すると条件部の値を当てはめることができます。</p></li>
+<li><p>{{ VAR_条件名 }} の条件名には <a class="reference internal" href="02_screen_structure.html"><span class="doc">2 OASE ディシジョンテーブル画面のメニュー 、画面構成</span></a> の新規追加画面にて入力された条件名を記入してください。</p></li>
 </ul>
 <div class="line-block">
 <div class="line"><strong>OPERATION_IDを指定した場合</strong></div>
@@ -353,6 +359,27 @@
 <div class="line"><strong>SERVER_LISTを指定した場合</strong></div>
 <div class="line">ITAのSymphonyに対して、OASEから作業対象ホストを指定して作業を実行できます。</div>
 <div class="line">（ITAでのオペレーションは自動払い出しになります）</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>MENU_IDを指定した場合</strong></div>
+<div class="line">ITAのパラメータシートと連携して、指定したSymphonyに対して作業を実行できます。</div>
+<div class="line">（ITAでのオペレーションは自動払い出しになります）</div>
+<div class="line">MENU_ID指定の場合は、CONVERT_FLGが必須になります。</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>MENU_ID指定かつCONVERT_FLGがTRUEの場合</strong></div>
+<div class="line">条件部におけるルールの記述を以下のように加工した場合、使用することができます。</div>
+<div class="line">・始めの条件を作業対象ホスト名でマッチングできるようにする。</div>
+<div class="line">・2番目以降の条件をパラメータシートに連携する値でマッチングできるようにする。</div>
+<div class="line">ルールにマッチングされた値がそのままパラメータシートへ登録を行います。</div>
+<div class="line">パラメータシートへ値が登録される順番はイベント情報の順番になります。</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>MENU_ID指定かつCONVERT_FLGがFALSEの場合</strong></div>
+<div class="line">条件部におけるルールの記述を加工せずに使用することができます。</div>
+<div class="line">ITAのパラメータシートへ連携される値はマッチングされた文言から指定された抽出条件によって抽出します。</div>
+<div class="line">抽出する値には作業対象ホストが必要です。</div>
+<div class="line">パラメータシートへ値が登録される順番はメニューID毎に指定することができます。</div>
 </div>
 <p><strong>記述例</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span>
@@ -367,9 +394,18 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">SERVER_LIST</span><span class="o">=</span><span class="n">hostname1</span><span class="p">:</span><span class="n">hostname2</span>
 </pre></div>
 </div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">MENU_ID</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">CONVERT_FLG</span><span class="o">=</span><span class="n">TRUE</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">MENU_ID</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="n">CONVERT_FLG</span><span class="o">=</span><span class="n">FALSE</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">MENU_ID</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="n">HOSTGROUP_NAME</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="n">HG1</span><span class="p">,</span><span class="n">HOST_NAME</span><span class="o">=</span><span class="mi">2</span><span class="p">:</span><span class="n">H2</span><span class="o">&amp;</span><span class="n">H3</span><span class="o">|</span><span class="mi">3</span><span class="p">:</span><span class="n">H4</span><span class="o">|</span><span class="mi">4</span><span class="p">:</span><span class="n">H5</span><span class="o">&amp;</span><span class="n">H6</span><span class="o">&amp;</span><span class="n">H7</span><span class="p">,</span><span class="n">CONVERT_FLG</span><span class="o">=</span><span class="n">FALSE</span>
+</pre></div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>OPERATION_IDとSERVER_LISTの両方を設定した場合エラーとなります。</p>
+<p>OPERATION_ID,SERVER_LIST,MENU_IDを同時に設定した場合エラーとなります。</p>
 </div>
 </div>
 <div class="section" id="mail">
