@@ -1,0 +1,29 @@
+{
+	"en": {
+		"Install_Online": {
+      "type": "none",
+      "url": ""
+    },
+		"Quick_start": {
+      "type": "none",
+      "url": ""
+    }
+	},
+	"ja": {
+		"Install_Online": {
+      "type": "slide",
+      "url": "2PACX-1vRzV-hGxkI9tkrJT9rnoJZYzhgCKrpG2KCmPPR_HqKuS8vCp7aLUXGimiUP8YYpf7O3IRwygNwZ9wWD"
+    },
+		"Quick_start": {
+      "type": "slide",
+      "url": "2PACX-1vSo8Yo11Kh-fGBjTp484Lfrfn8XoAfKH8JA8uL1ozkqMNlsxdXEnujjAtoIny2m7pX5ljTTjh1rxnir"
+    }
+	},
+	"config": {
+    "pdf_viewer_url" : "https://exastro-suite.github.io/docs/asset/library/pdfjs/web/viewer.html?file=",
+    "pdf_viewer_parameters" : "#page=1",
+		"pdf_url": "https://exastro-suite.github.io/oase-docs/asset/",
+		"slide_url": "https://docs.google.com/presentation/d/e/",
+		"slide_parameters": "/embed?start=false&loop=false&delayms=3000"
+	}
+}
