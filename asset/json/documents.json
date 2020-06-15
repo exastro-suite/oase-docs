@@ -11,12 +11,12 @@
 	},
 	"ja": {
 		"Install_Online": {
-      "type": "slide",
-      "url": "2PACX-1vRzV-hGxkI9tkrJT9rnoJZYzhgCKrpG2KCmPPR_HqKuS8vCp7aLUXGimiUP8YYpf7O3IRwygNwZ9wWD"
+      "type": "pdf",
+      "url": "Learn_ja/OASE-online-install_ja.pdf"
     },
 		"Quick_start": {
-      "type": "slide",
-      "url": "2PACX-1vSo8Yo11Kh-fGBjTp484Lfrfn8XoAfKH8JA8uL1ozkqMNlsxdXEnujjAtoIny2m7pX5ljTTjh1rxnir"
+      "type": "pdf",
+      "url": "Learn_ja/OASE-quickstart_ja.pdf"
     }
 	},
 	"config": {
