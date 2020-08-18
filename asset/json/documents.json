@@ -1,12 +1,12 @@
 {
 	"en": {
 		"Install_Online": {
-      "type": "none",
-      "url": ""
+      "type": "pdf",
+      "url": "Learn/OASE-online-install.pdf"
     },
 		"Quick_start": {
-      "type": "none",
-      "url": ""
+      "type": "pdf",
+      "url": "Learn/OASE-quickstart.pdf"
     }
 	},
 	"ja": {
