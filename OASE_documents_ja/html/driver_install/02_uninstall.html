@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>2 ドライバアンインストール &#8212; OASE_docs 1.0.1 ドキュメント</title>
+    <title>2 ドライバアンインストール &#8212; OASE_docs 1.1.1 ドキュメント</title>
     <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     
@@ -53,7 +53,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.0.1</dd>
+        <dd>1.1.1</dd>
       </dl>
     </div>
     
@@ -136,12 +136,11 @@
 OASE本体をインストールされた際のoase-root直下で実施します。</p>
 <div class="section" id="id3">
 <h3>2.1.1 アンインストールコマンド<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">driver_installer</span> <span class="o">-</span><span class="n">p</span> <span class="p">[</span><span class="n">pluginsパス</span><span class="p">]</span> <span class="o">-</span><span class="n">u</span> <span class="p">[</span><span class="n">アンインストール対象ID</span><span class="p">]</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">adapter_installer</span> <span class="o">-</span><span class="n">p</span> <span class="p">[</span><span class="n">pluginsパス</span><span class="p">]</span> <span class="o">-</span><span class="n">u</span> <span class="p">[</span><span class="n">アンインストール対象ID</span><span class="p">]</span>
 </pre></div>
 </div>
 <p><strong>例）ITAドライバアンインストール例</strong></p>
-<p>ディレクトリパスは「1 ドライバインストール」にして指定したディレクトリパスにしてください。</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">driver_installer</span> <span class="o">-</span><span class="n">p</span> <span class="p">[</span><span class="n">ディレクトリパス</span><span class="p">]</span><span class="o">/</span><span class="n">plugins</span> <span class="o">-</span><span class="n">u</span> <span class="mi">1</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">driver_installer</span> <span class="o">-</span><span class="n">p</span> <span class="o">/</span><span class="n">exastro</span><span class="o">/</span><span class="n">plugins</span> <span class="o">-</span><span class="n">u</span> <span class="mi">1</span>
 </pre></div>
 </div>
 </div>
