@@ -132,6 +132,10 @@
   <div class="section" id="id1">
 <h1>インストール手順<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>OASEのインストール手順を下記に示します。</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>ディレクトリのパスは構築するOSによって「centos」を読み替えて作成してください。</p>
+</div>
 <div class="section" id="id2">
 <h2>1. 事前準備<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="id3">
@@ -1056,6 +1060,32 @@ Total Size Required: <span class="m">230</span>.34 MB
 n
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>参考</p>
+<div class="line-block">
+<div class="line">ディシジョンマネージャは環境によって作成できるディシジョンテーブル数が変動します。</div>
+<div class="line">ディシジョンテーブルの最大作成可能数はデフォルトでは4ファイル程度となります。</div>
+<div class="line">記載ルール数またはルール自体の複雑度によってディシジョンテーブル作成数が前後する可能性があります。</div>
+<div class="line">より多くのディシジョンテーブルの作成を実施したい場合はチューニングが必要となります。</div>
+</div>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">危険</p>
+<p>注意</p>
+<div class="line-block">
+<div class="line">ディシジョンテーブルの最大作成数を超えた場合、ディシジョンテーブルのアップロード・プロダクション適用に失敗する可能性があります。</div>
+<div class="line">失敗した場合、以下のディレクトリのログを確認してください。</div>
+<div class="line">/var/log/jboss-eap/console.log</div>
+<div class="line">OutOfMemoryErrorの障害が発生している場合は再起動コマンドを実行してください。</div>
+<div class="line"># systemctl restart jboss-eap-rhel.service</div>
+<div class="line">再起動後、以下のコマンドを実行して、KIEコンテナーの一覧を確認します。</div>
+<div class="line"># curl -u [RHDM管理ユーザー名]:[RHDM管理パスワード] -H &quot;accept: application/json&quot; -X GET &quot;<a class="reference external" href="http:/">http:/</a>/[IPアドレス]:8080/decision-central/rest/controller/management/servers&quot;</div>
+<div class="line">削除したいKIEコンテナーのcontainer-idを指定して以下のコマンドを実行することにより、KIEコンテナーが削除されます。</div>
+<div class="line"># curl -u [RHDM管理ユーザー名]:[RHDM管理パスワード] -X DELETE &quot;<a class="reference external" href="http:/">http:/</a>/[IPアドレス]:8080/decision-central/rest/controller/management/servers/default-kieserver/containers/[container-id]&quot; -H &quot;accept: application/json&quot;</div>
+<div class="line">※IPアドレスはRHDMをインストールしたサーバのアドレス</div>
+</div>
+</div>
 </div>
 <div class="section" id="decision-manager">
 <h3>3.9. Decision Managerインストール<a class="headerlink" href="#decision-manager" title="このヘッドラインへのパーマリンク">¶</a></h3>
@@ -1287,15 +1317,149 @@ xlrd                   <span class="m">1</span>.2.0
 </pre></div>
 </div>
 <div class="line-block">
-<div class="line">2. init_custom.yamlのvalue値を環境によって適切に変更する</div>
+<div class="line">2. init_custom.yamlの作成</div>
 </div>
-<p>init_custom.yamlのValue値はデフォルト空白となっていますので、適切な値を記入してください。</p>
+<p>下記のコマンドにてinit_custom.yamlを作成してください。</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cd /home/centos/OASE/oase-root/web_app/fixtures
 # vi init_custom.yaml
 </pre></div>
 </div>
+<div class="line-block">
+<div class="line">内容は下記を参考にしてください。</div>
+<div class="line">また、init_custom.yamlのvalue値は環境によって異なるため適切な値を記入してください。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">################################</span>
+<span class="gh"># システム設定</span>
+<span class="gh">################################</span>
+<span class="m">-</span> model: web_app.System
+  pk: 2
+  fields:
+    config_name: ルールファイル設置ルートパス
+    category: RULE
+    config_id: RULEFILE_ROOTPATH
+    value: /home/centos/work/rule/
+    maintenance_flag: 0
+    last_update_timestamp: 2019-07-01T00:00:00+0900
+    last_update_user: システム管理者
+
+<span class="m">-</span> model: web_app.System
+  pk: 26
+  fields:
+    config_name: DMリクエスト送信先
+    category: DMSETTINGS
+    config_id: DM_IPADDRPORT
+    value:
+    maintenance_flag: 0
+    last_update_timestamp: 2019-07-01T00:00:00+0900
+    last_update_user: システム管理者
+
+<span class="m">-</span> model: web_app.System
+  pk: 27
+  fields:
+    config_name: DMユーザID
+    category: DMSETTINGS
+    config_id: DM_USERID
+    value:
+    maintenance_flag: 0
+    last_update_timestamp: 2019-07-01T00:00:00+0900
+    last_update_user: システム管理者
+
+<span class="m">-</span> model: web_app.System
+  pk: 28
+  fields:
+    config_name: DMパスワード
+    category: DMSETTINGS
+    config_id: DM_PASSWD
+    value:
+    maintenance_flag: 0
+    last_update_timestamp: 2019-07-01T00:00:00+0900
+    last_update_user: システム管理者
+
+<span class="m">-</span> model: web_app.System
+  pk: 29
+  fields:
+    config_name: 適用君待ち受け情報
+    category: APPLYSETTINGS
+    config_id: APPLY_IPADDRPORT
+    value: 127.0.0.1:50001
+    maintenance_flag: 0
+    last_update_timestamp: 2019-07-01T00:00:00+0900
+    last_update_user: システム管理者
+
+<span class="m">-</span> model: web_app.System
+  pk: 31
+  fields:
+    config_name: OASEメールSMTP
+    category: OASE_MAIL
+    config_id: OASE_MAIL_SMTP
+    value: {&quot;IPADDR&quot;:&quot;127.0.0.1&quot;,&quot;PORT&quot;:25,&quot;AUTH&quot;:False}
+    maintenance_flag: 0
+    last_update_timestamp: 2019-07-01T00:00:00+0900
+    last_update_user: システム管理者
+
+<span class="m">-</span> model: web_app.System
+  pk: 32
+  fields:
+    config_name: Maven repositoryパス
+    category: RULE
+    config_id: MAVENREP_PATH
+    value: /root/.m2/repository/com/oase/
+    maintenance_flag: 0
+    last_update_timestamp: 2019-07-01T00:00:00+0900
+    last_update_user: システム管理者
+
+<span class="m">-</span> model: web_app.System
+  pk: 50
+  fields:
+    config_name: RabbitMQユーザID
+    category: RABBITMQ
+    config_id: MQ_USER_ID
+    value:
+    maintenance_flag: 0
+    last_update_timestamp: 2019-07-01T00:00:00+0900
+    last_update_user: システム管理者
+
+<span class="m">-</span> model: web_app.System
+  pk: 51
+  fields:
+    config_name: RabbitMQパスワード
+    category: RABBITMQ
+    config_id: MQ_PASSWORD
+    value:
+    maintenance_flag: 0
+    last_update_timestamp: 2019-07-01T00:00:00+0900
+    last_update_user: システム管理者
+
+<span class="m">-</span> model: web_app.System
+  pk: 52
+  fields:
+    config_name: RabbitMQIPアドレス
+    category: RABBITMQ
+    config_id: MQ_IPADDRESS
+    # RABBITMQを入れたサーバのIPアドレス
+    value:
+    maintenance_flag: 0
+    last_update_timestamp: 2019-07-01T00:00:00+0900
+    last_update_user: システム管理者
+
+<span class="m">-</span> model: web_app.System
+  pk: 53
+  fields:
+    config_name: RabbitMQキュー名
+    category: RABBITMQ
+    config_id: MQ_QUEUE_NAME
+    # 任意の名称
+    value:
+    maintenance_flag: 0
+    last_update_timestamp: 2019-07-01T00:00:00+0900
+    last_update_user: システム管理者
+</pre></div>
+</div>
 <p>MQ_PASSWORDのvalue値は以下のコマンドを実行して表示された値を設定して下さい。
 password&#64;1の箇所は&quot;3.3. RabbitMQ Serverインストール&quot;で設定した{RabbitMQパスワード}に置き換えてください。</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># python /home/centos/OASE/tool/encrypter.py &#39;password@1&#39;
+</pre></div>
+</div>
 <p>DM_PASSWDのvalue値は以下のコマンドを実行して表示された値を設定して下さい。
 password&#64;1の箇所は&quot;3.7. JBoss EAPインストール&quot;で設定した{RHDM管理パスワード}に置き換えてください。</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># python /home/centos/OASE/tool/encrypter.py &#39;password@1&#39;
@@ -1421,6 +1585,10 @@ server <span class="o">{</span>
    <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>default.confがない場合は、viコマンドによりoase.confを作成してください。</p>
 </div>
 <div class="line-block">
 <div class="line">5. uwsgi.iniの修正</div>
@@ -1548,13 +1716,17 @@ uwsgi.service
     &lt;id&gt;http_proxy&lt;/id&gt;
     &lt;active&gt;true&lt;/active&gt;
     &lt;protocol&gt;http&lt;/protocol&gt;
-    &lt;host&gt;proxygate2.nic.nec.co.jp&lt;/host&gt;
-    &lt;nonProxyHosts&gt;localhost<span class="p">|</span><span class="m">10</span>.197.19.*<span class="p">|</span>proxygate2.nic.nec.co.jp&lt;/nonProxyHosts&gt;
+    &lt;host&gt;<span class="o">{</span>プロキシサーバのホスト名<span class="o">}</span>&lt;/host&gt;
+    &lt;nonProxyHosts&gt;<span class="o">{</span>プロキシ対象外のホストまたはIPアドレス<span class="o">}</span>&lt;/nonProxyHosts&gt;
     &lt;port&gt;8080&lt;/port&gt;
   &lt;/proxy&gt;
   *- ここまで -*
 &lt;/proxies&gt;
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>nonProxyHostsは | (パイプ)で区切ることで複数記述することができます。</p>
 </div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>既存の上部記述に続けて下部を追記する
    &lt;profile&gt;
@@ -1633,16 +1805,16 @@ uwsgi.service
         &lt;id&gt;http_proxy&lt;/id&gt;
         &lt;active&gt;true&lt;/active&gt;
         &lt;protocol&gt;http&lt;/protocol&gt;
-        &lt;host&gt;proxygate2.nic.nec.co.jp&lt;/host&gt;
-        &lt;nonProxyHosts&gt;localhost<span class="p">|</span><span class="m">10</span>.197.19.*<span class="p">|</span>proxygate2.nic.nec.co.jp&lt;/nonProxyHosts&gt;
+        &lt;host&gt;<span class="o">{</span>プロキシサーバのホスト名<span class="o">}</span>&lt;/host&gt;
+        &lt;nonProxyHosts&gt;<span class="o">{</span>プロキシ対象外のホストまたはIPアドレス<span class="o">}</span>&lt;/nonProxyHosts&gt;
         &lt;port&gt;8080&lt;/port&gt;
       &lt;/proxy&gt;
       &lt;proxy&gt;
         &lt;id&gt;https_proxy&lt;/id&gt;
         &lt;active&gt;true&lt;/active&gt;
         &lt;protocol&gt;https&lt;/protocol&gt;
-        &lt;host&gt;proxygate2.nic.nec.co.jp&lt;/host&gt;
-        &lt;nonProxyHosts&gt;localhost<span class="p">|</span><span class="m">10</span>.197.19.*<span class="p">|</span>proxygate2.nic.nec.co.jp&lt;/nonProxyHosts&gt;
+        &lt;host&gt;<span class="o">{</span>プロキシサーバのホスト名<span class="o">}</span>&lt;/host&gt;
+        &lt;nonProxyHosts&gt;<span class="o">{</span>プロキシ対象外のホストまたはIPアドレス<span class="o">}</span>&lt;/nonProxyHosts&gt;
         &lt;port&gt;8080&lt;/port&gt;
       &lt;/proxy&gt;
     &lt;/proxies&gt;
@@ -1689,6 +1861,10 @@ uwsgi.service
     &lt;/activeProfiles&gt;
 &lt;/settings&gt;
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>nonProxyHostsは | (パイプ)で区切ることで複数記述することができます。</p>
 </div>
 </div>
 <div class="section" id="decision-server">
@@ -1851,6 +2027,12 @@ uwsgi.service
 # systemctl start uwsgi
 # systemctl enable uwsgi
 </pre></div>
+</div>
+<div class="line-block">
+<div class="line">OASEのインストール作業は以上となります。</div>
+<div class="line">次にドライバインストールを行いますので、「環境構築マニュアル -ドライバインストール編-」をご参照ください。</div>
+<div class="line">監視ツールと連携を行う場合は「環境構築マニュアル -アダプタインストール編-」をご参照ください。</div>
+<div class="line">ActiveDirectoryを行いたい場合は「環境構築マニュアル -ActiveDirectory編-」をご参照ください。</div>
 </div>
 </div>
 </div>
