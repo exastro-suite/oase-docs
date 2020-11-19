@@ -339,31 +339,33 @@
 <div class="line"><strong>アクションパラメータ情報（必須）※ダブルクオーテーションは使用不可</strong></div>
 </div>
 <ul class="simple">
-<li><p>ITA_NAMEおよびSYMPHONY_CLASS_IDは必須です。</p></li>
+<li><p>ITA_NAMEおよびSYMPHONY_CLASS_IDまたはCONDUCTOR_CLASS_IDは必須です。</p></li>
 <li><p>ITA_NAMEはOASE画面のシステム-アクション設定-ITA_driverの名前と紐づけます。</p></li>
-<li><p>SYMPHONY_CLASS_IDはITA画面の基本コンソール-Symphonyクラス一覧のSymphonyクラスIDと紐づけます。</p></li>
+<li><p>SYMPHONY_CLASS_IDはITA画面のSymphony-Symphonyクラス一覧のSymphonyクラスIDと紐づけます。</p></li>
+<li><p>CONDUCTOR_CLASS_IDはITA画面のConductor-Conductorクラス一覧のConductorクラスIDと紐づけます。</p></li>
 <li><p>OPERATION_IDはITA画面の基本コンソール-投入オペレーション一覧のオペレーションIDと紐づけます。</p></li>
 <li><p>SERVER_LISTは実行対象となるホスト名を記述します。ホスト名はITA画面の基本コンソール-機器一覧のホスト名と紐づけます。複数記載する場合はコロン(:)で区切って記述します。</p></li>
 <li><p>MENU_IDはITAで作成されたパラメータシートのメニューIDと紐づけます。メニューIDはITA画面の管理コンソール-メニュー管理から確認できます。複数記載する場合はコロン(:)で区切って記述します。</p></li>
 <li><p>HOSTGROUP_NAMEはMENU_IDに紐づいたホストグループIDを記載します。MENU_IDと併せてコロン（:）で区切って記載します。1つのMENU_IDに複数のホストグループを紐づける場合はアンド（&amp;）で区切って記載します。</p></li>
 <li><p>複数のMENU_IDを設定する場合はパイプ（|）で区切って記載します。HOST_NAMEにつきましても、HOSTGROUP_NAMEと同様です。</p></li>
 <li><p>CONVERT_FLGはTRUEまたはFALSEを設定します。MENU_ID指定の時に必須になります。</p></li>
-<li><p>SYMPHONY_CLASS_ID,OPERATION_ID,SERVER_LIST,MENU_IDの値に {{ VAR_条件名 }} と記入すると条件部の値を当てはめることができます。</p></li>
+<li><p>SYMPHONY_CLASS_ID,CONDUCTOR_CLASS_ID,OPERATION_ID,SERVER_LIST,MENU_IDの値に {{ VAR_条件名 }} と記入すると条件部の値を当てはめることができます。</p></li>
 <li><p>{{ VAR_条件名 }} の条件名には <a class="reference internal" href="02_screen_structure.html"><span class="doc">2 OASE ディシジョンテーブル画面のメニュー 、画面構成</span></a> の新規追加画面にて入力された条件名を記入してください。</p></li>
 </ul>
 <div class="line-block">
 <div class="line"><strong>OPERATION_IDを指定した場合</strong></div>
 <div class="line">ITAに事前に準備しておいた [ オペレーション - Symphony ] で作業を実行できます。</div>
+<div class="line">ITAに事前に準備しておいた [ オペレーション - Conductor ] で作業を実行できます。</div>
 </div>
 <div class="line-block">
 <div class="line"><strong>SERVER_LISTを指定した場合</strong></div>
-<div class="line">ITAのSymphonyに対して、OASEから作業対象ホストを指定して作業を実行できます。</div>
-<div class="line">（ITAでのオペレーションは自動払い出しになります）</div>
+<div class="line">ITAのSymphonyまたはConductorに対して、OASEから作業対象ホストを指定して作業を実行できます。</div>
+<div class="line">(ITAでのオペレーションは自動払い出しになります)</div>
 </div>
 <div class="line-block">
 <div class="line"><strong>MENU_IDを指定した場合</strong></div>
-<div class="line">ITAのパラメータシートと連携して、指定したSymphonyに対して作業を実行できます。</div>
-<div class="line">（ITAでのオペレーションは自動払い出しになります）</div>
+<div class="line">ITAのパラメータシートと連携して、指定したSymphonyまたはConductorに対して作業を実行できます。</div>
+<div class="line">(ITAでのオペレーションは自動払い出しになります)</div>
 <div class="line">MENU_ID指定の場合は、CONVERT_FLGが必須になります。</div>
 </div>
 <div class="line-block">
@@ -382,13 +384,10 @@
 <div class="line">パラメータシートへ値が登録される順番はメニューID毎に指定することができます。</div>
 </div>
 <p><strong>記述例</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">OPERATION_ID</span><span class="o">=</span><span class="mi">10</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="p">{{</span> <span class="n">VAR_条件名</span> <span class="p">}},</span><span class="n">OPERATION_ID</span><span class="o">=</span><span class="mi">10</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">OPERATION_ID</span><span class="o">=</span><span class="mi">10</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">SERVER_LIST</span><span class="o">=</span><span class="n">hostname1</span><span class="p">:</span><span class="n">hostname2</span>
@@ -401,6 +400,24 @@
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">MENU_ID</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="n">HOSTGROUP_NAME</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="n">HG1</span><span class="p">,</span><span class="n">HOST_NAME</span><span class="o">=</span><span class="mi">2</span><span class="p">:</span><span class="n">H2</span><span class="o">&amp;</span><span class="n">H3</span><span class="o">|</span><span class="mi">3</span><span class="p">:</span><span class="n">H4</span><span class="o">|</span><span class="mi">4</span><span class="p">:</span><span class="n">H5</span><span class="o">&amp;</span><span class="n">H6</span><span class="o">&amp;</span><span class="n">H7</span><span class="p">,</span><span class="n">CONVERT_FLG</span><span class="o">=</span><span class="n">FALSE</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">CONDUCTOR_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">OPERATION_ID</span><span class="o">=</span><span class="mi">10</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">CONDUCTOR_CLASS_ID</span><span class="o">=</span><span class="p">{{</span> <span class="n">VAR_条件名</span> <span class="p">}},</span><span class="n">OPERATION_ID</span><span class="o">=</span><span class="mi">10</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">CONDUCTOR_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">SERVER_LIST</span><span class="o">=</span><span class="n">hostname1</span><span class="p">:</span><span class="n">hostname2</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">CONDUCTOR_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">MENU_ID</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">CONVERT_FLG</span><span class="o">=</span><span class="n">TRUE</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">CONDUCTOR_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">MENU_ID</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="n">CONVERT_FLG</span><span class="o">=</span><span class="n">FALSE</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">CONDUCTOR_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">MENU_ID</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="n">HOSTGROUP_NAME</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="n">HG1</span><span class="p">,</span><span class="n">HOST_NAME</span><span class="o">=</span><span class="mi">2</span><span class="p">:</span><span class="n">H2</span><span class="o">&amp;</span><span class="n">H3</span><span class="o">|</span><span class="mi">3</span><span class="p">:</span><span class="n">H4</span><span class="o">|</span><span class="mi">4</span><span class="p">:</span><span class="n">H5</span><span class="o">&amp;</span><span class="n">H6</span><span class="o">&amp;</span><span class="n">H7</span><span class="p">,</span><span class="n">CONVERT_FLG</span><span class="o">=</span><span class="n">FALSE</span>
 </pre></div>
 </div>
 <div class="admonition note">
