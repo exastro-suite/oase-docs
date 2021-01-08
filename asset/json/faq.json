@@ -1,6 +1,5 @@
 {
 "ja": {
-
 "全般":{
 "data":{"frequently":"","icon":"fa-sticky-note","id":"general"},
 "1":{"Q":"q","A":"a"}
@@ -30,10 +29,9 @@
 "1":{"Q":"q","A":"a"}
 },
 "Exastro IT Automationドライバ":{
-"data":{"frequently":"","icon":"fa-cog","id":"ita-driver"}
+"data":{"frequently":"","icon":"fa-cog","id":"ita-driver"},
 "1":{"Q":"q","A":"a"}
 }
-
 },
 "en":{
 
