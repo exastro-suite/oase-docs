@@ -1,23 +1,23 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
     <title>2 OASE ログイン画面のメニュー 、画面構成 &#8212; OASE_docs 1.1.1 ドキュメント</title>
-    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
   
     <script type="text/javascript" src="../_static/exastro_documents.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -94,6 +94,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sso_info/index.html">利用手順マニュアル -SSO設定画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../group/index.html">利用手順マニュアル -グループ画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user/index.html">利用手順マニュアル -ユーザ画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../monitoring_adapter/index.html">利用手順マニュアル -監視アダプタ編-</a></li>
@@ -134,7 +135,7 @@
 <h2>2.1 基本画面構成<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>ログイン画面の画面構成は次のとおりです。</p>
 <div class="figure align-center" id="id17">
-<a class="reference internal image-reference" href="../_images/main01.png"><img alt="../_images/main01.png" src="../_images/main01.png" style="width: 1305.0px; height: 836.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/main01.png"><img alt="../_images/main01.png" src="../_images/main01.png" style="width: 1408.0px; height: 885.0px;" /></a>
 <p class="caption"><span class="caption-text">図 2.1-1 画面構成</span><a class="headerlink" href="#id17" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <p>ログイン画面の各構成要素と、その機能は次の表のとおりです。</p>
@@ -165,10 +166,14 @@
 <td><p>ログインできます。</p></td>
 </tr>
 <tr class="row-odd"><td><p>4</p></td>
+<td><p>他のアカウントでログインボタン</p></td>
+<td><p>有効なシングルサインオン設定がある場合のみ表示されます。外部の認証プロバイダにて認証を行い、OASEへログインします。シングルサインオンの設定につきましては <a class="reference internal" href="../sso_info/index.html"><span class="doc">利用手順マニュアル -SSO設定画面編-</span></a> をご覧ください。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
 <td><p>パスワードをお忘れの場合ボタン</p></td>
 <td><p>パスワードをリセットすることができます。※AD連携時には表示されません。</p></td>
 </tr>
-<tr class="row-even"><td><p>5</p></td>
+<tr class="row-odd"><td><p>6</p></td>
 <td><p>お問い合わせボタン</p></td>
 <td><p>メールによるお問い合わせをすることができます。</p></td>
 </tr>

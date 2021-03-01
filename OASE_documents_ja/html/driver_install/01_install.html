@@ -1,23 +1,23 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
     <title>1 ドライバインストール &#8212; OASE_docs 1.1.1 ドキュメント</title>
-    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
   
     <script type="text/javascript" src="../_static/exastro_documents.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -79,8 +79,9 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">環境構築マニュアル -ドライバインストール編-</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="introduction.html">はじめに</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">1 ドライバインストール</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">1.1 インストールコマンドの形式</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">1.2 インストール状態の確認</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">1.1 ドライバ資材の解凍</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">1.2 インストールコマンドの形式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">1.3 インストール状態の確認</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="02_uninstall.html">2 ドライバアンインストール</a></li>
@@ -93,6 +94,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sso_info/index.html">利用手順マニュアル -SSO設定画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../group/index.html">利用手順マニュアル -グループ画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user/index.html">利用手順マニュアル -ユーザ画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../monitoring_adapter/index.html">利用手順マニュアル -監視アダプタ編-</a></li>
@@ -132,27 +134,33 @@
 <div class="line">本章では、アクション設定画面をご利用頂くために、必要なインストールについて説明します。</div>
 </div>
 <div class="section" id="id2">
-<h2>1.1 インストールコマンドの形式<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>1.1 ドライバ資材の解凍<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>インストール資材の下記ディレクトリに移動し、
+ご利用頂くドライバの資材の解凍を実施してください。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">oase</span><span class="o">/</span><span class="n">oase_install_package</span><span class="o">/</span><span class="n">OASE</span><span class="o">/</span><span class="n">oase</span><span class="o">-</span><span class="n">contents</span>
+<span class="n">tar</span> <span class="n">zxf</span> <span class="n">ITA_Driver</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="n">tar</span> <span class="n">zxf</span> <span class="n">mail_Driver</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>1.2 インストールコマンドの形式<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>下記の情報で インストールコマンドを実行します。
 OASE本体をインストールされた際のoase-root直下で実施します。</p>
-<div class="section" id="id3">
-<h3>1.1.1 インストールコマンド<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id4">
+<h3>1.2.1 インストールコマンド<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">driver_installer</span> <span class="o">-</span><span class="n">p</span> <span class="p">[</span><span class="n">pluginsフォルダ</span><span class="p">]</span> <span class="o">-</span><span class="n">i</span> <span class="p">[</span><span class="n">インストール対象ID</span><span class="p">]</span>
 </pre></div>
 </div>
 <p><strong>例）ITAインストール例</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">driver_installer</span> <span class="o">-</span><span class="n">p</span> <span class="o">/</span><span class="n">exastro</span><span class="o">/</span><span class="n">plugins</span> <span class="o">-</span><span class="n">i</span> <span class="mi">1</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">driver_installer</span> <span class="o">-</span><span class="n">p</span> <span class="o">/</span><span class="n">root</span><span class="o">/</span><span class="n">oase</span><span class="o">/</span><span class="n">oase_install_package</span><span class="o">/</span><span class="n">OASE</span><span class="o">/</span><span class="n">oase</span><span class="o">-</span><span class="n">contents</span><span class="o">/</span><span class="n">plugins</span> <span class="o">-</span><span class="n">i</span> <span class="mi">1</span>
 </pre></div>
 </div>
-<div class="admonition note">
-<p class="admonition-title">注釈</p>
-<p>ご利用頂くドライバの資材を任意のディレクトリに格納頂き、解凍する必要があります。</p>
 </div>
-</div>
-<div class="section" id="id4">
-<h3>1.1.2 オプション<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<table class="colwidths-given docutils align-default" id="id6">
-<caption><span class="caption-text">表 1.1.2 オプション定義</span><a class="headerlink" href="#id6" title="このテーブルへのパーマリンク">¶</a></caption>
+<div class="section" id="id5">
+<h3>1.2.2 オプション<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="colwidths-given docutils align-default" id="id7">
+<caption><span class="caption-text">表 1.1.2 オプション定義</span><a class="headerlink" href="#id7" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 8%" />
 <col style="width: 31%" />
@@ -177,9 +185,9 @@ OASE本体をインストールされた際のoase-root直下で実施します�
 </table>
 </div>
 <div class="section" id="id">
-<h3>1.1.3 インストール対象ID<a class="headerlink" href="#id" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<table class="colwidths-given docutils align-default" id="id7">
-<caption><span class="caption-text">表 1.1.3 インストール対象ID定義</span><a class="headerlink" href="#id7" title="このテーブルへのパーマリンク">¶</a></caption>
+<h3>1.2.3 インストール対象ID<a class="headerlink" href="#id" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="colwidths-given docutils align-default" id="id8">
+<caption><span class="caption-text">表 1.1.3 インストール対象ID定義</span><a class="headerlink" href="#id8" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 8%" />
 <col style="width: 31%" />
@@ -204,8 +212,8 @@ OASE本体をインストールされた際のoase-root直下で実施します�
 </table>
 </div>
 </div>
-<div class="section" id="id5">
-<h2>1.2 インストール状態の確認<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id6">
+<h2>1.3 インストール状態の確認<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <dl class="simple">
 <dt>インストールされているかを確認するにはアクション設定画面を確認してください。</dt><dd><p><a class="reference internal" href="../action/02_screen_structure.html"><span class="doc">2 OASE アクション設定画面のメニュー 、画面構成</span></a></p>
 </dd>
