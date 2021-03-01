@@ -1,23 +1,23 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
     <title>5 OASE ルール画面で表示されるメッセージ &#8212; OASE_docs 1.1.1 ドキュメント</title>
-    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
   
     <script type="text/javascript" src="../_static/exastro_documents.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -92,6 +92,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sso_info/index.html">利用手順マニュアル -SSO設定画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../group/index.html">利用手順マニュアル -グループ画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user/index.html">利用手順マニュアル -ユーザ画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../monitoring_adapter/index.html">利用手順マニュアル -監視アダプタ編-</a></li>
@@ -190,7 +191,7 @@
 <td><p>一括テストリクエストの送信が完了しました</p></td>
 </tr>
 <tr class="row-odd"><td><p>MOSJA03016</p></td>
-<td><p>データの取得に失敗しました。しばらく経ってからもう一度お試しください。再度同じエラーが発生している場合はOASEシステムの管理者へご連絡ください。</p></td>
+<td><p>データの取得に失敗しました。しばらく経ってからもう一度お試しください。</p></td>
 </tr>
 <tr class="row-even"><td><p>MOSJA03101</p></td>
 <td><p>アップロード処理開始時データ登録に失敗しました</p></td>
@@ -229,7 +230,7 @@
 <td><p>Decision Managerで予期しないエラーが発生しました。 （コンテナ削除）</p></td>
 </tr>
 <tr class="row-even"><td><p>MOSJA03219</p></td>
-<td><p>適用プロセスでエラーが発生しました。OASEシステムの管理者へご連絡ください。</p></td>
+<td><p>適用プロセスでエラーが発生しました。再度ルールファイルのアップロードをしてください。</p></td>
 </tr>
 <tr class="row-odd"><td><p>MOSJA03301</p></td>
 <td><p>指定のルール種別IDは存在しません</p></td>
@@ -357,7 +358,7 @@
 <td><p>kjar構築用ファイルなし時のデータ登録に失敗しました</p></td>
 </tr>
 <tr class="row-even"><td><p>MOSJA03106</p></td>
-<td><p>ルールファイルのアップロードに失敗しました。OASEシステムの管理者へご連絡ください。</p></td>
+<td><p>ルールファイルのアップロードに失敗しました。ディシジョンテーブル画面にて登録されているかご確認のうえ、再度ルールファイルのアップロードをしてください。</p></td>
 </tr>
 <tr class="row-odd"><td><p>MOSJA03121</p></td>
 <td><p>フォーマットエラーです。エラー内容を確認し、修正したものを再度アップロードしてください。</p></td>
@@ -366,7 +367,7 @@
 <td><p>既にプロダクション環境へ適用済みです</p></td>
 </tr>
 <tr class="row-odd"><td><p>MOSJA03206</p></td>
-<td><p>要求タイプが不明です。 reqtypeid =xxx OASEシステムの管理者へご連絡ください。</p></td>
+<td><p>要求タイプが不明です。 reqtypeid =xxx</p></td>
 </tr>
 <tr class="row-even"><td><p>MOSJA03208</p></td>
 <td><p>Decision Managerコンテナの作成に失敗しました。</p></td>
@@ -387,19 +388,19 @@
 <td><p>Decision Managerで予期しないエラーが発生しました。 （コンテナ削除）</p></td>
 </tr>
 <tr class="row-even"><td><p>MOSJA03218</p></td>
-<td><p>指定されたルール管理IDが存在しません。 manage_id =xxx ディシジョンテーブル画面やルール画面に削除対象のルール情報が表示されていることをご確認ください。表示されていない場合は削除済です。表示されている場合はOASEシステムの管理者へご連絡ください。</p></td>
+<td><p>指定されたルール管理IDが存在しません。 manage_id =xxx ディシジョンテーブル画面やルール画面に削除対象のルール情報が表示されていることをご確認ください。表示されていない場合は削除済です。</p></td>
 </tr>
 <tr class="row-odd"><td><p>MOSJA03219</p></td>
-<td><p>適用プロセスでエラーが発生しました。OASEシステムの管理者へご連絡ください。</p></td>
+<td><p>適用プロセスでエラーが発生しました。再度ルールファイルのアップロードをしてください。</p></td>
 </tr>
 <tr class="row-even"><td><p>MOSJA03404</p></td>
-<td><p>ビルド処理開始時データ更新に失敗しました。しばらく経ってからもう一度お試しください。再度同じエラーが発生している場合はOASEシステムの管理者へご連絡ください。</p></td>
+<td><p>ビルド処理開始時データ更新に失敗しました。しばらく経ってからもう一度お試しください。</p></td>
 </tr>
 <tr class="row-odd"><td><p>MOSJA03405</p></td>
-<td><p>ビルド後データ更新に失敗しました。しばらく経ってからもう一度お試しください。再度同じエラーが発生している場合はOASEシステムの管理者へご連絡ください。</p></td>
+<td><p>ビルド後データ更新に失敗しました。しばらく経ってからもう一度お試しください。</p></td>
 </tr>
 <tr class="row-even"><td><p>MOSJA03406</p></td>
-<td><p>アップロードされたファイルでkjarを構築できませんでした。しばらく経ってからもう一度お試しください。再度同じエラーが発生している場合はOASEシステムの管理者へご連絡ください。</p></td>
+<td><p>アップロードされたファイルでkjarを構築できませんでした。しばらく経ってからもう一度お試しください。</p></td>
 </tr>
 </tbody>
 </table>

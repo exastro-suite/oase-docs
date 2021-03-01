@@ -1,23 +1,23 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
     <title>システム構成 &#8212; OASE_docs 1.1.1 ドキュメント</title>
-    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
   
     <script type="text/javascript" src="../_static/exastro_documents.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -75,7 +75,11 @@
     <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">システム構成ガイド</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="introduction.html">はじめに</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">システム構成</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">システム構成</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">システム構成パターン</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">システムの通信要件</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="system_requirements.html">システム要件</a></li>
 <li class="toctree-l2"><a class="reference internal" href="client_side_requirements.html">クライアント側要件</a></li>
 </ul>
@@ -90,6 +94,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sso_info/index.html">利用手順マニュアル -SSO設定画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../group/index.html">利用手順マニュアル -グループ画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user/index.html">利用手順マニュアル -ユーザ画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../monitoring_adapter/index.html">利用手順マニュアル -監視アダプタ編-</a></li>
@@ -125,6 +130,8 @@
 
   <div class="section" id="id1">
 <h1>システム構成<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id2">
+<h2>システム構成パターン<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>webコンテンツ、BackYardコンテンツ、データベースは、次のようなサーバ構成で運用が可能です。</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -156,6 +163,64 @@
 <div class="line">・オールインワン（シングル）型</div>
 </div>
 <a class="reference internal image-reference" href="../_images/single-oase.png"><img alt="../_images/single-oase.png" class="align-center" src="../_images/single-oase.png" style="width: 407.0px; height: 350.0px;" /></a>
+</div>
+<div class="section" id="id3">
+<h2>システムの通信要件<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">本システム構成において、各サービス間の通信要件は以下の通りです。</div>
+</div>
+<table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-text">表 通信要件一覧</span><a class="headerlink" href="#id4" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 4%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 24%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>FROM</p></th>
+<th class="head"><p>TO</p></th>
+<th class="head"><p>プロトコル</p></th>
+<th class="head"><p>主な用途</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>端末</p></td>
+<td><p>Web</p></td>
+<td><dl class="simple">
+<dt>http(s)</dt><dd><p>[80(443)/tcp]</p>
+</dd>
+</dl>
+</td>
+<td><p>OASEのWebコンテンツへのアクセス</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>BackYard</p></td>
+<td><p>RHDM</p></td>
+<td><dl class="simple">
+<dt>http</dt><dd><p>[8080/tcp]</p>
+</dd>
+</dl>
+</td>
+<td><p>ディシジョンテーブルのコンテナ管理</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Web</p></td>
+<td><p>BackYard</p></td>
+<td><dl class="simple">
+<dt>tcp</dt><dd><p>[50001/tcp]</p>
+</dd>
+</dl>
+</td>
+<td><p>ディシジョンテーブルのファイル管理</p></td>
+</tr>
+</tbody>
+</table>
+<p>※必須項目を記載。OASE外部のサービスに準拠するため適宜変更してください。</p>
+</div>
 </div>
 
 
