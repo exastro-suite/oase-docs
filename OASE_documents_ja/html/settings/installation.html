@@ -1,29 +1,29 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
     <title>インストール手順 &#8212; OASE_docs 1.1.1 ドキュメント</title>
-    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
   
     <script type="text/javascript" src="../_static/exastro_documents.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="環境設定" href="environmental_setting.html" />
+    <link rel="next" title="インストール手順(Docker版)" href="installation_docker.html" />
     <link rel="prev" title="構築フロー" href="construction_flow.html" /> 
   </head>
 <body id="page" class="ja">
@@ -60,7 +60,7 @@
     <div id="toolbarNavigation">
       <ul>
         <li class="prev"><a href="construction_flow.html" title="構築フロー">前へ</a></li>
-        <li class="next"><a href="environmental_setting.html" title="環境設定">次へ</a></li>
+        <li class="next"><a href="installation_docker.html" title="インストール手順(Docker版)">次へ</a></li>
       </ul>
     </div>
     
@@ -79,11 +79,12 @@
 <li class="toctree-l2"><a class="reference internal" href="construction_flow.html">構築フロー</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">インストール手順</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id2">1. 事前準備</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">2. 汎用ツール追加</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id7">3. 必須ソフトウェアインストール</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id14">4. 注意事項</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">2. 汎用ツール追加</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">3. 必須ソフトウェアインストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">4. 注意事項</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="installation_docker.html">インストール手順(Docker版)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="environmental_setting.html">環境設定</a></li>
 </ul>
 </li>
@@ -96,6 +97,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sso_info/index.html">利用手順マニュアル -SSO設定画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../group/index.html">利用手順マニュアル -グループ画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user/index.html">利用手順マニュアル -ユーザ画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../monitoring_adapter/index.html">利用手順マニュアル -監視アダプタ編-</a></li>
@@ -135,38 +137,7 @@
 <div class="section" id="id2">
 <h2>1. 事前準備<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="id3">
-<h3>1.1 ファイアーウォール停止<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>・ステータス確認</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl status firewalld
-</pre></div>
-</div>
-<p>★Active: activeの場合</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl stop firewalld
-# systemctl disable firewalld
-</pre></div>
-</div>
-</div>
-<div class="section" id="selinux">
-<h3>1.2. SELinux無効化<a class="headerlink" href="#selinux" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>・ステータス確認</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># getenforce
-</pre></div>
-</div>
-<p>★Enforcingの場合</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># vi /etc/sysconfig/selinux
-</pre></div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">SELINUX</span><span class="o">=</span>disabled
-
-※ Enforcing から disabled へ変更
-</pre></div>
-</div>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># reboot
-</pre></div>
-</div>
-</div>
-<div class="section" id="id4">
-<h3>1.3. タイムゾーンを設定する<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>1.1. タイムゾーンを設定する<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># timedatectl status
 </pre></div>
 </div>
@@ -178,8 +149,8 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id5">
-<h3>1.4. 自分自身のホスト名について名前解決できること<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id4">
+<h3>1.2. 自分自身のホスト名について名前解決できること<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># ping {自ホスト名}
 </pre></div>
 </div>
@@ -193,8 +164,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="id6">
-<h2>2. 汎用ツール追加<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id5">
+<h2>2. 汎用ツール追加<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>後続の手順で必要になるツールを先にインストールしておく</p>
@@ -226,10 +197,10 @@
 </div>
 </div>
 </div>
+<div class="section" id="id6">
+<h2>3. 必須ソフトウェアインストール<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="id7">
-<h2>3. 必須ソフトウェアインストール<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="id8">
-<h3>3.1 環境構築ツール（オンライン版）の実行<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>3.1 環境構築ツール（オンライン版）の実行<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <div class="section" id="github">
 <h4>3.1.1. Githubからの資材ダウンロード<a class="headerlink" href="#github" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <div class="line-block">
@@ -243,8 +214,8 @@
 <p>バージョン（x.x.x）は適宜変更してください。</p>
 </div>
 </div>
-<div class="section" id="id9">
-<h4>3.1.2. 資材の展開<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="section" id="id8">
+<h4>3.1.2. 資材の展開<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <div class="line-block">
 <div class="line">tar.gzファイルを解凍します。</div>
 </div>
@@ -252,8 +223,8 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id10">
-<h4>3.1.3. ディレクトリ移動<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="section" id="id9">
+<h4>3.1.3. ディレクトリ移動<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <div class="line-block">
 <div class="line">環境構築を行うシェルのあるディレクトリに移動します。</div>
 </div>
@@ -261,15 +232,15 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id11">
-<h4>3.1.4. アンサーファイルの編集<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="section" id="id10">
+<h4>3.1.4. アンサーファイルの編集<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <div class="line-block">
 <div class="line">OASEのインストール設定を行うアンサーファイル（oase_answers.txt）を事前に作成してください。</div>
 <div class="line">アンサーファイルの各項目の内容は次の表のとおりです。</div>
 <div class="line">初期値が入っているものは、使用する環境によって適宜変更してください。</div>
 </div>
-<table class="colwidths-given docutils align-default" id="id16">
-<caption><span class="caption-text">表 アンサーファイル項目説明</span><a class="headerlink" href="#id16" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id15">
+<caption><span class="caption-text">表 アンサーファイル項目説明</span><a class="headerlink" href="#id15" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 5%" />
 <col style="width: 19%" />
@@ -286,130 +257,146 @@
 <tbody>
 <tr class="row-even"><td><p>1</p></td>
 <td><p>install_mode</p></td>
-<td><p>Install</p></td>
-<td><p>インストールモードの設定（インストール：Install）</p></td>
+<td><p>Install_Online</p></td>
+<td><p>インストールモードの設定（オンラインインストール：Install_Online/オフラインインストール：Install_Offline/ライブラリ収集：Gather_Library/バージョンアップALL：Versionup_All/バージョンアップOASE：Versionup_OASE/アンインストール：Uninstall）</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
 <td><p>RabbitMQ_username</p></td>
-<td><p>administrator</p></td>
+<td><p>admin</p></td>
 <td><p>RabbitMQのユーザ名</p></td>
 </tr>
-<tr class="row-even"><td><p>2</p></td>
+<tr class="row-even"><td><p>3</p></td>
 <td><p>RabbitMQ_password</p></td>
 <td><p>password</p></td>
 <td><p>RabbitMQのパスワード</p></td>
 </tr>
-<tr class="row-odd"><td><p>3</p></td>
+<tr class="row-odd"><td><p>4</p></td>
 <td><p>RabbitMQ_queuename</p></td>
 <td><p>oase</p></td>
 <td><p>RabbitMQで使用するキュー名</p></td>
 </tr>
-<tr class="row-even"><td><p>4</p></td>
+<tr class="row-even"><td><p>5</p></td>
 <td><p>RabbitMQ_ipaddr</p></td>
 <td></td>
 <td><p>RabbitMQを設定したサーバのIPアドレス</p></td>
 </tr>
-<tr class="row-odd"><td><p>5</p></td>
+<tr class="row-odd"><td><p>6</p></td>
 <td><p>db_root_password</p></td>
 <td><p>password</p></td>
-<td><p>MySQLのルートユーザのパスワード</p></td>
+<td><p>MariaDBのルートユーザのパスワード</p></td>
 </tr>
-<tr class="row-even"><td><p>6</p></td>
+<tr class="row-even"><td><p>7</p></td>
 <td><p>db_name</p></td>
 <td><p>OASE_DB</p></td>
-<td><p>MySQLで使用するDB名</p></td>
+<td><p>MariaDBで使用するDB名</p></td>
 </tr>
-<tr class="row-odd"><td><p>7</p></td>
+<tr class="row-odd"><td><p>8</p></td>
 <td><p>db_username</p></td>
 <td><p>OASE_USER</p></td>
-<td><p>MySQLで使用するユーザ名</p></td>
+<td><p>MariaDBで使用するユーザ名</p></td>
 </tr>
-<tr class="row-even"><td><p>8</p></td>
+<tr class="row-even"><td><p>9</p></td>
 <td><p>db_password</p></td>
 <td><p>OASE_PASSWD</p></td>
-<td><p>MySQLのパスワード</p></td>
+<td><p>MariaDBのパスワード</p></td>
 </tr>
-<tr class="row-odd"><td><p>9</p></td>
+<tr class="row-odd"><td><p>10</p></td>
 <td><p>db_erase</p></td>
 <td><p>erase</p></td>
 <td><p>アンインストール時にDBを消すかどうか（消す：erase/残す：leave）</p></td>
 </tr>
-<tr class="row-even"><td><p>10</p></td>
-<td><p>wildfly_root_directory</p></td>
-<td><p>/exastro/WildFly</p></td>
-<td><p>WildFlyのインストールディレクトリ</p></td>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>jboss_root_directory</p></td>
+<td><p>/exastro/JBossEAP</p></td>
+<td><p>JBossEAPのインストールディレクトリ</p></td>
 </tr>
-<tr class="row-odd"><td><p>11</p></td>
-<td><p>drools_adminname</p></td>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>rhdm_adminname</p></td>
 <td><p>admin0000</p></td>
-<td><p>Droolsの管理者名</p></td>
+<td><p>RHDMの管理者名</p></td>
 </tr>
-<tr class="row-even"><td><p>12</p></td>
-<td><p>drools_password</p></td>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>rhdm_password</p></td>
 <td><p>password&#64;1</p></td>
-<td><p>Droolsの管理者パスワード</p></td>
+<td><p>RHDMの管理者パスワード</p></td>
 </tr>
-<tr class="row-odd"><td><p>13</p></td>
+<tr class="row-odd"><td><p>14</p></td>
 <td><p>dm_ipaddrport</p></td>
 <td><p>localhost:8080</p></td>
 <td><p>ディシジョンマネージャを設定したサーバのIPアドレス</p></td>
 </tr>
-<tr class="row-even"><td><p>14</p></td>
+<tr class="row-even"><td><p>15</p></td>
 <td><p>rulefile_rootpath</p></td>
 <td><p>/exastro/rule</p></td>
 <td><p>ルールファイルを格納するディレクトリ</p></td>
 </tr>
-<tr class="row-odd"><td><p>15</p></td>
+<tr class="row-odd"><td><p>16</p></td>
 <td><p>apply_ipaddrport</p></td>
 <td><p>127.0.0.1:50001</p></td>
 <td><p>アプライサービスを設定したサーバのIPアドレス</p></td>
 </tr>
-<tr class="row-even"><td><p>16</p></td>
+<tr class="row-even"><td><p>17</p></td>
 <td><p>mavenrep_path</p></td>
 <td><p>/root/.m2/repository/com/oase/</p></td>
 <td><p>Mavenリポジトリのディレクトリ</p></td>
 </tr>
-<tr class="row-odd"><td><p>17</p></td>
+<tr class="row-odd"><td><p>18</p></td>
 <td><p>oasemail_smtp</p></td>
 <td><p>{'IPADDR':'127.0.0.1','PORT':25,'AUTH':False}</p></td>
 <td><p>OASEで使用するメールのSMTP設定</p></td>
 </tr>
-<tr class="row-even"><td><p>18</p></td>
+<tr class="row-even"><td><p>19</p></td>
 <td><p>oase_directory</p></td>
 <td><p>/exastro</p></td>
 <td><p>OASEのインストールディレクトリ</p></td>
 </tr>
-<tr class="row-odd"><td><p>19</p></td>
+<tr class="row-odd"><td><p>20</p></td>
 <td><p>oase_session_engine</p></td>
 <td><p>file</p></td>
 <td><p>OASEのセッション管理方法（DB：db/ファイル：file/キャッシュ：cache）</p></td>
 </tr>
-<tr class="row-even"><td><p>20</p></td>
+<tr class="row-even"><td><p>21</p></td>
 <td><p>ev_location</p></td>
 <td><p>127.0.0.1</p></td>
 <td><p>EVTIMERサーバを設定したサーバのIPアドレス</p></td>
 </tr>
-<tr class="row-odd"><td><p>21</p></td>
+<tr class="row-odd"><td><p>22</p></td>
 <td><p>oase_language</p></td>
 <td><p>ja</p></td>
 <td><p>OASEの言語設定（日本語：ja）</p></td>
 </tr>
-<tr class="row-even"><td><p>22</p></td>
+<tr class="row-even"><td><p>23</p></td>
 <td><p>oase_os</p></td>
 <td></td>
-<td><p>OASEをインストールするサーバのOS（CentOS7/RHEL7）</p></td>
+<td><p>OASEをインストールするサーバのOS（CentOS7/RHEL7/RHEL8）</p></td>
+</tr>
+<tr class="row-odd"><td><p>24</p></td>
+<td><p>oase_domain</p></td>
+<td><p>exastro-oase.local</p></td>
+<td><p>OASEのドメイン名</p></td>
+</tr>
+<tr class="row-even"><td><p>25</p></td>
+<td><p>certificate_path</p></td>
+<td></td>
+<td><p>ユーザ指定のSSLサーバ証明書に使用するファイルのファイルパス(ユーザ指定のSSL証明書使用時のみ入力。絶対パスで指定してください)</p></td>
+</tr>
+<tr class="row-odd"><td><p>26</p></td>
+<td><p>private_key_path</p></td>
+<td></td>
+<td><p>ユーザ指定のSSL秘密鍵に使用するファイルのファイルパス(ユーザ指定のSSL秘密鍵使用時のみ入力。絶対パスで指定してください)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="id12">
-<h4>3.1.5. アンサーファイルのサンプル<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="section" id="id11">
+<h4>3.1.5. アンサーファイルのサンプル<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <div class="line-block">
 <div class="line">アンサーファイル（oase_answers.txt）のサンプルを以下に示します。</div>
 </div>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>#Select install mode. (&quot;Install&quot;)
-# e.g) install_mode:Install
-install_mode:Install
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># Select install mode.
+# (&quot;Install_Online&quot;,&quot;Install_Offline&quot;,&quot;Gather_Library&quot;,&quot;Versionup_All&quot;, &quot;Versionup_OASE&quot;, &quot;Uninstall&quot;)
+# e.g) install_mode:Install_Online
+install_mode:Install_Online
 
 
 <span class="gh">##############################</span>
@@ -417,7 +404,7 @@ install_mode:Install
 <span class="gh">##############################</span>
 # Decide the RabbitMQ_username.
 # e.g) RabbitMQ_username:sample_rabbitmq_username
-RabbitMQ_username:administrator
+RabbitMQ_username:admin
 
 # Decide the RabbitMQ_password.
 # e.g) RabbitMQ_password:sample_rabbitmq_password
@@ -433,9 +420,9 @@ RabbitMQ_queuename:oase
 RabbitMQ_ipaddr:xxx.xxx.xxx.xxx
 
 <span class="gh">##############################</span>
-<span class="gh"># MySQL</span>
+<span class="gh"># MariaDB</span>
 <span class="gh">##############################</span>
-# Enter the MySQL root user&#39;s password
+# Enter the MariaDB root user&#39;s password
 # e.g) db_root_password:sample_root_password
 db_root_password:password
 
@@ -454,21 +441,21 @@ db_erase:erase
 
 
 <span class="gh">##############################</span>
-<span class="gh"># WildFly</span>
+<span class="gh"># JBoss EAP</span>
 <span class="gh">##############################</span>
-# Enter WildFly install directory.
-# e.g) wildfly_root_directory:/exastro/WildFly
-wildfly_root_directory:/exastro/WildFly
+# Enter JBoss install directory.
+# e.g) jboss_root_directory:/exastro/JBossEAP
+jboss_root_directory:/exastro/JBossEAP
 
 
 <span class="gh">##############################</span>
-<span class="gh"># Drools</span>
+<span class="gh"># RHDM</span>
 <span class="gh">##############################</span>
 # Decide the Administrator name, password.
-# e.g) drools_adminname:admin0000
-drools_adminname:admin0000
-# e.g) drools_password:password@1
-drools_password:password@1
+# e.g) rhdm_adminname:admin0000
+rhdm_adminname:admin0000
+# e.g) rhdm_password:password@1
+rhdm_password:password@1
 
 # Enter IP address &amp; port for Decision Manager.
 # e.g) dm_ipaddrport:localhost:8080
@@ -518,10 +505,6 @@ oase_directory:/exastro
 <span class="gh">##############################</span>
 <span class="gh"># settings.py</span>
 <span class="gh">##############################</span>
-# Select Session management.(&quot;db&quot; or &quot;file&quot; or &quot;cache&quot;)
-# e.g) oase_session_engine:cache
-oase_session_engine:file
-
 # Decide the EVTIMER SERVER location
 # e.g) ev_location:127.0.0.1
 ev_location:127.0.0.1
@@ -530,18 +513,39 @@ ev_location:127.0.0.1
 # e.g) oase_language:ja
 oase_language:ja
 
-# Select Operation System. (&quot;CentOS7&quot; or &quot;RHEL7&quot;)
+# Select Operation System. (&quot;CentOS7&quot; or &quot;RHEL7&quot; or &quot;RHEL8&quot;)
 # e.g) oase_os:RHEL7
 oase_os:RHEL7
+
+
+<span class="gh">##############################</span>
+<span class="gh"># SSLサーバ証明書</span>
+<span class="gh">##############################</span>
+# Enter the oase domain name.
+# e.g) oase_domain:exastro-oase.local
+oase_domain:exastro-oase.local
+
+# Enter when using user-specified certificates and private keys.
+# If no file path is entered for both &quot;certificate_path&quot; and &quot;private_key_path&quot;,
+# the OASE installer creates and installs a self-certificate and private key
+# using the values entered in &quot;oase_domain&quot;.
+
+# Enter the file path where the certificate to be install.
+# e.g) certificate_path:/temp/etc_pki_tls_certs/exastro-oase.crt
+certificate_path:
+
+# Enter the file path where the private key to be install.
+# e.g) private_key_path:/temp/etc_pki_tls_certs/exastro-oase.key
+private_key_path:
 </pre></div>
 </div>
 </div>
-<div class="section" id="id13">
-<h4>3.1.6. 環境構築ツール（オンライン版）実行<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="section" id="id12">
+<h4>3.1.6. 環境構築ツール（オンライン版）実行<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <div class="line-block">
 <div class="line">1. 以下のコマンドで、環境構築ツールを実行します。</div>
 </div>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># sh oase_online_installer.sh
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># sh oase_installer.sh
 </pre></div>
 </div>
 <div class="line-block">
@@ -573,9 +577,9 @@ oase_os:RHEL7
 <div class="line">・ログインID　　： administrator</div>
 <div class="line">・初期パスワード： oaseoaseoase</div>
 </div>
-<div class="figure align-center" id="id17">
+<div class="figure align-center" id="id16">
 <a class="reference internal image-reference" href="../_images/oase_login.png"><img alt="../_images/oase_login.png" src="../_images/oase_login.png" style="width: 1573.0px; height: 757.0px;" /></a>
-<p class="caption"><span class="caption-text">図1 ログイン画面</span><a class="headerlink" href="#id17" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-text">図1 ログイン画面</span><a class="headerlink" href="#id16" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -589,9 +593,9 @@ oase_os:RHEL7
 <div class="line">6. Dashboard画面</div>
 <div class="line">ログイン後、図2の画面が表示されます。</div>
 </div>
-<div class="figure align-center" id="id18">
+<div class="figure align-center" id="id17">
 <a class="reference internal image-reference" href="../_images/dashboard.PNG"><img alt="../_images/dashboard.PNG" src="../_images/dashboard.PNG" style="width: 1586.0px; height: 752.0px;" /></a>
-<p class="caption"><span class="caption-text">図2 Dashboard画面</span><a class="headerlink" href="#id18" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-text">図2 Dashboard画面</span><a class="headerlink" href="#id17" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <div class="line-block">
 <div class="line">OASEのインストール作業は以上となります。</div>
@@ -610,7 +614,7 @@ oase_os:RHEL7
 [2020-11-12 08:59:43] #####################################
 [2020-11-12 08:59:43] SKIP LIST(Please check the Settings)
 [2020-11-12 08:59:43] ・rabbitmq-server
-[2020-11-12 08:59:43] ・mysql80-community-release
+[2020-11-12 08:59:43] ・mariadb-server
 [2020-11-12 08:59:43] #####################################
 [2020-11-12 08:59:43] INFO : Install Finished
 [2020-11-12 08:59:43] #####################################
@@ -619,7 +623,7 @@ oase_os:RHEL7
 </div>
 <div class="line-block">
 <div class="line">7. スキップ処理の確認</div>
-<div class="line">RabbitMQやMySQLをスキップした場合は、OASE用に設定が必要になります。</div>
+<div class="line">RabbitMQやMariaDBをスキップした場合は、OASE用に設定が必要になります。</div>
 </div>
 <div class="line-block">
 <div class="line">7.1 RabbitMQ</div>
@@ -648,7 +652,7 @@ oase_os:RHEL7
 <p>3.1.4 アンサーファイルの編集にて記述頂きました、ユーザ名/パスワードでユーザ作成してください。</p>
 </div>
 <div class="line-block">
-<div class="line">7.2 MySQL</div>
+<div class="line">7.2 MariaDB</div>
 <div class="line">OASE用のデータベース、ユーザ作成を実施するため、以下のコマンドを実行してください。</div>
 </div>
 <div class="line-block">
@@ -657,10 +661,10 @@ oase_os:RHEL7
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># mysql -u root -p{db_root_password}
 </pre></div>
 </div>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>mysql&gt; CREATE DATABASE {db_name} CHARACTER SET utf8;
-mysql&gt; CREATE USER &#39;{db_username}&#39; IDENTIFIED BY &#39;{db_password}&#39;;
-mysql&gt; GRANT ALL ON {db_name}.* TO &#39;{db_username}&#39;;
-mysql&gt; quit
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>MariaDB [(none)]&gt; CREATE DATABASE {db_name} CHARACTER SET utf8;
+MariaDB [(none)]&gt; CREATE USER &#39;{db_username}&#39; IDENTIFIED BY &#39;{db_password}&#39;;
+MariaDB [(none)]&gt; GRANT ALL ON {db_name}.* TO &#39;{db_username}&#39;;
+MariaDB [(none)]&gt; quit
 </pre></div>
 </div>
 <div class="admonition note">
@@ -678,10 +682,10 @@ mysql&gt; quit
 </div>
 </div>
 </div>
+<div class="section" id="id13">
+<h2>4. 注意事項<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="id14">
-<h2>4. 注意事項<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="id15">
-<h3>4 ディシジョンテーブル作成可能数<a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>4 ディシジョンテーブル作成可能数<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <div class="line-block">
 <div class="line">ディシジョンマネージャは環境によって作成できるディシジョンテーブル数が変動します。</div>
 <div class="line">ディシジョンテーブルの最大作成可能数はデフォルトでは4ファイル程度となります。</div>
@@ -715,7 +719,7 @@ mysql&gt; quit
 <div id="articleNavigation">
   <ul>
     <li class="prev"><a href="construction_flow.html" title="前の章へ"><span>前のトピックへ</span>構築フロー</a></li>
-    <li class="next"><a href="environmental_setting.html" title="次の章へ"><span>次のトピックへ</span>環境設定</a></li>
+    <li class="next"><a href="installation_docker.html" title="次の章へ"><span>次のトピックへ</span>インストール手順(Docker版)</a></li>
   </ul>
 </div>
 
