@@ -1,23 +1,23 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
     <title>2 OASE アクション設定画面のメニュー 、画面構成 &#8212; OASE_docs 1.1.1 ドキュメント</title>
-    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
   
     <script type="text/javascript" src="../_static/exastro_documents.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -84,6 +84,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sso_info/index.html">利用手順マニュアル -SSO設定画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../group/index.html">利用手順マニュアル -グループ画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user/index.html">利用手順マニュアル -ユーザ画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../monitoring_adapter/index.html">利用手順マニュアル -監視アダプタ編-</a></li>
@@ -220,11 +221,11 @@
 </table>
 <p>ITAドライバ新規追加画面の画面構成は次のとおりです。</p>
 <div class="figure align-center" id="id26">
-<span id="screen-action-ita-new"></span><a class="reference internal image-reference" href="../_images/action_29.png"><img alt="../_images/action_29.png" src="../_images/action_29.png" style="width: 1366.0px; height: 625.0px;" /></a>
+<span id="screen-action-ita-new"></span><a class="reference internal image-reference" href="../_images/action_29.png"><img alt="../_images/action_29.png" src="../_images/action_29.png" style="width: 1285.0px; height: 724.0px;" /></a>
 <p class="caption"><span class="caption-text">図 2.1-5 画面構成</span><a class="headerlink" href="#id26" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <div class="figure align-center" id="id27">
-<span id="screen-action-ita-new2"></span><a class="reference internal image-reference" href="../_images/action_30.png"><img alt="../_images/action_30.png" src="../_images/action_30.png" style="width: 1366.0px; height: 624.0px;" /></a>
+<span id="screen-action-ita-new2"></span><a class="reference internal image-reference" href="../_images/action_30.png"><img alt="../_images/action_30.png" src="../_images/action_30.png" style="width: 1285.0px; height: 726.0px;" /></a>
 <p class="caption"><span class="caption-text">図 2.1-6 画面構成</span><a class="headerlink" href="#id27" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <p>ITAドライバ新規追加画面の各構成要素と、その機能は次の表のとおりです。</p>
@@ -255,46 +256,50 @@
 <td><p>任意のアクション先名を入力できます。</p></td>
 </tr>
 <tr class="row-odd"><td><p>4</p></td>
+<td><p>バージョン</p></td>
+<td><p>Exastro ITAutomationのバージョンを選択できます。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
 <td><p>プロトコル</p></td>
 <td><p>「http」または「https」を選択できます。</p></td>
 </tr>
-<tr class="row-even"><td><p>5</p></td>
+<tr class="row-odd"><td><p>6</p></td>
 <td><p>ホスト/IP</p></td>
 <td><p>通信に用いるホスト名およびIPアドレスを入力できます。</p></td>
 </tr>
-<tr class="row-odd"><td><p>6</p></td>
+<tr class="row-even"><td><p>7</p></td>
 <td><p>ポート</p></td>
 <td><p>通信に用いるポート番号を入力できます。</p></td>
 </tr>
-<tr class="row-even"><td><p>7</p></td>
+<tr class="row-odd"><td><p>8</p></td>
 <td><p>ユーザ名</p></td>
 <td><p>認証に必要なユーザ名を入力できます。</p></td>
 </tr>
-<tr class="row-odd"><td><p>8</p></td>
+<tr class="row-even"><td><p>9</p></td>
 <td><p>パスワード</p></td>
 <td><p>認証に必要なパスワードを入力することができます。</p></td>
 </tr>
-<tr class="row-even"><td><p>9</p></td>
+<tr class="row-odd"><td><p>10</p></td>
 <td><p>権限一覧</p></td>
 <td><p>ITAドライバに対するグループ毎の権限を「権限なし（赤色）」「参照のみ（黄色）」「更新可能（青色）」いずれかのラジオボタンで選択することができます。</p></td>
 </tr>
-<tr class="row-odd"><td><p>10</p></td>
+<tr class="row-even"><td><p>11</p></td>
 <td><p>キャンセルボタン</p></td>
 <td><p>新規追加画面を閉じてアクション設定画面に戻ります。</p></td>
 </tr>
-<tr class="row-even"><td><p>11</p></td>
+<tr class="row-odd"><td><p>12</p></td>
 <td><p>戻るボタン</p></td>
 <td><p>新規追加画面を閉じてアクション先の追加画面に戻ります。</p></td>
 </tr>
-<tr class="row-odd"><td><p>12</p></td>
-<td><p>保存するボタン</p></td>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>保存ボタン</p></td>
 <td><p>入力したアクション先情報を保存してアクション設定画面に戻ります。</p></td>
 </tr>
 </tbody>
 </table>
 <p>ITAドライバタブの画面構成は次のとおりです。</p>
 <div class="figure align-center" id="id29">
-<a class="reference internal image-reference" href="../_images/action_21.png"><img alt="../_images/action_21.png" src="../_images/action_21.png" style="width: 2006.0px; height: 1462.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/action_21.png"><img alt="../_images/action_21.png" src="../_images/action_21.png" style="width: 1287.0px; height: 725.0px;" /></a>
 <p class="caption"><span class="caption-text">図 2.1-7 画面構成</span><a class="headerlink" href="#id29" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <p>ITAドライバタブの各構成要素と、その機能は次の表のとおりです。</p>
@@ -332,7 +337,7 @@
 </table>
 <p>ITAドライバ操作画面の画面構成は次のとおりです。</p>
 <div class="figure align-center" id="id31">
-<a class="reference internal image-reference" href="../_images/action_31.png"><img alt="../_images/action_31.png" src="../_images/action_31.png" style="width: 1366.0px; height: 626.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/action_31.png"><img alt="../_images/action_31.png" src="../_images/action_31.png" style="width: 1285.0px; height: 747.0px;" /></a>
 <p class="caption"><span class="caption-text">図 2.1-8 画面構成</span><a class="headerlink" href="#id31" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <div class="figure align-center" id="id32">
@@ -386,7 +391,7 @@
 </table>
 <p>ITAドライバ編集画面の画面構成は次のとおりです。</p>
 <div class="figure align-center" id="id34">
-<a class="reference internal image-reference" href="../_images/action_33.png"><img alt="../_images/action_33.png" src="../_images/action_33.png" style="width: 1366.0px; height: 624.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/action_33.png"><img alt="../_images/action_33.png" src="../_images/action_33.png" style="width: 1285.0px; height: 747.0px;" /></a>
 <p class="caption"><span class="caption-text">図 2.1-10 画面構成</span><a class="headerlink" href="#id34" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <div class="figure align-center" id="id35">
@@ -871,7 +876,7 @@
 <h4>新規追加画面<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>ITAドライバのアクション先を新規で追加します。</p>
 <div class="figure align-center" id="id56">
-<span id="action-ita-new"></span><a class="reference internal image-reference" href="../_images/action_22.png"><img alt="../_images/action_22.png" src="../_images/action_22.png" style="width: 726.0px; height: 642.0px;" /></a>
+<span id="action-ita-new"></span><a class="reference internal image-reference" href="../_images/action_22.png"><img alt="../_images/action_22.png" src="../_images/action_22.png" style="width: 960.0px; height: 725.0px;" /></a>
 <p class="caption"><span class="caption-text">図 2.2-3-1 新規追加画面に表示される項目</span><a class="headerlink" href="#id56" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <table class="colwidths-given docutils align-default" id="id57">
@@ -897,55 +902,59 @@
 <td><p>入力必須項目です。OASEで管理する名前を設定してください。64文字以内で入力して下さい。</p></td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
+<td><p>バージョン</p></td>
+<td><p>接続先に合わせてプルダウンメニューからバージョンを選択してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
 <td><p>プロトコル</p></td>
 <td><p>接続先に合わせてプルダウンメニューから「http」および「https」を選択してください。</p></td>
 </tr>
-<tr class="row-odd"><td><p>4</p></td>
+<tr class="row-even"><td><p>5</p></td>
 <td><p>ホスト/IP</p></td>
 <td><p>入力必須項目です。ホスト名もしくはIPアドレスを入力して下さい。128文字以内で入力して下さい。</p></td>
 </tr>
-<tr class="row-even"><td><p>5</p></td>
+<tr class="row-odd"><td><p>6</p></td>
 <td><p>ポート</p></td>
 <td><p>入力必須項目です。ポート番号（0～65535）を設定してください。</p></td>
 </tr>
-<tr class="row-odd"><td><p>6</p></td>
+<tr class="row-even"><td><p>7</p></td>
 <td><p>ユーザ名</p></td>
 <td><p>入力必須項目です。認証可能ユーザを設定してください。64文字以内で入力して下さい。</p></td>
 </tr>
-<tr class="row-even"><td><p>7</p></td>
+<tr class="row-odd"><td><p>8</p></td>
 <td><p>パスワード</p></td>
 <td><p>入力必須項目です。認証可能パスワードを設定してください。64文字以内で入力して下さい。</p></td>
 </tr>
-<tr class="row-odd"><td><p>8</p></td>
+<tr class="row-even"><td><p>9</p></td>
 <td><p>グループ</p></td>
 <td><p>グループごとに省略されている画面を表示することで権限を設定することができます。</p></td>
 </tr>
-<tr class="row-even"><td><p>9</p></td>
+<tr class="row-odd"><td><p>10</p></td>
 <td><p>権限</p></td>
 <td><p>ITAドライバのメッセージ抽出定義に対しグループがどのような権限を持っているか簡易的に表示しています。</p></td>
 </tr>
-<tr class="row-odd"><td><p>10</p></td>
+<tr class="row-even"><td><p>11</p></td>
 <td><p>権限なし</p></td>
 <td><p>ラジオボタンを有効にし保存すると、対象のITAのメッセージ抽出定義を表示する権限を失います。</p></td>
 </tr>
-<tr class="row-even"><td><p>11</p></td>
+<tr class="row-odd"><td><p>12</p></td>
 <td><p>参照のみ</p></td>
 <td><p>ラジオボタンを有効にし保存すると、対象のITAのメッセージ抽出定義を表示することができます。</p></td>
 </tr>
-<tr class="row-odd"><td><p>12</p></td>
+<tr class="row-even"><td><p>13</p></td>
 <td><p>更新可能</p></td>
 <td><p>ラジオボタンを有効にし保存すると、対象のITAのメッセージ抽出定義を編集することができます。</p></td>
 </tr>
-<tr class="row-even"><td><p>13</p></td>
+<tr class="row-odd"><td><p>14</p></td>
 <td><p>キャンセルボタン</p></td>
 <td><p>新規追加画面を閉じてアクション設定画面に戻ります。</p></td>
 </tr>
-<tr class="row-odd"><td><p>14</p></td>
+<tr class="row-even"><td><p>15</p></td>
 <td><p>戻るボタン</p></td>
 <td><p>新規追加画面を閉じてアクション先の追加画面に戻ります。</p></td>
 </tr>
-<tr class="row-even"><td><p>15</p></td>
-<td><p>保存するボタン</p></td>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>保存ボタン</p></td>
 <td><p>入力したアクション先情報を保存してアクション設定画面に戻ります。</p></td>
 </tr>
 </tbody>
@@ -1051,7 +1060,7 @@
 <h4>一覧<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>ITAドライバのアクション先が一覧で表示されます。</p>
 <div class="figure align-center" id="id59">
-<span id="action-ita-disp"></span><a class="reference internal image-reference" href="../_images/action_23.png"><img alt="../_images/action_23.png" src="../_images/action_23.png" style="width: 2000.0px; height: 1462.0px;" /></a>
+<span id="action-ita-disp"></span><a class="reference internal image-reference" href="../_images/action_23.png"><img alt="../_images/action_23.png" src="../_images/action_23.png" style="width: 1285.0px; height: 725.0px;" /></a>
 <p class="caption"><span class="caption-text">図 2.2-3-2 一覧に表示される項目</span><a class="headerlink" href="#id59" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <table class="colwidths-given docutils align-default" id="id60">
@@ -1073,26 +1082,30 @@
 <td><p>アクション先名が表示されます。</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
+<td><p>バージョン</p></td>
+<td><p>Exastro ITAutomationのバージョンが表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
 <td><p>プロトコル</p></td>
 <td><p>通信に用いるプロトコルが表示されます。</p></td>
 </tr>
-<tr class="row-even"><td><p>3</p></td>
+<tr class="row-odd"><td><p>4</p></td>
 <td><p>ホスト/IP</p></td>
 <td><p>通信に用いるホスト名およびIPアドレスが表示されます。</p></td>
 </tr>
-<tr class="row-odd"><td><p>4</p></td>
+<tr class="row-even"><td><p>5</p></td>
 <td><p>ポート</p></td>
 <td><p>通信に用いるポート番号が表示されます。</p></td>
 </tr>
-<tr class="row-even"><td><p>5</p></td>
+<tr class="row-odd"><td><p>6</p></td>
 <td><p>ユーザ名</p></td>
 <td><p>認証に必要なユーザ名が表示されます。</p></td>
 </tr>
-<tr class="row-odd"><td><p>6</p></td>
+<tr class="row-even"><td><p>7</p></td>
 <td><p>最終更新者</p></td>
 <td><p>アクション先の名前、プロトコル、ホスト/IP、ポート、ユーザ名およびパスワードを更新したユーザの名前が表示されます。</p></td>
 </tr>
-<tr class="row-even"><td><p>7</p></td>
+<tr class="row-odd"><td><p>8</p></td>
 <td><p>最終実行日時</p></td>
 <td><p>アクション先の名前、プロトコル、ホスト/IP、ポート、ユーザ名およびパスワードを更新した日時が表示されます。</p></td>
 </tr>
@@ -1106,7 +1119,7 @@
 <li><p>アクション設定画面のアクセス権限が「更新可能」の場合のみ、「編集」ボタンおよび「削除」ボタンを表示することができます。</p></li>
 </ul>
 <div class="figure align-center" id="id61">
-<a class="reference internal image-reference" href="../_images/action_24.png"><img alt="../_images/action_24.png" src="../_images/action_24.png" style="width: 728.0px; height: 620.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/action_24.png"><img alt="../_images/action_24.png" src="../_images/action_24.png" style="width: 960.0px; height: 715.0px;" /></a>
 <p class="caption"><span class="caption-text">図 2.2-3-3 アクセス権限が「更新可能」の場合表示される「編集」ボタンと「削除」ボタン</span><a class="headerlink" href="#id61" title="この画像へのパーマリンク">¶</a></p>
 </div>
 </div>
@@ -1118,7 +1131,7 @@
 <div class="line">詳細は前述の「アクション設定画面のITAドライバ新規追加画面」 <a class="reference internal" href="#action-ita-new"><span class="std std-ref">図 2.2-3-1 新規追加画面に表示される項目</span></a> および、「アクション設定画面のITAドライバ一覧画面」 <a class="reference internal" href="#action-ita-disp"><span class="std std-ref">図 2.2-3-2 一覧に表示される項目</span></a> をご参照ください。</div>
 </div>
 <div class="figure align-center" id="id62">
-<a class="reference internal image-reference" href="../_images/action_25.png"><img alt="../_images/action_25.png" src="../_images/action_25.png" style="width: 723.0px; height: 639.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/action_25.png"><img alt="../_images/action_25.png" src="../_images/action_25.png" style="width: 960.0px; height: 715.0px;" /></a>
 <p class="caption"><span class="caption-text">図 2.2-3-4 「ITA Driver ver1」の編集画面</span><a class="headerlink" href="#id62" title="この画像へのパーマリンク">¶</a></p>
 </div>
 </div>
