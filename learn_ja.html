@@ -176,15 +176,91 @@ Learn</h1>
     <h2><em>Exastro Operation Autonomy Support Engine</em> を導入しよう</h2>
     <p>Exastro Operation Autonomy Support Engineのインストール方法から基本的な画面の説明を行います。</p>
     
-    <h3><em>Exastro Operation Autonomy Support Engine</em> オンラインインストール</h3>
-    <div class="viewDocument" data-document="Install_Online"></div>
-    <p style="text-align:left;">お手持ちの環境に Operation Autonomy Support Engineをすぐにインストールするためのインストールマニュアルです。RedHat系Linuxディストリビューションに対応しており、インターネットに接続できる必要があります。</p>
-    
-    <p style="text-align:left;">インストール完了後、下記の Operation Autonomy Support Engineクイックスタートを始めれば、すぐに Operation Autonomy Support Engineの魅力的なインターフェースを体験いただくことが可能です。</p>
-    
-    <p style="text-align:left;">またOperation Autonomy Support Engineインストール前の準備につきましては、<a href="https://exastro-suite.github.io/oase-docs/documents_ja.html" title="OASEドキュメント">こちら</a>をご参照ください。</p>
-    <p><a href="asset/Learn_ja/OASE-online-install_ja.pdf" class="download" download="Operation Autonomy Support Engine オンラインインストール"><i class="fas fa-file-pdf"></i>  マニュアルをダウンロード<i class="note">(PDF)</i></a></p>
+    <div class="tabContents subTabContents">
+      <div class="tabMenu">
+        <ul class="tabMenuList">
+          <li class="tabMenuItem"><a class="tabMenuLink touch" href="#install_online">Online</a></li>
+          <li class="tabMenuItem"><a class="tabMenuLink touch" href="#install_offline">Offline</a></li>
+          <li class="tabMenuItem"><a class="tabMenuLink touch" href="#install_versionup">Version up</a></li>
+          <li class="tabMenuItem"><a class="tabMenuLink touch" href="#install_container">Container</a></li>
+        </ul>
+      </div>
+      <div id="install_online" class="tabContent">
+        <h3>オンラインインストール</h3>
+        <div class="viewDocument" data-document="Install_Online"></div>
+        <p style="text-align:left;">お手持ちの環境に OASEをすぐにインストールするためのインストールマニュアルです。RedHat系Linuxディストリビューションに対応しており、インターネットに接続できる必要があります。</p>
 
+        <p style="text-align:left;">インストール完了後、下記の OASEクイックスタートを始めれば、すぐにOASEの魅力的なインターフェースを体験いただくことが可能です。</p>
+
+        <p style="text-align:left;">またOASEインストール前の準備につきましては、<a href="https://exastro-suite.github.io/oase-docs/documents_ja.html" title="OASEドキュメント">こちら</a>をご参照ください。</p>
+        <p><a href="asset/Learn_ja/OASE-online-install_ja.pdf" class="download" download="Operation Autonomy Support Engine オンラインインストール"><i class="fas fa-file-pdf"></i>  マニュアルをダウンロード<i class="note">(PDF)</i></a></p>
+      </div>
+      <div id="install_offline" class="tabContent">
+        <h3>オフラインインストール</h3>
+        <div class="viewDocument" data-document="Install_Offline"></div>
+        <p>お手持ちの環境によっては、外部との通信を制限されている場合がございます。</p>
+        <p>このような環境下の場合でも OASEをご利用いただけるよう、オフラインインストール手順をご紹介いたします。</p>
+        <p><a href="asset/Learn_ja/OASE-offline-install_ja.pdf" class="download" download="Operation Autonomy Support Engine オフラインインストール"><i class="fas fa-file-pdf"></i>  マニュアルをダウンロード<i class="note">(PDF)</i></a></p>
+      </div>
+      <div id="install_versionup" class="tabContent">
+        <h3>バージョンアップ</h3>
+        <div class="viewDocument" data-document="Install_Versionup"></div>
+        <p>OASEはバージョンアップすることが可能です。<br>
+        バージョンアップはVer1.2.0以降のオールインワン構成をサポートしています。</p>
+        <p><a href="asset/Learn_ja/OASE-versionup-install_ja.pdf" class="download" download="Operation Autonomy Support Engine バージョンアップインストール"><i class="fas fa-file-pdf"></i>  マニュアルをダウンロード<i class="note">(PDF)</i></a></p>
+      </div>
+      <div id="install_container" class="tabContent">
+        <h3>コンテナインストール</h3>
+        <div class="rightImage image33"><img src="../docs/asset/img/install_container_docker.png" alt="Container"></div>
+        <p>お手持ちのコンテナ環境にOASEをすぐに起動できます。<br>
+        インターネットに接続できる必要があります。<br>
+        コンテナ起動後、下記のOASEクイックスタートを始めれば、すぐにOASEの魅力的なインターフェースを体験いただくことが可能です。</p>
+
+        <div class="stepContents">
+          <ol class="stepContensList">
+            <li class="stepContentItem">
+              <dl class="stepContent">
+                <dt class="stepContentTitle"><span class="stepContentNumber">Step - 1</span> :コンテナの起動</dt>
+                <dd class="stepContentBody">
+                  <p class="stepContentBodyHeading" style="color:#2496ed;">Docker</p>
+                  <pre style="white-space: normal;"># docker run --privileged --add-host=exastro-oase:127.0.0.1 -d -p 8080:80 -p 10443:443 --name exastro01 exastro/oase:x.x.x</pre>
+                  <p>※ポート番号(8080,10443)とバージョン(x.x.x)は適宜変更してください。</p>
+                </dd>
+              </dl>
+            </li>
+            <li class="stepContentItem">
+              <dl class="stepContent">
+                <dt class="stepContentTitle"><span class="stepContentNumber">Step - 2</span>Operation Autonomy Support Engineコンソールにアクセス</dt>
+                <dd class="stepContentBody">
+                  <p>https://<span class="dummyVariable">[Container-Host-IP]</span>:10443/oase_web/top/login or http://<span class="dummyVariable">[Container-Host-IP]</span>:8080/oase_web/top/login</p>
+                  <p>※ポート番号(8080,10443)は適宜変更してください。</p>
+                </dd>
+              </dl>
+            </li>
+            <li class="stepContentItem">
+              <dl class="stepContent">
+                <dt class="stepContentTitle"><span class="stepContentNumber">Step - 3</span> :ログイン</dt>
+                <dd class="stepContentBody">
+                  <p>ログイン画面が表示されたら、指定のログインID、初期パスワードを入力して、[ログイン]ボタンをクリックしてください。</p>
+                  <p>・ログインID ： administrator<br>
+                  ・初期パスワード ： oaseoaseoase</p>
+                  <p>※インストール後に初めてログインした場合は、「パスワード変更画面」に遷移します。<br>
+                  ※パスワード変更画面から、初期パスワードを変更してください。</p>
+                </dd>
+              </dl>
+            </li>
+            <li class="stepContentItem">
+              <dl class="stepContent">
+                <dt class="stepContentTitle">注意事項</dt>
+                <dd class="stepContentBody">
+                  <p>イメージの詳細は<a href="https://hub.docker.com/r/exastro/oase" target="_blank">Docker-Hub</a>のREADMEを参照ください。</p>
+                </dd>
+              </dl>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
