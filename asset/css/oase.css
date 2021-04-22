@@ -34,6 +34,7 @@ background-image: url("../img/header_oase_home_monitor.png");
 #article.case #articleTitle .background { background-image: url("../img/header_case.jpg"); }
 #article.documents #articleTitle .background { background-image: url("../img/header_documents.jpg"); }
 #article.downloads #articleTitle .background { background-image: url("../img/header_downloads.jpg"); }
+#article.faq #articleTitle .background { background-image: url("../img/header_faq.jpg"); }
 
 @media screen and ( max-width: 640px ){
 
@@ -135,4 +136,37 @@ stroke: #00A9AC;
 #articleBody #features li:nth-child(3),
 #articleBody #features li:nth-child(4) { transform: translateX( 0 ); }
 
+}
+
+
+
+
+#faqNavi {
+border-bottom-color: #7AD2D4;
+}
+.faqNaviTitle {
+border-bottom-color: #00A9AC;
+color: #00A9AC;
+}
+#articleBody #faqNavi a.hover {
+color: #00A9AC;
+}
+#articleBody #faqNavi a.open:hover {
+color: #555;
+}
+#articleBody #faqNavi a::after {
+color: #00A9AC;
+}
+#faqContent .q .mark {
+background-color: #00A9AC;
+border-color: #00A9AC;
+}
+#faqContent .q .text {
+border-color: #00A9AC;
+}
+#faqContent .q:hover .text {
+background-color: #F5FCFC;
+}
+#faqContent .a .mark {
+color: #00A9AC;
 }
