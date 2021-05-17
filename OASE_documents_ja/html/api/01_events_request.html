@@ -1,23 +1,23 @@
 
 <!DOCTYPE html>
 
-<html lang="ja">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>1 イベントリクエスト &#8212; OASE_docs 1.2.0 ドキュメント</title>
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <title>1 イベントリクエスト &#8212; OASE_docs 1.3.0 ドキュメント</title>
     <link rel="stylesheet" href="../_static/option.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/translations.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
   
     <script type="text/javascript" src="../_static/exastro_documents.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -53,7 +53,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.2.0</dd>
+        <dd>1.3.0</dd>
       </dl>
     </div>
     
@@ -81,6 +81,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../common/index.html">利用手順マニュアル -共通編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../login/index.html">利用手順マニュアル -ログイン画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../decision_table/index.html">利用手順マニュアル -ディシジョンテーブル画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../token/index.html">利用手順マニュアル -トークン払い出し画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
@@ -139,7 +140,7 @@
 <div class="section" id="id3">
 <h3>1.1.1 リクエスト例<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p><strong>例）プロダクション適用ルール</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">X</span> <span class="n">POST</span> <span class="o">-</span><span class="n">k</span> <span class="s2">&quot;https://&lt;HostName&gt;/oase_web/event/event/eventsrequest&quot;</span> <span class="o">-</span><span class="n">H</span> <span class="s2">&quot;accept: application/json&quot;</span> <span class="o">-</span><span class="n">d</span> <span class="s2">&quot;{</span><span class="se">\&quot;</span><span class="s2">decisiontable</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">decisiontable001</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">requesttype</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">1</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">eventdatetime</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">2018/12/13 15:16:29</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">eventinfo</span><span class="se">\&quot;</span><span class="s2">:[</span><span class="se">\&quot;</span><span class="s2">2</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">あああ</span><span class="se">\&quot;</span><span class="s2">]}&quot;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">X</span> <span class="n">POST</span> <span class="o">-</span><span class="n">k</span> <span class="s2">&quot;https://&lt;HostName&gt;/oase_web/event/event/eventsrequest&quot;</span> <span class="o">-</span><span class="n">H</span> <span class="s2">&quot;accept: application/json&quot;</span> <span class="o">-</span><span class="n">d</span> <span class="s2">&quot;{</span><span class="se">\&quot;</span><span class="s2">decisiontable</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">decisiontable001</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">requesttype</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">1</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">eventdatetime</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">2018/12/13 15:16:29</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">eventinfo</span><span class="se">\&quot;</span><span class="s2">:[</span><span class="se">\&quot;</span><span class="s2">2</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">あああ</span><span class="se">\&quot;</span><span class="s2">]}&quot;</span> <span class="o">-</span><span class="n">H</span> <span class="s2">&quot;Authorization: Bearer ACCESS_TOKEN&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -170,6 +171,11 @@
 <td><p>Content-Type</p></td>
 <td><p>形式名</p></td>
 <td><p>値は「application/json」で固定</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>token</p></td>
+<td><p>トークン</p></td>
+<td><p>Token払い出し画面にて取得した値を設定</p></td>
 </tr>
 </tbody>
 </table>
@@ -266,7 +272,7 @@
 <div class="section" id="id7">
 <h3>1.2.1 レスポンス例<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p><strong>例）プロダクション適用ルール</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span> <span class="s2">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;Accept request.&quot;</span><span class="p">,</span> <span class="s2">&quot;trace_id&quot;</span><span class="p">:</span> <span class="s2">&quot;TOS2018111904243770328833e21239f2524e6d8032763940f6c72f&quot;</span><span class="p">}</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span> <span class="s2">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;Accept request.&quot;</span><span class="p">,</span> <span class="s2">&quot;trace_id&quot;</span><span class="p">:</span> <span class="s2">&quot;TOS_20210412053112220048_0000000010&quot;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>

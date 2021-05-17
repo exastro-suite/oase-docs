@@ -1,23 +1,23 @@
 
 <!DOCTYPE html>
 
-<html lang="ja">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>2 OASE 個人設定画面のメニュー 、画面構成 &#8212; OASE_docs 1.2.0 ドキュメント</title>
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <title>2 OASE 個人設定画面のメニュー 、画面構成 &#8212; OASE_docs 1.3.0 ドキュメント</title>
     <link rel="stylesheet" href="../_static/option.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/translations.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
   
     <script type="text/javascript" src="../_static/exastro_documents.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -53,7 +53,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.2.0</dd>
+        <dd>1.3.0</dd>
       </dl>
     </div>
     
@@ -81,6 +81,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../common/index.html">利用手順マニュアル -共通編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../login/index.html">利用手順マニュアル -ログイン画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../decision_table/index.html">利用手順マニュアル -ディシジョンテーブル画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../token/index.html">利用手順マニュアル -トークン払い出し画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
@@ -134,13 +135,13 @@
 <div class="section" id="id1">
 <h2>2.1 基本画面構成<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>「個人設定」画面の「アカウント情報」タブの画面構成は次のとおりです。</p>
-<div class="figure align-center" id="id6">
-<span id="personal-config-01"></span><a class="reference internal image-reference" href="../_images/personal_config_01.png"><img alt="../_images/personal_config_01.png" src="../_images/personal_config_01.png" style="width: 1421.0px; height: 1093.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.1-1 画面構成</span><a class="headerlink" href="#id6" title="この画像へのパーマリンク">¶</a></p>
+<div class="figure align-center" id="id7">
+<span id="personal-config-01"></span><a class="reference internal image-reference" href="../_images/personal_config_01.png"><img alt="../_images/personal_config_01.png" src="../_images/personal_config_01.png" style="width: 1286.0px; height: 740.0px;" /></a>
+<p class="caption"><span class="caption-text">図 2.1-1 画面構成</span><a class="headerlink" href="#id7" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <p>「個人設定」画面の「アカウント情報」タブの各構成要素と、その機能は次の表のとおりです。</p>
-<table class="colwidths-given docutils align-default" id="id7">
-<caption><span class="caption-text">表 2.1-1 機能説明</span><a class="headerlink" href="#id7" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id8">
+<caption><span class="caption-text">表 2.1-1 機能説明</span><a class="headerlink" href="#id8" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 6%" />
 <col style="width: 24%" />
@@ -180,27 +181,35 @@
 <div class="line">詳細は前述の「アカウント情報」タブ <a class="reference internal" href="#personal-config-01"><span class="std std-ref">図 2.1-1 画面構成</span></a> をご参照ください。</div>
 <div class="line">※Active Directory連携時「メールアドレスの変更」タブは表示されません。</div>
 </div>
-<div class="figure align-center" id="id8">
-<a class="reference internal image-reference" href="../_images/personal_config_02.png"><img alt="../_images/personal_config_02.png" src="../_images/personal_config_02.png" style="width: 1280.0px; height: 1024.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.1-2 画面構成</span><a class="headerlink" href="#id8" title="この画像へのパーマリンク">¶</a></p>
+<div class="figure align-center" id="id9">
+<a class="reference internal image-reference" href="../_images/personal_config_02.png"><img alt="../_images/personal_config_02.png" src="../_images/personal_config_02.png" style="width: 1286.0px; height: 741.0px;" /></a>
+<p class="caption"><span class="caption-text">図 2.1-2 画面構成</span><a class="headerlink" href="#id9" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <div class="line-block">
 <div class="line">「パスワードをお忘れの場合」ボタンの詳細は</div>
 <div class="line">「ログイン」画面の <a class="reference internal" href="../login/02_screen_structure.html#login-01"><span class="std std-ref">図 2.1-4 画面構成</span></a> をご参照ください。</div>
 </div>
 <p>メールアドレスが変更された場合は以下のように表示されます。</p>
-<div class="figure align-center" id="id9">
+<div class="figure align-center" id="id10">
 <a class="reference internal image-reference" href="../_images/personal_config_04.png"><img alt="../_images/personal_config_04.png" src="../_images/personal_config_04.png" style="width: 1284.0px; height: 1027.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.1-3 画面構成</span><a class="headerlink" href="#id9" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-text">図 2.1-3 画面構成</span><a class="headerlink" href="#id10" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <div class="line-block">
 <div class="line">「パスワードの変更」タブの画面構成は「アカウント情報」タブ同様です。</div>
 <div class="line">詳細は前述の「アカウント情報」タブ <a class="reference internal" href="#personal-config-01"><span class="std std-ref">図 2.1-1 画面構成</span></a> をご参照ください。</div>
 <div class="line">※Active Directory連携時「パスワードの変更」タブは表示されません。</div>
 </div>
-<div class="figure align-center" id="id10">
-<a class="reference internal image-reference" href="../_images/personal_config_03.png"><img alt="../_images/personal_config_03.png" src="../_images/personal_config_03.png" style="width: 1284.0px; height: 1027.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.1-4 画面構成</span><a class="headerlink" href="#id10" title="この画像へのパーマリンク">¶</a></p>
+<div class="figure align-center" id="id11">
+<a class="reference internal image-reference" href="../_images/personal_config_03.png"><img alt="../_images/personal_config_03.png" src="../_images/personal_config_03.png" style="width: 1286.0px; height: 740.0px;" /></a>
+<p class="caption"><span class="caption-text">図 2.1-4 画面構成</span><a class="headerlink" href="#id11" title="この画像へのパーマリンク">¶</a></p>
+</div>
+<div class="line-block">
+<div class="line">「言語の変更」タブの画面構成は「アカウント情報」タブ同様です。</div>
+<div class="line">詳細は前述の「アカウント情報」タブ <a class="reference internal" href="#personal-config-01"><span class="std std-ref">図 2.1-1 画面構成</span></a> をご参照ください。</div>
+</div>
+<div class="figure align-center" id="id12">
+<a class="reference internal image-reference" href="../_images/personal_config_10.png"><img alt="../_images/personal_config_10.png" src="../_images/personal_config_10.png" style="width: 1286.0px; height: 740.0px;" /></a>
+<p class="caption"><span class="caption-text">図 2.1-5 画面構成</span><a class="headerlink" href="#id12" title="この画像へのパーマリンク">¶</a></p>
 </div>
 </div>
 <div class="section" id="id2">
@@ -212,12 +221,12 @@
 <div class="line">アカウントに登録されている情報を一覧で表示します。</div>
 <div class="line">「アカウント情報」タブはAD連携や権限に関わらず表示することができます。</div>
 </div>
-<div class="figure align-center" id="id11">
+<div class="figure align-center" id="id13">
 <a class="reference internal image-reference" href="../_images/personal_config_05.png"><img alt="../_images/personal_config_05.png" src="../_images/personal_config_05.png" style="width: 1367.0px; height: 501.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-1-1 「アカウント情報」タブ</span><a class="headerlink" href="#id11" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-text">図 2.2-1-1 「アカウント情報」タブ</span><a class="headerlink" href="#id13" title="この画像へのパーマリンク">¶</a></p>
 </div>
-<table class="colwidths-given docutils align-default" id="id12">
-<caption><span class="caption-text">表 2.2-1-1 機能説明</span><a class="headerlink" href="#id12" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id14">
+<caption><span class="caption-text">表 2.2-1-1 機能説明</span><a class="headerlink" href="#id14" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 6%" />
 <col style="width: 24%" />
@@ -248,19 +257,19 @@
 <p class="admonition-title">注釈</p>
 <p>「ログインID：administrator」のメールアドレスはデフォルトで「sample&#64;xxx.bbb.ccc」と設定されています。初回ログイン後任意のアドレスに変更してください。</p>
 </div>
-<div class="figure align-center" id="id13">
+<div class="figure align-center" id="id15">
 <a class="reference internal image-reference" href="../_images/personal_config_08.png"><img alt="../_images/personal_config_08.png" src="../_images/personal_config_08.png" style="width: 1366.0px; height: 483.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-2-2 administratorのメールアドレス</span><a class="headerlink" href="#id13" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-text">図 2.2-2-2 administratorのメールアドレス</span><a class="headerlink" href="#id15" title="この画像へのパーマリンク">¶</a></p>
 </div>
 </div>
 <div class="section" id="id4">
 <h3>(2)メールアドレスの変更タブ<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<div class="figure align-center" id="id14">
-<a class="reference internal image-reference" href="../_images/personal_config_06.png"><img alt="../_images/personal_config_06.png" src="../_images/personal_config_06.png" style="width: 1367.0px; height: 1094.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-2-1 「メールアドレスの変更」タブ</span><a class="headerlink" href="#id14" title="この画像へのパーマリンク">¶</a></p>
+<div class="figure align-center" id="id16">
+<a class="reference internal image-reference" href="../_images/personal_config_06.png"><img alt="../_images/personal_config_06.png" src="../_images/personal_config_06.png" style="width: 1286.0px; height: 742.0px;" /></a>
+<p class="caption"><span class="caption-text">図 2.2-2-1 「メールアドレスの変更」タブ</span><a class="headerlink" href="#id16" title="この画像へのパーマリンク">¶</a></p>
 </div>
-<table class="colwidths-given docutils align-default" id="id15">
-<caption><span class="caption-text">表 2.2-2-1 機能説明</span><a class="headerlink" href="#id15" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id17">
+<caption><span class="caption-text">表 2.2-2-1 機能説明</span><a class="headerlink" href="#id17" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 6%" />
 <col style="width: 24%" />
@@ -291,19 +300,19 @@
 </tr>
 </tbody>
 </table>
-<div class="figure align-center" id="id16">
+<div class="figure align-center" id="id18">
 <a class="reference internal image-reference" href="../_images/personal_config_09.png"><img alt="../_images/personal_config_09.png" src="../_images/personal_config_09.png" style="width: 1171.0px; height: 795.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-2-2 「メールアドレスのご変更」メール</span><a class="headerlink" href="#id16" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-text">図 2.2-2-2 「メールアドレスのご変更」メール</span><a class="headerlink" href="#id18" title="この画像へのパーマリンク">¶</a></p>
 </div>
 </div>
 <div class="section" id="id5">
 <h3>(3)パスワードの変更タブ<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<div class="figure align-center" id="id17">
-<a class="reference internal image-reference" href="../_images/personal_config_07.png"><img alt="../_images/personal_config_07.png" src="../_images/personal_config_07.png" style="width: 1367.0px; height: 1093.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-3-1 「パスワードの変更」タブ</span><a class="headerlink" href="#id17" title="この画像へのパーマリンク">¶</a></p>
+<div class="figure align-center" id="id19">
+<a class="reference internal image-reference" href="../_images/personal_config_07.png"><img alt="../_images/personal_config_07.png" src="../_images/personal_config_07.png" style="width: 1286.0px; height: 742.0px;" /></a>
+<p class="caption"><span class="caption-text">図 2.2-3-1 「パスワードの変更」タブ</span><a class="headerlink" href="#id19" title="この画像へのパーマリンク">¶</a></p>
 </div>
-<table class="colwidths-given docutils align-default" id="id18">
-<caption><span class="caption-text">表 2.2-3-1 機能説明</span><a class="headerlink" href="#id18" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id20">
+<caption><span class="caption-text">表 2.2-3-1 機能説明</span><a class="headerlink" href="#id20" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 6%" />
 <col style="width: 24%" />
@@ -331,6 +340,37 @@
 <tr class="row-odd"><td><p>4</p></td>
 <td><p>パスワードを変更する</p></td>
 <td><p>入力内容に問題が無い場合、新しいパスワードに変更することができます。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id6">
+<h3>(4)言語の変更タブ<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="figure align-center" id="id21">
+<a class="reference internal image-reference" href="../_images/personal_config_11.png"><img alt="../_images/personal_config_11.png" src="../_images/personal_config_11.png" style="width: 1286.0px; height: 738.0px;" /></a>
+<p class="caption"><span class="caption-text">図 2.2-4-1 「言語の変更」タブ</span><a class="headerlink" href="#id21" title="この画像へのパーマリンク">¶</a></p>
+</div>
+<table class="colwidths-given docutils align-default" id="id22">
+<caption><span class="caption-text">表 2.2-4-1 機能説明</span><a class="headerlink" href="#id22" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>言語</p></td>
+<td><p>変更したい言語(日本語 または 英語)を選択します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>言語を変更する</p></td>
+<td><p>選択した言語に変更することができます。</p></td>
 </tr>
 </tbody>
 </table>

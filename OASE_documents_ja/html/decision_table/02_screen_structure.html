@@ -1,23 +1,23 @@
 
 <!DOCTYPE html>
 
-<html lang="ja">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>2 OASE ディシジョンテーブル画面のメニュー 、画面構成 &#8212; OASE_docs 1.2.0 ドキュメント</title>
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <title>2 OASE ディシジョンテーブル画面のメニュー 、画面構成 &#8212; OASE_docs 1.3.0 ドキュメント</title>
     <link rel="stylesheet" href="../_static/option.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/translations.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
   
     <script type="text/javascript" src="../_static/exastro_documents.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -53,7 +53,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.2.0</dd>
+        <dd>1.3.0</dd>
       </dl>
     </div>
     
@@ -92,6 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="04_messages.html">4 OASE ディシジョンテーブル画面で表示されるメッセージ</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../token/index.html">利用手順マニュアル -トークン払い出し画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
@@ -288,7 +289,7 @@
 </table>
 <p>新規追加（未知事象通知タブ）画面の画面構成は次のとおりです。</p>
 <div class="figure align-center" id="id27">
-<span id="label-tab-3"></span><a class="reference internal image-reference" href="../_images/decision_table_36.png"><img alt="../_images/decision_table_36.png" src="../_images/decision_table_36.png" style="width: 1280.0px; height: 720.0px;" /></a>
+<span id="label-tab-3"></span><a class="reference internal image-reference" href="../_images/decision_table_36.png"><img alt="../_images/decision_table_36.png" src="../_images/decision_table_36.png" style="width: 1286.0px; height: 722.0px;" /></a>
 <p class="caption"><span class="caption-text">図 2.1-6 画面構成</span><a class="headerlink" href="#id27" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <p>新規追加（未知事象通知タブ）画面の各構成要素と、その機能は次の表のとおりです。</p>
@@ -327,10 +328,14 @@
 <td><p>通知先のメールアドレスを入力できます。</p></td>
 </tr>
 <tr class="row-odd"><td><p>6</p></td>
+<td><p>ServiceNowDriver名</p></td>
+<td><p>ServiceNowの接続先をプルダウン選択できます。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
 <td><p>閉じるボタン</p></td>
 <td><p>新規追加画面を閉じてディシジョンテーブル画面に戻ります。</p></td>
 </tr>
-<tr class="row-even"><td><p>7</p></td>
+<tr class="row-odd"><td><p>8</p></td>
 <td><p>保存するボタン</p></td>
 <td><p>新規追加情報を保存してディシジョンテーブル画面に戻ります。</p></td>
 </tr>
@@ -454,7 +459,7 @@
 </table>
 <p>ディシジョンテーブル詳細（未知事象通知タブ）画面の画面構成は次のとおりです。</p>
 <div class="figure align-center" id="id33">
-<a class="reference internal image-reference" href="../_images/decision_table_38.png"><img alt="../_images/decision_table_38.png" src="../_images/decision_table_38.png" style="width: 1277.0px; height: 615.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/decision_table_38.png"><img alt="../_images/decision_table_38.png" src="../_images/decision_table_38.png" style="width: 1286.0px; height: 722.0px;" /></a>
 <p class="caption"><span class="caption-text">図 2.1-9 画面構成</span><a class="headerlink" href="#id33" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <p>ディシジョンテーブル詳細（未知事象通知タブ）画面の各構成要素と、その機能は次の表のとおりです。</p>
@@ -493,18 +498,22 @@
 <td><p>通知先のメールアドレスが表示されます。</p></td>
 </tr>
 <tr class="row-odd"><td><p>6</p></td>
+<td><p>ServiceNowDriver名</p></td>
+<td><p>連携するServiceNowの接続先ドライバ名が表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
 <td><p>複製ボタン</p></td>
 <td><p>ディシジョンテーブル画面で選択したディシジョンテーブルと同様のディシジョンテーブルを追加することができます。</p></td>
 </tr>
-<tr class="row-even"><td><p>7</p></td>
+<tr class="row-odd"><td><p>8</p></td>
 <td><p>削除ボタン</p></td>
 <td><p>ディシジョンテーブル画面で選択したディシジョンテーブルを削除しディシジョンテーブル詳細画面を閉じてディシジョンテーブル画面に戻ります。</p></td>
 </tr>
-<tr class="row-odd"><td><p>8</p></td>
+<tr class="row-even"><td><p>9</p></td>
 <td><p>編集ボタン</p></td>
 <td><p>ディシジョンテーブル画面で選択したディシジョンテーブルを編集することができます。</p></td>
 </tr>
-<tr class="row-even"><td><p>9</p></td>
+<tr class="row-odd"><td><p>10</p></td>
 <td><p>DLボタン</p></td>
 <td><p>ディシジョンテーブル画面で選択したディシジョンテーブルをエクセルファイルでダウンロードすることができます。</p></td>
 </tr>
@@ -522,7 +531,7 @@
 </div>
 <p>ディシジョンテーブル編集画面の画面構成は次のとおりです。</p>
 <div class="figure align-center" id="id36">
-<a class="reference internal image-reference" href="../_images/decision_table_25.png"><img alt="../_images/decision_table_25.png" src="../_images/decision_table_25.png" style="width: 896.0px; height: 1566.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/decision_table_25.png"><img alt="../_images/decision_table_25.png" src="../_images/decision_table_25.png" style="width: 960.0px; height: 1338.0px;" /></a>
 <p class="caption"><span class="caption-text">図 2.1-11 画面構成</span><a class="headerlink" href="#id36" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <p>ディシジョンテーブル編集画面の各構成要素と、その機能は次の表のとおりです。</p>
@@ -569,14 +578,18 @@
 <td><p>ディシジョンテーブル画面で入力したメールアドレスが表示され、編集可能です。</p></td>
 </tr>
 <tr class="row-odd"><td><p>8</p></td>
+<td><p>ServiceNowDriver名</p></td>
+<td><p>ディシジョンテーブル画面で選択した接続先ServiceNowドライバ名が表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
 <td><p>権限</p></td>
 <td><p>ディシジョンテーブル画面で選択したディシジョンテーブルに対してどのグループにどのような権限が設定されているか表示され、編集可能です。</p></td>
 </tr>
-<tr class="row-even"><td><p>9</p></td>
+<tr class="row-odd"><td><p>10</p></td>
 <td><p>キャンセルボタン</p></td>
 <td><p>変更内容を破棄してディシジョンテーブル編集画面を閉じ、ディシジョンテーブル画面に戻ります。</p></td>
 </tr>
-<tr class="row-odd"><td><p>10</p></td>
+<tr class="row-even"><td><p>11</p></td>
 <td><p>保存するボタン</p></td>
 <td><p>変更内容を保存してディシジョンテーブル編集画面を閉じ、ディシジョンテーブル画面に戻ります。</p></td>
 </tr>
@@ -651,7 +664,6 @@
 <h4>権限<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <ul class="simple">
 <li><p>権限によってディシジョンテーブル画面に表示されるディシジョンテーブルが異なります。</p></li>
-<li><p>「グループ名：システム管理者」のアクセス権限を持つユーザには、すべてのディシジョンテーブルが表示されます。</p></li>
 </ul>
 <div class="figure align-center" id="id42">
 <a class="reference internal image-reference" href="../_images/decision_table_10.png"><img alt="../_images/decision_table_10.png" src="../_images/decision_table_10.png" style="width: 2000.0px; height: 383.0px;" /></a>
@@ -661,47 +673,43 @@
 <a class="reference internal image-reference" href="../_images/decision_table_12.png"><img alt="../_images/decision_table_12.png" src="../_images/decision_table_12.png" style="width: 1920.0px; height: 934.0px;" /></a>
 <p class="caption"><span class="caption-text">図 2.2-1-5 ディシジョンテーブル画面にすべてのディシジョンテーブル(5件)が表示される</span><a class="headerlink" href="#id43" title="この画像へのパーマリンク">¶</a></p>
 </div>
-<div class="figure align-center" id="id44">
-<a class="reference internal image-reference" href="../_images/decision_table_17.png"><img alt="../_images/decision_table_17.png" src="../_images/decision_table_17.png" style="width: 1920.0px; height: 936.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-1-6 「グループ名：システム管理者」であれば「sample003」に対し権限の設定が無くてもディシジョンテーブル画面に表示することができる</span><a class="headerlink" href="#id44" title="この画像へのパーマリンク">¶</a></p>
-</div>
 <ul class="simple">
 <li><p>ディシジョンテーブル画面のアクセス権限が「更新可能」のユーザであってもすべてのディシジョンテーブルは表示されません。</p></li>
 <li><p>ディシジョンテーブルに対する権限が「参照のみ」または「更新可能」である場合のみ、対象のディシジョンテーブルが表示されます。</p></li>
 </ul>
-<div class="figure align-center" id="id45">
+<div class="figure align-center" id="id44">
 <a class="reference internal image-reference" href="../_images/decision_table_13.png"><img alt="../_images/decision_table_13.png" src="../_images/decision_table_13.png" style="width: 2001.0px; height: 383.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-1-7 ユーザ(user001)の権限が「test_group_001」に設定されている</span><a class="headerlink" href="#id45" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-text">図 2.2-1-7 ユーザ(user001)の権限が「test_group_001」に設定されている</span><a class="headerlink" href="#id44" title="この画像へのパーマリンク">¶</a></p>
+</div>
+<div class="figure align-center" id="id45">
+<a class="reference internal image-reference" href="../_images/decision_table_14.png"><img alt="../_images/decision_table_14.png" src="../_images/decision_table_14.png" style="width: 2001.0px; height: 1200.0px;" /></a>
+<p class="caption"><span class="caption-text">図 2.2-1-8 「グループ名：test_group_001」の「ディシジョンテーブル画面」に関する「アクセス権限」は「更新可能」</span><a class="headerlink" href="#id45" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <div class="figure align-center" id="id46">
-<a class="reference internal image-reference" href="../_images/decision_table_14.png"><img alt="../_images/decision_table_14.png" src="../_images/decision_table_14.png" style="width: 2001.0px; height: 1200.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-1-8 「グループ名：test_group_001」の「ディシジョンテーブル画面」に関する「アクセス権限」は「更新可能」</span><a class="headerlink" href="#id46" title="この画像へのパーマリンク">¶</a></p>
+<a class="reference internal image-reference" href="../_images/decision_table_15.png"><img alt="../_images/decision_table_15.png" src="../_images/decision_table_15.png" style="width: 1922.0px; height: 936.0px;" /></a>
+<p class="caption"><span class="caption-text">図 2.2-1-9 ディシジョンテーブル画面には参照権限以上あるディシジョンテーブル(3件)が表示される</span><a class="headerlink" href="#id46" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <div class="figure align-center" id="id47">
-<a class="reference internal image-reference" href="../_images/decision_table_15.png"><img alt="../_images/decision_table_15.png" src="../_images/decision_table_15.png" style="width: 1922.0px; height: 936.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-1-9 ディシジョンテーブル画面には参照権限以上あるディシジョンテーブル(3件)が表示される</span><a class="headerlink" href="#id47" title="この画像へのパーマリンク">¶</a></p>
-</div>
-<div class="figure align-center" id="id48">
 <a class="reference internal image-reference" href="../_images/decision_table_16.png"><img alt="../_images/decision_table_16.png" src="../_images/decision_table_16.png" style="width: 1920.0px; height: 939.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-1-10 「グループ名：test_group_001」が「sample003」に対し参照権限があるためディシジョンテーブル画面に表示される</span><a class="headerlink" href="#id48" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-text">図 2.2-1-10 「グループ名：test_group_001」が「sample003」に対し参照権限があるためディシジョンテーブル画面に表示される</span><a class="headerlink" href="#id47" title="この画像へのパーマリンク">¶</a></p>
 </div>
 </div>
 </div>
 <div class="section" id="id8">
 <h3>(2)新規追加画面（基本情報・権限タブ）<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>ディシジョンテーブル画面へのアクセス権限が「更新可能」の場合のみ、新規追加画面を表示することができます。</p>
-<div class="figure align-center" id="id49">
+<div class="figure align-center" id="id48">
 <span id="label-stab-1"></span><a class="reference internal image-reference" href="../_images/decision_table_08.png"><img alt="../_images/decision_table_08.png" src="../_images/decision_table_08.png" style="width: 1653.0px; height: 174.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-2-1 アクセス権限が「更新可能」であるため「新規追加ボタン」が表示される</span><a class="headerlink" href="#id49" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-text">図 2.2-2-1 アクセス権限が「更新可能」であるため「新規追加ボタン」が表示される</span><a class="headerlink" href="#id48" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <div class="section" id="id9">
 <h4>入力欄<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h4>
-<div class="figure align-center" id="id50">
+<div class="figure align-center" id="id49">
 <a class="reference internal image-reference" href="../_images/decision_table_07.png"><img alt="../_images/decision_table_07.png" src="../_images/decision_table_07.png" style="width: 1920.0px; height: 932.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-2-2 新規追加画面（基本情報・権限タブ）</span><a class="headerlink" href="#id50" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-text">図 2.2-2-2 新規追加画面（基本情報・権限タブ）</span><a class="headerlink" href="#id49" title="この画像へのパーマリンク">¶</a></p>
 </div>
-<table class="colwidths-given docutils align-default" id="id51">
-<caption><span class="caption-text">表 2.2-2-1 機能説明</span><a class="headerlink" href="#id51" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id50">
+<caption><span class="caption-text">表 2.2-2-1 機能説明</span><a class="headerlink" href="#id50" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 6%" />
 <col style="width: 24%" />
@@ -759,12 +767,12 @@
 <p>ディシジョンテーブル画面へのアクセス権限が「更新可能」の場合のみ、新規追加画面を表示することができます。</p>
 <div class="section" id="id11">
 <h4>入力欄<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h4>
-<div class="figure align-center" id="id52">
+<div class="figure align-center" id="id51">
 <span id="label-stab-2"></span><a class="reference internal image-reference" href="../_images/decision_table_19.png"><img alt="../_images/decision_table_19.png" src="../_images/decision_table_19.png" style="width: 1280.0px; height: 720.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-3-1 新規追加画面（条件式タブ）</span><a class="headerlink" href="#id52" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-text">図 2.2-3-1 新規追加画面（条件式タブ）</span><a class="headerlink" href="#id51" title="この画像へのパーマリンク">¶</a></p>
 </div>
-<table class="colwidths-given docutils align-default" id="id53">
-<caption><span class="caption-text">表 2.2-3-1 機能説明</span><a class="headerlink" href="#id53" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id52">
+<caption><span class="caption-text">表 2.2-3-1 機能説明</span><a class="headerlink" href="#id52" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 6%" />
 <col style="width: 24%" />
@@ -811,8 +819,8 @@
 <div class="section" id="id12">
 <h4>条件式<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>どのような条件に合致するか設定し値に応じて判定されます。</p>
-<span id="label-table-1"></span><table class="colwidths-given docutils align-default" id="id54">
-<caption><span class="caption-text">表 2.2-3-2 機能説明</span><a class="headerlink" href="#id54" title="このテーブルへのパーマリンク">¶</a></caption>
+<span id="label-table-1"></span><table class="colwidths-given docutils align-default" id="id53">
+<caption><span class="caption-text">表 2.2-3-2 機能説明</span><a class="headerlink" href="#id53" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 9%" />
 <col style="width: 27%" />
@@ -901,12 +909,12 @@
 <p>ディシジョンテーブル画面へのアクセス権限が「更新可能」の場合のみ、新規追加画面を表示することができます。</p>
 <div class="section" id="id14">
 <h4>入力欄<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h4>
-<div class="figure align-center" id="id55">
-<span id="label-stab-3"></span><a class="reference internal image-reference" href="../_images/decision_table_39.png"><img alt="../_images/decision_table_39.png" src="../_images/decision_table_39.png" style="width: 1280.0px; height: 720.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-4-1 新規追加画面（未知事象通知タブ）</span><a class="headerlink" href="#id55" title="この画像へのパーマリンク">¶</a></p>
+<div class="figure align-center" id="id54">
+<span id="label-stab-3"></span><a class="reference internal image-reference" href="../_images/decision_table_39.png"><img alt="../_images/decision_table_39.png" src="../_images/decision_table_39.png" style="width: 1286.0px; height: 722.0px;" /></a>
+<p class="caption"><span class="caption-text">図 2.2-4-1 新規追加画面（未知事象通知タブ）</span><a class="headerlink" href="#id54" title="この画像へのパーマリンク">¶</a></p>
 </div>
-<table class="colwidths-given docutils align-default" id="id56">
-<caption><span class="caption-text">表 2.2-4-1 機能説明</span><a class="headerlink" href="#id56" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id55">
+<caption><span class="caption-text">表 2.2-4-1 機能説明</span><a class="headerlink" href="#id55" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 6%" />
 <col style="width: 24%" />
@@ -932,10 +940,14 @@
 <td><p>任意入力項目です。512文字以内で入力してください。</p></td>
 </tr>
 <tr class="row-odd"><td><p>4</p></td>
+<td><p>ServiceNowDriver名</p></td>
+<td><p>任意選択項目です。プルダウンメニューから接続先ServiceNowドライバ名を選択してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
 <td><p>閉じるボタン</p></td>
 <td><p>新規追加画面を閉じてディシジョンテーブル画面に戻ります。</p></td>
 </tr>
-<tr class="row-even"><td><p>5</p></td>
+<tr class="row-odd"><td><p>6</p></td>
 <td><p>保存するボタン</p></td>
 <td><p>新規追加情報を保存してディシジョンテーブル画面に戻ります。</p></td>
 </tr>
@@ -949,12 +961,12 @@
 <div class="line">登録されているディシジョンテーブルの詳細を表示します。</div>
 <div class="line">削除ボタンおよび編集ボタンについては各権限ごとに異なります。ここでは共通機能について説明します。</div>
 </div>
-<div class="figure align-center" id="id57">
+<div class="figure align-center" id="id56">
 <a class="reference internal image-reference" href="../_images/decision_table_22.png"><img alt="../_images/decision_table_22.png" src="../_images/decision_table_22.png" style="width: 806.0px; height: 924.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-5-1 ディシジョンテーブル詳細画面</span><a class="headerlink" href="#id57" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-text">図 2.2-5-1 ディシジョンテーブル詳細画面</span><a class="headerlink" href="#id56" title="この画像へのパーマリンク">¶</a></p>
 </div>
-<table class="colwidths-given docutils align-default" id="id58">
-<caption><span class="caption-text">表 2.2-5-1 機能説明</span><a class="headerlink" href="#id58" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id57">
+<caption><span class="caption-text">表 2.2-5-1 機能説明</span><a class="headerlink" href="#id57" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 6%" />
 <col style="width: 24%" />
@@ -1001,12 +1013,12 @@
 <div class="line">「(3)新規追加画面（条件式タブ）」 <a class="reference internal" href="#label-stab-2"><span class="std std-ref">図 2.2-3-1 新規追加画面（条件式タブ）</span></a> 、</div>
 <div class="line">「(4)新規追加画面（未知事象通知タブ）」 <a class="reference internal" href="#label-stab-3"><span class="std std-ref">図 2.2-4-1 新規追加画面（未知事象通知タブ）</span></a> をご参照ください。</div>
 </div>
-<div class="figure align-center" id="id59">
+<div class="figure align-center" id="id58">
 <a class="reference internal image-reference" href="../_images/decision_table_23.png"><img alt="../_images/decision_table_23.png" src="../_images/decision_table_23.png" style="width: 2203.0px; height: 924.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-5-2 ディシジョンテーブル複製画面</span><a class="headerlink" href="#id59" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-text">図 2.2-5-2 ディシジョンテーブル複製画面</span><a class="headerlink" href="#id58" title="この画像へのパーマリンク">¶</a></p>
 </div>
-<table class="colwidths-given docutils align-default" id="id60">
-<caption><span class="caption-text">表 2.2-5-2 機能説明</span><a class="headerlink" href="#id60" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id59">
+<caption><span class="caption-text">表 2.2-5-2 機能説明</span><a class="headerlink" href="#id59" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 6%" />
 <col style="width: 24%" />
@@ -1033,25 +1045,25 @@
 <div class="section" id="id17">
 <h4>編集・削除<a class="headerlink" href="#id17" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>ディシジョンテーブルの編集・削除における権限が「更新可能」である場合、ディシジョンテーブル詳細画面に「削除」「編集」ボタンが表示されます。</p>
-<div class="figure align-center" id="id61">
+<div class="figure align-center" id="id60">
 <a class="reference internal image-reference" href="../_images/decision_table_26.png"><img alt="../_images/decision_table_26.png" src="../_images/decision_table_26.png" style="width: 1922.0px; height: 933.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-5-3 user001が権限「更新可能」のtest_group_001に設定されている場合</span><a class="headerlink" href="#id61" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-text">図 2.2-5-3 user001が権限「更新可能」のtest_group_001に設定されている場合</span><a class="headerlink" href="#id60" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <p>ディシジョンテーブルの編集・削除における権限が「更新可能」以外である場合、ディシジョンテーブル詳細画面に「削除」「編集」ボタンは表示されません。</p>
-<div class="figure align-center" id="id62">
+<div class="figure align-center" id="id61">
 <a class="reference internal image-reference" href="../_images/decision_table_27.png"><img alt="../_images/decision_table_27.png" src="../_images/decision_table_27.png" style="width: 1922.0px; height: 937.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-5-4 user001が権限「参照のみ」のtest_group_001に設定されている場合</span><a class="headerlink" href="#id62" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-text">図 2.2-5-4 user001が権限「参照のみ」のtest_group_001に設定されている場合</span><a class="headerlink" href="#id61" title="この画像へのパーマリンク">¶</a></p>
 </div>
 </div>
 </div>
 <div class="section" id="id18">
 <h3>(6)ディシジョンテーブル編集画面<a class="headerlink" href="#id18" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<div class="figure align-center" id="id63">
-<a class="reference internal image-reference" href="../_images/decision_table_28.png"><img alt="../_images/decision_table_28.png" src="../_images/decision_table_28.png" style="width: 878.0px; height: 1562.0px;" /></a>
-<p class="caption"><span class="caption-text">図 2.2-6-1 ディシジョンテーブル編集画面</span><a class="headerlink" href="#id63" title="この画像へのパーマリンク">¶</a></p>
+<div class="figure align-center" id="id62">
+<a class="reference internal image-reference" href="../_images/decision_table_28.png"><img alt="../_images/decision_table_28.png" src="../_images/decision_table_28.png" style="width: 960.0px; height: 1336.0px;" /></a>
+<p class="caption"><span class="caption-text">図 2.2-6-1 ディシジョンテーブル編集画面</span><a class="headerlink" href="#id62" title="この画像へのパーマリンク">¶</a></p>
 </div>
-<table class="colwidths-given docutils align-default" id="id64">
-<caption><span class="caption-text">表 2.2-6-1 機能説明</span><a class="headerlink" href="#id64" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id63">
+<caption><span class="caption-text">表 2.2-6-1 機能説明</span><a class="headerlink" href="#id63" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 6%" />
 <col style="width: 24%" />
@@ -1085,30 +1097,34 @@
 <td><p>任意入力項目です。512文字以内で入力してください。</p></td>
 </tr>
 <tr class="row-odd"><td><p>6</p></td>
+<td><p>ServiceNowDriver名</p></td>
+<td><p>任意選択項目です。プルダウンメニューから接続先ServiceNowドライバ名を選択してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
 <td><p>グループ</p></td>
 <td><p>グループごとに省略されている画面を表示することができます。</p></td>
 </tr>
-<tr class="row-even"><td><p>7</p></td>
+<tr class="row-odd"><td><p>8</p></td>
 <td><p>権限</p></td>
 <td><p>ディシジョンテーブルに対しグループがどのような権限を持っているか簡易的に表示しています。左から「ディシジョンテーブル（編集・削除）」「ルール（ステージング環境）」「ルール（プロダクション環境）」「リクエスト履歴」「アクション履歴」「監視アダプタ」の権限を表しています。</p></td>
 </tr>
-<tr class="row-odd"><td><p>8</p></td>
+<tr class="row-even"><td><p>9</p></td>
 <td><p>権限なし</p></td>
 <td><p>ラジオボタンを有効にし保存すると、対象のディシジョンテーブルを表示する権限を失います。</p></td>
 </tr>
-<tr class="row-even"><td><p>9</p></td>
+<tr class="row-odd"><td><p>10</p></td>
 <td><p>参照のみ</p></td>
 <td><p>ラジオボタンを有効にし保存すると、対象のディシジョンテーブルを表示（一部操作）することができます。</p></td>
 </tr>
-<tr class="row-odd"><td><p>10</p></td>
+<tr class="row-even"><td><p>11</p></td>
 <td><p>更新可能</p></td>
 <td><p>ラジオボタンを有効にし保存すると、対象のディシジョンテーブルを編集および処理の実行ができます。</p></td>
 </tr>
-<tr class="row-even"><td><p>11</p></td>
+<tr class="row-odd"><td><p>12</p></td>
 <td><p>キャンセルボタン</p></td>
 <td><p>変更内容を破棄してディシジョンテーブル編集画面を閉じ、ディシジョンテーブル画面に戻ります。</p></td>
 </tr>
-<tr class="row-odd"><td><p>12</p></td>
+<tr class="row-even"><td><p>13</p></td>
 <td><p>保存するボタン</p></td>
 <td><p>変更内容を保存してディシジョンテーブル編集画面を閉じ、ディシジョンテーブル画面に戻ります。</p></td>
 </tr>
