@@ -1,23 +1,23 @@
 
 <!DOCTYPE html>
 
-<html lang="ja">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>3 OASE ディシジョンテーブルファイルの説明 &#8212; OASE_docs 1.2.0 ドキュメント</title>
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <title>3 OASE ディシジョンテーブルファイルの説明 &#8212; OASE_docs 1.3.0 ドキュメント</title>
     <link rel="stylesheet" href="../_static/option.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/translations.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
   
     <script type="text/javascript" src="../_static/exastro_documents.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -53,7 +53,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.2.0</dd>
+        <dd>1.3.0</dd>
       </dl>
     </div>
     
@@ -91,6 +91,7 @@
 <li class="toctree-l2"><a class="reference internal" href="04_messages.html">4 OASE ディシジョンテーブル画面で表示されるメッセージ</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../token/index.html">利用手順マニュアル -トークン払い出し画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
@@ -145,7 +146,7 @@
 <p class="caption"><span class="caption-text">図 3.1-1-1 ディシジョンテーブル新規追加画面</span><a class="headerlink" href="#id8" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <div class="figure align-center" id="id9">
-<a class="reference internal image-reference" href="../_images/decision_table_20.png"><img alt="../_images/decision_table_20.png" src="../_images/decision_table_20.png" style="width: 1804.0px; height: 568.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/decision_table_20.png"><img alt="../_images/decision_table_20.png" src="../_images/decision_table_20.png" style="width: 1528.0px; height: 540.0px;" /></a>
 <p class="caption"><span class="caption-text">図 3.1-1-2 ディシジョンテーブルファイル(Tablesシート)</span><a class="headerlink" href="#id9" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <table class="colwidths-given docutils align-default" id="id10">
@@ -164,7 +165,7 @@
 <tbody>
 <tr class="row-even"><td><p>1</p></td>
 <td><p>ファイル名</p></td>
-<td><p>ディシジョンテーブル画面で新規追加および複製時に自動生成された文字列がエクセルファイルのファイル名になります。</p></td>
+<td><p>ディシジョンテーブル画面で新規追加および複製時に自動生成された文字列がエクセルファイルの初期ファイル名になります。</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
 <td><p>コメント部</p></td>
@@ -232,10 +233,11 @@
 <li><p>アクションを実行してよいか、実行する前に事前承認メールを送る設定をすることができます。</p></li>
 <li><p>アクションの実行が失敗した場合何回リトライするか、リトライの間隔および回数を設定することができます。</p></li>
 <li><p>同一アクションを何度も実行するのを避けたい場合、抑止の間隔および回数を設定することで制御できます。</p></li>
-<li><p>アクション種別ごとに記入方法が異なる場合があります。設定内容に合わせて記入してください。</p></li>
+<li><p>アクション種別ごとに記入方法が異なります。設定内容に合わせて記入してください。</p></li>
+<li><p>複数のルールをグルーピングすることで、コリレーション機能を利用することができます。</p></li>
 </ul>
 <div class="figure align-center" id="id13">
-<a class="reference internal image-reference" href="../_images/decision_table_32.png"><img alt="../_images/decision_table_32.png" src="../_images/decision_table_32.png" style="width: 2000.0px; height: 567.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/decision_table_32.png"><img alt="../_images/decision_table_32.png" src="../_images/decision_table_32.png" style="width: 1507.0px; height: 566.0px;" /></a>
 <p class="caption"><span class="caption-text">図 3.1-4-1 ディシジョンテーブルファイル(Tablesシート)の条件部</span><a class="headerlink" href="#id13" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <div class="section" id="id5">
@@ -263,7 +265,7 @@
 <div class="line-block">
 <div class="line"><strong>アクションパラメータ情報（必須）※ダブルクオーテーションは使用不可</strong></div>
 </div>
-<p>記入方法は後述の <a class="reference internal" href="#labelcap1"><span class="std std-ref">ITAドライバ</span></a> および <a class="reference internal" href="#labelcap2"><span class="std std-ref">mailドライバ</span></a> をご参照ください。</p>
+<p>記入方法は後述の <a class="reference internal" href="#labelcap1"><span class="std std-ref">ITAドライバ</span></a> 、 <a class="reference internal" href="#labelcap2"><span class="std std-ref">mailドライバ</span></a> および <a class="reference internal" href="#labelcap3"><span class="std std-ref">ServiceNowドライバ</span></a> をご参照ください。</p>
 <div class="line-block">
 <div class="line"><strong>アクション実行前パラメータ情報（必須）※ダブルクオーテーションは使用不可 ※不要の場合は「X」を定義</strong></div>
 </div>
@@ -331,6 +333,84 @@
 </ul>
 <p><strong>記述例</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>条件回数（必須）</strong></div>
+</div>
+<ul class="simple">
+<li><p>アクションの条件回数を記述します。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>条件期間(秒)（必須）</strong></div>
+</div>
+<ul class="simple">
+<li><p>アクションの条件期間を記述します。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">300</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>大グループ（必須）</strong></div>
+</div>
+<ul class="simple">
+<li><p>グルーピングしたいルールに対してグループ名を記述します。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">group1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>優先順位（必須）</strong></div>
+</div>
+<ul class="simple">
+<li><p>大グループでグルーピングしたルールの優先順位を記述します。1が最優先になります。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>小グループ（必須）</strong></div>
+</div>
+<ul class="simple">
+<li><p>大グループからさらにグルーピングしたいルールに対してグループ名を記述します。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">group10</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>優先順位（必須）</strong></div>
+</div>
+<ul class="simple">
+<li><p>小グループでグルーピングしたルールの優先順位を記述します。1が最優先になります。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span>
 </pre></div>
 </div>
 </div>
@@ -449,6 +529,19 @@
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MAIL_NAME</span><span class="o">=</span><span class="n">oasetest</span><span class="p">,</span><span class="n">MAIL_TO</span><span class="o">=</span><span class="p">{{</span> <span class="n">VAR_条件名</span> <span class="p">}},</span><span class="n">MAIL_CC</span><span class="o">=</span><span class="n">ccc</span><span class="nd">@ccc</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_BCC</span><span class="o">=</span><span class="n">ddd</span><span class="nd">@ddd</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_TEMPLATE</span><span class="o">=</span><span class="n">test_template</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="servicenow">
+<span id="labelcap3"></span><h4>ServiceNowドライバ<a class="headerlink" href="#servicenow" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="line-block">
+<div class="line"><strong>アクションパラメータ情報（必須）※ダブルクオーテーションは使用不可</strong></div>
+</div>
+<ul class="simple">
+<li><p>SERVICENOW_NAMEは必須です。OASE画面のシステム-アクション設定-ServiceNow_driverの名前と紐づけます。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SERVICENOW_NAME</span><span class="o">=</span><span class="n">ServiceNowTest</span>
 </pre></div>
 </div>
 </div>
