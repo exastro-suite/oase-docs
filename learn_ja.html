@@ -174,8 +174,8 @@ Learn</h1>
 <section id="introduction">
   <div class="sectionInner">
 
-    <h2><em>Exastro Operation Autonomy Support Engine</em> を導入しよう</h2>
-    <p>Exastro Operation Autonomy Support Engineのインストール方法から基本的な画面の説明を行います。</p>
+    <h2><em>Exastro OASE</em> を導入しよう</h2>
+    <p>Exastro OASEのインストール方法から基本的な画面の説明を行います。</p>
     
     <div class="tabContents subTabContents">
       <div class="tabMenu">
@@ -268,16 +268,56 @@ Learn</h1>
 <section id="quickStart">
   <div class="sectionInner">
 
-    <h2><em>Exastro Operation Autonomy Support Engine</em> を触ってみよう</h2>
-    <h3><em>Exastro Operation Autonomy Support Engine</em> クイックスタート</h3>
+    <h2><em>Exastro OASE</em> を触ってみよう</h2>
+    
+    <h3><em>Exastro OASE</em> Learn MAP</h3>
+    
+    <div class="learnMapImage">
+      <div class="learnMapImageInner">
+        <div class="learnMapBase"><img src="./asset/img/learn_map/learn_map_ja.png" alt="Learn MAP"></div>
+        <ul class="learnMapLinkList">
+          <li class="learnMapLinkItem"><a href="#quickStartMain" class="learnMapLink learnMapLinkQuickstart anker" data-type="Quickstart"><img src="./asset/img/learn_map/learn_map_btn_quickstart_ja.png" alt="クイックスタート※"></a></li>
+          <li class="learnMapLinkItem"><span class="learnMapLink learnMapLinkBase anker" data-type="Base"><img src="./asset/img/learn_map/learn_map_btn_base.png" alt="Exastro OASE Base※"><span class="learnMapComingSoon"></span></span></li>
+          <li class="learnMapLinkItem"><span class="learnMapLink learnMapLinkZabbix" data-type="Zabbix"><img src="./asset/img/learn_map/learn_map_btn_zabbix_ja.png" alt="Zabbix連携編※"><span class="learnMapComingSoon"></span></span></li>
+          <li class="learnMapLinkItem"><span class="learnMapLink learnMapLinkPrometheus" data-type="Prometheus"><img src="./asset/img/learn_map/learn_map_btn_prometheus_ja.png" alt="Prometheus連携編※"><span class="learnMapComingSoon"></span></span></li>
+          <li class="learnMapLinkItem"><span class="learnMapLink learnMapLinkCloudWatch" data-type="CloudWatch"><img src="./asset/img/learn_map/learn_map_btn_cloudwatch_ja.png" alt="CloudWatch連携編※"><span class="learnMapComingSoon"></span></span></li>
+        </ul>
+        <ul class="learnMapAreaList">
+          <li class="learnMapAreaItem learnMapAreaQuickstart" data-type="Quickstart"><img src="./asset/img/learn_map/learn_map_area_mail.png" alt="クイックスタート"></li>
+          <li class="learnMapAreaItem learnMapAreaBase" data-type="Base"><img src="./asset/img/learn_map/learn_map_area_ita.png" alt="Exastro OASE Base"></li>
+          <li class="learnMapAreaItem learnMapAreaZabbix" data-type="Zabbix"><img src="./asset/img/learn_map/learn_map_area_zabbix.png" alt="Zabbix連携編"></li>
+          <li class="learnMapAreaItem learnMapAreaPrometheus" data-type="Prometheus"><img src="./asset/img/learn_map/learn_map_area_prometheus.png" alt="Prometheus連携編"></li>
+          <li class="learnMapAreaItem learnMapAreaCloudWatch" data-type="CloudWatch"><img src="./asset/img/learn_map/learn_map_area_cloudwatch.png" alt="CloudWatch連携編"></li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      // 表示を切り替える
+      (function(){
+        $('.learnMapLink').on({
+          'mouseenter touchstart': function(){
+            const type = $( this ).attr('data-type');
+            $('.learnMapAreaItem').not('[data-type="' + type + '"]').hide();
+            $('.learnMapLink').not('[data-type="' + type + '"]').css('opacity','0.2');
+          },
+          'mouseleave touchend': function(){
+            $('.learnMapAreaItem').show();
+            $('.learnMapLink').css('opacity','1');
+          },
+        })
+      }());
+    </script>
+    
+    <h3 id="quickStartMain"><em>Exastro OASE</em> クイックスタート</h3>
     <div class="viewDocument" data-document="Quick_start"></div>
-    <p>Operation Autonomy Support Engineのインタフェースをスムーズに体感頂くために、クイックスタートをご用意しました。</p>
-    <p>Operation Autonomy Support Engineではいくつかのソフトウェアと連携が可能ですが、それらの中で設定が簡易であるメールソフトとの連携を体感頂けます。</p>
-    <p>また Operation Autonomy Support Engineは「監視アダプタによるキック」および「ITAと連動したアクション実行」といった最重要な機能を提供していますが、クイックスタートではスムーズに体感頂くために、敢えてこれらの機能の活用を割愛しています。</p>
-    <p><a href="asset/Learn_ja/OASE-quickstart_ja.pdf" class="download" download="Operation Autonomy Support Engine クイックスタート"><i class="fas fa-file-pdf"></i>  マニュアルをダウンロード<i class="note">(PDF)</i></a></p>
+    <p>OASEのインタフェースをスムーズに体感頂くために、クイックスタートをご用意しました。</p>
+    <p>OASEではいくつかのソフトウェアと連携が可能ですが、それらの中で設定が簡易であるメールソフトとの連携を体感頂けます。</p>
+    <p>また OASEは「監視アダプタによるキック」および「ITAと連動したアクション実行」といった最重要な機能を提供していますが、クイックスタートではスムーズに体感頂くために、敢えてこれらの機能の活用を割愛しています。</p>
+    <p><a href="asset/Learn_ja/OASE-quickstart_ja.pdf" class="download" download="Exastro OASE クイックスタート"><i class="fas fa-file-pdf"></i>  マニュアルをダウンロード<i class="note">(PDF)</i></a></p>
 
   </div>
 </section>
+
 <!-- InstanceEndEditable -->
 </div>
 

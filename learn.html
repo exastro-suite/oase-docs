@@ -193,7 +193,46 @@ Learn</h1>
   <div class="sectionInner">
 
     <h2>Getting started with <em>Exastro Operation Autonomy Support Engine</em></h2>
-    <h3><em>Exastro Operation Autonomy Support Engine</em> quickstart</h3>
+    
+    <h3><em>Exastro OASE</em> Learn MAP</h3>
+    
+    <div class="learnMapImage">
+      <div class="learnMapImageInner">
+        <div class="learnMapBase"><img src="./asset/img/learn_map/learn_map_en.png" alt="Learn MAP"></div>
+        <ul class="learnMapLinkList">
+          <li class="learnMapLinkItem"><a href="#quickStartMain" class="learnMapLink learnMapLinkQuickstart anker" data-type="Quickstart"><img src="./asset/img/learn_map/learn_map_btn_quickstart_en.png" alt="クイックスタート※"></a></li>
+          <li class="learnMapLinkItem"><span class="learnMapLink learnMapLinkBase anker" data-type="Base"><img src="./asset/img/learn_map/learn_map_btn_base.png" alt="Exastro OASE Base※"><span class="learnMapComingSoon"></span></span></li>
+          <li class="learnMapLinkItem"><span class="learnMapLink learnMapLinkZabbix" data-type="Zabbix"><img src="./asset/img/learn_map/learn_map_btn_zabbix_en.png" alt="Zabbix連携編※"><span class="learnMapComingSoon"></span></span></li>
+          <li class="learnMapLinkItem"><span class="learnMapLink learnMapLinkPrometheus" data-type="Prometheus"><img src="./asset/img/learn_map/learn_map_btn_prometheus_en.png" alt="Prometheus連携編※"><span class="learnMapComingSoon"></span></span></li>
+          <li class="learnMapLinkItem"><span class="learnMapLink learnMapLinkCloudWatch" data-type="CloudWatch"><img src="./asset/img/learn_map/learn_map_btn_cloudwatch_en.png" alt="CloudWatch連携編※"><span class="learnMapComingSoon"></span></span></li>
+        </ul>
+        <ul class="learnMapAreaList">
+          <li class="learnMapAreaItem learnMapAreaQuickstart" data-type="Quickstart"><img src="./asset/img/learn_map/learn_map_area_mail.png" alt="クイックスタート"></li>
+          <li class="learnMapAreaItem learnMapAreaBase" data-type="Base"><img src="./asset/img/learn_map/learn_map_area_ita.png" alt="Exastro OASE Base"></li>
+          <li class="learnMapAreaItem learnMapAreaZabbix" data-type="Zabbix"><img src="./asset/img/learn_map/learn_map_area_zabbix.png" alt="Zabbix連携編"></li>
+          <li class="learnMapAreaItem learnMapAreaPrometheus" data-type="Prometheus"><img src="./asset/img/learn_map/learn_map_area_prometheus.png" alt="Prometheus連携編"></li>
+          <li class="learnMapAreaItem learnMapAreaCloudWatch" data-type="CloudWatch"><img src="./asset/img/learn_map/learn_map_area_cloudwatch.png" alt="CloudWatch連携編"></li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      // 表示を切り替える
+      (function(){
+        $('.learnMapLink').on({
+          'mouseenter touchstart': function(){
+            const type = $( this ).attr('data-type');
+            $('.learnMapAreaItem').not('[data-type="' + type + '"]').hide();
+            $('.learnMapLink').not('[data-type="' + type + '"]').css('opacity','0.2');
+          },
+          'mouseleave touchend': function(){
+            $('.learnMapAreaItem').show();
+            $('.learnMapLink').css('opacity','1');
+          },
+        })
+      }());
+    </script>
+    
+    <h3 id="quickStartMain"><em>Exastro Operation Autonomy Support Engine</em> quickstart</h3>
     <div class="viewDocument" data-document="Quick_start"></div>
     <p>This is a quickstart manual for users to familiarize with the interface of Operation Autonomy Support Engine.</p>
     <p>Operation Autonomy Support Engine can associate with several software, users can experience association with mail system which is easy to setup among the software by following this manual.</p>

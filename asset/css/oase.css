@@ -170,3 +170,84 @@ background-color: #F5FCFC;
 #faqContent .a .mark {
 color: #00A9AC;
 }
+
+
+
+
+#quickStart .learnMapImageInner {
+position: relative;
+z-index: 0;
+}
+#articleBody #quickStart .learnMapAreaList,
+#articleBody #quickStart .learnMapLinkList {
+position: absolute;
+left: 0; top: 0;
+width: 100%; height: 100%;
+margin: 0; padding: 0;
+list-style: none;
+}
+#quickStart .learnMapAreaItem {
+position: absolute;
+left: 0; top: 0;
+z-index: 1;
+width: 100%; height: 100%;
+}
+#quickStart img {
+display: block;
+}
+#quickStart .learnMapLink {
+position: absolute;
+z-index: 10;
+}
+#quickStart .learnMapLink.learnMapLinkZabbix,
+#quickStart .learnMapLink.learnMapLinkPrometheus,
+#quickStart .learnMapLink.learnMapLinkCloudWatch {
+width: 18.961%;
+left: 12.554%;
+}
+#quickStart .learnMapLink.learnMapLinkZabbix { top: 33.908%; }
+#quickStart .learnMapLink.learnMapLinkPrometheus { top: 59.040%; }
+#quickStart .learnMapLink.learnMapLinkCloudWatch { top: 84.173%; }
+
+
+#quickStart .learnMapComingSoon {
+display: block;
+position: absolute;
+right: -12%; top: 20%;
+width: 28%; padding-bottom: 20%;
+background: url("../img/learn_map/learn_map_comingsoon.png") left top no-repeat;
+background-size: cover;
+}
+#quickStart .learnMapLinkBase .learnMapComingSoon {
+width: 23%; padding-bottom: 16%;
+}
+
+#quickStart .learnMapLink.learnMapLinkQuickstart,
+#quickStart .learnMapLink.learnMapLinkBase {
+width: 23.344%;
+left: 38.252%;
+}
+#quickStart .learnMapLink.learnMapLinkQuickstart { top: 41.963%; }
+#quickStart .learnMapLink.learnMapLinkBase { top: 67.301%; }
+
+#quickStart span.learnMapLink {
+cursor: no-drop;
+}
+#quickStart a.learnMapLink:hover {
+transform: scale(1.02);
+}
+#quickStart a.learnMapLink:active {
+transform: scale(.98);
+}
+@media screen and ( max-width: 640px ) {
+#quickStart .learnMapImage {
+overflow: auto;
+}
+#quickStart .learnMapImageInner {
+width: 640px;
+}
+#articleBody #quickStart .learnMapAreaList,
+#articleBody #quickStart .learnMapLinkList {
+width: 640px;
+}
+}
