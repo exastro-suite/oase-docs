@@ -1,23 +1,23 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>インストール手順 &#8212; OASE_docs 1.3.0 ドキュメント</title>
-    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
+    <title>インストール手順 &#8212; OASE_docs 1.3.1 ドキュメント</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
   
     <script type="text/javascript" src="../_static/exastro_documents.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -53,7 +53,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.3.0</dd>
+        <dd>1.3.1</dd>
       </dl>
     </div>
     
@@ -372,16 +372,21 @@
 <td><p>OASEをインストールするサーバのOS（CentOS7/RHEL7/RHEL8）</p></td>
 </tr>
 <tr class="row-odd"><td><p>24</p></td>
+<td><p>oase_timezone</p></td>
+<td></td>
+<td><p>OASEのtimezone設定</p></td>
+</tr>
+<tr class="row-even"><td><p>24</p></td>
 <td><p>oase_domain</p></td>
 <td><p>exastro-oase.local</p></td>
 <td><p>OASEのドメイン名</p></td>
 </tr>
-<tr class="row-even"><td><p>25</p></td>
+<tr class="row-odd"><td><p>25</p></td>
 <td><p>certificate_path</p></td>
 <td></td>
 <td><p>ユーザ指定のSSLサーバ証明書に使用するファイルのファイルパス(ユーザ指定のSSL証明書使用時のみ入力。絶対パスで指定してください)</p></td>
 </tr>
-<tr class="row-odd"><td><p>26</p></td>
+<tr class="row-even"><td><p>26</p></td>
 <td><p>private_key_path</p></td>
 <td></td>
 <td><p>ユーザ指定のSSL秘密鍵に使用するファイルのファイルパス(ユーザ指定のSSL秘密鍵使用時のみ入力。絶対パスで指定してください)</p></td>
@@ -392,7 +397,7 @@
 <p class="admonition-title">注釈</p>
 <div class="line-block">
 <div class="line">OASEのログイン画面、ログイン画面にあるパスワードをお忘れの場合から遷移されるパスワード変更画面、</div>
-<div class="line">インストールで登録されるユーザ、グループは、インストール時のOASEの言語設定により、日本語または英語を表示します。</div>
+<div class="line">インストールで登録されるユーザ、グループ、デシジョンテーブルファイル、一括テスト用Excelファイルはインストール時のOASEの言語設定により、日本語または英語を表示します。</div>
 <div class="line">それ以外に関しては個人設定画面からユーザ毎に日本語、英語を選択/表示できます。</div>
 </div>
 </div>
@@ -525,6 +530,10 @@ oase_language:ja
 # Select Operation System. (&quot;CentOS7&quot; or &quot;RHEL7&quot; or &quot;RHEL8&quot;)
 # e.g) oase_os:RHEL7
 oase_os:RHEL7
+
+# Enter time_zone.
+# e.g) time_zone:Asia/Tokyo
+oase_timezone:Asia/Tokyo
 
 
 <span class="gh">##############################</span>
