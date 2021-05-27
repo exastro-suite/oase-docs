@@ -12,7 +12,7 @@
 </script>
 <!-- InstanceParam name="pageLanguage" type="text" value="ja" -->
 <!-- InstanceParam name="pageType" type="text" value="article" -->
-<!-- InstanceParam name="pageTitle" type="text" value="learn" -->
+<!-- InstanceParam name="pageTitle" type="text" value="webinar" -->
 
 
 <meta charset="utf-8">
@@ -22,7 +22,7 @@
 <meta name="theme-color" content="#002B62">
 <meta http-equiv="content-language" content="ja">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Learn | Exastro Operation Autonomy Support Engine</title>
+<title>Webinar | Exastro Operation Autonomy Support Engine</title>
 <!-- InstanceEndEditable -->
 <!-- Stylesheet and JavaScript -->
 <link rel="stylesheet" type="text/css" href="../docs/asset/css/common.css">
@@ -37,8 +37,8 @@
 <link rel="stylesheet" type="text/css" href="asset/css/oase.css">
 <script src="../docs/asset/js/article.js"></script>
 
-<link rel="alternate" hreflang="en" href="https://exastro-suite.github.io/oase-docs/learn.html">
-<link rel="alternate" hreflang="ja" href="https://exastro-suite.github.io/oase-docs/learn_ja.html">
+<link rel="alternate" hreflang="en" href="https://exastro-suite.github.io/oase-docs/webinar.html">
+<link rel="alternate" hreflang="ja" href="https://exastro-suite.github.io/oase-docs/webinar_ja.html">
 
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="shortcut icon" href="favicon.ico">
@@ -60,18 +60,16 @@
 
 
 <!-- InstanceBeginEditable name="head" -->
-<script src="../docs/asset/js/view_documents.js"></script>
 <script>
-$(function(){
-  var url = 'https://exastro-suite.github.io/oase-docs/asset/json/documents.json';
-  viewDocuments( url );
+$( function() {
+  youTubeIframeAPISet();
 });
 </script>
 <!-- InstanceEndEditable -->
 
 </head>
 
-<body id="article" class="oase learn ja">
+<body id="article" class="oase webinar ja">
 
 <div id="container">
 
@@ -134,7 +132,7 @@ $(function(){
 </ul>
 
 <ul id="languageMenu">
-<li><!-- InstanceBeginEditable name="EditHeaderLanguageMenuArea" --><a href="./learn.html" class="en">English</a>
+<li><!-- InstanceBeginEditable name="EditHeaderLanguageMenuArea" --><!--<a href="./webinar.html" class="en">English</a>-->
 <!-- InstanceEndEditable --></li>
 <li><span>Japanese</span></li>
 </ul>
@@ -156,8 +154,7 @@ $(function(){
 <div class="sectionInner">
 <!-- InstanceBeginEditable name="EditContentHeaderArea" -->
 <h1><small>Exastro OASE</small><br>
-Learn</h1>
-<!--<p></p>-->
+Webinar</h1>
 <!-- InstanceEndEditable -->
 </div>
 </section>
@@ -167,157 +164,114 @@ Learn</h1>
 <!-- InstanceBeginEditable name="EditContentBodyArea" -->
 <nav id="contentsMenu">
   <ul>
-    <li><a href="#introduction" class="touch anker">導入手順 <i class="fas fa-angle-down"></i></a></li>
-    <li><a href="#quickStart" class="touch anker">クイックスタート <i class="fas fa-angle-down"></i></a></li>
+    <li><a href="#webinarList" class="touch anker">Webinar list <i class="fas fa-angle-down"></i></a></li>
+    <li><a href="#c01" class="touch anker">C05 基本的な使い方 <i class="fas fa-angle-down"></i></a></li>
   </ul>
 </nav>
 
-<section id="introduction">
+<section id="webinarList">
   <div class="sectionInner">
+    <h2><em>Exastro OASE</em> Webinar list</h2>
+    <div class="exTable">
+      <table class="webinarTable">
+        <thead>
+          <tr>
+            <th class="blank"></th>
+            <th><span class="webinarNumber">C05</span> 基本的な使い方</th>
+            <th><span class="webinarNumber">C06</span> 外部ソフトウェア連携</th>
+            <th><span class="webinarNumber">C07</span> 特定用途</th>
+            <th><span class="webinarNumber">C08</span> AIOps</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="webinarTableLevel1">
+            <th><strong>Lv1</strong><br><span class="webinarLevel1">初級編</span></th>
+            <td><a href="#Ex-C01-Lv1" class="touch anker">Ex-C05-Lv1 <i class="fas fa-check-circle"></i></a>
+            Exastroで実現する障害対応の自動化（Zabbix × OASE × ITA）</td>
+            <td><span class="webinarComingSoon">Ex-C06-Lv1</span>
+            CloudWatch連携でAWSでの運用をもっと楽に♪</td>
+            <td class="comingSoon" rowspan="3" colspan="2">Coming Soon</td>
+          </tr>
+          <tr class="webinarTableLevel2">
+            <th><strong>Lv2</strong><br><span class="webinarLevel2">中級編</span></th>
+            <td><span class="webinarComingSoon">Ex-C01-Lv2</span>
+            こんな使い方も！<br>
+            Exastro OASEの活用法♪<br>
+            （ITAのメッセージ抽出定義、調査フローを挟む…等）</td>
+            <td><span class="webinarComingSoon">Ex-C02-Lv2</span>
+            Prometheus連携で話題のメトリクス監視との連携をしてみよう♪</td>
+          </tr>
+          <tr class="webinarTableLevel3">
+            <th><strong>Lv3</strong><br><span class="webinarLevel3">上級編</span></th>
+            <td><span class="webinarComingSoon">Ex-C01-Lv3</span>
+            Exastro OASEで実現する！<br>
+            コリレーション機能</td>
+            <td><span class="webinarComingSoon">Ex-C02-Lv3</span>
+            OASE × ServiceNowで実現するITOMの世界</td>
+          </tr>
+        </tbody>
+      </table>    
+    </div>
+  </div>
+</section>
 
-    <h2><em>Exastro OASE</em> を導入しよう</h2>
-    <p>Exastro OASEのインストール方法から基本的な画面の説明を行います。</p>
-    
-    <div class="tabContents subTabContents">
-      <div class="tabMenu">
-        <ul class="tabMenuList">
-          <li class="tabMenuItem"><a class="tabMenuLink touch" href="#install_online">Online</a></li>
-          <li class="tabMenuItem"><a class="tabMenuLink touch" href="#install_offline">Offline</a></li>
-          <li class="tabMenuItem"><a class="tabMenuLink touch" href="#install_versionup">Version up</a></li>
-          <li class="tabMenuItem"><a class="tabMenuLink touch" href="#install_container">Container</a></li>
-        </ul>
-      </div>
-      <div id="install_online" class="tabContent">
-        <h3>オンラインインストール</h3>
-        <div class="viewDocument" data-document="Install_Online"></div>
-        <p style="text-align:left;">お手持ちの環境に OASEをすぐにインストールするためのインストールマニュアルです。RedHat系Linuxディストリビューションに対応しており、インターネットに接続できる必要があります。</p>
+<section id="c01">
+  <div class="sectionInner">
+    <h2><span class="webinarNumber">C05</span> 基本的な使い方</h2>
+    <ul class="webinarList">
 
-        <p style="text-align:left;">インストール完了後、下記の OASEクイックスタートを始めれば、すぐにOASEの魅力的なインターフェースを体験いただくことが可能です。</p>
+<!-- Ex-C01-Lv1 -->
+<li class="webinarItem" id="Ex-C01-Lv1">
+  <div class="webinarContainer">
 
-        <p style="text-align:left;">またOASEインストール前の準備につきましては、<a href="https://exastro-suite.github.io/oase-docs/documents_ja.html" title="OASEドキュメント">こちら</a>をご参照ください。</p>
-        <p><a href="asset/Learn_ja/OASE-online-install_ja.pdf" class="download" download="Operation Autonomy Support Engine オンラインインストール"><i class="fas fa-file-pdf"></i>  マニュアルをダウンロード<i class="note">(PDF)</i></a></p>
+    <div class="webinarVersionSelect">
+      <div class="webinarVersionSelectTitle">OASE Version <i class="fas fa-arrow-circle-right"></i></div>
+      <ul class="webinarVersionList">
+        <li class="webinarVersionItem"><a href="#c05l01v130" class="webinarVersionLink">1.3.0</a></li>
+      </ul>
+    </div>
+    <div id="c05l01v130" class="webinarContent">
+      <div class="webinarOverview">
+        <div class="webinarMeta">
+          <div class="webinarLevel"><span class="webinarLevel1">Lv1 初級編</span></div>
+          <div class="webinarCode"><span class="webinarCodeText">Ex-C05-Lv1</span></div>
+        </div>
+        <h3 class="webinarTitle">Exastroで実現する障害対応の自動化（Zabbix × OASE × ITA）</h3>
+        <p class="webinarText">Exastro OASEの概要と、オールインワン構成でのインストール、および活用方法をデモを交えて解説しております。Exastro OASEを初めてお使いになる方にピッタリのビギナーコースです。</p>
       </div>
-      <div id="install_offline" class="tabContent">
-        <h3>オフラインインストール</h3>
-        <div class="viewDocument" data-document="Install_Offline"></div>
-        <p>お手持ちの環境によっては、外部との通信を制限されている場合がございます。</p>
-        <p>このような環境下の場合でも OASEをご利用いただけるよう、オフラインインストール手順をご紹介いたします。</p>
-        <p><a href="asset/Learn_ja/OASE-offline-install_ja.pdf" class="download" download="Operation Autonomy Support Engine オフラインインストール"><i class="fas fa-file-pdf"></i>  マニュアルをダウンロード<i class="note">(PDF)</i></a></p>
-      </div>
-      <div id="install_versionup" class="tabContent">
-        <h3>バージョンアップ</h3>
-        <div class="viewDocument" data-document="Install_Versionup"></div>
-        <p>OASEはバージョンアップすることが可能です。<br>
-        バージョンアップはVer1.2.0以降のオールインワン構成をサポートしています。</p>
-        <p><a href="asset/Learn_ja/OASE-versionup-install_ja.pdf" class="download" download="Operation Autonomy Support Engine バージョンアップインストール"><i class="fas fa-file-pdf"></i>  マニュアルをダウンロード<i class="note">(PDF)</i></a></p>
-      </div>
-      <div id="install_container" class="tabContent">
-        <h3>コンテナインストール</h3>
-        <div class="rightImage image33"><img src="../docs/asset/img/install_container_docker.png" alt="Container"></div>
-        <p>お手持ちのコンテナ環境にOASEをすぐに起動できます。<br>
-        インターネットに接続できる必要があります。<br>
-        コンテナ起動後、下記のOASEクイックスタートを始めれば、すぐにOASEの魅力的なインターフェースを体験いただくことが可能です。</p>
-
-        <div class="stepContents">
-          <ol class="stepContensList">
-            <li class="stepContentItem">
-              <dl class="stepContent">
-                <dt class="stepContentTitle"><span class="stepContentNumber">Step - 1</span> :コンテナの起動</dt>
-                <dd class="stepContentBody">
-                  <p class="stepContentBodyHeading" style="color:#2496ed;">Docker</p>
-                  <pre style="white-space: normal;"># docker run --privileged --add-host=exastro-oase:127.0.0.1 -d -p 8080:80 -p 10443:443 --name exastro01 exastro/oase:x.x.x</pre>
-                  <p>※ポート番号(8080,10443)とバージョン(x.x.x)は適宜変更してください。</p>
-                </dd>
-              </dl>
-            </li>
-            <li class="stepContentItem">
-              <dl class="stepContent">
-                <dt class="stepContentTitle"><span class="stepContentNumber">Step - 2</span>Operation Autonomy Support Engineコンソールにアクセス</dt>
-                <dd class="stepContentBody">
-                  <p>https://<span class="dummyVariable">[Container-Host-IP]</span>:10443/oase_web/top/login or http://<span class="dummyVariable">[Container-Host-IP]</span>:8080/oase_web/top/login</p>
-                  <p>※ポート番号(8080,10443)は適宜変更してください。</p>
-                </dd>
-              </dl>
-            </li>
-            <li class="stepContentItem">
-              <dl class="stepContent">
-                <dt class="stepContentTitle"><span class="stepContentNumber">Step - 3</span> :ログイン</dt>
-                <dd class="stepContentBody">
-                  <p>ログイン画面が表示されたら、指定のログインID、初期パスワードを入力して、[ログイン]ボタンをクリックしてください。</p>
-                  <p>・ログインID ： administrator<br>
-                  ・初期パスワード ： oaseoaseoase</p>
-                  <p>※インストール後に初めてログインした場合は、「パスワード変更画面」に遷移します。<br>
-                  ※パスワード変更画面から、初期パスワードを変更してください。</p>
-                </dd>
-              </dl>
-            </li>
-            <li class="stepContentItem">
-              <dl class="stepContent">
-                <dt class="stepContentTitle">注意事項</dt>
-                <dd class="stepContentBody">
-                  <p>イメージの詳細は<a href="https://hub.docker.com/r/exastro/oase" target="_blank">Docker-Hub</a>のREADMEを参照ください。</p>
-                </dd>
-              </dl>
-            </li>
-          </ol>
+      <div class="webinarVideo">
+        <div class="youtubeEmbed" data-embed-id="vtOXJgAXyy0">
+          <div id="vtOXJgAXyy0"></div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="quickStart">
-  <div class="sectionInner">
-
-    <h2><em>Exastro OASE</em> を触ってみよう</h2>
-    
-    <h3><em>Exastro OASE</em> Learn MAP</h3>
-    
-    <div class="learnMapImage">
-      <div class="learnMapImageInner">
-        <div class="learnMapBase"><img src="./asset/img/learn_map/learn_map_ja.png" alt="Learn MAP"></div>
-        <ul class="learnMapLinkList">
-          <li class="learnMapLinkItem"><a href="#quickStartMain" class="learnMapLink learnMapLinkQuickstart anker" data-type="Quickstart"><img src="./asset/img/learn_map/learn_map_btn_quickstart_ja.png" alt="クイックスタート※"></a></li>
-          <li class="learnMapLinkItem"><span class="learnMapLink learnMapLinkBase anker" data-type="Base"><img src="./asset/img/learn_map/learn_map_btn_base.png" alt="Exastro OASE Base※"><span class="learnMapComingSoon"></span></span></li>
-          <li class="learnMapLinkItem"><span class="learnMapLink learnMapLinkZabbix" data-type="Zabbix"><img src="./asset/img/learn_map/learn_map_btn_zabbix_ja.png" alt="Zabbix連携編※"><span class="learnMapComingSoon"></span></span></li>
-          <li class="learnMapLinkItem"><span class="learnMapLink learnMapLinkPrometheus" data-type="Prometheus"><img src="./asset/img/learn_map/learn_map_btn_prometheus_ja.png" alt="Prometheus連携編※"><span class="learnMapComingSoon"></span></span></li>
-          <li class="learnMapLinkItem"><span class="learnMapLink learnMapLinkCloudWatch" data-type="CloudWatch"><img src="./asset/img/learn_map/learn_map_btn_cloudwatch_ja.png" alt="CloudWatch連携編※"><span class="learnMapComingSoon"></span></span></li>
-        </ul>
-        <ul class="learnMapAreaList">
-          <li class="learnMapAreaItem learnMapAreaQuickstart" data-type="Quickstart"><img src="./asset/img/learn_map/learn_map_area_mail.png" alt="クイックスタート"></li>
-          <li class="learnMapAreaItem learnMapAreaBase" data-type="Base"><img src="./asset/img/learn_map/learn_map_area_ita.png" alt="Exastro OASE Base"></li>
-          <li class="learnMapAreaItem learnMapAreaZabbix" data-type="Zabbix"><img src="./asset/img/learn_map/learn_map_area_zabbix.png" alt="Zabbix連携編"></li>
-          <li class="learnMapAreaItem learnMapAreaPrometheus" data-type="Prometheus"><img src="./asset/img/learn_map/learn_map_area_prometheus.png" alt="Prometheus連携編"></li>
-          <li class="learnMapAreaItem learnMapAreaCloudWatch" data-type="CloudWatch"><img src="./asset/img/learn_map/learn_map_area_cloudwatch.png" alt="CloudWatch連携編"></li>
-        </ul>
+      <div class="webinarDocument">
+        <table class="webinarDocumentTable">
+          <tbody>
+            <tr>
+              <th rowspan="3">教材(Qiita)</th>
+              <td><a href="https://qiita.com/wreath-vine/items/46b3838ce845bba9ae4e" target="_blank">Exastro OASE を最速でインストールする <i class="fas fa-external-link-alt"></i></a></td>
+            </tr>
+            <tr>
+              <td><a href="https://qiita.com/wreath-vine/items/d916764885ea8169cdda" target="_blank">Exastro OASE でマッチポンプした話(Web+Zabbix構築編) <i class="fas fa-external-link-alt"></i></a></td>
+            </tr>
+            <tr>
+              <td><a href="https://qiita.com/wreath-vine/items/003bb12e7096ec9070cb" target="_blank">Exastro OASE でマッチポンプした話(活用編) <i class="fas fa-external-link-alt"></i></a></td>
+            </tr>
+            <tr>
+              <th>アーカイブ(Youtube)</th>
+              <td><a href="https://youtu.be/vtOXJgAXyy0" target="_blank">[Ex-C05-Lv1]Exastro OASEで実現する障害対応の自動化 <i class="fas fa-external-link-alt"></i></a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-    <script>
-      // 表示を切り替える
-      (function(){
-        $('.learnMapLink').on({
-          'mouseenter touchstart': function(){
-            const type = $( this ).attr('data-type');
-            $('.learnMapAreaItem').not('[data-type="' + type + '"]').hide();
-            $('.learnMapLink').not('[data-type="' + type + '"]').css('opacity','0.2');
-          },
-          'mouseleave touchend': function(){
-            $('.learnMapAreaItem').show();
-            $('.learnMapLink').css('opacity','1');
-          },
-        })
-      }());
-    </script>
-    
-    <h3 id="quickStartMain"><em>Exastro OASE</em> クイックスタート</h3>
-    <div class="viewDocument" data-document="Quick_start"></div>
-    <p>OASEのインタフェースをスムーズに体感頂くために、クイックスタートをご用意しました。</p>
-    <p>OASEではいくつかのソフトウェアと連携が可能ですが、それらの中で設定が簡易であるメールソフトとの連携を体感頂けます。</p>
-    <p>また OASEは「監視アダプタによるキック」および「ITAと連動したアクション実行」といった最重要な機能を提供していますが、クイックスタートではスムーズに体感頂くために、敢えてこれらの機能の活用を割愛しています。</p>
-    <p><a href="asset/Learn_ja/OASE-quickstart_ja.pdf" class="download" download="Exastro OASE クイックスタート"><i class="fas fa-file-pdf"></i>  マニュアルをダウンロード<i class="note">(PDF)</i></a></p>
+  </div>
+</li>
 
+    </ul>
   </div>
 </section>
+
 
 <!-- InstanceEndEditable -->
 </div>
