@@ -25,6 +25,14 @@
 		"Quick_start": {
       "type": "pdf",
       "url": "Learn_ja/OASE-quickstart_ja.pdf"
+    },
+		"BASE_Tutorial": {
+      "type": "pdf",
+      "url": "Learn_ja/OASE-base_ITA-Driver_lecture_ja.pdf"
+    },
+		"BASE_Practice": {
+      "type": "none",
+      "url": ""
     }
 	},
 	"config": {
