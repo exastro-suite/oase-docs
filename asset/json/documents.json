@@ -31,8 +31,8 @@
       "url": "Learn_ja/OASE-base_ITA-Driver_lecture_ja.pdf"
     },
 		"BASE_Practice": {
-      "type": "none",
-      "url": ""
+      "type": "pdf",
+      "url": "Learn_ja/OASE-base_ITA-Driver_practice_ja.pdf"
     }
 	},
 	"config": {
