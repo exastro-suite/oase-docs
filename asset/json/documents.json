@@ -4,6 +4,14 @@
       "type": "pdf",
       "url": "Learn/OASE-online-install.pdf"
     },
+		"Install_Offline": {
+      "type": "pdf",
+      "url": "Learn/OASE-offline-install.pdf"
+    },
+		"Install_Versionup": {
+      "type": "pdf",
+      "url": "Learn/OASE-versionup-install.pdf"
+    },
 		"Quick_start": {
       "type": "pdf",
       "url": "Learn/OASE-quickstart.pdf"
