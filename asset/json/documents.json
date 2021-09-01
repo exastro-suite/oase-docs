@@ -41,6 +41,14 @@
 		"BASE_Practice": {
       "type": "pdf",
       "url": "Learn_ja/OASE-base_ITA-Driver_practice_ja.pdf"
+    },
+		"ZABBIX_Tutorial": {
+      "type": "pdf",
+      "url": "Learn_ja/OASE-zabbix_lecture_ja.pdf"
+    },
+		"ZABBIX_Practice": {
+      "type": "pdf",
+      "url": "Learn_ja/OASE-zabbix_practice_ja.pdf"
     }
 	},
 	"config": {
