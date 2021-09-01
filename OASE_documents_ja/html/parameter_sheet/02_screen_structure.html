@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>2 OASE 【ITAドライバ】メッセージ抽出定義画面のメニュー 、画面構成 &#8212; OASE_docs 1.3.1 ドキュメント</title>
+    <title>2 OASE 【ITAドライバ】メッセージ抽出定義画面のメニュー 、画面構成 &#8212; OASE_docs 1.4.0 ドキュメント</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     
@@ -53,7 +53,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.3.1</dd>
+        <dd>1.4.0</dd>
       </dl>
     </div>
     
@@ -80,6 +80,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../adapter_install/index.html">環境構築マニュアル -アダプタインストール編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../common/index.html">利用手順マニュアル -共通編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../login/index.html">利用手順マニュアル -ログイン画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dashboard/index.html">利用手順マニュアル -Dashboard画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../decision_table/index.html">利用手順マニュアル -ディシジョンテーブル画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../token/index.html">利用手順マニュアル -トークン払い出し画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
@@ -371,6 +372,15 @@
 <div class="line">・2100160002　/　メニュー項目作成情報</div>
 </div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<div class="line-block">
+<div class="line">ITA側で上記のメニューを更新してから、OASE側に反映されるまで長くて一時間ほどかかります。</div>
+<div class="line">すぐに反映したい場合は、OASE側のサービスを再起動する必要があります。</div>
+<div class="line">対処方法として、次のコマンドを実行します。</div>
+<div class="line">systemctl restart oase-ITA-collaboration</div>
+</div>
+</div>
 <table class="colwidths-given docutils align-default" id="id19">
 <caption><span class="caption-text">表 2.2-2-1 機能説明</span><a class="headerlink" href="#id19" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
@@ -415,11 +425,11 @@
 </tr>
 <tr class="row-odd"><td><p>8</p></td>
 <td><p>パラメータ名</p></td>
-<td><p>入力必須項目です。※パラメータシートの登録にはこの値が「ホスト名」に設定されているレコードが必要になります。</p></td>
+<td><p>対象ホストを指定したい場合は入力必須項目です。パラメータシートの登録にはこの値が「ホスト名」に設定されているレコードが必要になります。また、Terraform連携時等で「ホスト名」の事前設定がない場合は入力必須項目ではありません。</p></td>
 </tr>
 <tr class="row-even"><td><p>9</p></td>
 <td><p>抽出対象条件名</p></td>
-<td><p>入力必須項目です。32文字以内で入力してください。</p></td>
+<td><p>入力必須項目です。32文字以内で入力してください。入力項目は抽出対象となるディシジョンテーブルにて設定した条件名となります。</p></td>
 </tr>
 <tr class="row-odd"><td><p>10</p></td>
 <td><p>抽出方法1</p></td>

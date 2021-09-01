@@ -93,7 +93,7 @@
    :scale: 100%
    :align: center
 
-   図 3.1-4-1 ディシジョンテーブルファイル(Tablesシート)の条件部
+   図 3.1-4-1 ディシジョンテーブルファイル(Tablesシート)のアクション部
 
 共通
 ^^^^^
@@ -158,7 +158,22 @@
  X
 
 
-  
+| **アクション実行後パラメータ情報（必須）※ダブルクオーテーションは使用不可 ※不要の場合は「X」を定義**
+
+* SERVICENOW_NAMEは必須です。OASE画面のシステム-アクション設定-ServiceNow_driverの名前と紐づけます。
+* 不要の場合はXを記述してください。
+
+**記述例**
+
+::
+
+ SERVICENOW_NAME=ServiceNowTest
+
+::
+
+ X
+
+
 | **アクションリトライ間隔（必須）※「1」以上を定義して下さい。**
 
 * アクションのリトライ間隔を記述します。
@@ -443,13 +458,14 @@ ServiceNowドライバ
 | **アクションパラメータ情報（必須）※ダブルクオーテーションは使用不可**
 
 * SERVICENOW_NAMEは必須です。OASE画面のシステム-アクション設定-ServiceNow_driverの名前と紐づけます。
+* INCIDENT_STATUSは必須です。ServiceNowインシデント管理のレコードを新規登録する「OPEN」、またはインシデントを閉じる「CLOSE」を記述します。
 
 
 **記述例**
 
 ::
 
- SERVICENOW_NAME=ServiceNowTest
+ SERVICENOW_NAME=ServiceNowTest,INCIDENT_STATUS=OPEN
 
 
 (5)アクション条件部

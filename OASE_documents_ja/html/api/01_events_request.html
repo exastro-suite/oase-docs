@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>1 イベントリクエスト &#8212; OASE_docs 1.3.1 ドキュメント</title>
+    <title>1 イベントリクエスト &#8212; OASE_docs 1.4.0 ドキュメント</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     
@@ -53,7 +53,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.3.1</dd>
+        <dd>1.4.0</dd>
       </dl>
     </div>
     
@@ -80,6 +80,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../adapter_install/index.html">環境構築マニュアル -アダプタインストール編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../common/index.html">利用手順マニュアル -共通編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../login/index.html">利用手順マニュアル -ログイン画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dashboard/index.html">利用手順マニュアル -Dashboard画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../decision_table/index.html">利用手順マニュアル -ディシジョンテーブル画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../token/index.html">利用手順マニュアル -トークン払い出し画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
@@ -283,7 +284,7 @@
 <h3>1.2.3 レスポンスボディ<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <div class="line-block">
 <div class="line">リクエストを投入し内容に問題が無い場合は、「&quot;result&quot;: true」「&quot;msg&quot;: &quot;Accept request.&quot;」となり、</div>
-<div class="line">末尾に受け付けられたリクエストのトレースIDが表示されます。</div>
+<div class="line">末尾に受け付けられたリクエストのイベントシリアルNo.が表示されます。</div>
 <div class="line">内容に問題がある場合は「&quot;result&quot;: false」となり、処理が受け付けられません。</div>
 <div class="line">その場合は「&quot;msg&quot;」に記載の内容を確認し解消することでリクエストが受け付けられるようになります。</div>
 </div>
@@ -311,7 +312,7 @@
 </tr>
 <tr class="row-even"><td><p>3</p></td>
 <td><p>trace_id</p></td>
-<td><p>トレースID</p></td>
+<td><p>イベントシリアルNo.</p></td>
 </tr>
 </tbody>
 </table>

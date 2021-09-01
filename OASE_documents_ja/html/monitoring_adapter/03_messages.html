@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>3 OASE 監視アダプタ画面で表示されるメッセージ &#8212; OASE_docs 1.3.1 ドキュメント</title>
+    <title>3 OASE 監視アダプタ画面で表示されるメッセージ &#8212; OASE_docs 1.4.0 ドキュメント</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     
@@ -53,7 +53,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.3.1</dd>
+        <dd>1.4.0</dd>
       </dl>
     </div>
     
@@ -80,6 +80,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../adapter_install/index.html">環境構築マニュアル -アダプタインストール編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../common/index.html">利用手順マニュアル -共通編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../login/index.html">利用手順マニュアル -ログイン画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dashboard/index.html">利用手順マニュアル -Dashboard画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../decision_table/index.html">利用手順マニュアル -ディシジョンテーブル画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../token/index.html">利用手順マニュアル -トークン払い出し画面編-</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
@@ -269,6 +270,195 @@
 </tr>
 <tr class="row-odd"><td><p>MOSJA26147</p></td>
 <td><p>Zabbix項目に設定されていない文字が指定されています。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26213</p></td>
+<td><p>監視先が設定されていません。権限がある場合は、[監視先の追加]をクリックすると設定編集できます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26214</p></td>
+<td><p>条件に対応させるPrometheus項目名を入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26215</p></td>
+<td><p>必須項目(ディシジョンテーブル名)が選択されていません。選択してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26216</p></td>
+<td><p>編集内容を保存します。よろしいですか？</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26217</p></td>
+<td><p>他のPrometheusアダプタ名と重複しています。修正してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26218</p></td>
+<td><p>URIとディシジョンテーブル名の組み合わせが重複しています。URI、またはディシジョンテーブル名を変更してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26219</p></td>
+<td><p>データは既に削除されています。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26220</p></td>
+<td><p>データの削除に失敗しました。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26221</p></td>
+<td><p>必須項目(名前)が入力されていません。入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26222</p></td>
+<td><p>名前は64文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26223</p></td>
+<td><p>名前に使用できない文字が含まれています。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26224</p></td>
+<td><p>必須項目(URI)が入力されていません。入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26225</p></td>
+<td><p>URIは512文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26226</p></td>
+<td><p>URIに使用できない文字が含まれています。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26233</p></td>
+<td><p>ディシジョンテーブル名が存在しません。ディシジョンテーブル画面からファイルをダウンロードし、ルールの設定を行ってください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26236</p></td>
+<td><p>必須項目(Prometheus項目)が入力されていません。入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26237</p></td>
+<td><p>Prometheus項目に使用できない文字が含まれています。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26238</p></td>
+<td><p>Prometheus項目は128文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26239</p></td>
+<td><p>削除すると設定されている監視基盤へのメッセージ取得を行わなくなります。保存してもよろしいですか？</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26242</p></td>
+<td><p>クエリは128文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26243</p></td>
+<td><p>クエリに使用できない文字が含まれています。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26247</p></td>
+<td><p>必須項目(イベント発生日時)が入力されていません。入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26248</p></td>
+<td><p>イベント発生日時は128文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26249</p></td>
+<td><p>イベント発生日時に使用できない文字が含まれています。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26250</p></td>
+<td><p>必須項目(インスタンス情報)が入力されていません。入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26251</p></td>
+<td><p>インスタンス情報は128文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26252</p></td>
+<td><p>インスタンス情報に使用できない文字が含まれています。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26305</p></td>
+<td><p>ルールが削除されています。ルールを選び直してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26306</p></td>
+<td><p>監視先が設定されていません。権限がある場合は、[監視先の追加]をクリックすると設定編集できます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26315</p></td>
+<td><p>他のGrafanaアダプタ名と重複しています。修正してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26316</p></td>
+<td><p>URIとディシジョンテーブル名の組み合わせが重複しています。URI、またはディシジョンテーブル名を変更してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26317</p></td>
+<td><p>条件に対応させるGrafana項目名を入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26321</p></td>
+<td><p>パスワードは64文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26322</p></td>
+<td><p>ユーザ名は64文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26323</p></td>
+<td><p>必須項目(ディシジョンテーブル名)が選択されていません。選択してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26324</p></td>
+<td><p>編集内容を保存します。よろしいですか？</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26325</p></td>
+<td><p>削除すると設定されている監視基盤へのメッセージ取得を行わなくなります。保存してもよろしいですか？</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26326</p></td>
+<td><p>データは既に削除されています。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26327</p></td>
+<td><p>データの削除に失敗しました。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26328</p></td>
+<td><p>必須項目(名前)が入力されていません。入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26329</p></td>
+<td><p>名前は64文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26330</p></td>
+<td><p>名前に使用できない文字が含まれています。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26331</p></td>
+<td><p>必須項目(URI)が入力されていません。入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26332</p></td>
+<td><p>URIは512文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26333</p></td>
+<td><p>URIに使用できない文字が含まれています。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26334</p></td>
+<td><p>必須項目(ユーザ名)が入力されていません。入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26335</p></td>
+<td><p>ユーザ名は64文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26336</p></td>
+<td><p>ユーザ名に使用できない文字が含まれています。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26337</p></td>
+<td><p>必須項目(パスワード)が入力されていません。入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26338</p></td>
+<td><p>パスワードは64文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26339</p></td>
+<td><p>パスワードに使用できない文字が含まれています。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26340</p></td>
+<td><p>ディシジョンテーブル名が存在しません。ディシジョンテーブル画面からファイルをダウンロードし、ルールの設定を行ってください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26341</p></td>
+<td><p>必須項目(イベント発生日時)が入力されていません。入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26342</p></td>
+<td><p>イベント発生日時は128文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26343</p></td>
+<td><p>イベント発生日時に使用できない文字が含まれています。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26344</p></td>
+<td><p>必須項目(インスタンス情報)が入力されていません。入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26345</p></td>
+<td><p>インスタンス情報は128文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26346</p></td>
+<td><p>インスタンス情報に使用できない文字が含まれています。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26347</p></td>
+<td><p>保存されている条件名の数と入力されたGrafana項目の数が違います。もう一度お試しください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26348</p></td>
+<td><p>必須項目(Grafana項目)が入力されていません。入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26349</p></td>
+<td><p>Grafana項目は128文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA26350</p></td>
+<td><p>Grafana項目に使用できない文字が含まれています。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA26351</p></td>
+<td><p>Grafana項目に設定されていない文字が指定されています。</p></td>
 </tr>
 </tbody>
 </table>
