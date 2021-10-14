@@ -255,7 +255,7 @@ Learn</h1>
                 <dt class="stepContentTitle"><span class="stepContentNumber">Step - 1</span> :コンテナの起動</dt>
                 <dd class="stepContentBody">
                   <p class="stepContentBodyHeading" style="color:#2496ed;">Docker</p>
-                  <pre style="white-space: normal;"># docker run --privileged --add-host=exastro-oase:127.0.0.1 -d -p 8080:80 -p 10443:443 --name exastro01 exastro/oase:x.x.x</pre>
+                  <pre style="white-space: normal;"># docker run --hostname="exastro-oase" --privileged --add-host=exastro-oase:127.0.0.1 -d -p 8080:80 -p 10443:443 --name exastro01 exastro/oase:x.x.x</pre>
                   <p>※ポート番号(8080,10443)とバージョン(x.x.x)は適宜変更してください。</p>
                 </dd>
               </dl>
