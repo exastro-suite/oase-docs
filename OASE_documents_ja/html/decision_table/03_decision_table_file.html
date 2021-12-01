@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>3 OASE ディシジョンテーブルファイルの説明 &#8212; OASE_docs 1.4.0 ドキュメント</title>
+    <title>3 OASE ディシジョンテーブルファイルの説明 &#8212; OASE_docs 1.5.0 ドキュメント</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     
@@ -53,7 +53,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.4.0</dd>
+        <dd>1.5.0</dd>
       </dl>
     </div>
     
@@ -147,7 +147,7 @@
 <p class="caption"><span class="caption-text">図 3.1-1-1 ディシジョンテーブル新規追加画面</span><a class="headerlink" href="#id7" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <div class="figure align-center" id="id8">
-<a class="reference internal image-reference" href="../_images/decision_table_20.png"><img alt="../_images/decision_table_20.png" src="../_images/decision_table_20.png" style="width: 1593.0px; height: 637.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/decision_table_20.png"><img alt="../_images/decision_table_20.png" src="../_images/decision_table_20.png" style="width: 1602.0px; height: 863.0px;" /></a>
 <p class="caption"><span class="caption-text">図 3.1-1-2 ディシジョンテーブルファイル(Tablesシート)</span><a class="headerlink" href="#id8" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <table class="colwidths-given docutils align-default" id="id9">
@@ -238,7 +238,7 @@
 <li><p>複数のルールをグルーピングすることで、コリレーション機能を利用することができます。</p></li>
 </ul>
 <div class="figure align-center" id="id12">
-<a class="reference internal image-reference" href="../_images/decision_table_32.png"><img alt="../_images/decision_table_32.png" src="../_images/decision_table_32.png" style="width: 1593.0px; height: 636.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/decision_table_32.png"><img alt="../_images/decision_table_32.png" src="../_images/decision_table_32.png" style="width: 1602.0px; height: 859.0px;" /></a>
 <p class="caption"><span class="caption-text">図 3.1-4-1 ディシジョンテーブルファイル(Tablesシート)のアクション部</span><a class="headerlink" href="#id12" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <div class="section" id="id5">
@@ -251,6 +251,26 @@
 </ul>
 <p><strong>記述例</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rule1</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>発生事象（必須）※不要の場合は「X」を定義</strong></div>
+</div>
+<ul class="simple">
+<li><p>発生した事象を記入してください。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ハードウェアの故障</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>対処概要（必須）※不要の場合は「X」を定義</strong></div>
+</div>
+<ul class="simple">
+<li><p>対処概要を記入してください。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITAによる対処</span>
 </pre></div>
 </div>
 <div class="line-block">
@@ -554,10 +574,18 @@
 </div>
 <ul class="simple">
 <li><p>SERVICENOW_NAMEは必須です。OASE画面のシステム-アクション設定-ServiceNow_driverの名前と紐づけます。</p></li>
-<li><p>INCIDENT_STATUSは必須です。ServiceNowインシデント管理のレコードを新規登録する「OPEN」、またはインシデントを閉じる「CLOSE」を記述します。</p></li>
+<li><p>INCIDENT_STATUSはインシデント管理の際に必要です。ServiceNowインシデント管理のレコードを新規登録する「NEW」、インシデント対処中となる「IN PROGRESS」、インシデント解決済みとなる「RESOLVED」またはインシデントを閉じる「CLOSED」を記述します。</p></li>
+<li><p>WORKFLOW_IDはワークフローの実行に必要です。ServiceNowのワークフロースケジュール編集画面から、sys_idを取得してください。</p></li>
+<li><p>WORK_NOTES_APPROVAL、WORK_NOTES_REJECTEDはそれぞれ、ServiceNow側で承認・却下を必要とするインシデント管理の際に必要です。承認・却下時にServiceNowの作業メモに書き込まれる文言を記述してください。</p></li>
 </ul>
 <p><strong>記述例</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SERVICENOW_NAME</span><span class="o">=</span><span class="n">ServiceNowTest</span><span class="p">,</span><span class="n">INCIDENT_STATUS</span><span class="o">=</span><span class="n">OPEN</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SERVICENOW_NAME</span><span class="o">=</span><span class="n">ServiceNowTest</span><span class="p">,</span><span class="n">WORKFLOW_ID</span><span class="o">=</span><span class="n">abcdef1234567890</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SERVICENOW_NAME</span><span class="o">=</span><span class="n">ServiceNowTest</span><span class="p">,</span><span class="n">INCIDENT_STATUS</span><span class="o">=</span><span class="n">IN_PROGRESS</span><span class="p">,</span><span class="n">WORK_NOTES_APPROVAL</span><span class="o">=</span><span class="n">APPROVED</span><span class="p">,</span><span class="n">WORK_NOTES_REJECTED</span><span class="o">=</span><span class="n">REJECTED</span>
 </pre></div>
 </div>
 </div>
@@ -605,7 +633,7 @@
 <li><p>項目によっては記述フォーマットについても例が記載されています。</p></li>
 </ul>
 <div class="figure align-center" id="id14">
-<a class="reference internal image-reference" href="../_images/decision_table_34.png"><img alt="../_images/decision_table_34.png" src="../_images/decision_table_34.png" style="width: 1097.0px; height: 860.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/decision_table_34.png"><img alt="../_images/decision_table_34.png" src="../_images/decision_table_34.png" style="width: 727.0px; height: 800.0px;" /></a>
 <p class="caption"><span class="caption-text">図 3.1-6-1 ディシジョンテーブルファイル(exampleシート)</span><a class="headerlink" href="#id14" title="この画像へのパーマリンク">¶</a></p>
 </div>
 </div>

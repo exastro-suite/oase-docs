@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>インストール手順 &#8212; OASE_docs 1.4.0 ドキュメント</title>
+    <title>インストール手順 &#8212; OASE_docs 1.5.0 ドキュメント</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/option.css" type="text/css" />
     
@@ -53,7 +53,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.4.0</dd>
+        <dd>1.5.0</dd>
       </dl>
     </div>
     
@@ -663,12 +663,31 @@ private_key_path:
 </pre></div>
 </div>
 <div class="line-block">
-<div class="line">4. URL接続</div>
-<div class="line">以下のURLより、ログイン画面にアクセスしてください。</div>
-<div class="line">URL：<a class="reference external" href="https:/">https:/</a>/（サーバのIPアドレス）</div>
+<div class="line">4. setings.pyの編集</div>
+<div class="line">settings.pyのHOST_NAMEの部分に以下のようにURLを記載してください。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># vi (OASEをインストールしたディレクトリのパス)/OASE/oase-root/confs/frameworkconfs/settings.py
+</pre></div>
 </div>
 <div class="line-block">
-<div class="line">5. ログイン</div>
+<div class="line">HOST_NAME = '<a class="reference external" href="https:/">https:/</a>/(サーバのIPアドレス)'</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>例：HOST_NAME = &#39;https://127.0.0.1&#39;
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">その後httpdサービスを再起動してください。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl restart httpd
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">5. URL接続</div>
+<div class="line">以下のURLより、ログイン画面にアクセスしてください。</div>
+<div class="line">URL：<a class="reference external" href="https:/">https:/</a>/(サーバのIPアドレス)</div>
+</div>
+<div class="line-block">
+<div class="line">6. ログイン</div>
 <div class="line">OASEのログイン画面が表示されたら、指定のログインID、初期パスワードを入力して、[Login]ボタンを押下してください。</div>
 <div class="line">・ログインID　　： administrator</div>
 <div class="line">・初期パスワード： oaseoaseoase</div>
@@ -686,7 +705,7 @@ private_key_path:
 </div>
 </div>
 <div class="line-block">
-<div class="line">6. Dashboard画面</div>
+<div class="line">7. Dashboard画面</div>
 <div class="line">ログイン後、図2の画面が表示されます。</div>
 </div>
 <div class="figure align-center" id="id17">
@@ -718,11 +737,11 @@ private_key_path:
 </div>
 </div>
 <div class="line-block">
-<div class="line">7. スキップ処理の確認</div>
+<div class="line">8. スキップ処理の確認</div>
 <div class="line">RabbitMQやMariaDBをスキップした場合は、OASE用に設定が必要になります。</div>
 </div>
 <div class="line-block">
-<div class="line">7.1 RabbitMQ</div>
+<div class="line">8.1 RabbitMQ</div>
 <div class="line">OASE用のユーザ作成を実施するため、以下のコマンドを実行してください。</div>
 </div>
 <div class="line-block">
@@ -748,7 +767,7 @@ private_key_path:
 <p>3.1.4 アンサーファイルの編集にて記述頂きました、ユーザ名/パスワードでユーザ作成してください。</p>
 </div>
 <div class="line-block">
-<div class="line">7.2 MariaDB</div>
+<div class="line">8.2 MariaDB</div>
 <div class="line">OASE用のデータベース、ユーザ作成を実施するため、以下のコマンドを実行してください。</div>
 </div>
 <div class="line-block">
