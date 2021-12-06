@@ -248,7 +248,7 @@ Learn</h1>
                 <dt class="stepContentTitle"><span class="stepContentNumber">Step - 1</span>: Start container</dt>
                 <dd class="stepContentBody">
                   <p class="stepContentBodyHeading" style="color:#2496ed;">Docker</p>
-                  <pre style="white-space: normal;"># docker run --privileged --add-host=exastro-oase:127.0.0.1 -d -p 8080:80 -p 10443:443 --name exastro01 exastro/oase:x.x.x</pre>
+                  <pre style="white-space: normal;"># docker run --hostname="exastro-oase" --privileged --add-host=exastro-oase:127.0.0.1 -d -p 8080:80 -p 10443:443 --name exastro01 exastro/oase:x.x.x</pre>
                   <p>*Please change port number (8080,10443) and version (x.x.x) according your environment.</p>
                 </dd>
               </dl>

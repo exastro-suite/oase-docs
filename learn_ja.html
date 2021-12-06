@@ -37,8 +37,8 @@
 <link rel="stylesheet" type="text/css" href="asset/css/oase.css">
 <script src="../docs/asset/js/article.js"></script>
 
-<link rel="alternate" hreflang="en" href="https://exastro-suite.github.io/oase-docs/learn.html">
-<link rel="alternate" hreflang="ja" href="https://exastro-suite.github.io/oase-docs/learn_ja.html">
+<link rel="alternate" hreflang="en" href="./learn.html">
+<link rel="alternate" hreflang="ja" href="./learn_ja.html">
 
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="shortcut icon" href="favicon.ico">
@@ -47,23 +47,24 @@
 
 <meta name="keywords" content="Exastro, Exastro Suite, OSS">
 <meta name="description" content="Exastro Operation Autonomy Support Engineは、システム運用業務の自動化・効率化・省力化を実現するためのソフトウェアです。システム運用におけるノウハウやドキュメントをルールとして一元管理し、運用情報から対処方法を自動で判断します。さらにExastro IT Automation等の自動化ソフトウェアをコントロールできるため、対処を自動で実行することも可能です。">
-<meta name="thumbnail" content="https://exastro-suite.github.io/docs/asset/img/ogp_twitter_image.jpg" />
+<meta name="thumbnail" content="../asset/img/ogp_twitter_image.jpg" />
 <meta property="og:description" content="Exastro Operation Autonomy Support Engineは、システム運用業務の自動化・効率化・省力化を実現するためのソフトウェアです。システム運用におけるノウハウやドキュメントをルールとして一元管理し、運用情報から対処方法を自動で判断します。さらにExastro IT Automation等の自動化ソフトウェアをコントロールできるため、対処を自動で実行することも可能です。">
-<link rel="image_src" href="https://exastro-suite.github.io/oase-docs/asset/img/ogp_image.jpg">
+<link rel="image_src" href="./asset/img/ogp_image.jpg">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://exastro-suite.github.io/oase-docs/index_ja.html">
+<meta property="og:url" content="./index_ja.html">
 <meta property="og:title" content="Exastro Suite">
-<meta property="og:image" content="https://exastro-suite.github.io/oase-docs/asset/img/ogp_image.jpg">
+<meta property="og:image" content="./asset/img/ogp_image.jpg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Exastro Suite">
-<meta name="twitter:image" content="https://exastro-suite.github.io/docs/asset/img/ogp_twitter_image.jpg">
+<meta name="twitter:image" content="../docs/asset/img/ogp_twitter_image.jpg">
 
 
 <!-- InstanceBeginEditable name="head" -->
 <script src="../docs/asset/js/view_documents.js"></script>
 <script>
 $(function(){
-  var url = 'https://exastro-suite.github.io/oase-docs/asset/json/documents.json';
+  //var url = location.protocol + "://" + location.host + '/oase-docs/asset/json/documents.json';
+  var url = './asset/json/documents.json';
   viewDocuments( url );
 });
 </script>
@@ -224,7 +225,7 @@ Learn</h1>
 
         <p style="text-align:left;">インストール完了後、下記の OASEクイックスタートを始めれば、すぐにOASEの魅力的なインターフェースを体験いただくことが可能です。</p>
 
-        <p style="text-align:left;">またOASEインストール前の準備につきましては、<a href="https://exastro-suite.github.io/oase-docs/documents_ja.html" title="OASEドキュメント">こちら</a>をご参照ください。</p>
+        <p style="text-align:left;">またOASEインストール前の準備につきましては、<a href="./documents_ja.html" title="OASEドキュメント">こちら</a>をご参照ください。</p>
         <p><a href="asset/Learn_ja/OASE-online-install_ja.pdf" class="download" download="Operation Autonomy Support Engine オンラインインストール"><i class="fas fa-file-pdf"></i>  マニュアルをダウンロード<i class="note">(PDF)</i></a></p>
       </div>
       <div id="install_offline" class="tabContent">
@@ -255,7 +256,7 @@ Learn</h1>
                 <dt class="stepContentTitle"><span class="stepContentNumber">Step - 1</span> :コンテナの起動</dt>
                 <dd class="stepContentBody">
                   <p class="stepContentBodyHeading" style="color:#2496ed;">Docker</p>
-                  <pre style="white-space: normal;"># docker run --privileged --add-host=exastro-oase:127.0.0.1 -d -p 8080:80 -p 10443:443 --name exastro01 exastro/oase:x.x.x</pre>
+                  <pre style="white-space: normal;"># docker run --hostname="exastro-oase" --privileged --add-host=exastro-oase:127.0.0.1 -d -p 8080:80 -p 10443:443 --name exastro01 exastro/oase:x.x.x</pre>
                   <p>※ポート番号(8080,10443)とバージョン(x.x.x)は適宜変更してください。</p>
                 </dd>
               </dl>
@@ -310,7 +311,7 @@ Learn</h1>
           <li class="learnMapLinkItem"><a href="#quickStartMain" class="learnMapLink learnMapLinkQuickstart anker" data-type="Quickstart"><img src="./asset/img/learn_map/learn_map_btn_quickstart_ja.png" alt="クイックスタート※"></a></li>
           <li class="learnMapLinkItem"><a href="#base" class="learnMapLink learnMapLinkBase anker" data-type="Base"><img src="./asset/img/learn_map/learn_map_btn_base.png" alt="Exastro OASE Base※"></a></li>
           <li class="learnMapLinkItem"><a href="#zabbix" class="learnMapLink learnMapLinkZabbix anker" data-type="Zabbix"><img src="./asset/img/learn_map/learn_map_btn_zabbix_ja.png" alt="Zabbix連携編※"></a></li>
-          <li class="learnMapLinkItem"><span class="learnMapLink learnMapLinkPrometheus" data-type="Prometheus"><img src="./asset/img/learn_map/learn_map_btn_prometheus_ja.png" alt="Prometheus連携編※"><span class="learnMapComingSoon"></span></span></li>
+          <li class="learnMapLinkItem"><a href="#prometheus" class="learnMapLink learnMapLinkPrometheus anker" data-type="Prometheus"><img src="./asset/img/learn_map/learn_map_btn_prometheus_ja.png" alt="Prometheus連携編※"></a></li>
           <li class="learnMapLinkItem"><span class="learnMapLink learnMapLinkCloudWatch" data-type="CloudWatch"><img src="./asset/img/learn_map/learn_map_btn_cloudwatch_ja.png" alt="CloudWatch連携編※"><span class="learnMapComingSoon"></span></span></li>
         </ul>
         <ul class="learnMapAreaList">
@@ -406,6 +407,51 @@ Learn</h1>
 
   </div>
 </section>
+
+<section id="prometheus">
+  <div class="sectionInner">
+  
+    <h2><em>Exastro OASE</em> Prometheus連携</h2>
+    <p>OASEの「Prometheus連携」の利用手順をご用意しました。<br>
+    本書は、簡単にハンズオンしたい方のための「実習編」のみのご用意となっております。<br>
+    「Prometheusアダプタ」を用いたpull型のイベント検知をすることができます。</p>
+
+    <div class="floatContents">
+      <!-- practice -->
+      <div id="prometheusPractice" class="halfContent">
+        <h3><strong>実習</strong>編</h3>
+        
+        <div class="viewDocument only wide" data-document="Prometheus_Practice">
+        </div>
+        <p><a href="asset/Learn_ja/OASE-prometheus_practice_ja.pdf" class="download" download="OASE Prometheus連携 実習"><i class="fas fa-file-pdf"></i> マニュアルをダウンロード<i class="note">(PDF)</i></a></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="servicenow">
+  <div class="sectionInner">
+  
+    <h2><em>Exastro OASE</em> Service Now連携</h2>
+    <p>OASEの「Serivce Now連携」の利用手順をご用意しました。<br>
+      本書は、ポイントを絞り込んだ「座学編」、簡単にハンズオンしたい方のための「実習編」の2部構成になっております。<br>
+    「Service Nowドライバ」を用いたアクション実行をすることができます。</p>
+
+    <div class="floatContents">
+      <!-- practice -->
+      <div id="servicenowLecture" class="halfContent">
+        <h3><strong>座学</strong>編</h3>
+        
+        <div class="viewDocument only wide" data-document="ServiceNow_Tutorial">
+        </div>
+        <p><a href="asset/Learn_ja/OASE-servicenow_lecture_ja.pdf" class="download" download="OASE ServiceNow連携 座学"><i class="fas fa-file-pdf"></i> マニュアルをダウンロード<i class="note">(PDF)</i></a></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- InstanceEndEditable -->
 </div>
