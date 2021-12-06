@@ -49,6 +49,14 @@
 		"ZABBIX_Practice": {
       "type": "pdf",
       "url": "Learn_ja/OASE-zabbix_practice_ja.pdf"
+    },
+		"Prometheus_Practice": {
+      "type": "pdf",
+      "url": "Learn_ja/OASE-prometheus_practice_ja.pdf"
+    },
+		"ServiceNow_Tutorial": {
+      "type": "pdf",
+      "url": "Learn_ja/OASE-servicenow_lecture_ja.pdf"
     }
 	},
 	"config": {
