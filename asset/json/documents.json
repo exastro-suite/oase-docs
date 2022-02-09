@@ -54,6 +54,10 @@
       "type": "pdf",
       "url": "Learn_ja/OASE-prometheus_practice_ja.pdf"
     },
+		"Grafana_Practice": {
+      "type": "pdf",
+      "url": "Learn_ja/OASE-grafana_practice_ja.pdf"
+    },
 		"ServiceNow_Tutorial": {
       "type": "pdf",
       "url": "Learn_ja/OASE-servicenow_lecture_ja.pdf"
