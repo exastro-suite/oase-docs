@@ -4,18 +4,20 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>2 監視アダプタアンインストール &#8212; OASE_docs 1.5.0 ドキュメント</title>
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
+    <title>2 監視アダプタアンインストール &#8212; OASE_docs 1.6.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/option.css" />
     
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/translations.js"></script>
   
@@ -53,7 +55,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.5.0</dd>
+        <dd>1.6.0</dd>
       </dl>
     </div>
     
@@ -128,17 +130,17 @@
 <article class="divInner">
 <div class="body" role="main">
 
-  <div class="section" id="id1">
-<h1>2 監視アダプタアンインストール<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+  <section id="id1">
+<h1>2 監視アダプタアンインストール<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <div class="line-block">
 <div class="line">本章では、監視アダプタ画面をご利用停止するために、必要なアンインストールについて説明します。</div>
 </div>
-<div class="section" id="id2">
-<h2>2.1 アンインストールコマンドの形式<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<section id="id2">
+<h2>2.1 アンインストールコマンドの形式<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p>下記の情報で アンインストールコマンドを実行します。
 OASE本体をインストールされた際のoase-root直下で実施します。</p>
-<div class="section" id="id3">
-<h3>2.1.1 アンインストールコマンド<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<section id="id3">
+<h3>2.1.1 アンインストールコマンド<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">adapter_installer</span> <span class="o">-</span><span class="n">p</span> <span class="p">[</span><span class="n">pluginsパス</span><span class="p">]</span> <span class="o">-</span><span class="n">u</span> <span class="p">[</span><span class="n">アンインストール対象ID</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -146,9 +148,9 @@ OASE本体をインストールされた際のoase-root直下で実施します�
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">adapter_installer</span> <span class="o">-</span><span class="n">p</span> <span class="o">/</span><span class="n">exastro</span><span class="o">/</span><span class="n">plugins</span> <span class="o">-</span><span class="n">u</span> <span class="mi">1</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id4">
-<h3>2.1.2 オプション<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+</section>
+<section id="id4">
+<h3>2.1.2 オプション<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <p>オプションについては次の表のとおりです。</p>
 <table class="colwidths-given docutils align-default" id="id5">
 <caption><span class="caption-text">表 2.1.2 オプション定義</span><a class="headerlink" href="#id5" title="このテーブルへのパーマリンク">¶</a></caption>
@@ -174,9 +176,9 @@ OASE本体をインストールされた際のoase-root直下で実施します�
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="id">
-<h3>2.1.3 アンインストール対象ID<a class="headerlink" href="#id" title="このヘッドラインへのパーマリンク">¶</a></h3>
+</section>
+<section id="id">
+<h3>2.1.3 アンインストール対象ID<a class="headerlink" href="#id" title="Permalink to this heading">¶</a></h3>
 <p>アンインストール対象IDについては次の表のとおりです。</p>
 <table class="colwidths-given docutils align-default" id="id6">
 <caption><span class="caption-text">表 2.1.3 アンインストール対象ID定義</span><a class="headerlink" href="#id6" title="このテーブルへのパーマリンク">¶</a></caption>
@@ -200,11 +202,19 @@ OASE本体をインストールされた際のoase-root直下で実施します�
 <td><p>2</p></td>
 <td><p>Prometheusアダプタをアンインストールします。</p></td>
 </tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>3</p></td>
+<td><p>Grafanaアダプタをアンインストールします。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>4</p></td>
+<td><p>Datadogアダプタをアンインストールします。</p></td>
+</tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
 </div>

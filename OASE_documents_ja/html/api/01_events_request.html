@@ -4,18 +4,20 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>1 イベントリクエスト &#8212; OASE_docs 1.5.0 ドキュメント</title>
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
+    <title>1 イベントリクエスト &#8212; OASE_docs 1.6.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/option.css" />
     
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/translations.js"></script>
   
@@ -53,7 +55,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.5.0</dd>
+        <dd>1.6.0</dd>
       </dl>
     </div>
     
@@ -129,24 +131,24 @@
 <article class="divInner">
 <div class="body" role="main">
 
-  <div class="section" id="id1">
-<h1>1 イベントリクエスト<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+  <section id="id1">
+<h1>1 イベントリクエスト<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <div class="line-block">
 <div class="line">本章では、ルール画面で設定したルールに対して、</div>
 <div class="line">RestAPI機能を用いたリクエストを行うために必要なパラメータなどについて説明します。</div>
 </div>
-<div class="section" id="id2">
-<h2>1.1 リクエストの形式<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<section id="id2">
+<h2>1.1 リクエストの形式<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p>下記の情報で HTTPS リクエストを発行します。</p>
-<div class="section" id="id3">
-<h3>1.1.1 リクエスト例<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<section id="id3">
+<h3>1.1.1 リクエスト例<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
 <p><strong>例）プロダクション適用ルール</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">X</span> <span class="n">POST</span> <span class="o">-</span><span class="n">k</span> <span class="s2">&quot;https://&lt;HostName&gt;/oase_web/event/event/eventsrequest&quot;</span> <span class="o">-</span><span class="n">H</span> <span class="s2">&quot;accept: application/json&quot;</span> <span class="o">-</span><span class="n">d</span> <span class="s2">&quot;{</span><span class="se">\&quot;</span><span class="s2">decisiontable</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">decisiontable001</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">requesttype</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">1</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">eventdatetime</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">2018/12/13 15:16:29</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">eventinfo</span><span class="se">\&quot;</span><span class="s2">:[</span><span class="se">\&quot;</span><span class="s2">2</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">あああ</span><span class="se">\&quot;</span><span class="s2">]}&quot;</span> <span class="o">-</span><span class="n">H</span> <span class="s2">&quot;Authorization: Bearer ACCESS_TOKEN&quot;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id4">
-<h3>1.1.2 リクエストヘッダ<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+</section>
+<section id="id4">
+<h3>1.1.2 リクエストヘッダ<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <table class="colwidths-given docutils align-default" id="id10">
 <caption><span class="caption-text">表 1.1.2 フォーマット定義</span><a class="headerlink" href="#id10" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
@@ -180,9 +182,9 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="id5">
-<h3>1.1.3 パラメータ<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+</section>
+<section id="id5">
+<h3>1.1.3 パラメータ<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
 <table class="colwidths-given docutils align-default" id="id11">
 <caption><span class="caption-text">表 1.1.3 フォーマット定義</span><a class="headerlink" href="#id11" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
@@ -233,55 +235,55 @@
 </tr>
 </tbody>
 </table>
-<div class="section" id="decisiontable">
-<h4>decisiontable<a class="headerlink" href="#decisiontable" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<section id="decisiontable">
+<h4>decisiontable<a class="headerlink" href="#decisiontable" title="Permalink to this heading">¶</a></h4>
 <p>ディシジョンテーブル画面で作成したディシジョンテーブル名を記述することができます。</p>
 <p><strong>記述例</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">decisiontable001</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="requesttype">
-<h4>requesttype<a class="headerlink" href="#requesttype" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="requesttype">
+<h4>requesttype<a class="headerlink" href="#requesttype" title="Permalink to this heading">¶</a></h4>
 <p>投入先である「1:プロダクション」「2:ステージング」のどちらかを記述します。</p>
 <p><strong>記述例</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="eventdatetime">
-<h4>eventdatetime<a class="headerlink" href="#eventdatetime" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="eventdatetime">
+<h4>eventdatetime<a class="headerlink" href="#eventdatetime" title="Permalink to this heading">¶</a></h4>
 <p>「yyyy/mm/dd hh:mm:ss」または、イベント発生日時を指定しない場合「-」のどちらかを記述します。</p>
 <p><strong>記述例</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2018</span><span class="o">/</span><span class="mi">12</span><span class="o">/</span><span class="mi">13</span> <span class="mi">15</span><span class="p">:</span><span class="mi">16</span><span class="p">:</span><span class="mi">29</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="eventinfo">
-<h4>eventinfo<a class="headerlink" href="#eventinfo" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="eventinfo">
+<h4>eventinfo<a class="headerlink" href="#eventinfo" title="Permalink to this heading">¶</a></h4>
 <p>ディシジョンテーブルで作成したルール条件の数値や、文字列を記述することができます。複数ある時はカンマ区切りで記述します。</p>
 <p><strong>記述例</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>\<span class="s2">&quot;2</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">あああ</span><span class="se">\&quot;</span><span class="s2">]</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="id6">
-<h2>1.2 レスポンスの形式<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="id6">
+<h2>1.2 レスポンスの形式<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
 <p>下記の情報で 応答データを受け取ります。</p>
-<div class="section" id="id7">
-<h3>1.2.1 レスポンス例<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<section id="id7">
+<h3>1.2.1 レスポンス例<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
 <p><strong>例）プロダクション適用ルール</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span> <span class="s2">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;Accept request.&quot;</span><span class="p">,</span> <span class="s2">&quot;trace_id&quot;</span><span class="p">:</span> <span class="s2">&quot;TOS_20210412053112220048_0000000010&quot;</span><span class="p">}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id8">
-<h3>1.2.2 ヘッダ<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
-</div>
-<div class="section" id="id9">
-<h3>1.2.3 レスポンスボディ<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+</section>
+<section id="id8">
+<h3>1.2.2 ヘッダ<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id9">
+<h3>1.2.3 レスポンスボディ<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">リクエストを投入し内容に問題が無い場合は、「&quot;result&quot;: true」「&quot;msg&quot;: &quot;Accept request.&quot;」となり、</div>
 <div class="line">末尾に受け付けられたリクエストのイベントシリアルNo.が表示されます。</div>
@@ -316,8 +318,8 @@
 </tr>
 </tbody>
 </table>
-<div class="section" id="result">
-<h4>result<a class="headerlink" href="#result" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<section id="result">
+<h4>result<a class="headerlink" href="#result" title="Permalink to this heading">¶</a></h4>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 6%" />
@@ -341,9 +343,9 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="msg">
-<h4>msg<a class="headerlink" href="#msg" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="msg">
+<h4>msg<a class="headerlink" href="#msg" title="Permalink to this heading">¶</a></h4>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 6%" />
@@ -391,10 +393,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
 
 </div>
