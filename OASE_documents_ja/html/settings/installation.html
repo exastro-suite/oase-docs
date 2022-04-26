@@ -4,18 +4,20 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>インストール手順 &#8212; OASE_docs 1.5.0 ドキュメント</title>
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
+    <title>インストール手順 &#8212; OASE_docs 1.6.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/option.css" />
     
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/translations.js"></script>
   
@@ -53,7 +55,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.5.0</dd>
+        <dd>1.6.0</dd>
       </dl>
     </div>
     
@@ -133,13 +135,13 @@
 <article class="divInner">
 <div class="body" role="main">
 
-  <div class="section" id="id1">
-<h1>インストール手順<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+  <section id="id1">
+<h1>インストール手順<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <p>OASEのインストール手順を下記に示します。</p>
-<div class="section" id="id2">
-<h2>1. 事前準備<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="id3">
-<h3>1.1. タイムゾーンを設定する<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<section id="id2">
+<h2>1. 事前準備<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<section id="id3">
+<h3>1.1. タイムゾーンを設定する<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># timedatectl status
 </pre></div>
 </div>
@@ -150,9 +152,9 @@
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># timedatectl set-timezone Asia/Tokyo
 </pre></div>
 </div>
-</div>
-<div class="section" id="id4">
-<h3>1.2. 自分自身のホスト名について名前解決できること<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+</section>
+<section id="id4">
+<h3>1.2. 自分自身のホスト名について名前解決できること<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># ping {自ホスト名}
 </pre></div>
 </div>
@@ -164,16 +166,16 @@
 <div class="line"><br /></div>
 <div class="line">hostsで指定するなど、名前解決が可能な状態にすること</div>
 </div>
-</div>
-</div>
-<div class="section" id="id5">
-<h2>2. 汎用ツール追加<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+</section>
+</section>
+<section id="id5">
+<h2>2. 汎用ツール追加<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <div class="admonition note">
-<p class="admonition-title">注釈</p>
+<p class="admonition-title">ノート</p>
 <p>後続の手順で必要になるツールを先にインストールしておく</p>
 </div>
-<div class="section" id="wget">
-<h3>2.1. wgetインストール<a class="headerlink" href="#wget" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<section id="wget">
+<h3>2.1. wgetインストール<a class="headerlink" href="#wget" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum list | grep wget
 </pre></div>
 </div>
@@ -184,9 +186,9 @@
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum install -y wget
 </pre></div>
 </div>
-</div>
-<div class="section" id="gcc">
-<h3>2.2. gccインストール<a class="headerlink" href="#gcc" title="このヘッドラインへのパーマリンク">¶</a></h3>
+</section>
+<section id="gcc">
+<h3>2.2. gccインストール<a class="headerlink" href="#gcc" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum list | grep gcc
 </pre></div>
 </div>
@@ -197,14 +199,14 @@
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum install -y gcc
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="id6">
-<h2>3. 必須ソフトウェアインストール<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="id7">
-<h3>3.1 環境構築ツール（オンライン版）の実行<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<div class="section" id="github">
-<h4>3.1.1. Githubからの資材ダウンロード<a class="headerlink" href="#github" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+</section>
+<section id="id6">
+<h2>3. 必須ソフトウェアインストール<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<section id="id7">
+<h3>3.1 環境構築ツール（オンライン版）の実行<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<section id="github">
+<h4>3.1.1. Githubからの資材ダウンロード<a class="headerlink" href="#github" title="Permalink to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">以下のコマンドで資材をDLします。</div>
 </div>
@@ -212,30 +214,30 @@
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">注釈</p>
+<p class="admonition-title">ノート</p>
 <p>バージョン（x.x.x）は適宜変更してください。</p>
 </div>
-</div>
-<div class="section" id="id8">
-<h4>3.1.2. 資材の展開<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="id8">
+<h4>3.1.2. 資材の展開<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">tar.gzファイルを解凍します。</div>
 </div>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># tar zxf exastro-oase-x.x.x.tar.gz
 </pre></div>
 </div>
-</div>
-<div class="section" id="id9">
-<h4>3.1.3. ディレクトリ移動<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="id9">
+<h4>3.1.3. ディレクトリ移動<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">環境構築を行うシェルのあるディレクトリに移動します。</div>
 </div>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cd oase/oase_install_package/install_scripts
 </pre></div>
 </div>
-</div>
-<div class="section" id="id10">
-<h4>3.1.4. アンサーファイルの編集<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="id10">
+<h4>3.1.4. アンサーファイルの編集<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">OASEのインストール設定を行うアンサーファイル（oase_answers.txt）を事前に作成してください。</div>
 <div class="line">アンサーファイルの各項目の内容は次の表のとおりです。</div>
@@ -423,16 +425,21 @@
 <td><p>Grafanaアダプタのインストール有無指定</p></td>
 </tr>
 <tr class="row-odd"><td><p>34</p></td>
+<td><p>datadog_adapter</p></td>
+<td><p>no</p></td>
+<td><p>Datadogアダプタのインストール有無指定</p></td>
+</tr>
+<tr class="row-even"><td><p>35</p></td>
 <td><p>oase_domain</p></td>
 <td><p>exastro-oase.local</p></td>
 <td><p>OASEのドメイン名</p></td>
 </tr>
-<tr class="row-even"><td><p>35</p></td>
+<tr class="row-odd"><td><p>36</p></td>
 <td><p>certificate_path</p></td>
 <td></td>
 <td><p>ユーザ指定のSSLサーバ証明書に使用するファイルのファイルパス(ユーザ指定のSSL証明書使用時のみ入力。絶対パスで指定してください)</p></td>
 </tr>
-<tr class="row-odd"><td><p>36</p></td>
+<tr class="row-even"><td><p>37</p></td>
 <td><p>private_key_path</p></td>
 <td></td>
 <td><p>ユーザ指定のSSL秘密鍵に使用するファイルのファイルパス(ユーザ指定のSSL秘密鍵使用時のみ入力。絶対パスで指定してください)</p></td>
@@ -440,16 +447,16 @@
 </tbody>
 </table>
 <div class="admonition note">
-<p class="admonition-title">注釈</p>
+<p class="admonition-title">ノート</p>
 <div class="line-block">
 <div class="line">OASEのログイン画面、ログイン画面にあるパスワードをお忘れの場合から遷移されるパスワード変更画面、</div>
 <div class="line">インストールで登録されるユーザ、グループ、デシジョンテーブルファイル、一括テスト用Excelファイルはインストール時のOASEの言語設定により、日本語または英語を表示します。</div>
 <div class="line">それ以外に関しては個人設定画面からユーザ毎に日本語、英語を選択/表示できます。</div>
 </div>
 </div>
-</div>
-<div class="section" id="id11">
-<h4>3.1.5. アンサーファイルのサンプル<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="id11">
+<h4>3.1.5. アンサーファイルのサンプル<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">アンサーファイル（oase_answers.txt）のサンプルを以下に示します。</div>
 </div>
@@ -612,6 +619,7 @@ servicenow_driver:no
 zabbix_adapter:yes
 prometheus_adapter:no
 grafana_adapter:no
+datadog_adapter:no
 
 
 <span class="gh">##############################</span>
@@ -635,9 +643,9 @@ certificate_path:
 private_key_path:
 </pre></div>
 </div>
-</div>
-<div class="section" id="id12">
-<h4>3.1.6. 環境構築ツール（オンライン版）実行<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="id12">
+<h4>3.1.6. 環境構築ツール（オンライン版）実行<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">1. 以下のコマンドで、環境構築ツールを実行します。</div>
 </div>
@@ -649,7 +657,7 @@ private_key_path:
 <div class="line">環境構築ツールを実行するとoase_install.logに処理内容が出力されます。</div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">注釈</p>
+<p class="admonition-title">ノート</p>
 <p>ログ格納パス： /(インストール資材展開先)/oase_install_package/install_scripts/logs</p>
 </div>
 <div class="line-block">
@@ -692,12 +700,14 @@ private_key_path:
 <div class="line">・ログインID　　： administrator</div>
 <div class="line">・初期パスワード： oaseoaseoase</div>
 </div>
-<div class="figure align-center" id="id16">
+<figure class="align-center" id="id16">
 <a class="reference internal image-reference" href="../_images/oase_login.png"><img alt="../_images/oase_login.png" src="../_images/oase_login.png" style="width: 1573.0px; height: 757.0px;" /></a>
-<p class="caption"><span class="caption-text">図1 ログイン画面</span><a class="headerlink" href="#id16" title="この画像へのパーマリンク">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">図1 ログイン画面</span><a class="headerlink" href="#id16" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
 <div class="admonition note">
-<p class="admonition-title">注釈</p>
+<p class="admonition-title">ノート</p>
 <div class="line-block">
 <div class="line">インストール後に初めてログインした場合は、「パスワード変更画面」に遷移します。</div>
 <div class="line">パスワード変更画面から、初期パスワードを変更してください。</div>
@@ -708,10 +718,12 @@ private_key_path:
 <div class="line">7. Dashboard画面</div>
 <div class="line">ログイン後、図2の画面が表示されます。</div>
 </div>
-<div class="figure align-center" id="id17">
+<figure class="align-center" id="id17">
 <a class="reference internal image-reference" href="../_images/dashboard.PNG"><img alt="../_images/dashboard.PNG" src="../_images/dashboard.PNG" style="width: 1602.0px; height: 792.0px;" /></a>
-<p class="caption"><span class="caption-text">図2 Dashboard画面</span><a class="headerlink" href="#id17" title="この画像へのパーマリンク">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">図2 Dashboard画面</span><a class="headerlink" href="#id17" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
 <div class="line-block">
 <div class="line">OASEのインストール作業は以上となります。</div>
 <div class="line">次にドライバインストールを行いますので、「環境構築マニュアル -ドライバインストール編-」をご参照ください。</div>
@@ -719,7 +731,7 @@ private_key_path:
 <div class="line">ActiveDirectoryを行いたい場合は「環境構築マニュアル -ActiveDirectory編-」をご参照ください。</div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">注釈</p>
+<p class="admonition-title">ノート</p>
 <div class="line-block">
 <div class="line">OASEをインストールする環境で、既にインストール済みのソフトウェアはスキップを行います。</div>
 <div class="line">標準出力に下記のようにSKIP LISTが表示された場合は、スキップ処理が行われています。</div>
@@ -763,7 +775,7 @@ private_key_path:
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">注釈</p>
+<p class="admonition-title">ノート</p>
 <p>3.1.4 アンサーファイルの編集にて記述頂きました、ユーザ名/パスワードでユーザ作成してください。</p>
 </div>
 <div class="line-block">
@@ -783,7 +795,7 @@ MariaDB [(none)]&gt; quit
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">注釈</p>
+<p class="admonition-title">ノート</p>
 <p>3.1.4 アンサーファイルの編集にて記述頂きました、rootパスワード、データベース名、ユーザ名、パスワードで作成してください。</p>
 </div>
 <div class="admonition danger">
@@ -794,13 +806,13 @@ MariaDB [(none)]&gt; quit
 <div class="line">アップグレードは行いませんのでご注意ください。</div>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="id13">
-<h2>4. 注意事項<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<div class="section" id="id14">
-<h3>4 ディシジョンテーブル作成可能数<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h3>
+</section>
+</section>
+</section>
+<section id="id13">
+<h2>4. 注意事項<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h2>
+<section id="id14">
+<h3>4 ディシジョンテーブル作成可能数<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">ディシジョンマネージャは環境によって作成できるディシジョンテーブル数が変動します。</div>
 <div class="line">ディシジョンテーブルの最大作成可能数はデフォルトでは4ファイル程度となります。</div>
@@ -832,7 +844,7 @@ MariaDB [(none)]&gt; quit
 </div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">注釈</p>
+<p class="admonition-title">ノート</p>
 <div class="line-block">
 <div class="line">より多くのディシジョンテーブルの作成を実施したい場合はJBOSSヒープサイズのチューニングを行う必要があります。</div>
 <div class="line">チューニング方法は下記の通りです。</div>
@@ -844,16 +856,16 @@ MariaDB [(none)]&gt; quit
 <div class="line"># systemctl start jboss-eap-rhel.service</div>
 <div class="line">droolsの場合</div>
 <div class="line"># systemctl stop drools.service</div>
-<div class="line"># vi {jboss_root_directory}/wildfly-14.0.1.Final/bin/standalone.conf</div>
+<div class="line"># vi {jboss_root_directory}/wildfly-x.x.x.Final/bin/standalone.conf</div>
 <div class="line">以下の行のサイズを修正する。</div>
 <div class="line">JAVA_OPTS=&quot;-Xms64m -Xmx1024m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=1024m -Djava.net.preferIPv4Stack=true&quot;</div>
 <div class="line"># systemctl start drools.service</div>
 <div class="line">※{jboss_root_directory}はoase_answers.txtのjboss_root_directory項目に記述したディレクトリパスに置換してください。</div>
 </div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
 </div>

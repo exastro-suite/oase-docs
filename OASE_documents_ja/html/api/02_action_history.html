@@ -4,18 +4,20 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>2 アクション履歴 &#8212; OASE_docs 1.5.0 ドキュメント</title>
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/option.css" type="text/css" />
+    <title>2 アクション履歴 &#8212; OASE_docs 1.6.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/option.css" />
     
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/translations.js"></script>
   
@@ -53,7 +55,7 @@
     <div id="documentVersion">
       <dl>
         <dt>Document version</dt>
-        <dd>1.5.0</dd>
+        <dd>1.6.0</dd>
       </dl>
     </div>
     
@@ -129,24 +131,24 @@
 <article class="divInner">
 <div class="body" role="main">
 
-  <div class="section" id="id1">
-<h1>2 アクション履歴<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+  <section id="id1">
+<h1>2 アクション履歴<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <div class="line-block">
 <div class="line">本章では、RestAPI機能を用いてアクション履歴を取得するために</div>
 <div class="line">必要なパラメータなどについて説明します。</div>
 </div>
-<div class="section" id="id2">
-<h2>2.1 リクエストの形式<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<section id="id2">
+<h2>2.1 リクエストの形式<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p>下記の情報で HTTPS リクエストを発行します。</p>
-<div class="section" id="id3">
-<h3>2.1.1 リクエスト例<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<section id="id3">
+<h3>2.1.1 リクエスト例<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
 <p><strong>例）プロダクション適用ルール</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">X</span> <span class="n">GET</span> <span class="o">-</span><span class="n">k</span> <span class="s2">&quot;https://&lt;HostName&gt;/oase_web/restapi/actionhistory/historyrequest&quot;</span> <span class="o">-</span><span class="n">H</span> <span class="s2">&quot;accept: application/json&quot;</span> <span class="o">-</span><span class="n">d</span> <span class="s2">&quot;{</span><span class="se">\&quot;</span><span class="s2">traceid</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">TOS_20210412053112220048_0000000010</span><span class="se">\&quot;</span><span class="s2">}&quot;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id4">
-<h3>2.1.2 リクエストヘッダ<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+</section>
+<section id="id4">
+<h3>2.1.2 リクエストヘッダ<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <table class="colwidths-given docutils align-default" id="id10">
 <caption><span class="caption-text">表 2.1.2 フォーマット定義</span><a class="headerlink" href="#id10" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
@@ -175,9 +177,9 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="id5">
-<h3>2.1.3 パラメータ<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+</section>
+<section id="id5">
+<h3>2.1.3 パラメータ<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
 <table class="colwidths-given docutils align-default" id="id11">
 <caption><span class="caption-text">表 2.1.3 フォーマット定義</span><a class="headerlink" href="#id11" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
@@ -207,21 +209,21 @@
 </tr>
 </tbody>
 </table>
-<div class="section" id="traceid">
-<h4>traceid<a class="headerlink" href="#traceid" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<section id="traceid">
+<h4>traceid<a class="headerlink" href="#traceid" title="Permalink to this heading">¶</a></h4>
 <p>取得したいアクション履歴に紐付くイベントシリアルNo.を指定します。</p>
 <p><strong>記述例</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">TOS_20210412053112220048_0000000010</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="id6">
-<h2>2.2 レスポンスの形式<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="id6">
+<h2>2.2 レスポンスの形式<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
 <p>下記の情報で 応答データを受け取ります。</p>
-<div class="section" id="id7">
-<h3>2.2.1 レスポンス例<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<section id="id7">
+<h3>2.2.1 レスポンス例<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
 <p><strong>例）ステージング適用ルール</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span> <span class="s2">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;Successful completion. (Staging environment)&quot;</span><span class="p">,</span> <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;処理済み(正常終了)&quot;</span><span class="p">}</span>
 </pre></div>
@@ -230,12 +232,12 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span> <span class="s2">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;Successful completion.&quot;</span><span class="p">,</span> <span class="s2">&quot;action_history_list&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;処理済み(正常終了)&quot;</span><span class="p">,</span> <span class="s2">&quot;rule_type_name&quot;</span><span class="p">:</span> <span class="s2">&quot;ルール種別001&quot;</span><span class="p">,</span> <span class="s2">&quot;rule_name&quot;</span><span class="p">:</span> <span class="s2">&quot;rule01&quot;</span><span class="p">,</span> <span class="s2">&quot;action_type_id&quot;</span><span class="p">:</span> <span class="s2">&quot;ITA(ver1)&quot;</span><span class="p">,</span> <span class="s2">&quot;last_update_timestamp&quot;</span><span class="p">:</span> <span class="s2">&quot;2018/11/20 14:31&quot;</span><span class="p">,</span> <span class="s2">&quot;last_update_user&quot;</span><span class="p">:</span> <span class="s2">&quot;アクションドライバープロシージャ&quot;</span><span class="p">}]}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id8">
-<h3>2.2.2 ヘッダ<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
-</div>
-<div class="section" id="id9">
-<h3>2.2.3 レスポンスボディ<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+</section>
+<section id="id8">
+<h3>2.2.2 ヘッダ<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id9">
+<h3>2.2.3 レスポンスボディ<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">リクエストを投入し内容に問題が無い場合は 「&quot;result&quot;: true」「&quot;msg&quot;: &quot;Successful completion.&quot;」となり、</div>
 <div class="line">以降に「どのようなステータス状況なのか」等の情報が表示されます。</div>
@@ -294,8 +296,8 @@
 </tr>
 </tbody>
 </table>
-<div class="section" id="result">
-<h4>result<a class="headerlink" href="#result" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<section id="result">
+<h4>result<a class="headerlink" href="#result" title="Permalink to this heading">¶</a></h4>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 6%" />
@@ -319,9 +321,9 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="msg">
-<h4>msg<a class="headerlink" href="#msg" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="msg">
+<h4>msg<a class="headerlink" href="#msg" title="Permalink to this heading">¶</a></h4>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 6%" />
@@ -373,13 +375,13 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="action-history-list">
-<h4>action_history_list<a class="headerlink" href="#action-history-list" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="action-history-list">
+<h4>action_history_list<a class="headerlink" href="#action-history-list" title="Permalink to this heading">¶</a></h4>
 <p>リクエストしたイベントシリアルNo.に対するアクション履歴の情報（status、rule_type_name、rule_name、action_type_id、last_update_timestamp、last_update_user）が記述されます。</p>
-</div>
-<div class="section" id="status">
-<h4>status<a class="headerlink" href="#status" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="status">
+<h4>status<a class="headerlink" href="#status" title="Permalink to this heading">¶</a></h4>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 6%" />
@@ -467,25 +469,25 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="rule-type-name">
-<h4>rule_type_name<a class="headerlink" href="#rule-type-name" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="rule-type-name">
+<h4>rule_type_name<a class="headerlink" href="#rule-type-name" title="Permalink to this heading">¶</a></h4>
 <p>ディシジョンテーブル画面で設定したディシジョンテーブル名が表示されます。</p>
 <p><strong>記述例</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ルール種別001</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="rule-name">
-<h4>rule_name<a class="headerlink" href="#rule-name" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="rule-name">
+<h4>rule_name<a class="headerlink" href="#rule-name" title="Permalink to this heading">¶</a></h4>
 <p>ディシジョンテーブルExcelファイルで設定したルール名が表示されます。</p>
 <p><strong>記述例</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rule01</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="action-type-id">
-<h4>action_type_id<a class="headerlink" href="#action-type-id" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="action-type-id">
+<h4>action_type_id<a class="headerlink" href="#action-type-id" title="Permalink to this heading">¶</a></h4>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 6%" />
@@ -509,26 +511,26 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="last-update-timestamp">
-<h4>last_update_timestamp<a class="headerlink" href="#last-update-timestamp" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="last-update-timestamp">
+<h4>last_update_timestamp<a class="headerlink" href="#last-update-timestamp" title="Permalink to this heading">¶</a></h4>
 <p>最終実行日時が表示されます。</p>
 <p><strong>記述例</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2018</span><span class="o">/</span><span class="mi">11</span><span class="o">/</span><span class="mi">20</span> <span class="mi">14</span><span class="p">:</span><span class="mi">31</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="last-update-user">
-<h4>last_update_user<a class="headerlink" href="#last-update-user" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</section>
+<section id="last-update-user">
+<h4>last_update_user<a class="headerlink" href="#last-update-user" title="Permalink to this heading">¶</a></h4>
 <p>最終実行者が表示されます。</p>
 <p><strong>記述例</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">アクションドライバープロシージャ</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
 
 </div>
