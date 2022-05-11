@@ -11,4 +11,3 @@
    suppression
    correlation
    apply_rule
-   .. action_history
