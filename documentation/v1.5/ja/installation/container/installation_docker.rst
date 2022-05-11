@@ -1,11 +1,12 @@
-========================
-インストール (コンテナ)
-========================
+======
+Docker
+======
 
 | Docker 版 Exastro OASE の導入方法について説明します。
-| Docker 版は、現時点ではデモ用となっているため、データの永続化や冗長構成には非対応です。
+| Docker 版は、現時点では検証用となっており手軽に利用を開始できます。
+.. | 一方で、データの永続化や冗長構成には非対応のため、それらを必要とする場合、:doc:`installation_docker-compose` や :doc:`installation_kubernetes` 環境での利用を推奨します。
 | Docker 版 OASE を使うことで、コンテナ起動後、すぐに OASE を利用できます。
-| 本番環境における導入の場合には、:doc:`installation_online` か :doc:`installation_offline` を参照して下さい。
+| 本番環境における導入の場合には、:doc:`../installer/installation_online` か :doc:`../installer/installation_offline` を参照して下さい。
 
 
 前提条件
@@ -48,8 +49,8 @@ docker-compose
          tty: true
          image: exastro/oase:latest
          ports:
-            - "<port>:80"
-            - "<port>:443"
+            - "<http_port>:80"
+            - "<https_port>:443"
 
 | コンテナを起動します。
 
@@ -58,14 +59,14 @@ docker-compose
    docker-compose up -d oase
 
 .. warning::
-   | :program:`privileged` および :program:`hostname: exastro-oase` は必須項目となります。
+   | :program:`privileged: true` および :program:`hostname: exastro-oase` は必須項目となります。
    | また、サービス接続用のポートは環境に応じて変更をしてください。
 
 
 接続確認
 ========
 
-.. include:: ../include/confirm_login.rst
+.. include:: ../../include/confirm_login.rst
 
 
 環境情報

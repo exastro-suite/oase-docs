@@ -1,6 +1,6 @@
-=========================
-インストール (オンライン)
-=========================
+======================
+オンラインインストーラ
+======================
 
 | オンラインによる Exastro OASE 導入のための手順について説明します。
 | :doc:`requirements` を確認の上、作業を実施して下さい。
@@ -154,7 +154,7 @@
 
 | インストール設定ファイルの各設定項目に関しては下記を参照して下さい。
 
-.. include:: ../include/installation_configuration_online.rst
+.. include:: ../../include/installation_configuration_online.rst
 
 
 インストール設定ファイルのサンプル (商用向け)
@@ -175,7 +175,7 @@
 
   * Red Hat Enterprise Linux 7
 
-.. include:: ../include/sample_configuration_commercial.rst
+.. include:: ../../include/sample_configuration_commercial.rst
 
 インストール設定ファイルのサンプル (非商用向け)
 -----------------------------------------------
@@ -195,7 +195,7 @@
 
   * CentOS 7
 
-.. include:: ../include/sample_configuration_uncommercial.rst
+.. include:: ../../include/sample_configuration_uncommercial.rst
 
 
 インストーラ実行
@@ -229,7 +229,7 @@
 | インストーラ実行結果を確認します。
 | 標準出力、または、インストールログに下記のように表示された場合はインストールが正常に完了しております。
 
-.. code-block:: log
+.. code-block:: text
 
    [2020-11-12 08:59:43] INFO : Finished to install
    [2020-11-12 08:59:43] #####################################
@@ -265,4 +265,4 @@ Django 設定
 接続確認
 ========
 
-.. include:: ../include/confirm_login.rst
+.. include:: ../../include/confirm_login.rst
