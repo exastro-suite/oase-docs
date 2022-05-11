@@ -9,7 +9,6 @@
    :maxdepth: 1
 
    login
-   sso
    reset_password
    expired_password
 
