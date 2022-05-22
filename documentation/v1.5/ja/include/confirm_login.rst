@@ -1,5 +1,3 @@
-:orphan:
-
 | 以下のURLより、ログイン画面にアクセスしてください。
 
 .. code-block:: text

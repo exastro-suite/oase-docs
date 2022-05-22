@@ -1,5 +1,3 @@
-:orphan:
-
 .. csv-table:: ディシジョンテーブル作成時に設定可能な条件式一覧
    :name: decision_table_conditions
    :header: 条件式, 説明, 取得したメッセージの例, 真となる条件の記載例
