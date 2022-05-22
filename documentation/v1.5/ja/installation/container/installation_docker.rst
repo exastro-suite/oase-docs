@@ -27,7 +27,7 @@ Docker 環境が必要となります。
    docker run --privileged --hostname="exastro-oase" -d exastro/oase -p <port>:80 -p <port>:443
 
 .. warning::
-   | :command:`--privileged` および :command:`--hostname="exastro-oase"` は必須のオプションとなります。
+   | :kbd:`--privileged` および :kbd:`--hostname="exastro-oase"` は必須のオプションとなります。
    | また、サービス接続用のポートは環境に応じて変更をしてください。
 
 docker-compose

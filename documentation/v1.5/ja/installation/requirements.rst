@@ -13,8 +13,7 @@
    :widths: 10, 50
 
    OS,     Linux Centos7
-   CPU,    Intel Xeon E312xx (Sandy Bridge)
-   CPU数,  4コア
+   CPUコア数,  4コア
    メモリ, 8GB
    HDD,    100GB
 
@@ -28,33 +27,44 @@
 | Webコンテンツ、BackYardコンテンツ、データベースは、次のようなサーバ構成で運用が可能です。
 
 .. csv-table::
-   :header: No., 構成, 説明, メリット, デメリット
-   :widths: 5, 16, 20, 15, 15
+   :header: 構成, 説明, 特徴
+   :widths: 16, 20, 15
 
-   1, オールインワン（シングル）型, OASE システムを一つのサーバ上で組み立てる最も簡単で安価な構築型,構築が簡易かつ低コスト,バックアップ無し
+   オールインワン構成, OASE システムを一つの基盤上で稼働させる最も簡単で安価な構築型,構築作業や構成がシンプルで、かつ、低コストに実現可能。
+   ハイアベイラビリティ構成,高い可用性や拡張性がある構築型,SPoF(単一障害点)がないため基盤の障害が発生した場合にもサービス継続可能な可用性や拡張性がある。
 
 以降に、各型のイメージ図を記載します。
 
-| ・オールインワン（シングル）型
+.. figure:: ../images/introduction/deploy_all_in_one.png
+   :scale: 33%
+   :align: left
 
-.. image:: ../images/deploy_all_in_one.png
-   :scale: 100%
-   :align: center
-   :alt: オールインワン構成
+   オールインワン構成例
+
+.. figure:: ../images/introduction/deploy_high_availability.png
+   :scale: 33%
+   :align: right
+
+   ハイアベイラビリティ構成例
+
+.. raw:: html
+
+   <div style="clear:both;"></div>
 
 通信要件
 ========
 
 | 本システム構成において、各サービス間の通信要件は以下の通りです。
 
-.. csv-table:: 表 通信要件一覧
-   :header: No., FROM, TO, プロトコル, 主な用途
-   :widths: 5, 20, 20, 30, 50
+.. csv-table:: 通信要件一覧
+   :header: FROM, TO, プロトコル, 主な用途
+   :widths: 20, 20, 30, 50
 
-   1, 端末, Web, "http(s) [80(443)/tcp]", OASEのWebコンテンツへのアクセス
-   2, BackYard, RHDM or Drools, "http [8080/tcp]", ディシジョンテーブルのコンテナ管理
-   3, Web, BackYard, "tcp [50001/tcp]", ディシジョンテーブルのファイル管理
-
+   作業端末, Exastro OASE, "http(s) [80,443/tcp]", Exastro OASE の Web コンソールへのアクセス
+   Exastro OASE, RDB(MariaDB), "3306/tcp", DB通信
+   Exastro OASE, RabbitMQ, "5672/tcp", イベントメッセージの送受信
+   Exastro OASE, RHDM or Drools, "http [8080/tcp]", ディシジョンテーブルのコンテナ管理
+ 
 .. note:: 必須項目を記載。OASE外部のサービスに準拠するため適宜変更してください。
 
 ソフトウェア要件
