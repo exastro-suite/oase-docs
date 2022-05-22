@@ -10,11 +10,9 @@
 ルール作成
 ==========
 
-.. |download_icon| image:: ../images/quickstart/download_icon.png
-
 | ルールの作成には、ディシジョンテーブルファイルを利用します。
 | ディシジョンテーブルファイルのダウンロードは、画面上部のメニューの :menuselection:`ルール --> ディシジョンテーブル` から行います。
-| :doc:`decision_table` で作成した :program:`新規ディシジョンテーブル` のダウンロードアイコン |download_icon| をクリックし、ディシジョンテーブルファイルをダウンロードします。
+| :doc:`decision_table` で作成した :program:`新規ディシジョンテーブル` のダウンロードボタン :guilabel:`` 、ディシジョンテーブルファイルをダウンロードします。
 
 
 .. figure:: ../images/quickstart/new_rule_01.png
@@ -24,7 +22,7 @@
    ディシジョンテーブルダウンロード
 
 | ディシジョンテーブルファイルを開き、ルールを追加します。
-| 記載内容の詳細についてはここでは説明を省略します。詳細は、:doc:`../decision_table/rule` を参照して下さい。
+| 記載内容の詳細についてはここでは説明を省略します。詳細は、:doc:`../rule_engine/action_parameters` を参照して下さい。
 
 | 特に重要な項目としては、下記となります。
 
@@ -109,7 +107,7 @@
 
 .. tip:: トークンは、ルールの検証を行う際のテストリクエスト送信でも必要となります。
 
-| 画面上部にある、:guilabel:`新規トークン払い出し` をクリックします。
+| 画面上部にある、:guilabel:` 新規トークン払い出し` をクリックします。
 
 .. figure:: ../images/quickstart/new_token_01.png
    :scale: 30%
@@ -135,7 +133,7 @@
 
    <div style="clear:both;"></div>
 
-| 項目の入力が完了したら、:guilabel:`トークン払い出し` をクリックします。
+| 項目の入力が完了したら、:guilabel:` トークン払い出し` をクリックします。
 | トークンが画面上に表示されますが、後から確認できるので記録は不要です。
 
 
@@ -143,17 +141,17 @@
 ============
 
 | ルールの設定は、画面上部のメニューの :menuselection:`ルール --> ルール` から行えます。
-| 画面上部にある :guilabel:`ファイルを選択` をクリックし、 :ref:`new_rule` で作成したディシジョンテーブルファイルを選択します。
-| 選択したファイルが正しいことを確認し、:guilabel:`アップロード` をクリックします。
+| 画面上部にある :guilabel:` ファイルを選択` をクリックし、 :ref:`new_rule` で作成したディシジョンテーブルファイルを選択します。
+| 選択したファイルが正しいことを確認し、:guilabel:` アップロード` をクリックします。
 
 .. figure:: ../images/quickstart/rule_apply_01.png
    :width: 800px
    :align: center
 
 | :menuselection:`作業ステータス` が :program:`ステージング適用完了` になっていることを確認します。
-| :guilabel:`テストリクエスト` をクリックします。
+| :guilabel:` テストリクエスト` をクリックします。
 
-.. tip:: 何らかの問題がある場合は、 ダウンロードボタン |download_icon| をクリックし、ログファイルを確認して下さい。
+.. tip:: 何らかの問題がある場合は、 ダウンロードボタン :guilabel:`` をクリックし、ログファイルを確認して下さい。
 
 
 .. figure:: ../images/quickstart/test_request_01.png
@@ -172,7 +170,7 @@
 
    <div style="clear:both;"></div>
 
-| :guilabel:`テストリクエスト設定へ` をクリックします。
+| :guilabel:` テストリクエスト設定へ` をクリックします。
 
 .. figure:: ../images/quickstart/test_request_02.png
    :scale: 30%
@@ -190,7 +188,7 @@
 
    <div style="clear:both;"></div>
 
-| :guilabel:`実行` をクリックします。
+| :guilabel:` 実行` をクリックします。
 
 .. figure:: ../images/quickstart/test_request_03.png
    :scale: 30%
@@ -204,19 +202,17 @@
 
    <div style="clear:both;"></div>
 
-| :guilabel:`閉じる` をクリックします。
+| :guilabel:` 閉じる` をクリックします。
 | 運用ステータスを :program:`検証完了` にするかどうかの確認があるので、:guilabel:`OK` をクリックします。
 
 
 ルールの本番適用
 ================
 
-.. |apply_icon| image:: ../images/quickstart/apply_icon.png
-
 | ルールの本番適用は、画面上部のメニューの :menuselection:`ルール --> ルール` から行えます。
-| 画面上部の **ステージング適用ルール** にある **適用ボタン** |apply_icon| をクリックします。
+| 画面上部の :menuselection:`ステージング適用ルール` にある適用ボタン :guilabel:`` をクリックします。
 
-| 数秒～1分程度後に、 **作業ステータス** が **プロダクション適用完了** になります。
+| 数秒～1分程度後に、 :menuselection:`作業ステータス` が :program:`プロダクション適用完了` になります。
 
 .. figure:: ../images/quickstart/rule_apply_02.png
    :width: 800px

@@ -10,7 +10,7 @@ ZABBIX監視アダプタの追加
 ========================
 
 | 監視アダプタの設定は、画面上部のメニューの :menuselection:`システム --> 監視アダプタ` から行えます。
-| 新たに監視アダプタを登録するために、:guilabel:`監視先の追加` をクリックします。
+| 新たに監視アダプタを登録するために、:guilabel:` 監視先の追加` をクリックします。
 
 | :menuselection:`監視先の追加` 設定フォームから設定を行います。
 
@@ -30,7 +30,7 @@ ZABBIX監視アダプタの追加
 
    <div style="clear:both;"></div>
 
-| :menuselection:`ZABBIX Adapter ver1` 設定フォームで、連係する監視アプリケーション(Zabbix)に対する接続情報とデシジョンテーブル連携のための設定を行います。
+| :menuselection:`ZABBIX Adapter ver1` 設定フォームで、連携する監視アプリケーション(Zabbix)に対する接続情報とデシジョンテーブル連携のための設定を行います。
 
 .. figure:: ../images/quickstart/new_monitoring_adapter_02.png
    :width: 400px
@@ -79,7 +79,7 @@ ZABBIX監視アダプタの追加
    <div style="clear:both;"></div>
 
 
-| 全ての項目の入力が完了したら、:guilabel:`保存` をクリックします。
+| 全ての項目の入力が完了したら、:guilabel:` 保存` をクリックします。
 | 新規に追加した監視アダプタが一覧画面に表示されます。
 
 .. figure:: ../images/quickstart/new_monitoring_adapter_03.png

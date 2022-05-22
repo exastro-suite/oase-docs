@@ -18,17 +18,17 @@
    パスワード入力フォーム
 
 .. csv-table:: 初回ログイン時の入力内容
-   :header: No., 入力項目, 入力値, 説明
-   :widths: 2, 15, 15, 30
+   :header: 入力項目, 入力値, 説明
+   :widths: 15, 15, 30
 
-   ①, Login ID, administrator, システム管理者のログインIDを入力します。
-   ②, Password, oaseoaseoase, システム管理者のログインパスワードを入力します。
+   Login ID, :kbd:`administrator`, システム管理者のログインIDを入力します。
+   Password, :kbd:`oaseoaseoase`, システム管理者のログインパスワードを入力します。
 
 .. raw:: html
 
    <div style="clear:both;"></div>
 
-|  :guilabel:`Login` ボタンを押下します。
+|  :guilabel:` Login` ボタンを押下します。
 
 
 .. _change-pw:
@@ -47,12 +47,12 @@
    パスワード変更フォーム
 
 .. csv-table:: パスワード変更時の入力内容
-   :header: No., 入力項目, 入力値, 説明
-   :widths: 2, 15, 15, 30
+   :header: 入力項目, 入力値, 説明
+   :widths: 15, 15, 30
 
-   ①, 既存のパスワード, oaseoaseoase, システム管理者の初期パスワードを入力します。
-   ②, 既存のパスワード, 新しいパスワード, パスワードの入力条件に従って、新しいパスワードを入力します。
-   ③, 新規のパスワードの再入力, 新しいパスワード, 入力したパスワードが正しいかの確認のため、もう一度パスワードを入力します。
+   既存のパスワード, :kbd:`oaseoaseoase`, システム管理者の初期パスワードを入力します。
+   既存のパスワード, 新しいパスワード, パスワードの入力条件に従って、新しいパスワードを入力します。
+   新規のパスワードの再入力, 新しいパスワード, 入力したパスワードが正しいかの確認のため、もう一度パスワードを入力します。
 
 
 .. note:: | パスワードは下記の条件を満たす必要があります。
@@ -63,7 +63,7 @@
 
    <div style="clear:both;"></div>
 
-|  :guilabel:`変更する` ボタンを押下します。
+|  :guilabel:` 変更する` ボタンを押下します。
 
 .. figure:: ../images/quickstart/init_password02.png
    :scale: 30%
@@ -102,7 +102,7 @@
 
    <div style="clear:both;"></div>
 
-| :guilabel:`Login` をクリックすると、下記のようにダッシュボードが表示されます。
+| :guilabel:` Login` をクリックすると、下記のようにダッシュボードが表示されます。
 
 .. figure:: ../images/dashboard/dashboard_no_data.png
    :width: 80%

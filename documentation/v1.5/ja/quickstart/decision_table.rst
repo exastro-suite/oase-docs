@@ -10,7 +10,7 @@
 ========================
 
 | デシジョンテーブルの設定は、画面上部のメニューの :menuselection:`ルール --> デシジョンテーブル` から行えます。
-| 新たにデシジョンテーブルを作成するために、:guilabel:`新規追加` をクリックします。
+| 新たにデシジョンテーブルを作成するために、:guilabel:` 新規追加` をクリックします。
 
 | :menuselection:`基本情報・権限` 設定フォームから設定を行います。
 
@@ -38,7 +38,7 @@
 
    <div style="clear:both;"></div>
 
-| 入力が完了したら、:guilabel:`条件式の設定へ` をクリックします。
+| 入力が完了したら、:guilabel:` 条件式の設定へ` をクリックします。
 | :menuselection:`条件式` 設定フォームで、アラートメッセージに対する条件式を設定を行います。
 
 .. figure:: ../images/quickstart/new_decision_table_02.png
@@ -64,7 +64,7 @@
 
    <div style="clear:both;"></div>
 
-| 入力が完了したら、:guilabel:`未知事象通知の設定へ` をクリックします。
+| 入力が完了したら、:guilabel:` 未知事象通知の設定へ` をクリックします。
 | :menuselection:`未知事象通知` 設定フォームで、通知先の設定を行います。
 
 .. figure:: ../images/quickstart/new_decision_table_03.png
@@ -83,7 +83,7 @@
 
    <div style="clear:both;"></div>
 
-| 全ての項目の入力が完了したら、:guilabel:`保存` をクリックします。
+| 全ての項目の入力が完了したら、:guilabel:` 保存` をクリックします。
 | 新規に追加したディシジョンテーブルが一覧画面に表示されます。
 
 .. figure:: ../images/quickstart/new_decision_table_04.png
