@@ -2,26 +2,34 @@
 マニュアル構成
 ==============
 
-| 本マニュアルの記載内容について説明します。
+| 本マニュアルについて説明します。
+
 
 マニュアルの構成
 ================
 
 | 本書の内容は、ユーザの知りたい項目に簡単にアクセスできるように、セクションとサブセクションに分かれています。
-| Exastro Operation Autonomy Support Engine (以降、Exastro OASE と表記)システム構築の為のシステム構成や環境構築、運用について説明します。
+| Exastro Operation Autonomy Support Engine (以降、Exastro OASE と表記)のシステム構築の為のシステム構成や環境構築、運用について説明します。
 
-セクション
-==========
+* :doc:`../introduction/index` では、現在の Exastro OASE に関する一般的な情報を記載しています。
+.. * :doc:`../definitions/definitions` では、Exastro OASE で使用する用語を説明しています。
+* :doc:`../installation/index` では、Exastro OASE のインストール方法やアップデート方法について記載しています。
+* :doc:`../quickstart/index` では、Exastro OASE のログインからルールの作成、そして実際に対処を行うまでの一連の流れを記載しています。
+* :doc:`../system/index` では、Exastro OASE で変更可能な設定項目とその内容について記載しています。
+* :doc:`../authentication/index` では、ユーザやグループとその権限の設定方法について記載しています。
+* :doc:`../security/index` では、Exastro OASE が提供しているセキュリティ機能について記載しています。
+* :doc:`../monitoring/index` では、監視アプリケーションとの連携のための設定方法について説明しています。
+* :doc:`../action/index` では、対処(アクション)をおこなうためのアプリケーションとの連携のための設定方法について説明しています。
+* :doc:`../rule_engine/index` では、監視アプリケーションから取得したアラートメッセージと対処方法を結びつけるルールや対処方法の定義のやり方について記載しています。
+* :doc:`../api/index` では、Exastro OASE が提供するシステム関連系のための API について記載しています。
+* :doc:`../appendix/index` では、Exastro OASE のシステム内部の情報について記載しています。ユーザが利用する上ではほとんど不要な情報でしょう。
 
-:doc:`../introduction/index` では、現在の Exastro OASE に関する一般的な情報を記載しています。
-
-.. :doc:`../definitions/definitions` では、Exastro OASE で使用する用語を説明しています。
-
-:doc:`../installation/index` では、Exastro OASE のインストール方法やアップデート方法について記載しています。
 
 メモ
 ====
 
+| ユーザが確認すべき内容ごとにレベルが分けをしたメモを記載している箇所がいくつかあります。
+| Note や Tip については読み飛ばしてもそれほど運用に影響はありませんが、Warning や Danger は運用上注意が必要な項目となりますので、ユーザが確認することを推奨します。
 | 吹き出し形式のメモには下記の意味があります。
 
 .. note:: | 補足的な情報を示しています。
@@ -42,12 +50,12 @@
 | 本マニュアルでは、内容に応じて下記のような表現方法を用います。
 
 .. csv-table::  表現例
-   :header: 表現例, 実際の表記
+   :header: 表現例, 実際の表記(入力例)
    :widths: 20, 60
 
-   メニュー・画面, :menuselection:`メニュー --> サブメニュー`、:menuselection:`画面名`
+   メニュー・画面・画面内の項目, :menuselection:`メニュー --> サブメニュー`、:menuselection:`画面名`、:menuselection:`項目`
    ボタン, :guilabel:`ボタン`
-   キーボード入力・入力内容, :kbd:`Ctrl + Z`、 :kbd:`入力内容`
-   コマンド, :command:`Input data`
-   設定値, :program:`Input data`
-   ファイル・ディレクトリ, :file:`/path/to/file`
+   キーボード入力, :kbd:`Ctrl + Z`、 :kbd:`入力文字列`
+   GUI上の設定項目・設定値, :program:`Item`、 :program:`Input data`
+   ファイル・ディレクトリのパス, :file:`/path/to/file`
+   用語定義, :dfn:`用語`
