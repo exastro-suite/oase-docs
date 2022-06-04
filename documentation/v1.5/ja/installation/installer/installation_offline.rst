@@ -3,7 +3,7 @@
 ======================
 
 | オフラインによる Exastro OASE 導入のための手順について説明します。
-| :doc:`requirements` を確認の上、作業を実施して下さい。
+| :doc:`../requirements` を確認の上、作業を実施して下さい。
 
 前提条件
 ========
@@ -211,8 +211,8 @@
 
 .. tip::
    | 各プロセスのインストール先のディレクトリを下記のようにしております。
-   | Exastro OASE: **/exastro**
-   | JBoss (WildFly): **/exastro/JBoss**
+   | Exastro OASE: :file:`/exastro``
+   | JBoss (WildFly): :file:`/exastro/JBoss`
 
 | 環境構築ツールを実行します。
 
@@ -229,9 +229,9 @@
 
 .. tip::
    | インストールログは下記に作成されます。
-   | **<extract_path>/oase/oase_install_package/install_scripts/logs**
+   | :file:`<extract_path>/oase/oase_install_package/install_scripts/logs`
    | 本マニュアルの手順では、下記となります。
-   | **/tmp/oase/oase_install_package/install_scripts/logs**
+   | :file:`/tmp/oase/oase_install_package/install_scripts/logs`
 
 
 | インストーラ実行結果を確認します。
@@ -247,8 +247,8 @@
 Django 設定
 ===========
 
-| Django の **HOST_NAME** を設定します。
-| **HOST_NAME** は、他のプロセスからアクセス可能な **Web App** プロセスの URL を指定します。
+| Django の :program:`HOST_NAME` を設定します。
+| :program:`HOST_NAME` は、Exastro OASE サーバに接続する際の URL を指定します。
 
 .. code-block:: bash
 

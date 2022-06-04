@@ -3,7 +3,7 @@
 ======================
 
 | オンラインによる Exastro OASE 導入のための手順について説明します。
-| :doc:`requirements` を確認の上、作業を実施して下さい。
+| :doc:`../requirements` を確認の上、作業を実施して下さい。
 | オフライン環境でのインストール方法については :doc:`installation_offline` を参考にして下さい。
 
 前提条件
@@ -33,7 +33,7 @@
 
    # 現在のタイムゾーンを確認
    timedatectl status
-   Time zone: <any_time_zone>
+   Time zone: <anywhere_time_zone>
 
    # タイムゾーンを変更する場合
    sudo timedatectl set-timezone <your_time_zone>
@@ -240,7 +240,7 @@ Django 設定
 ===========
 
 | Django の :program:`HOST_NAME` を設定します。
-| :program:`HOST_NAME` は、他のプロセスからアクセス可能な :program:`Web App` プロセスの URL を指定します。
+| :program:`HOST_NAME` は、Exastro OASE サーバに接続する際の URL を指定します。
 
 .. code-block:: bash
 
