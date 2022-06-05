@@ -52,11 +52,10 @@
 | 画面上部のメニューから :menuselection:`システム --> アカウントロックユーザ` を開きます。
 | ロックされているアカウントの一覧を表示します。
 
-.. figure:: ../images/locked_user/locked_user_02.png
+.. figure:: /images/ja/locked_user/locked_user_02.png
    :scale: 60%
    :align: center
    
    アカウントロックユーザ画面
    
-| :guilabel:`解除ボタン` をクリックし, アカウントロックを解除します。
-| アカウントロックユーザ画面に戻ります。 
+| 解除ボタン :guilabel:`` をクリックし, アカウントロックを解除します。
