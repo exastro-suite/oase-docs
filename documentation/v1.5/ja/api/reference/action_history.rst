@@ -131,13 +131,13 @@ Example
 リクエスト
 ----------
 
-.. code-block:: bash
+.. code-block:: sh
 
-   curl -X GET -k 'https://<fqdn_or_ip_address>/oase_web/restapi/actionhistory/historyrequest’ \
+   curl -X GET -k 'https://<fqdn_or_ip_address>/oase_web/restapi/actionhistory/historyrequest' \
         -H 'accept: application/json' \
-        -d ’{
+        -d '{
              ”traceid”: ”TOS_20210412053112220048_0000000010”
-            }’
+            }'
 
 レスポンス
 ----------

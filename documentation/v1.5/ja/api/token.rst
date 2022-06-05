@@ -3,7 +3,7 @@
 ========
 
 | トークン払い出し方法、および、画面の操作方法について説明します。
-| トークン払い出し画面では、OASE を利用して作業を行う上で共通に必要となる以下の機能を提供します。
+| トークン払い出し画面では、Exastro OASE を利用して作業を行う上で共通に必要となる以下の機能を提供します。
 | トークン画面の操作は、画面上部のメニューの :menuselection:`ルール --> トークン払い出し` から表示できます。
 
 
@@ -19,9 +19,9 @@
 新規トークンの払い出し
 ======================
 
-| 画面上部にある、:guilabel:`新規トークン払い出し` をクリックします。
+| 画面上部にある、:guilabel:` 新規トークン払い出し` をクリックします。
 
-.. figure:: ../images/token/token_10.png
+.. figure:: /images/ja/token/token_10.png
    :scale: 30%
    :align: center
 
@@ -30,7 +30,7 @@
 
 | 設定フォームの各項目に情報を入力します。
 
-.. figure:: ../images/token/token_11.png
+.. figure:: /images/ja/token/token_11.png
    :scale: 20%
    :align: left
 
@@ -55,10 +55,10 @@
 
    <div style="clear:both;"></div>
 
-| 項目の入力が完了したら、:guilabel:`トークン払い出し` をクリックします。
+| 項目の入力が完了したら、:guilabel:` トークン払い出し` をクリックします。
 | トークンが画面上に表示されますが、後から確認できるので記録は不要です。
 
-.. figure:: ../images/token/token_12.png
+.. figure:: /images/ja/token/token_12.png
    :scale: 35%
    :align: center
 
@@ -70,25 +70,25 @@
 
 | 発行済みのトークンは :menuselection:`トークン払い出し` 画面から確認します。
 
-.. figure:: ../images/token/token_07.png
+.. figure:: /images/ja/token/token_07.png
    :scale: 60%
    :align: center
 
    トークン詳細画面
 
-| :guilabel:`トークン再表示` をクリックします。
+| :guilabel:` トークン再表示` をクリックします。
 | 現在のログイン中のユーザのパスワードを入力します。
 
-.. figure:: ../images/token/token_08.png
+.. figure:: /images/ja/token/token_08.png
    :scale: 30%
    :align: center
 
    パスワードの再入力画面
 
-| :guilabel:`トークン再表示` をクリックし、トークンを再表示します。
+| :guilabel:` トークン再表示` をクリックし、トークンを再表示します。
 | トークン再表示画面の各構成要素と、その機能は次の表のとおりです。
 
-.. figure:: ../images/token/token_09.png
+.. figure:: /images/ja/token/token_09.png
    :scale: 30%
    :align: left
 
@@ -112,9 +112,9 @@
 ==============
 
 | トークンに紐付けられているグループの権限を編集します。
-| トークン一覧画から :menuselection:`トークン詳細` 面画を開き、 :guilabel:`編集` をクリックします。
+| トークン一覧画から :menuselection:`トークン詳細` 面画を開き、 :guilabel:` 編集` をクリックします。
 
-.. figure:: ../images/token/token_13.png
+.. figure:: /images/ja/token/token_13.png
    :scale: 30%
    :align: left
 
