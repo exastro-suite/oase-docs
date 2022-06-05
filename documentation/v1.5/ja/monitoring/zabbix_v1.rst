@@ -3,13 +3,13 @@ Zabbixアダプタ
 ==============
 
 | Zabbix アダプタは、Zabbix サーバで提供されているアラート情報(`トリガー情報 <https://www.zabbix.com/documentation/current/en/manual/api/reference/trigger/object>`_)を能動的に取得するための仕組みです。
-| ディシジョンテーブルに対して、複数の Zabbix サーバと連係することが可能です。
+| ディシジョンテーブルに対して、複数の Zabbix サーバと連携することが可能です。
 
 前提条件
 ========
 
-* ・監視アダプタの登録を行う際には、事前にディシジョンテーブルが登録されている必要があります。ディシジョンテーブルの登録方法に関しては、:doc:`../rule_engine/decision_table` を参照してください。
-* ・Zabbixと連係するためには、接続先のZabbixサーバのURLが http[s]://zabbix.server.fqdn/**zabbix** となっている必要があり、サービスが */zabbix* ディレクトリで公開されている必要があります。
+* ・監視アダプタの登録を行う際には、事前にディシジョンテーブルが登録されている必要があります。ディシジョンテーブルの登録方法に関しては、:doc:`../rule_definition/decision_table` を参照してください。
+* ・Zabbixと連携するためには、接続先のZabbixサーバのURLが http[s]://zabbix.server.fqdn/**zabbix** となっている必要があり、サービスが */zabbix* ディレクトリで公開されている必要があります。
 * ・Zabbix監視アダプタがインストール済みである必要があります。インストール方法については、:doc:`adapter_install` を参照してください。
 
 新規登録
@@ -23,7 +23,7 @@ Zabbixアダプタ
     | 監視アダプタを追加するために、監視アダプタに対する「更新可能」のアクセス権限が必要です。
 
 
-.. figure:: ../images/monitoring_adapter/monitoring_adapter_08.png
+.. figure:: /images/ja/monitoring_adapter/monitoring_adapter_08.png
    :scale: 80%
    :align: center
 
@@ -31,7 +31,7 @@ Zabbixアダプタ
 
 | Zabbix アダプタの設定項目を入力します。
 
-.. figure:: ../images/monitoring_adapter/monitoring_adapter_09.png
+.. figure:: /images/ja/monitoring_adapter/monitoring_adapter_09.png
    :scale: 35%
    :align: left
 
@@ -74,7 +74,7 @@ Zabbixアダプタ
 
 | 上メニューの :menuselection:`システム --> 監視アダプタ` から監視アダプタ画面を開き、 :menuselection:`ZABBIX Adapter ver1` タブを押下し、Zabbix アダプタの一覧を表示します。
 
-.. figure:: ../images/monitoring_adapter/monitoring_adapter_10.png
+.. figure:: /images/ja/monitoring_adapter/monitoring_adapter_10.png
    :scale: 60%
    :align: center
 
@@ -82,7 +82,7 @@ Zabbixアダプタ
 
 | 編集対象の監視アダプタの詳細確認ボタン :guilabel:`` をクリックし、詳細画面を開きます。
 
-.. figure:: ../images/monitoring_adapter/monitoring_adapter_11.png
+.. figure:: /images/ja/monitoring_adapter/monitoring_adapter_11.png
    :scale: 60%
    :align: center
 
@@ -90,7 +90,7 @@ Zabbixアダプタ
 
 | 画面下部にある :guilabel:` 編集` ボタンから編集画面を開き、該当の項目を編集します。
 
-.. figure:: ../images/monitoring_adapter/monitoring_adapter_13.png
+.. figure:: /images/ja/monitoring_adapter/monitoring_adapter_13.png
    :scale: 60%
    :align: center
 

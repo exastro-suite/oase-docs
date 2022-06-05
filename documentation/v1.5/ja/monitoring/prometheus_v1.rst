@@ -3,12 +3,12 @@ Prometheusアダプタ
 ==================
 
 | Prometheus アダプタは、Prometheus で提供されているアラート情報(`Prometheus HTTP API - Alerts <https://prometheus.io/docs/prometheus/latest/querying/api/#alerts>`_)を能動的に取得するための仕組みです。
-| ディシジョンテーブルに対して、複数の Prometheus サーバと連係することが可能です。
+| ディシジョンテーブルに対して、複数の Prometheus サーバと連携することが可能です。
 
 前提条件
 ========
 
-* ・監視アダプタの登録を行う際には、事前にディシジョンテーブルが登録されている必要があります。ディシジョンテーブルの登録方法に関しては、:doc:`../rule_engine/decision_table` を参照してください。
+* ・監視アダプタの登録を行う際には、事前にディシジョンテーブルが登録されている必要があります。ディシジョンテーブルの登録方法に関しては、:doc:`../rule_definition/decision_table` を参照してください。
 * ・Prometheus監視アダプタがインストール済みである必要があります。インストール方法については、:doc:`adapter_install` を参照してください。
 
 新規登録
@@ -22,7 +22,7 @@ Prometheusアダプタ
     | 監視アダプタを追加するために、監視アダプタに対する「更新可能」のアクセス権限が必要です。
 
 
-.. figure:: ../images/monitoring_adapter/monitoring_adapter_08.png
+.. figure:: /images/ja/monitoring_adapter/monitoring_adapter_08.png
    :scale: 80%
    :align: center
 
@@ -30,7 +30,7 @@ Prometheusアダプタ
 
 | Prometheus アダプタの設定項目を入力します。
 
-.. figure:: ../images/monitoring_adapter/monitoring_adapter_22.png
+.. figure:: /images/ja/monitoring_adapter/monitoring_adapter_22.png
    :scale: 35%
    :align: left
 
@@ -61,10 +61,14 @@ Prometheusアダプタ
 
 | 例えば、下記のレスポンスを取得した場合の Promehteus 項目の指定方法は、以下のようになります。
 
+
+.. code-block:: sh
+   
+   curl http://your-prom-server:9090/api/v1/alerts
+   
+
 .. code-block:: json
 
-   $ curl http://your-prom-server:9090/api/v1/alerts
-   
    {
        "data": {
            "alerts": [
@@ -106,7 +110,7 @@ Prometheusアダプタ
 
 | 上メニューの :menuselection:`システム --> 監視アダプタ` から監視アダプタ画面を開き、 :menuselection:`Prometheus Adapter ver1` タブを押下し、Prometheus アダプタの一覧を表示します。
 
-.. figure:: ../images/monitoring_adapter/monitoring_adapter_20.png
+.. figure:: /images/ja/monitoring_adapter/monitoring_adapter_20.png
    :scale: 60%
    :align: center
 
@@ -114,7 +118,7 @@ Prometheusアダプタ
 
 | 編集対象の監視アダプタの詳細確認ボタン :guilabel:`` をクリックし、詳細画面を開きます。
 
-.. figure:: ../images/monitoring_adapter/monitoring_adapter_21.png
+.. figure:: /images/ja/monitoring_adapter/monitoring_adapter_21.png
    :scale: 60%
    :align: center
 
@@ -122,7 +126,7 @@ Prometheusアダプタ
 
 | 画面下部にある :guilabel:` 編集` ボタンから編集画面を開き、該当の項目を編集します。
 
-.. figure:: ../images/monitoring_adapter/monitoring_adapter_22.png
+.. figure:: /images/ja/monitoring_adapter/monitoring_adapter_22.png
    :scale: 60%
    :align: center
 

@@ -1,6 +1,6 @@
-===============
-Grafanaアダプタ
-===============
+===========
+ITAドライバ
+===========
 
 | Grafana アダプタは、Grafana で提供されているアラート情報(`Grafana HTTP API - Alerting API <https://grafana.com/docs/grafana/latest/http_api/alerting/#alerting-api>`_)を能動的に取得するための仕組みです。
 | ディシジョンテーブルに対して、複数の Grafana サーバと連携することが可能です。
