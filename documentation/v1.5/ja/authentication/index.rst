@@ -5,7 +5,6 @@
 .. toctree::
    :maxdepth: 1
 
-   login/index
    group
-.. user
-.. sso
+   user
+   login/index

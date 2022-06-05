@@ -12,7 +12,7 @@
 | Exastro OASE に認証情報を入力することでログインします。
 | :program:`Login ID` と :program:`Password` を入力します。
 
-.. figure:: ../../images/login/main02.png
+.. figure:: /images/ja/login/main02.png
    :scale: 30%
    :align: left
 
@@ -30,9 +30,9 @@
 
    <div style="clear:both;"></div>
 
-| :guilabel:`Login` をクリックすると、下記のようにダッシュボードが表示されます。
+| :guilabel:` Login` をクリックすると、下記のようにダッシュボードが表示されます。
 
-.. figure:: ../../images/dashboard/dashboard_no_data.png
+.. figure:: /images/ja/dashboard/dashboard_no_data.png
    :width: 80%
    :align: center
 
