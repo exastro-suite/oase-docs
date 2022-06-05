@@ -25,13 +25,13 @@
    プロダクション環境 : は
       | ステージング環境で検証済みのルールを使用して、監視運用の自動化を行う環境です。
 
-.. figure:: ../images/rule/staging_confirmation.png
+.. figure:: /images/ja/rule/staging_confirmation.png
    :scale: 45%
    :align: left
    
    ルール適用の流れ
 
-.. figure:: ../images/rule/rule_00_01.png
+.. figure:: /images/ja/rule/rule_00_01.png
    :scale: 40%
    :align: right
 
@@ -56,7 +56,7 @@
    | ディシジョンテーブルの作成、および、ディシジョンテーブルファイルの取得方法については、 :doc:`rule_format` を参照してください。
    | また、ステージング環境へのルール適用には、対象となるディシジョンテーブルのステージング環境に対する「更新可能」のアクセス権限が必要です。
 
-.. figure:: ../images/rule/rule_03_02.png
+.. figure:: /images/ja/rule/rule_03_02.png
    :width: 75%
    :align: center
 
@@ -67,7 +67,7 @@
 .. note::
    | ステージング環境へのアクセス権限が「更新可能」の場合のみ、アップロードボタンは押下することができます。
 
-.. figure:: ../images/rule/rule_03_03.png
+.. figure:: /images/ja/rule/rule_03_03.png
    :width: 75%
    :align: center
 
@@ -136,13 +136,13 @@
 | :guilabel:` テストリクエスト` ボタンを押下し、テストリクエスト画面へ遷移します。
 | テスト実施対象のディシジョンテーブルをプルダウンから選択します。
 
-.. figure:: ../images/rule/rule_03_04.png
+.. figure:: /images/ja/rule/rule_03_04.png
    :scale: 30%
    :align: left
 
    テストリクエスト
 
-.. figure:: ../images/rule/rule_03_13_02.png
+.. figure:: /images/ja/rule/rule_03_13_02.png
    :scale: 45%
    :align: right
 
@@ -155,7 +155,7 @@
 | ディシジョンテーブルの選択し、 :guilabel:` テストリクエスト設定へ` ボタンを押下します。
 | :menuselection:`単発テスト` を押下し、テストリクエストで投入する内容を記入します。
 
-.. figure:: ../images/rule/rule_03_18.png
+.. figure:: /images/ja/rule/rule_03_18.png
    :scale: 45%
    :align: left
 
@@ -182,13 +182,13 @@
 | :guilabel:` テストリクエスト` ボタンを押下し、テストリクエスト画面へ遷移します。
 | テスト実施対象のディシジョンテーブルをプルダウンから選択します。
 
-.. figure:: ../images/rule/rule_03_04.png
+.. figure:: /images/ja/rule/rule_03_04.png
    :scale: 30%
    :align: left
 
    単発テストリクエスト
 
-.. figure:: ../images/rule/rule_03_13_02.png
+.. figure:: /images/ja/rule/rule_03_13_02.png
    :scale: 45%
    :align: right
 
@@ -202,13 +202,13 @@
 | :menuselection:`一括テスト` を押下し、:guilabel:` 一括テスト用Excelファイルのダウンロード` ボタンからファイルをダウンロードします。
 | ダウンロードした一括テスト用Excelファイルに、ディシジョンテーブルで定義されている条件部に対して、テストリクエスト送信の値を記入します。Web API により投入されるリクエストや監視アダプタから取得したイベント情報により想定される値を記入します。
 
-.. figure:: ../images/rule/rule_03_19.png
+.. figure:: /images/ja/rule/rule_03_19.png
    :scale: 40%
    :align: left
 
    一括テストリクエスト設定
 
-.. figure:: ../images/rule/rule_04_01.png
+.. figure:: /images/ja/rule/rule_04_01.png
    :scale: 25%
    :align: right
 
@@ -227,7 +227,7 @@
 | 実行状況は定期的に取得され、随時ログの出力内容が更新されます。
 | 実行状況の取得は、テストが完了する、もしくは、テストリクエスト画面が閉じられるまで行われます。
 
-.. figure:: ../images/rule/rule_03_25_01.png
+.. figure:: /images/ja/rule/rule_03_25_01.png
    :scale: 40%
    :align: left
 
@@ -246,7 +246,7 @@
 
    <div style="clear:both;"></div>
 
-.. figure:: ../images/rule/rule_03_25_02.png
+.. figure:: /images/ja/rule/rule_03_25_02.png
    :scale: 40%
    :align: left
 
@@ -267,7 +267,7 @@
 
 | 実行ログは、テストの証跡取得のためにテキストファイルとして出力するが可能です。
 
-.. figure:: ../images/rule/rule_03_27.png
+.. figure:: /images/ja/rule/rule_03_27.png
    :scale: 40%
    :align: center
 
@@ -277,7 +277,7 @@
 | このとき、「運用ステータスを検証完了にしてよろしいですか？」と確認メッセージが表示されます。
 | :guilabel:`OK` を選択すると運用ステータスが「検証完了」へ、「キャンセル」を選択すると運用ステータスが「検証実施中」へ遷移します。
 
-.. figure:: ../images/rule/rule_03_31.png
+.. figure:: /images/ja/rule/rule_03_31.png
    :scale: 40%
    :align: center
 
@@ -291,7 +291,7 @@
 | ルールファイルの運用ステータスが「検証未実施」「検証実施中」「検証NG」「検証完了」のいずれかに該当、かつ、プロダクション環境へ適用していない場合、運用者の任意でステータスを変更できます。
 | ステージング環境へのアクセス権限が「更新可能」の場合のみ、運用ステータスの変更は押下することができます。
 
-.. figure:: ../images/rule/rule_03_06.png
+.. figure:: /images/ja/rule/rule_03_06.png
    :scale: 80%
    :align: center
 
@@ -309,7 +309,7 @@
 .. note::
    | プロダクション環境へのルール適用には、対象となるディシジョンテーブルのプロダクション環境に対する「更新可能」のアクセス権限が必要です
 
-.. figure:: ../images/rule/rule_03_08.png
+.. figure:: /images/ja/rule/rule_03_08.png
    :scale: 80%
    :align: center
 
@@ -318,7 +318,7 @@
 | プロダクション環境へルールの適用を実施すると、作業ステータスや運用ステータスが更新されます。
 | プロダクション適用ルールの運用ステータスが「プロダクション適用」となれば正常です。
 
-.. figure:: ../images/rule/rule_03_09.png
+.. figure:: /images/ja/rule/rule_03_09.png
    :scale: 80%
    :align: center
 
@@ -358,7 +358,7 @@
 .. note::
    | プロダクション環境へのルール適用には、対象となるディシジョンテーブルのプロダクション環境に対する「更新可能」のアクセス権限が必要です
 
-.. figure:: ../images/rule/rule_03_12.png
+.. figure:: /images/ja/rule/rule_03_12.png
    :scale: 80%
    :align: center
 
@@ -367,4 +367,4 @@
 ルールの評価結果
 ================
 
-| ルールの評価結果については、:doc:`../maintenance/action_history` を参照してください。
+| ルールの評価結果については、:doc:`../rule_maintenance/action_history` を参照してください。

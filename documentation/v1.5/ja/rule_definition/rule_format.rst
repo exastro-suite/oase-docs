@@ -11,7 +11,7 @@
 
 | 新規追加したディシジョンテーブルのディシジョンテーブルファイルの取得には、:menuselection:`ルール --> ディシジョンテーブル` 画面を開き、作成対象のディシジョンテーブルの :guilabel:`` ボタンを押下します。
 
-.. figure:: ../images/decision_table/decision_table_04.png
+.. figure:: /images/ja/decision_table/decision_table_04.png
    :scale: 50%
    :align: center
 
@@ -19,7 +19,7 @@
  
 | 登録済みディシジョンテーブルのディシジョンテーブルファイルの取得には、:menuselection:`ルール --> ルール` 画面を開き、更新対象のディシジョンテーブルの :guilabel:`` ボタンを押下します。
 
-.. figure:: ../images/rule/rule_03_07.png
+.. figure:: /images/ja/rule/rule_03_07.png
    :scale: 50%
    :align: center
 
@@ -82,7 +82,7 @@
 
 テストリクエストおよびルールマッチング結果によるアクションの実行を行うため、ディシジョンテーブルファイルのTablesシートに判定の基準となる条件を記述する必要があります。
 
-.. figure:: ../images/decision_table/decision_table_20.png
+.. figure:: /images/ja/decision_table/decision_table_20.png
    :scale: 100%
    :align: center
 
@@ -107,7 +107,7 @@
 | :menuselection:`Tablesシート` の背景色緑色の箇所で、ユーザが任意に文字列を入力可能な項目です。
 | ここに記載した内容はシステムに一切の影響を与えません。
 
-.. figure:: ../images/decision_table/decision_table_30.png
+.. figure:: /images/ja/decision_table/decision_table_30.png
    :scale: 75%
    :align: center
 
@@ -128,7 +128,7 @@
 
 .. include:: ../include/decision_table_conditions.rst
 
-.. figure:: ../images/decision_table/decision_table_31.png
+.. figure:: /images/ja/decision_table/decision_table_31.png
    :scale: 75%
    :align: center
 
@@ -151,14 +151,14 @@
 * アクションの実行が失敗した場合のリトライ回数と間隔の設定
 * 大量のアラートメッセージを受信した場合に同一のアクションの実行を抑止する間隔および回数を設定
 
-.. figure:: ../images/decision_table/decision_table_32.png
+.. figure:: /images/ja/decision_table/decision_table_32.png
    :scale: 100%
    :align: center
 
    アクション部
 
 | 下記の :numref:`action_part` にアクション部の各項目の概要を記載します。
-|  :doc:`action_parameters`、 :doc:`suppression` 、 :doc:`correlation` については、次節以降を参照して下さい。
+|  :doc:`action`、 :doc:`suppression` 、 :doc:`correlation` については、次節以降を参照して下さい。
 
 .. csv-table:: アクション部の構成
    :name: action_part
@@ -169,9 +169,9 @@
    ルール名（必須）, ルールの名前を指定します。,プロセス再起動
    発生事象,想定する発生事象についての説明を記載する箇所です。アクション履歴やServiceNowのインシデント管理の説明欄に記載されます。,プロセスの無応答を検知しました。
    対処概要,対処内容についての説明を記載する箇所です。アクション履歴やServiceNowのインシデント管理の説明欄に記載されます。,プロセスを再起動を実施します。
-   アクション種別,対処を行うドライバの選択をします。詳細は :doc:`action_parameters` します。,ITA(ver1)
-   アクションパラメータ情報,ドライバに渡すパラメータ情報を記載します。詳細は :doc:`action_parameters` します。,CONDUCTOR_CLASS_ID=1\,OPERATION_ID=1
-   認証メールパラメータ情報,認証メール送信時のパラメータ情報を記載します。詳細は :doc:`action_parameters` します。,MAIL_NAME=oasetest\,MAIL_TO=aaa@aaa.com;bbb@bbb.com\,MAIL_CC=ccc@ccc.com\,MAIL_BCC=ddd@ddd.com\,MAIL_TEMPLATE=test_template
+   アクション種別,対処を行うドライバの選択をします。詳細は :doc:`action` を確認してください。,ITA(ver1)
+   アクションパラメータ情報,ドライバに渡すパラメータ情報を記載します。詳細は :doc:`action` を確認してください。,CONDUCTOR_CLASS_ID=1\,OPERATION_ID=1
+   承認メールパラメータ情報,承認メール送信時のパラメータ情報を記載します。詳細は :doc:`approval` を確認してください。,MAIL_NAME=oasetest\,MAIL_TO=aaa@aaa.com;bbb@bbb.com\,MAIL_CC=ccc@ccc.com\,MAIL_BCC=ddd@ddd.com\,MAIL_TEMPLATE=test_template
    リトライ間隔,対処に失敗した場合の次回実行までの待ち時間(秒)を記載します。,5
    リトライ回数,対処を試行する回数を記載します。例えば、2と入力した場合は1回のリトライが発生します。,1
    抑止間隔, :doc:`suppression` で使用します。大量に同一のアラートを受信した場合には、同一のアクションが何度も実行されることを防ぐための :doc:`suppression` があります。同一のアラートの実行を抑止する間隔(秒)を記載します。,120
@@ -190,7 +190,7 @@
 
 | :menuselection:`Tablesシート` の背景色赤色の箇所で、ルールが有効・無効となる日時について定義する項目です。
 
-.. figure:: ../images/decision_table/decision_table_33.png
+.. figure:: /images/ja/decision_table/decision_table_33.png
    :scale: 75%
    :align: center
 

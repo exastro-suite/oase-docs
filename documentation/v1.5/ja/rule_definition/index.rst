@@ -1,13 +1,14 @@
-============
-判断ロジック
-============
+==========
+ルール定義
+==========
 
 .. toctree::
    :maxdepth: 2
 
    decision_table
    rule_format
-   action_parameters
+   action
+   approval
    suppression
    correlation
    apply_rule
