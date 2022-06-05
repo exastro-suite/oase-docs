@@ -1619,6 +1619,12 @@ span.highlighted {
   height: 3.0em;
 }
 
+#article button.copybtn svg {
+  stroke: currentColor;
+  width: 3.0em;
+  height: 3.0em;
+  padding: 0.1em;
+}
 
 /* articleNavigation */
 

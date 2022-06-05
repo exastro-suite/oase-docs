@@ -27,10 +27,14 @@ Exastro OASE 1.5 操作マニュアル
    installation/index
    quickstart/index
    system/index
-   configuration/index
+   authentication/index
    security/index
-   rule_engine/index
+   monitoring/index
+   action/index
+   rule_definition/index
+   rule_maintenance/index
    api/index
+   trouble_shooting/index
    appendix/index
 ..
    system_construction/index
