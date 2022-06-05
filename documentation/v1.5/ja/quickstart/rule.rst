@@ -16,7 +16,7 @@
 | :doc:`decision_table` で作成した :program:`新規ディシジョンテーブル` のダウンロードボタン :guilabel:`` 、ディシジョンテーブルファイルをダウンロードします。
 
 
-.. figure:: ../images/quickstart/new_rule_01.png
+.. figure:: /images/ja/quickstart/new_rule_01.png
    :width: 400px
    :align: center
 
@@ -91,7 +91,7 @@
 | 無効日                              |                                                                           |
 +-------------------------------------+---------------------------------------------------------------------------+
 
-.. figure:: ../images/quickstart/new_rule_02.png
+.. figure:: /images/ja/quickstart/new_rule_02.png
    :width: 800px
    :align: center
 
@@ -108,7 +108,7 @@
 
 | 画面上部にある、:guilabel:` 新規トークン払い出し` をクリックします。
 
-.. figure:: ../images/quickstart/new_token_01.png
+.. figure:: /images/ja/quickstart/new_token_01.png
    :scale: 30%
    :align: left
 
@@ -143,7 +143,7 @@
 | 画面上部にある :guilabel:` ファイルを選択` をクリックし、 :ref:`new_rule` で作成したディシジョンテーブルファイルを選択します。
 | 選択したファイルが正しいことを確認し、:guilabel:` アップロード` をクリックします。
 
-.. figure:: ../images/quickstart/rule_apply_01.png
+.. figure:: /images/ja/quickstart/rule_apply_01.png
    :width: 800px
    :align: center
 
@@ -153,7 +153,7 @@
    | ファイルアップロード時に何らかの問題が発生してエラーとなった場合は、 ダウンロードボタン :guilabel:`` をクリックし、ダウンロードした ZIP ファイルに梱包されているログファイルを確認して下さい。
 
 
-.. figure:: ../images/quickstart/test_request_01.png
+.. figure:: /images/ja/quickstart/test_request_01.png
    :scale: 30%
    :align: left
 
@@ -171,7 +171,7 @@
 
 | :guilabel:` テストリクエスト設定へ` をクリックします。
 
-.. figure:: ../images/quickstart/test_request_02.png
+.. figure:: /images/ja/quickstart/test_request_02.png
    :scale: 30%
    :align: left
 
@@ -189,7 +189,7 @@
 
 | :guilabel:` 実行` をクリックします。
 
-.. figure:: ../images/quickstart/test_request_03.png
+.. figure:: /images/ja/quickstart/test_request_03.png
    :scale: 30%
    :align: left
 
@@ -213,7 +213,7 @@
 
 | 数秒～数分後に、 :menuselection:`作業ステータス` が :program:`プロダクション適用完了` になります。
 
-.. figure:: ../images/quickstart/rule_apply_02.png
+.. figure:: /images/ja/quickstart/rule_apply_02.png
    :width: 800px
    :align: center
 

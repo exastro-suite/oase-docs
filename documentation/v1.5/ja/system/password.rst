@@ -19,7 +19,7 @@
 | 画面上部のメニューから :menuselection:`システム --> システム設定` を開きます。
 | 左メニューから :menuselection:`パスワード設定` を選択します。
 
-.. figure:: ../images/system_config/password_column_edit.png
+.. figure:: /images/ja/system_config/password_column_edit.png
    :scale: 30%
    :align: center
 

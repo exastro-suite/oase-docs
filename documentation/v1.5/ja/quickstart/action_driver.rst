@@ -5,7 +5,8 @@
 | 新規アクションドライバの作成方法についてITA(Exastro IT Automation)アクションドライバの導入を例に説明します。
 | Exastro OASE におけるアクションドライバとは、自動対処のためのソフトウェアと連携するための機能を指します。
 
-.. note:: **Exastro IT Automation** のことを省略して **ITA** と記載する場合があります。
+.. note::
+   | **Exastro IT Automation** のことを省略して **ITA** と記載する場合があります。
 
 ITA(Exastro IT Automation)アクションドライバの追加
 ==================================================
@@ -15,7 +16,7 @@ ITA(Exastro IT Automation)アクションドライバの追加
 
 |  :menuselection:`アクション先の追加`  設定フォームから設定を行います。
 
-.. figure:: ../images/quickstart/new_action_driver_01.png
+.. figure:: /images/ja/quickstart/new_action_driver_01.png
    :width: 400px
    :align: left
 
@@ -33,7 +34,7 @@ ITA(Exastro IT Automation)アクションドライバの追加
 
 |  :menuselection:`ITA Driver ver1`  設定フォームで、連携する連携ソフトウェア(ITA)に対する接続情報とディシジョンテーブル連携のための設定を行います。
 
-.. figure:: ../images/quickstart/new_action_driver_02.png
+.. figure:: /images/ja/quickstart/new_action_driver_02.png
    :width: 400px
    :align: left
 
@@ -62,7 +63,8 @@ ITA(Exastro IT Automation)アクションドライバの追加
    ユーザ名 : や
       | 連携ソフトウェア(ITA)にログインで使用するユーザを入力します。
 
-      .. warning:: Exastro OASE のロールに紐づくITAユーザを指定する必要があります。
+      .. warning::
+         | Exastro OASE のロールに紐づくITAユーザを指定する必要があります。
 
 .. glossary::
 
@@ -81,7 +83,7 @@ ITA(Exastro IT Automation)アクションドライバの追加
 | 全ての項目の入力が完了したら、:guilabel:` 保存` をクリックします。
 | 新規に追加したアクションドライバが一覧画面に表示されます。
 
-.. figure:: ../images/quickstart/new_action_driver_03.png
+.. figure:: /images/ja/quickstart/new_action_driver_03.png
    :width: 800px
    :align: center
 

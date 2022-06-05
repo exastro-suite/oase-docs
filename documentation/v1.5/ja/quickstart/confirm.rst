@@ -42,7 +42,7 @@
 | 監視アプリケーションからのアラートメッセージ(リクエスト)を取得した場合の確認方法について説明します。
 | リクエスト履歴は、画面上部のメニューの :menuselection:`ルール --> リクエスト履歴` から確認します。
 
-.. figure:: ../images/quickstart/request_history_01.png
+.. figure:: /images/ja/quickstart/request_history_01.png
    :width: 800px
    :align: center
 
@@ -58,7 +58,7 @@
 | 監視アプリケーションからのアラートメッセージ(リクエスト)がディシジョンテーブルに記載したルールにマッチした場合の確認方法について説明します。
 | アクション履歴は、画面上部のメニューの :menuselection:`ルール --> アクション履歴` から確認します。
 
-.. figure:: ../images/quickstart/action_history_01.png
+.. figure:: /images/ja/quickstart/action_history_01.png
    :width: 800px
    :align: center
 

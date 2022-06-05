@@ -14,7 +14,7 @@ ZABBIX監視アダプタの追加
 
 | :menuselection:`監視先の追加` 設定フォームから設定を行います。
 
-.. figure:: ../images/quickstart/new_monitoring_adapter_01.png
+.. figure:: /images/ja/quickstart/new_monitoring_adapter_01.png
    :width: 400px
    :align: left
 
@@ -32,7 +32,7 @@ ZABBIX監視アダプタの追加
 
 | :menuselection:`ZABBIX Adapter ver1` 設定フォームで、連携する監視アプリケーション(Zabbix)に対する接続情報とディシジョンテーブル連携のための設定を行います。
 
-.. figure:: ../images/quickstart/new_monitoring_adapter_02.png
+.. figure:: /images/ja/quickstart/new_monitoring_adapter_02.png
    :width: 400px
    :align: left
 
@@ -82,7 +82,7 @@ ZABBIX監視アダプタの追加
 | 全ての項目の入力が完了したら、:guilabel:` 保存` をクリックします。
 | 新規に追加した監視アダプタが一覧画面に表示されます。
 
-.. figure:: ../images/quickstart/new_monitoring_adapter_03.png
+.. figure:: /images/ja/quickstart/new_monitoring_adapter_03.png
    :width: 800px
    :align: center
 
@@ -94,7 +94,7 @@ ZABBIX監視アダプタの追加
 | 監視アプリケーションとの連携は、画面上部のメニューの :menuselection:`ルール --> リクエスト履歴` から行います。
 | Zabbix でアラートが発生している状態では、下図のようにリクエスト履歴に対応するアラート(イベント情報)が表示されます。
 
-.. figure:: ../images/quickstart/new_monitoring_adapter_04.png
+.. figure:: /images/ja/quickstart/new_monitoring_adapter_04.png
    :width: 800px
    :align: center
 

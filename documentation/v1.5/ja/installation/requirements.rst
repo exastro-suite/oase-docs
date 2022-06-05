@@ -35,13 +35,13 @@
 
 以降に、各型のイメージ図を記載します。
 
-.. figure:: ../images/introduction/deploy_all_in_one.png
+.. figure:: /images/ja/introduction/deploy_all_in_one.png
    :scale: 33%
    :align: left
 
    オールインワン構成例
 
-.. figure:: ../images/introduction/deploy_high_availability.png
+.. figure:: /images/ja/introduction/deploy_high_availability.png
    :scale: 33%
    :align: right
 

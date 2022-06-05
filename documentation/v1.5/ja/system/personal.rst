@@ -20,7 +20,7 @@
 .. tip::
    | :menuselection:`アカウント情報` はAD連携や権限に関わらず表示することができます。
 
-.. figure:: ../images/personal_config/personal_config_05.png
+.. figure:: /images/ja/personal_config/personal_config_05.png
    :scale: 25%
    :align: left
 
@@ -52,7 +52,7 @@
 
 | メールアドレスの変更ができます。
 
-.. figure:: ../images/personal_config/personal_config_06.png
+.. figure:: /images/ja/personal_config/personal_config_06.png
    :scale: 25%
    :align: left
 
@@ -81,7 +81,7 @@
 | 変更されたメールアドレスに「メールアドレスのご変更」メールが送られます。
 | 有効期間内に記載のURLへアクセスすることでメールアドレスの変更が完了します。
 
-.. figure:: ../images/personal_config/personal_config_09.png
+.. figure:: /images/ja/personal_config/personal_config_09.png
    :scale: 40%
    :align: center
 
@@ -96,7 +96,7 @@
 
 | パスワードの変更ができます。
 
-.. figure:: ../images/personal_config/personal_config_07.png
+.. figure:: /images/ja/personal_config/personal_config_07.png
    :scale: 25%
    :align: left
 
@@ -132,7 +132,7 @@
 
 | 言語の変更ができます。
 
-.. figure:: ../images/personal_config/personal_config_11.png
+.. figure:: /images/ja/personal_config/personal_config_11.png
    :scale: 40%
    :align: left
 

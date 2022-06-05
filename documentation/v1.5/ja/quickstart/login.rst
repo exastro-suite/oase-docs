@@ -10,7 +10,7 @@
 
 | OASE の画面にアクセスした場合、ログイン画面の各入力項目に値を入力します。
 
-.. figure:: ../images/quickstart/login_form.png
+.. figure:: /images/ja/quickstart/login_form.png
    :scale: 30%
    :align: left
    :alt: "パスワード入力フォーム"
@@ -39,7 +39,7 @@
 | 初回ログイン時は、初期パスワードの変更の必要があります。
 | 現在のパスワードと。新しいパスワードを入力します。
 
-.. figure:: ../images/quickstart/init_password01.png
+.. figure:: /images/ja/quickstart/init_password01.png
    :scale: 30%
    :align: left
    :alt: "パスワード変更フォーム"
@@ -65,7 +65,7 @@
 
 |  :guilabel:` 変更する` ボタンを押下します。
 
-.. figure:: ../images/quickstart/init_password02.png
+.. figure:: /images/ja/quickstart/init_password02.png
    :scale: 30%
    :align: left
    :alt: "パスワード変更確認ダイアログ"
@@ -84,7 +84,7 @@
 
 :ref:`初期パスワード変更 <change-pw>` で設定したパスワードを使い、再度ログインをします。
 
-.. figure:: ../images/login/main02.png
+.. figure:: /images/ja/login/main02.png
    :scale: 30%
    :align: left
    :alt: "ログイン画面"
@@ -104,7 +104,7 @@
 
 | :guilabel:` Login` をクリックすると、下記のようにダッシュボードが表示されます。
 
-.. figure:: ../images/dashboard/dashboard_no_data.png
+.. figure:: /images/ja/dashboard/dashboard_no_data.png
    :width: 80%
    :align: center
 

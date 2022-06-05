@@ -23,7 +23,7 @@
 | 画面上部のメニューから :menuselection:`システム --> システム設定` を開きます。
 | 左メニューから :menuselection:`ログ設定` を選択します。
 
-.. figure:: ../images/system_config/logs_column_edit.png
+.. figure:: /images/ja/system_config/logs_column_edit.png
    :scale: 15%
    :align: left
 

@@ -23,7 +23,7 @@ Active Directory連携
 
 | AD連携機能は、ドメインを構成するドメインコントローラと連携します。
 
-.. image:: ../images/active_directory/system_configuration.png
+.. image:: /images/ja/active_directory/system_configuration.png
    :scale: 80%
    :align: center
 
@@ -42,7 +42,7 @@ Active Directory 設定
 | 画面上部のメニューから :menuselection:`システム --> システム設定` を開きます。
 | 左メニューから :menuselection:`Active Directory設定` を選択します。
 
-.. figure:: ../images/system_config/ADLinkage_column_edit.png
+.. figure:: /images/ja/system_config/ADLinkage_column_edit.png
    :scale: 25%
    :align: left
 
@@ -89,7 +89,7 @@ OFFからONに切り替えた際の動作
 | DBの保存、および、 crontab の設定が成功すると、認証サーバへ接続、認証を行い、ユーザとグループの情報を取得します。
 | 取得されたユーザとグループの情報は、Exastro OASE 内のユーザとグループの情報として保存されます。
 
-.. figure:: ../images/system_config/ADLinkage_Dialog01.png
+.. figure:: /images/ja/system_config/ADLinkage_Dialog01.png
    :scale: 40%
    :align: center
 
@@ -110,7 +110,7 @@ ONからOFFに切り替えた際の動作
 
 | 各項目の初期化、および、crontab 設定の削除が成功すると、ドメインコントローラから取得したグループ・ユーザが全て削除されます。
 
-.. figure:: ../images/system_config/ADLinkage_Dialog02.png
+.. figure:: /images/ja/system_config/ADLinkage_Dialog02.png
    :scale: 40%
    :align: center
 
