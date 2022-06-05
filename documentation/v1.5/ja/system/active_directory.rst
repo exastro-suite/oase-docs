@@ -11,11 +11,11 @@ Active Directory連携
 | AD連携機能は、以下の機能を提供します。
 
 .. csv-table::
-   :header: 機能名, 用途, Web 処理, BackYard 処理
-   :widths: 15, 50, 10, 10
-
-   ユーザ認証, Exastro OASE からドメインコントローラに対して AD 認証(LDAP 認証)を行います。,○,
-   ミラーリング, ドメインコントローラ上のユーザ情報およびグループ情報を Exastro OASE 上の「ユーザ」および「グループ」にミラーリングをします。(一方向同期),,○
+   :header: 機能名, 用途
+   :widths: 15, 50
+   
+   ユーザ認証, Exastro OASE からドメインコントローラに対して AD 認証(LDAP 認証)を行います。
+   ミラーリング, ドメインコントローラ上のユーザ情報およびグループ情報を Exastro OASE 上の「ユーザ」および「グループ」にミラーリングをします。(一方向同期)
 
 
 システム構成
@@ -43,8 +43,8 @@ Active Directory 設定
 | 左メニューから :menuselection:`Active Directory設定` を選択します。
 
 .. figure:: ../images/system_config/ADLinkage_column_edit.png
-   :scale: 80%
-   :align: center
+   :scale: 25%
+   :align: left
 
    Active Directory 設定編集画面
 
