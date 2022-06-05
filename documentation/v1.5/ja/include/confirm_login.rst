@@ -10,7 +10,7 @@
 
 | Exastro OASE のログイン画面が表示されます。
 
-.. figure:: ../../images/install/oase_login.png
+.. figure:: /images/ja/install/oase_login.png
    :scale: 60%
    :align: center
 
