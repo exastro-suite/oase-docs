@@ -61,15 +61,16 @@
         <dd>
           <div>
             <select name="version" onchange="location.href=value;">
-                file_path: v1.5/ja/rule_definition/decision_table
-                  <option value="#"
-                  selected
+                file_path: v1.6/ja/rule_definition/decision_table
+                  <option value="../../../v1.6/ja/rule_definition/decision_table.html"
                   >current</option>
                 file_path: v1.6/ja/rule_definition/decision_table
+                  <option value="../../../v1.6/ja/rule_definition/decision_table.html"
+                  >v1.6 (current)</option>
                 file_path: v1.5/ja/rule_definition/decision_table
                   <option value="#"
                   selected
-                  >v1.5 (current)</option>
+                  >v1.5</option>
                 file_path: old/ja/rule_definition/decision_table
             </select>
           </div>
@@ -110,6 +111,7 @@
   
   <aside class="divInner">
     <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.6/index.html">Exastro OASE 1.6</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Exastro OASE 1.5</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Exastro OASE 1.5 操作マニュアル</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">1. はじめに</a></li>
@@ -144,6 +146,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../../old/index.html">Exastro OASE previous version</a></li>
 </ul>
 
     <ul>
@@ -201,7 +204,7 @@
 <figure class="align-left" id="id13">
 <a class="reference internal image-reference" href="../../../_images/new_decision_table_01.png"><img alt="../../../_images/new_decision_table_01.png" src="../../../_images/new_decision_table_01.png" style="width: 400px;" /></a>
 <figcaption>
-<p><span class="caption-number">図 9.1 </span><span class="caption-text">基本情報・権限設定</span><a class="headerlink" href="#id13" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-number">図 9.34 </span><span class="caption-text">基本情報・権限設定</span><a class="headerlink" href="#id13" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 <dl class="glossary">
@@ -214,12 +217,12 @@
 </dd>
 <dt id="term-1">権限の設定<a class="headerlink" href="#term-1" title="この用語の解説へ">¶</a></dt><dd><div class="line-block">
 <div class="line">グループに割り当てる権限を定義します。</div>
-<div class="line">各項目の詳細については、<a class="reference internal" href="#decision-table-authentication"><span class="std std-numref">表 9.1</span></a> を参照して下さい。</div>
+<div class="line">各項目の詳細については、<a class="reference internal" href="../../../v1.6/ja/rule_definition/decision_table.html#decision-table-authentication"><span class="std std-numref">表 9.1</span></a> を参照して下さい。</div>
 </div>
 </dd>
 </dl>
 <div style="clear:both;"></div><table class="docutils align-default" id="decision-table-authentication">
-<caption><span class="caption-number">表 9.1 </span><span class="caption-text">権限の設定</span><a class="headerlink" href="#decision-table-authentication" title="このテーブルへのパーマリンク">¶</a></caption>
+<caption><span class="caption-number">表 9.19 </span><span class="caption-text">権限の設定</span><a class="headerlink" href="#decision-table-authentication" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 7%" />
 <col style="width: 16%" />
@@ -277,7 +280,7 @@
 <figure class="align-left" id="id14">
 <a class="reference internal image-reference" href="../../../_images/new_decision_table_02.png"><img alt="../../../_images/new_decision_table_02.png" src="../../../_images/new_decision_table_02.png" style="width: 400px;" /></a>
 <figcaption>
-<p><span class="caption-number">図 9.2 </span><span class="caption-text">条件式</span><a class="headerlink" href="#id14" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-number">図 9.35 </span><span class="caption-text">条件式</span><a class="headerlink" href="#id14" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 <dl class="glossary">
@@ -289,12 +292,12 @@
 <div class="line">条件式は、監視アプリケーションから取得したイベント(メッセージ)を評価するための式です。</div>
 <div class="line">ディシジョンテーブルに記載の値との関係を表します。</div>
 <div class="line">アラートメッセージがこの条件式に一致する場合、Exastro OASE はアクションを実行します。</div>
-<div class="line">各条件式については、<a class="reference internal" href="rule_format.html#decision-table-conditions"><span class="std std-numref">表 9.7</span></a> を参照して下さい。</div>
+<div class="line">各条件式については、<a class="reference internal" href="../../../v1.6/ja/rule_definition/rule_format.html#decision-table-conditions"><span class="std std-numref">表 9.7</span></a> を参照して下さい。</div>
 </div>
 </dd>
 </dl>
 <div style="clear:both;"></div><table class="colwidths-given docutils align-default" id="decision-table-conditions">
-<caption><span class="caption-number">表 9.2 </span><span class="caption-text">ディシジョンテーブル作成時に設定可能な条件式一覧</span><a class="headerlink" href="#decision-table-conditions" title="このテーブルへのパーマリンク">¶</a></caption>
+<caption><span class="caption-number">表 9.20 </span><span class="caption-text">ディシジョンテーブル作成時に設定可能な条件式一覧</span><a class="headerlink" href="#decision-table-conditions" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 40%" />
@@ -388,20 +391,20 @@
 <figure class="align-left" id="id15">
 <a class="reference internal image-reference" href="../../../_images/new_decision_table_03.png"><img alt="../../../_images/new_decision_table_03.png" src="../../../_images/new_decision_table_03.png" style="width: 400px;" /></a>
 <figcaption>
-<p><span class="caption-number">図 9.3 </span><span class="caption-text">未知事象通知</span><a class="headerlink" href="#id15" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-number">図 9.36 </span><span class="caption-text">未知事象通知</span><a class="headerlink" href="#id15" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 <dl class="glossary">
 <dt id="term-4">未知事象通知<a class="headerlink" href="#term-4" title="この用語の解説へ">¶</a></dt><dd><div class="line-block">
 <div class="line">未知事象(ルールに定義されていないイベント)が発生した場合の通知先を設定します。</div>
 <div class="line-block">
-<div class="line">未知事象通知については、<a class="reference internal" href="#unknown-event-notification"><span class="std std-numref">表 9.3</span></a> を参照して下さい。</div>
+<div class="line">未知事象通知については、<a class="reference internal" href="../../../v1.6/ja/rule_definition/decision_table.html#unknown-event-notification"><span class="std std-numref">表 9.3</span></a> を参照して下さい。</div>
 </div>
 </div>
 </dd>
 </dl>
 <div style="clear:both;"></div><table class="colwidths-given docutils align-default" id="unknown-event-notification">
-<caption><span class="caption-number">表 9.3 </span><span class="caption-text">未知事象通知</span><a class="headerlink" href="#unknown-event-notification" title="このテーブルへのパーマリンク">¶</a></caption>
+<caption><span class="caption-number">表 9.21 </span><span class="caption-text">未知事象通知</span><a class="headerlink" href="#unknown-event-notification" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 30%" />
 <col style="width: 70%" />
@@ -435,7 +438,7 @@
 <figure class="align-center" id="id16">
 <a class="reference internal image-reference" href="../../../_images/new_decision_table_04.png"><img alt="../../../_images/new_decision_table_04.png" src="../../../_images/new_decision_table_04.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">図 9.4 </span><span class="caption-text">ディシジョンテーブル一覧</span><a class="headerlink" href="#id16" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-number">図 9.37 </span><span class="caption-text">ディシジョンテーブル一覧</span><a class="headerlink" href="#id16" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 </section>
@@ -483,21 +486,21 @@
 <div class="line">下記の手順により、安全にディシジョンテーブルを移行できます。</div>
 </div>
 <ol class="arabic simple">
-<li><p><a class="reference internal" href="#copy-decision-table"><span class="std std-ref">ディシジョンテーブルの複製と編集</span></a></p></li>
+<li><p><a class="reference internal" href="../../../v1.6/ja/rule_definition/decision_table.html#copy-decision-table"><span class="std std-ref">ディシジョンテーブルの複製と編集</span></a></p></li>
 <li><p>既存ルールの移行</p></li>
 <li><p>ディシジョンテーブルに紐づく監視アダプタの切り替え</p></li>
-<li><p><a class="reference internal" href="#delete-decision-table"><span class="std std-ref">ディシジョンテーブルの削除</span></a></p></li>
+<li><p><a class="reference internal" href="../../../v1.6/ja/rule_definition/decision_table.html#delete-decision-table"><span class="std std-ref">ディシジョンテーブルの削除</span></a></p></li>
 </ol>
 <figure class="align-center" id="id17">
 <a class="reference internal image-reference" href="../../../_images/migrate_decision_table.svg"><img alt="../../../_images/migrate_decision_table.svg" src="../../../_images/migrate_decision_table.svg" width="800px" /></a>
 <figcaption>
-<p><span class="caption-number">図 9.5 </span><span class="caption-text">ディシジョンテーブルの移行イメージ</span><a class="headerlink" href="#id17" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-number">図 9.38 </span><span class="caption-text">ディシジョンテーブルの移行イメージ</span><a class="headerlink" href="#id17" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 <section id="id9">
 <h3>既存ディシジョンテーブルの複製・編集<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <ol class="arabic simple">
-<li><p><a class="reference internal" href="#copy-decision-table"><span class="std std-ref">ディシジョンテーブルの複製と編集</span></a> の手順に従い、既存の設定を流用した形でディシジョンテーブルを複製します。</p></li>
+<li><p><a class="reference internal" href="../../../v1.6/ja/rule_definition/decision_table.html#copy-decision-table"><span class="std std-ref">ディシジョンテーブルの複製と編集</span></a> の手順に従い、既存の設定を流用した形でディシジョンテーブルを複製します。</p></li>
 <li><p>ディシジョンテーブル名を入力し、条件式を編集します。</p></li>
 </ol>
 </section>
@@ -518,7 +521,7 @@
 <section id="id12">
 <h3>旧ディシジョンテーブルの削除<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <ol class="arabic simple">
-<li><p>移行が正常に完了したら <a class="reference internal" href="#delete-decision-table"><span class="std std-ref">ディシジョンテーブルの削除</span></a> の手順に従い、ディシジョンテーブルを削除します。</p></li>
+<li><p>移行が正常に完了したら <a class="reference internal" href="../../../v1.6/ja/rule_definition/decision_table.html#delete-decision-table"><span class="std std-ref">ディシジョンテーブルの削除</span></a> の手順に従い、ディシジョンテーブルを削除します。</p></li>
 </ol>
 </section>
 </section>

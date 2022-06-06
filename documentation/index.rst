@@ -20,8 +20,9 @@ Exastro OASE Documentation
 .. toctree::
    :maxdepth: 1
 
-   v1.5/index
    v1.6/index
+   v1.5/index
+   old/index
 
 .. raw:: html
 
