@@ -22,7 +22,7 @@ ITAドライバ
     | 監視アダプタを追加するために、監視アダプタに対する「更新可能」のアクセス権限が必要です。
 
 
-.. figure:: /images/ja/monitoring_adapter/monitoring_adapter_08.png
+.. figure:: /images/ja/monitoring_adapter/monitoring_adapter_08_v1.5.png
    :scale: 80%
    :align: center
 
