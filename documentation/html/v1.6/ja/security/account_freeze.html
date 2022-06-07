@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>6.1. アカウント凍結 &#8212; OASE Documentation 1.5 ドキュメント</title>
+    <title>6.1. アカウント凍結 &#8212; OASE Documentation  ドキュメント</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/option.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
@@ -72,7 +72,6 @@
                 file_path: v1.5/ja/security/account_freeze
                   <option value="../../../v1.5/ja/security/account_freeze.html"
                   >v1.5</option>
-                file_path: old/ja/security/account_freeze
             </select>
           </div>
         </dd>
@@ -140,12 +139,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../v1.5/index.html">Exastro OASE 1.5</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../old/index.html">Exastro OASE previous version</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/index.html">旧マニュアル</a></li>
 </ul>
 
-    <ul>
+    <!-- <ul>
       <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
-    </ul>
+    </ul> -->
     
   </aside>
 </div><!-- End #sideMenu -->
@@ -181,23 +180,12 @@
 <div class="line-block">
 <div class="line">アカウントロックに関連する設定ついては、システム設定の <a class="reference internal" href="../system/password.html"><span class="doc">パスワード設定</span></a> の下記の項目を参考にして下さい。</div>
 </div>
-<ul class="simple">
-<li><p>パスワード誤り閾値</p>
-<ul>
-<li><p>パスワード入力の誤り回数が閾値を超えたユーザは、アカウントが一時的にロックします。</p></li>
-</ul>
-</li>
-<li><p>アカウントロック継続期間</p>
-<ul>
-<li><p>アカウントロックが解除されるまでの時間。</p></li>
-</ul>
-</li>
-<li><p>アカウントロック上限回数</p>
-<ul>
-<li><p>アカウントロック上限を超えたユーザを、アカウント凍結し、アカウントロックユーザに登録します。</p></li>
-</ul>
-</li>
-</ul>
+<p>パスワード誤り閾値
+| パスワード入力の誤り回数が閾値を超えたユーザは、アカウントが一時的にロックします。</p>
+<p>アカウントロック継続期間
+| アカウントロックが解除されるまでの時間。</p>
+<p>アカウントロック上限回数
+| アカウントロック上限を超えたユーザを、アカウント凍結し、アカウントロックユーザに登録します。</p>
 <div class="line-block">
 <div class="line">例えば、パスワード誤り閾値が 5 (回)、アカウントロック上限回数が 3 (回)と設定されていた場合、15 回連続でパスワードの認証に失敗したタイミングでアカウント凍結されます。</div>
 </div>
@@ -220,7 +208,7 @@
 <div class="line">アカウントロックの解除には、下記の条件を満たしている必要があります。</div>
 </div>
 <ul class="simple">
-<li><p>・アカウントロック解除を行うユーザは、システム管理者(Administrator)、もしくは、メール通知先ログインIDであること。</p></li>
+<li><p>アカウントロック解除を行うユーザは、システム管理者(Administrator)、もしくは、メール通知先ログインIDであること。</p></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">ちなみに</p>

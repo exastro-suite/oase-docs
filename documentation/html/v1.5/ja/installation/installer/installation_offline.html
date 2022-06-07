@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>オフラインインストーラ &#8212; OASE Documentation 1.5 ドキュメント</title>
+    <title>オフラインインストーラ &#8212; OASE Documentation  ドキュメント</title>
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/option.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
@@ -71,7 +71,6 @@
                   <option value="#"
                   selected
                   >v1.5</option>
-                file_path: old/ja/installation/installer/installation_offline
             </select>
           </div>
         </dd>
@@ -144,12 +143,12 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../old/index.html">Exastro OASE previous version</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/index.html">旧マニュアル</a></li>
 </ul>
 
-    <ul>
+    <!-- <ul>
       <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
-    </ul>
+    </ul> -->
     
   </aside>
 </div><!-- End #sideMenu -->
@@ -183,10 +182,8 @@
 </div>
 <section id="id2">
 <h2>前提条件<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<ul class="simple">
-<li><p>・オフラインインストール時はオフライン環境で実施可能ですが、インストールに必要な資材の収集時にはインターネットに接続できる必要があります。</p></li>
-<li><p>・インストール先の OS とインストール資材収集で利用する OS は一致している必要があります。</p></li>
-</ul>
+<p>オフラインインストール時はオフライン環境で実施可能ですが、インストールに必要な資材の収集時にはインターネットに接続できる必要があります。
+インストール先の OS とインストール資材収集で利用する OS は一致している必要があります。</p>
 <div class="line-block">
 <div class="line">オンライン環境でのインストール方法については <a class="reference internal" href="installation_online.html"><span class="doc">オンラインインストーラ</span></a> を参考にして下さい。</div>
 </div>
@@ -343,26 +340,18 @@ tree --charset<span class="o">=</span>C <span class="si">${</span><span class="n
 <div class="line-block">
 <div class="line">インストール設定ファイルの各設定項目に関しては下記を参照して下さい。</div>
 </div>
-<ul>
-<li><p>必須</p>
-<ul>
-<li><div class="line-block">
+<dl>
+<dt>必須</dt><dd><div class="line-block">
 <div class="line">設定項目の記載が必要か不要かを記載しています。</div>
 <div class="line">基本的に、全項目の記載が必要となります。</div>
 </div>
-</li>
-</ul>
-</li>
-<li><p>有効</p>
-<ul>
-<li><div class="line-block">
+</dd>
+<dt>有効</dt><dd><div class="line-block">
 <div class="line">設定項目がインストーラ実行時に使用されるかどうかを示しています。</div>
 <div class="line">インストール方法によって有効か無効かが異なります。</div>
 </div>
-</li>
-</ul>
-</li>
-</ul>
+</dd>
+</dl>
 <table class="docutils align-default" id="id13">
 <caption><span class="caption-number">表 2.6 </span><span class="caption-text">インストール設定ファイルの設定項目</span><a class="headerlink" href="#id13" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
@@ -723,23 +712,20 @@ tree --charset<span class="o">=</span>C <span class="si">${</span><span class="n
 <div class="line">商用向けインストール設定ファイル（oase_answers.txt）のサンプルを以下に示します。</div>
 <div class="line">また、インストール条件は下記となります。</div>
 </div>
-<ul class="simple">
-<li><p>インストール方式</p>
-<ul>
-<li><p>オンラインインストール</p></li>
-</ul>
-</li>
-<li><p>判断ロジック</p>
-<ul>
-<li><p>Red Hat Decision Manager</p></li>
-</ul>
-</li>
-<li><p>インストール先OS</p>
-<ul>
-<li><p>Red Hat Enterprise Linux 7</p></li>
-</ul>
-</li>
-</ul>
+<dl>
+<dt>インストール方式</dt><dd><div class="line-block">
+<div class="line">オンラインインストール</div>
+</div>
+</dd>
+<dt>判断ロジック</dt><dd><div class="line-block">
+<div class="line">Red Hat Decision Manager</div>
+</div>
+</dd>
+<dt>インストール先OS</dt><dd><div class="line-block">
+<div class="line">Red Hat Enterprise Linux 7</div>
+</div>
+</dd>
+</dl>
 <div class="literal-block-wrapper docutils container" id="id14">
 <div class="code-block-caption"><span class="caption-number">リスト 2.8 </span><span class="caption-text">oase_answers.txt</span><a class="headerlink" href="#id14" title="このコードへのパーマリンク">¶</a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Select install mode.</span>
@@ -932,23 +918,20 @@ private_key_path:
 <div class="line">非商用向けのインストール設定ファイル（oase_answers.txt）のサンプルを以下に示します。</div>
 <div class="line">また、インストール条件は下記となります。</div>
 </div>
-<ul class="simple">
-<li><p>インストール方式</p>
-<ul>
-<li><p>オンラインインストール</p></li>
-</ul>
-</li>
-<li><p>判断ロジック</p>
-<ul>
-<li><p>Drools</p></li>
-</ul>
-</li>
-<li><p>インストール先OS</p>
-<ul>
-<li><p>CentOS 7</p></li>
-</ul>
-</li>
-</ul>
+<dl>
+<dt>インストール方式</dt><dd><div class="line-block">
+<div class="line">オンラインインストール</div>
+</div>
+</dd>
+<dt>判断ロジック</dt><dd><div class="line-block">
+<div class="line">Drools</div>
+</div>
+</dd>
+<dt>インストール先OS</dt><dd><div class="line-block">
+<div class="line">CentOS 7</div>
+</div>
+</dd>
+</dl>
 <div class="literal-block-wrapper docutils container" id="id15">
 <div class="code-block-caption"><span class="caption-number">リスト 2.9 </span><span class="caption-text">oase_answers.txt</span><a class="headerlink" href="#id15" title="このコードへのパーマリンク">¶</a></div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Select install mode.</span>
@@ -1222,7 +1205,7 @@ http://&lt;ip_address_or_fqdn&gt;:&lt;port&gt;
 <figure class="align-center" id="id16">
 <a class="reference internal image-reference" href="../../../../_images/oase_login.png"><img alt="../../../../_images/oase_login.png" src="../../../../_images/oase_login.png" style="width: 943.8px; height: 454.2px;" /></a>
 <figcaption>
-<p><span class="caption-number">図 2.9 </span><span class="caption-text">ログイン画面</span><a class="headerlink" href="#id16" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-number">図 2.11 </span><span class="caption-text">ログイン画面</span><a class="headerlink" href="#id16" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">

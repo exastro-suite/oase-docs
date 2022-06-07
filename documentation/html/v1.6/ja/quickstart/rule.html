@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>3.5. ルール作成とルール適用 &#8212; OASE Documentation 1.5 ドキュメント</title>
+    <title>3.5. ルール作成とルール適用 &#8212; OASE Documentation  ドキュメント</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/option.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
@@ -72,7 +72,6 @@
                 file_path: v1.5/ja/quickstart/rule
                   <option value="../../../v1.5/ja/quickstart/rule.html"
                   >v1.5</option>
-                file_path: old/ja/quickstart/rule
             </select>
           </div>
         </dd>
@@ -146,12 +145,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../v1.5/index.html">Exastro OASE 1.5</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../old/index.html">Exastro OASE previous version</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/index.html">旧マニュアル</a></li>
 </ul>
 
-    <ul>
+    <!-- <ul>
       <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
-    </ul>
+    </ul> -->
     
   </aside>
 </div><!-- End #sideMenu -->
@@ -202,33 +201,30 @@
 <div class="line-block">
 <div class="line">特に重要な項目としては、下記となります。</div>
 </div>
-<ul class="simple">
-<li><p>アラートメッセージ(正規表現可 一致)</p>
-<ul>
-<li><p>監視アプリケーションから取得したアラートメッセージのマッチ条件を定義します。今回は、取得したアラート全てに対して、ITA を実行する条件となります。</p></li>
-</ul>
-</li>
-<li><p>アクションパラメータ情報（必須）</p>
-<ul>
-<li><p>自動化ソフトウェアのアクションドライバとそのパラメータを指定します。</p></li>
-<li><p><strong class="program">ITA_NAME</strong></p>
-<ul>
-<li><p><a class="reference internal" href="action_driver.html"><span class="doc">アクションドライバの作成</span></a> で作成したアクションドライバのアクションドライバ名を指定します。</p></li>
-</ul>
-</li>
-<li><p><strong class="program">CONDUCTOR_CLASS_ID</strong></p>
-<ul>
-<li><p>Exastro OASE から実行する ITA の ConductorクラスIDを指定します。</p></li>
-</ul>
-</li>
-<li><p><strong class="program">OPERATION_ID</strong></p>
-<ul>
-<li><p>Exastro OASE から実行する ITA の Conductor に紐付けるオペレーション ID を指定します。</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<dl>
+<dt>アラートメッセージ(正規表現可 一致)</dt><dd><div class="line-block">
+<div class="line">監視アプリケーションから取得したアラートメッセージのマッチ条件を定義します。今回は、取得したアラート全てに対して、ITA を実行する条件となります。</div>
+</div>
+</dd>
+<dt>アクションパラメータ情報（必須）</dt><dd><div class="line-block">
+<div class="line">自動化ソフトウェアのアクションドライバとそのパラメータを指定します。</div>
+</div>
+<div class="line-block">
+<div class="line"><strong class="program">ITA_NAME</strong></div>
+<div class="line-block">
+<div class="line"><a class="reference internal" href="action_driver.html"><span class="doc">アクションドライバの作成</span></a> で作成したアクションドライバのアクションドライバ名を指定します。</div>
+</div>
+<div class="line"><strong class="program">CONDUCTOR_CLASS_ID</strong></div>
+<div class="line-block">
+<div class="line">Exastro OASE から実行する ITA の ConductorクラスIDを指定します。</div>
+</div>
+<div class="line"><strong class="program">OPERATION_ID</strong></div>
+<div class="line-block">
+<div class="line">Exastro OASE から実行する ITA の Conductor に紐付けるオペレーション ID を指定します。</div>
+</div>
+</div>
+</dd>
+</dl>
 <div class="line-block">
 <div class="line">また、本項で扱う全ての項目は下記となります。</div>
 </div>
@@ -323,18 +319,18 @@
 <p><span class="caption-number">図 3.19 </span><span class="caption-text">トークン払い出し</span><a class="headerlink" href="#id8" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
-<dl class="glossary">
-<dt id="term-0">トークン名<a class="headerlink" href="#term-0" title="この用語の解説へ">¶</a></dt><dd><div class="line-block">
+<dl>
+<dt>トークン名</dt><dd><div class="line-block">
 <div class="line">トークン名を入力します。</div>
 <div class="line">クイックスタートでは <strong class="program">新規トークン</strong> として登録します。</div>
 </div>
 </dd>
-<dt id="term-1">有効期限<a class="headerlink" href="#term-1" title="この用語の解説へ">¶</a></dt><dd><div class="line-block">
+<dt>有効期限</dt><dd><div class="line-block">
 <div class="line">トークンの有効期限を指定します。</div>
 <div class="line">クイックスタートでは、未記入(有効期限なし)として登録します</div>
 </div>
 </dd>
-<dt id="term-2">権限の設定<a class="headerlink" href="#term-2" title="この用語の解説へ">¶</a></dt><dd><div class="line-block">
+<dt>権限の設定</dt><dd><div class="line-block">
 <div class="line">グループに割り当てる権限を定義します。</div>
 <div class="line">クイックスタートでは <strong class="program">権限あり</strong> に設定します。</div>
 </div>
@@ -370,8 +366,8 @@
 <p><span class="caption-number">図 3.20 </span><span class="caption-text">テストリクエスト(ディシジョンテーブル選択)</span><a class="headerlink" href="#id9" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
-<dl class="glossary">
-<dt id="term-3">ディシジョンテーブル名選択<a class="headerlink" href="#term-3" title="この用語の解説へ">¶</a></dt><dd><div class="line-block">
+<dl>
+<dt>ディシジョンテーブル名選択</dt><dd><div class="line-block">
 <div class="line">テストを行う対象のディシジョンテーブルを選択します。</div>
 <div class="line">クイックスタートでは <strong class="program">新規ディシジョンテーブル</strong> を選択します。</div>
 </div>
@@ -386,8 +382,8 @@
 <p><span class="caption-number">図 3.21 </span><span class="caption-text">テストリクエスト(テストリクエスト設定)</span><a class="headerlink" href="#id10" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
-<dl class="glossary">
-<dt id="term-4">アラートメッセージ<a class="headerlink" href="#term-4" title="この用語の解説へ">¶</a></dt><dd><div class="line-block">
+<dl>
+<dt>アラートメッセージ</dt><dd><div class="line-block">
 <div class="line">テストリクエストで送信するメッセージを設定します。</div>
 <div class="line-block">
 <div class="line"><span class="menuselection">単発テスト</span> でアラートメッセージを <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">This</kbd> <kbd class="kbd docutils literal notranslate">is</kbd> <kbd class="kbd docutils literal notranslate">test</kbd> <kbd class="kbd docutils literal notranslate">alert.</kbd></kbd> と入力します。</div>
