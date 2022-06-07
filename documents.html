@@ -137,14 +137,18 @@
 <article>
 
 <div id="articleTitle">
-<section>
-<div class="sectionInner">
-<!-- InstanceBeginEditable name="EditContentHeaderArea" -->
-<h1><small>Exastro OASE</small><br>
-Documents</h1>
-<!-- InstanceEndEditable -->
-</div>
-</section>
+  <section class="iframe">
+    <div class="sectionInner">
+    
+    <iframe src="./documentation/html/index.html"></iframe>
+    <script>
+    $('iframe').on('load', function(){
+      $( this ).contents().find('#logo').hide();
+    });
+    </script>
+    
+    </div>
+    </section>
 </div>
 
 <div id="articleBody">
