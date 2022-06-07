@@ -9,7 +9,7 @@
 前提条件
 ========
 
-* ・インストーラの実行にはインストール先のサーバからインターネットに接続できる必要があります。
+* インストーラの実行にはインストール先のサーバからインターネットに接続できる必要があります。
 
 事前準備
 ========
@@ -163,17 +163,14 @@
 | 商用向けインストール設定ファイル（oase_answers.txt）のサンプルを以下に示します。
 | また、インストール条件は下記となります。
 
-* インストール方式
+インストール方式
+  | オンラインインストール
 
-  * オンラインインストール
+判断ロジック
+  | Red Hat Decision Manager
 
-* 判断ロジック
-
-  * Red Hat Decision Manager
-
-* インストール先OS
-
-  * Red Hat Enterprise Linux 7
+インストール先OS
+  | Red Hat Enterprise Linux 7
 
 .. include:: ../../include/sample_configuration_commercial.rst
 
@@ -183,17 +180,14 @@
 | 非商用向けのインストール設定ファイル（oase_answers.txt）のサンプルを以下に示します。
 | また、インストール条件は下記となります。
 
-* インストール方式
+インストール方式
+  | オンラインインストール
 
-  * オンラインインストール
+判断ロジック
+  | Drools
 
-* 判断ロジック
-
-  * Drools
-
-* インストール先OS
-
-  * CentOS 7
+インストール先OS
+  | CentOS 7
 
 .. include:: ../../include/sample_configuration_uncommercial.rst
 

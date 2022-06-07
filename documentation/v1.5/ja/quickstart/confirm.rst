@@ -23,17 +23,14 @@
 
 | 各パラメータについては下記を参照に適書き換えて下さい。
 
-* *ip_address_or_fqdn*
- 
-  * Exastro OASE に接続可能な IP アドレスや FQDN を入力します。
+*ip_address_or_fqdn*
+   | Exastro OASE に接続可能な IP アドレスや FQDN を入力します。
 
-* *access_token*
- 
-  * :doc:`rule` で払い出したトークンを入力します。
+*access_token*
+   | :doc:`rule` で払い出したトークンを入力します。
 
-* *current_datetime*
-
-  * 現在日時を「YYYY/MM/DD HH:mm:ss」形式で入力します。
+*current_datetime*
+  | 現在日時を「YYYY/MM/DD HH:mm:ss」形式で入力します。
 
 
 リクエスト履歴

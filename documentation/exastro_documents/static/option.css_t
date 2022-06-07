@@ -14,9 +14,6 @@
 #article .toctree-wrapper .caption {
   border-left-color: {{ theme_h2_color }} !important;
 }
-#article h3 {
-  background-color: {{ theme_h3_color }} !important;
-}
 #article thead th {
   background-color: {{ theme_th_color }} !important;
 }

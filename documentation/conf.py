@@ -22,7 +22,7 @@ copyright = '2022 NEC Corporation'
 author = 'NEC'
 
 # The full version, including alpha/beta/rc tags
-release = '1.5'
+release = ''
 
 
 # -- General configuration ---------------------------------------------------
@@ -90,6 +90,5 @@ html_context = {
         'current': 'v1.6',
         'v1.6 (current)': 'v1.6',
         'v1.5': 'v1.5',
-        'old': 'old',
     }
 }

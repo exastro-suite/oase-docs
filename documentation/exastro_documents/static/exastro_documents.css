@@ -1042,17 +1042,19 @@ span.highlighted {
 }
 
 #article h3 {
-  margin: 16px 0 16px;
+  border-bottom: solid 1px #6680A1;
+  border-left: solid 2px #6680A1;  
+  margin: 4px 0 16px;
   padding: 12px 16px;
-  background-color: #555;
+  /* background-color: #555; */
   line-height: 0.9;
   font-size: 1.4rem;
   font-weight: normal;
-  color: #FFF;
+  color: #444;
 }
 
 #article h4 {
-  margin: 16px 0 16px;
+  margin: 4px 0 16px;
   padding: 8px 16px;
   background-color: #F6F6F6;
   border-top: 1px solid #CCC;
@@ -1175,6 +1177,33 @@ span.highlighted {
   font-weight: normal;
 }
 
+
+#article ul.simple li {
+  line-height: 1.75;
+  font-size: 1.2rem;
+  color: #444;
+  list-style: none;
+}
+
+#article li {
+  line-height: 1.75;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+  list-style: none;
+}
+
+#article ul.simple li p::before {
+  content: "・"
+}
+
+#article ul.simple li p {
+  margin: 0;
+  line-height: 2;
+  font-weight: normal;
+}
+
+
 #article .line-block {
   margin: 6px 0 6px;
 }
@@ -1209,6 +1238,17 @@ span.highlighted {
 
 #article table#icons td:nth-child(n + 2) {
   vertical-align: middle;
+}
+
+#article dt {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+}
+
+#article dd {
+  padding-left: 2em;
+  text-indent: 1em;
 }
 
 #article th,
@@ -1963,9 +2003,9 @@ span.highlighted {
     margin: 32px 0 24px;
   }
 
-  #article h3 {
+  /* #article h3 {
     margin: 24px 0 16px;
-  }
+  } */
 
   #article p,
   #article .highlight-default,

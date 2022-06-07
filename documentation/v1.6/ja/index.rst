@@ -36,32 +36,6 @@ Exastro OASE 1.6 操作マニュアル
    api/index
    trouble_shooting/index
    appendix/index
-..
-   system_construction/index
-   settings/index
-   active_directory/index
-   driver_install/index
-   adapter_install/index
-   common/index
-   login/index
-   dashboard/index
-   decision_table/index
-   token/index
-   rule/index
-   action_history/index
-   system_config/index
-   sso_info/index
-   group/index
-   user/index
-   monitoring_adapter/index
-   action/index
-   locked_user/index
-   blacklist/index
-   whitelist/index
-   personal_config/index
-   api/index
-   parameter_sheet/index
-
 
 .. raw:: html
 

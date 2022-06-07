@@ -8,9 +8,9 @@ Zabbixアダプタ
 前提条件
 ========
 
-* ・監視アダプタの登録を行う際には、事前にディシジョンテーブルが登録されている必要があります。ディシジョンテーブルの登録方法に関しては、:doc:`../rule_definition/decision_table` を参照してください。
-* ・Zabbixと連携するためには、接続先のZabbixサーバのURLが http[s]://zabbix.server.fqdn/**zabbix** となっている必要があり、サービスが */zabbix* ディレクトリで公開されている必要があります。
-* ・Zabbix監視アダプタがインストール済みである必要があります。インストール方法については、:doc:`adapter_install` を参照してください。
+* 監視アダプタの登録を行う際には、事前にディシジョンテーブルが登録されている必要があります。ディシジョンテーブルの登録方法に関しては、:doc:`../rule_definition/decision_table` を参照してください。
+* Zabbixと連携するためには、接続先のZabbixサーバのURLが http[s]://zabbix.server.fqdn/**zabbix** となっている必要があり、サービスが */zabbix* ディレクトリで公開されている必要があります。
+* Zabbix監視アダプタがインストール済みである必要があります。インストール方法については、:doc:`adapter_install` を参照してください。
 
 新規登録
 ========

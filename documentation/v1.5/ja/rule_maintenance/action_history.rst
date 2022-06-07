@@ -88,7 +88,7 @@ Exastro IT Automation 実行結果
 
 | 履歴詳細画面における、Exastro IT Automation 固有の実行結果は次の通りです。
 
-* ・Symphony 実行時
+* Symphony 実行時
 
 .. figure:: /images/ja/action_history/action_history_12.png
    :scale: 30%
@@ -112,7 +112,7 @@ Exastro IT Automation 実行結果
 
    <div style="clear:both;"></div>
 
-* ・Conductor 実行時
+* Conductor 実行時
 
 .. figure:: /images/ja/action_history/action_history_14.png
    :scale: 30%

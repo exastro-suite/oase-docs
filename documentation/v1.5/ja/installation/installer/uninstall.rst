@@ -9,47 +9,39 @@
 前提条件
 ========
 
-* ・インストール時の設定値が必要となりますので、インストール設定ファイルが必要になります。
+* インストール時の設定値が必要となりますので、インストール設定ファイルが必要になります。
 
 
 方法1: データを残す場合
 ============================
 
-* install_mode
+install_mode
+  | **Uninstall** : アンインストールを指定します。
 
-  * **Uninstall** : アンインストールを指定します。
+db_root_password
+  | MariaDB の root パスワードを指定します。
 
-* db_root_password
+db_erase
+  | **leave** : アンインストール時に MariaDB からデータを削除しません。
 
-  * MariaDB の root パスワードを指定します。
-
-* db_erase
-
-  * **leave** : アンインストール時に MariaDB からデータを削除しません。
-
-* oase_directory
-
-  * **<Exastro OASE のインストール先のディレクトリ>/OASE** を指定します。 
+oase_directory
+  | **<Exastro OASE のインストール先のディレクトリ>/OASE** を指定します。 
 
 
 方法2: データを削除する場合
 ============================
 
-* install_mode
+install_mode
+  | **Uninstall** : アンインストールを指定します。
 
-  * **Uninstall** : アンインストールを指定します。
+db_root_password
+  | MariaDB の root パスワードを指定します。
 
-* db_root_password
+db_erase
+  | **erase** : アンインストール時に MariaDB からデータを削除します。
 
-  * MariaDB の root パスワードを指定します。
-
-* db_erase
-
-  * **erase** : アンインストール時に MariaDB からデータを削除します。
-
-* oase_directory
-
-  * **<Exastro OASE のインストール先のディレクトリ>** を指定します。 
+oase_directory
+  | **<Exastro OASE のインストール先のディレクトリ>** を指定します。 
 
 
 インストーラ実行

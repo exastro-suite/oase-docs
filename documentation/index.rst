@@ -22,7 +22,7 @@ Exastro OASE Documentation
 
    v1.6/index
    v1.5/index
-   old/index
+   旧マニュアル <https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/index.html>
 
 .. raw:: html
 
