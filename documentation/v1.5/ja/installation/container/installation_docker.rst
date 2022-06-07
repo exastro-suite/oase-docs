@@ -6,7 +6,7 @@ Docker
 | Docker 版は、現時点では検証用となっており手軽に利用を開始できます。
 .. | 一方で、データの永続化や冗長構成には非対応のため、それらを必要とする場合、:doc:`installation_docker-compose` や :doc:`installation_kubernetes` 環境での利用を推奨します。
 | Docker 版 OASE を使うことで、コンテナ起動後、すぐに OASE を利用できます。
-| 本番環境における導入の場合には、:doc:`../installer/installation_online` か :doc:`../installer/installation_offline` を参照して下さい。
+| 非コンテナ環境における導入の場合には、:doc:`../installer/installation_online` か :doc:`../installer/installation_offline` を参照して下さい。
 
 
 前提条件
