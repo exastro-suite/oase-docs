@@ -213,7 +213,7 @@
 </div>
 </div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> oase-container
-docker-compose up -d oase
+docker-compose up -d
 </pre></div>
 </div>
 <div class="line-block">
@@ -223,25 +223,28 @@ docker-compose up -d oase
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> oase-container
 
 <span class="c1"># Exastro OASE と Exastro IT Automation コンテナの起動</span>
-docker-compose --profile ita up -d oase
+docker-compose --profile ita up -d
 
 <span class="c1"># Exastro OASE と Zabbix 連携用コンテナの起動</span>
-docker-compose --profile zabbix up -d oase
+docker-compose --profile zabbix up -d
 
 <span class="c1"># Exastro OASE と Prometheus 連携用コンテナの起動</span>
-docker-compose --profile prometheus up -d oase
+docker-compose --profile prometheus up -d
 
 <span class="c1"># Exastro OASE と Grafana 連携用コンテナの起動</span>
-docker-compose --profile grafana up -d oase
+docker-compose --profile grafana up -d
 
 <span class="c1"># Exastro OASE と Datadog 連携用コンテナの起動</span>
-docker-compose --profile datadog up -d oase
+docker-compose --profile datadog up -d
 
 <span class="c1"># Exastro OASE とメール連携用コンテナの起動</span>
-docker-compose --profile mail up -d oase
+docker-compose --profile mail up -d
 
 <span class="c1"># Exastro OASE と Exastro IT Automation コンテナ、及び、監視アプリケーション連携用コンテナの起動</span>
-docker-compose --profile mail up -d oase
+docker-compose --profile all up -d
+
+<span class="c1"># Exastro OASE と Exastro IT Automation コンテナ、及び、Zabbix 監視アプリケーション連携用コンテナの起動</span>
+docker-compose --profile ita --profile zabbix up -d
 </pre></div>
 </div>
 </section>

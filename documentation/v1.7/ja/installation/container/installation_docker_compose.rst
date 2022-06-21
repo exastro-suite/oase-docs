@@ -36,7 +36,7 @@ Docker Compose を使ったコンテナ起動
 .. code-block:: bash
 
     cd oase-container
-    docker-compose up -d oase
+    docker-compose up -d
 
 
 | 監視アプリケーション用のコンテナを起動する場合は、プロファイルを指定して起動します。
@@ -59,26 +59,28 @@ Docker Compose を使ったコンテナ起動
     cd oase-container
 
     # Exastro OASE と Exastro IT Automation コンテナの起動
-    docker-compose --profile ita up -d oase
+    docker-compose --profile ita up -d
 
     # Exastro OASE と Zabbix 連携用コンテナの起動
-    docker-compose --profile zabbix up -d oase
+    docker-compose --profile zabbix up -d
 
     # Exastro OASE と Prometheus 連携用コンテナの起動
-    docker-compose --profile prometheus up -d oase
+    docker-compose --profile prometheus up -d
 
     # Exastro OASE と Grafana 連携用コンテナの起動
-    docker-compose --profile grafana up -d oase
+    docker-compose --profile grafana up -d
 
     # Exastro OASE と Datadog 連携用コンテナの起動
-    docker-compose --profile datadog up -d oase
+    docker-compose --profile datadog up -d
 
     # Exastro OASE とメール連携用コンテナの起動
-    docker-compose --profile mail up -d oase
+    docker-compose --profile mail up -d
 
     # Exastro OASE と Exastro IT Automation コンテナ、及び、監視アプリケーション連携用コンテナの起動
-    docker-compose --profile mail up -d oase
+    docker-compose --profile all up -d
 
+    # Exastro OASE と Exastro IT Automation コンテナ、及び、Zabbix 監視アプリケーション連携用コンテナの起動
+    docker-compose --profile ita --profile zabbix up -d
 
 接続確認
 ========
