@@ -87,8 +87,9 @@ html_context = {
         'en': 'English'
     },
     'versions': {
-        'current': 'v1.6',
-        'v1.6 (current)': 'v1.6',
+        'current': 'v1.7',
+        'v1.7 (current)': 'v1.7',
+        'v1.6': 'v1.6',
         'v1.5': 'v1.5',
     }
 }
