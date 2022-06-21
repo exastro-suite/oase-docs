@@ -61,12 +61,15 @@
         <dd>
           <div>
             <select name="version" onchange="location.href=value;">
-                file_path: v1.6/ja/rule_definition/rule_format
-                  <option value="../../../v1.6/ja/rule_definition/rule_format.html"
+                file_path: v1.7/ja/rule_definition/rule_format
+                  <option value="../../../v1.7/ja/rule_definition/rule_format.html"
                   >current</option>
+                file_path: v1.7/ja/rule_definition/rule_format
+                  <option value="../../../v1.7/ja/rule_definition/rule_format.html"
+                  >v1.7 (current)</option>
                 file_path: v1.6/ja/rule_definition/rule_format
                   <option value="../../../v1.6/ja/rule_definition/rule_format.html"
-                  >v1.6 (current)</option>
+                  >v1.6</option>
                 file_path: v1.5/ja/rule_definition/rule_format
                   <option value="#"
                   selected
@@ -110,6 +113,7 @@
   
   <aside class="divInner">
     <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.7/index.html">Exastro OASE 1.7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../v1.6/index.html">Exastro OASE 1.6</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Exastro OASE 1.5</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Exastro OASE 1.5 操作マニュアル</a><ul class="current">
@@ -189,7 +193,7 @@
 <figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../../_images/decision_table_04.png"><img alt="../../../_images/decision_table_04.png" src="../../../_images/decision_table_04.png" style="width: 954.0px; height: 164.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">図 9.39 </span><span class="caption-text">新規ディシジョンテーブルファイルのダウンロード</span><a class="headerlink" href="#id10" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-number">図 9.72 </span><span class="caption-text">新規ディシジョンテーブルファイルのダウンロード</span><a class="headerlink" href="#id10" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 <div class="line-block">
@@ -198,7 +202,7 @@
 <figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../../../_images/rule_03_07.png"><img alt="../../../_images/rule_03_07.png" src="../../../_images/rule_03_07.png" style="width: 1014.5px; height: 182.5px;" /></a>
 <figcaption>
-<p><span class="caption-number">図 9.40 </span><span class="caption-text">登録済みディシジョンテーブルファイルのダウンロード</span><a class="headerlink" href="#id11" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-number">図 9.73 </span><span class="caption-text">登録済みディシジョンテーブルファイルのダウンロード</span><a class="headerlink" href="#id11" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 </section>
@@ -220,14 +224,14 @@
 </dd>
 </dl>
 <div class="line-block">
-<div class="line"><a class="reference internal" href="../../../v1.6/ja/rule_definition/rule_format.html#rule-and-action"><span class="std std-numref">表 9.4</span></a> のようなルールがディシジョンテーブルに適用されている場合の具体例を示します。</div>
+<div class="line"><a class="reference internal" href="../../../v1.7/ja/rule_definition/rule_format.html#rule-and-action"><span class="std std-numref">表 9.4</span></a> のようなルールがディシジョンテーブルに適用されている場合の具体例を示します。</div>
 </div>
 <div class="line-block">
 <div class="line"><strong>パターン1</strong> : &quot;mysql is down&quot; というアラート名のメッセージを取得した場合、Rule 2 の条件のみにマッチするため、DB 障害発生メールが送信されます。</div>
 <div class="line"><strong>パターン2</strong> : &quot;httpd is down&quot; というアラート名のメッセージを取得した場合、Rule 1 と Rule 2 の両方の条件にマッチするため、Web 障害発生メールが送信され、メールの送信処理完了後、Rule 3 の対処である Apache の起動を実行されます。</div>
 </div>
 <table class="colwidths-given docutils align-default" id="rule-and-action">
-<caption><span class="caption-number">表 9.22 </span><span class="caption-text">疑似的なルール</span><a class="headerlink" href="#rule-and-action" title="このテーブルへのパーマリンク">¶</a></caption>
+<caption><span class="caption-number">表 9.40 </span><span class="caption-text">疑似的なルール</span><a class="headerlink" href="#rule-and-action" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 21%" />
 <col style="width: 43%" />
@@ -283,11 +287,11 @@
 <figure class="align-center" id="id12">
 <a class="reference internal image-reference" href="../../../_images/decision_table_20.png"><img alt="../../../_images/decision_table_20.png" src="../../../_images/decision_table_20.png" style="width: 1602.0px; height: 863.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">図 9.41 </span><span class="caption-text">ディシジョンテーブルファイル(Tablesシート)</span><a class="headerlink" href="#id12" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-number">図 9.74 </span><span class="caption-text">ディシジョンテーブルファイル(Tablesシート)</span><a class="headerlink" href="#id12" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 <table class="colwidths-given docutils align-default" id="id13">
-<caption><span class="caption-number">表 9.23 </span><span class="caption-text">Tablesシート(ルール管理シート)の構成</span><a class="headerlink" href="#id13" title="このテーブルへのパーマリンク">¶</a></caption>
+<caption><span class="caption-number">表 9.41 </span><span class="caption-text">Tablesシート(ルール管理シート)の構成</span><a class="headerlink" href="#id13" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 75%" />
@@ -324,11 +328,11 @@
 <figure class="align-center" id="id14">
 <a class="reference internal image-reference" href="../../../_images/decision_table_30.png"><img alt="../../../_images/decision_table_30.png" src="../../../_images/decision_table_30.png" style="width: 769.5px; height: 483.75px;" /></a>
 <figcaption>
-<p><span class="caption-number">図 9.42 </span><span class="caption-text">コメント部</span><a class="headerlink" href="#id14" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-number">図 9.75 </span><span class="caption-text">コメント部</span><a class="headerlink" href="#id14" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 <table class="colwidths-given docutils align-default" id="id15">
-<caption><span class="caption-number">表 9.24 </span><span class="caption-text">コメント部の構成</span><a class="headerlink" href="#id15" title="このテーブルへのパーマリンク">¶</a></caption>
+<caption><span class="caption-number">表 9.42 </span><span class="caption-text">コメント部の構成</span><a class="headerlink" href="#id15" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 14%" />
 <col style="width: 71%" />
@@ -355,7 +359,7 @@
 <div class="line">ディシジョンテーブルの新規作成時に設定した条件式と対応する項目が表示されます。</div>
 </div>
 <table class="colwidths-given docutils align-default" id="decision-table-conditions">
-<caption><span class="caption-number">表 9.25 </span><span class="caption-text">ディシジョンテーブル作成時に設定可能な条件式一覧</span><a class="headerlink" href="#decision-table-conditions" title="このテーブルへのパーマリンク">¶</a></caption>
+<caption><span class="caption-number">表 9.43 </span><span class="caption-text">ディシジョンテーブル作成時に設定可能な条件式一覧</span><a class="headerlink" href="#decision-table-conditions" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 40%" />
@@ -440,7 +444,7 @@
 <figure class="align-center" id="id16">
 <a class="reference internal image-reference" href="../../../_images/decision_table_31.png"><img alt="../../../_images/decision_table_31.png" src="../../../_images/decision_table_31.png" style="width: 884.25px; height: 460.5px;" /></a>
 <figcaption>
-<p><span class="caption-number">図 9.43 </span><span class="caption-text">条件部</span><a class="headerlink" href="#id16" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-number">図 9.76 </span><span class="caption-text">条件部</span><a class="headerlink" href="#id16" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -470,17 +474,17 @@
 <figure class="align-center" id="id17">
 <a class="reference internal image-reference" href="../../../_images/decision_table_32.png"><img alt="../../../_images/decision_table_32.png" src="../../../_images/decision_table_32.png" style="width: 1602.0px; height: 859.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">図 9.44 </span><span class="caption-text">アクション部</span><a class="headerlink" href="#id17" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-number">図 9.77 </span><span class="caption-text">アクション部</span><a class="headerlink" href="#id17" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 <div class="line-block">
-<div class="line">下記の <a class="reference internal" href="../../../v1.6/ja/rule_definition/rule_format.html#action-part"><span class="std std-numref">表 9.8</span></a> にアクション部の各項目の概要を記載します。</div>
+<div class="line">下記の <a class="reference internal" href="../../../v1.7/ja/rule_definition/rule_format.html#action-part"><span class="std std-numref">表 9.8</span></a> にアクション部の各項目の概要を記載します。</div>
 <div class="line-block">
 <div class="line"><a class="reference internal" href="action.html"><span class="doc">アクション定義</span></a>、 <a class="reference internal" href="suppression.html"><span class="doc">抑止機能 ※準備中</span></a> 、 <a class="reference internal" href="correlation.html"><span class="doc">コリレーション機能 ※準備中</span></a> については、次節以降を参照して下さい。</div>
 </div>
 </div>
 <table class="colwidths-given docutils align-default" id="action-part">
-<caption><span class="caption-number">表 9.26 </span><span class="caption-text">アクション部の構成</span><a class="headerlink" href="#action-part" title="このテーブルへのパーマリンク">¶</a></caption>
+<caption><span class="caption-number">表 9.44 </span><span class="caption-text">アクション部の構成</span><a class="headerlink" href="#action-part" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 21%" />
 <col style="width: 43%" />
@@ -568,14 +572,14 @@
 <figure class="align-center" id="id18">
 <a class="reference internal image-reference" href="../../../_images/decision_table_33.png"><img alt="../../../_images/decision_table_33.png" src="../../../_images/decision_table_33.png" style="width: 874.5px; height: 417.75px;" /></a>
 <figcaption>
-<p><span class="caption-number">図 9.45 </span><span class="caption-text">アクション条件部</span><a class="headerlink" href="#id18" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-number">図 9.78 </span><span class="caption-text">アクション条件部</span><a class="headerlink" href="#id18" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 <div class="line-block">
-<div class="line">下記の <a class="reference internal" href="../../../v1.6/ja/rule_definition/rule_format.html#action-condition"><span class="std std-numref">表 9.9</span></a> にアクション部の各項目の概要を記載します。</div>
+<div class="line">下記の <a class="reference internal" href="../../../v1.7/ja/rule_definition/rule_format.html#action-condition"><span class="std std-numref">表 9.9</span></a> にアクション部の各項目の概要を記載します。</div>
 </div>
 <table class="colwidths-given docutils align-default" id="action-condition">
-<caption><span class="caption-number">表 9.27 </span><span class="caption-text">アクション条件部の構成</span><a class="headerlink" href="#action-condition" title="このテーブルへのパーマリンク">¶</a></caption>
+<caption><span class="caption-number">表 9.45 </span><span class="caption-text">アクション条件部の構成</span><a class="headerlink" href="#action-condition" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 21%" />
 <col style="width: 43%" />

@@ -20,6 +20,7 @@ Exastro OASE Documentation
 .. toctree::
    :maxdepth: 1
 
+   v1.7/index
    v1.6/index
    v1.5/index
    旧マニュアル <https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/index.html>
