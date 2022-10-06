@@ -36,6 +36,14 @@ Docker Compose を使ったコンテナ起動
 .. code-block:: bash
 
     cd oase-container
+    
+    # networkを一つ作成
+    docker network create oase-monitoring
+
+    # logsディレクトリの権限を変更する
+    chmod 777 -R logs/
+
+    # 例: Exastro OASE コンテナの起動
     docker-compose up -d
 
 
@@ -58,28 +66,34 @@ Docker Compose を使ったコンテナ起動
 
     cd oase-container
 
-    # Exastro OASE と Exastro IT Automation コンテナの起動
+    # networkを一つ作成
+    docker network create oase-monitoring
+
+    # logsディレクトリの権限を変更する
+    chmod 777 -R logs/
+
+    # 例1: Exastro OASE と Exastro IT Automation コンテナの起動
     docker-compose --profile ita up -d
 
-    # Exastro OASE と Zabbix 連携用コンテナの起動
+    # 例2: Exastro OASE と Zabbix 連携用コンテナの起動
     docker-compose --profile zabbix up -d
 
-    # Exastro OASE と Prometheus 連携用コンテナの起動
+    # 例3: Exastro OASE と Prometheus 連携用コンテナの起動
     docker-compose --profile prometheus up -d
 
-    # Exastro OASE と Grafana 連携用コンテナの起動
+    # 例4: Exastro OASE と Grafana 連携用コンテナの起動
     docker-compose --profile grafana up -d
 
-    # Exastro OASE と Datadog 連携用コンテナの起動
+    # 例5: Exastro OASE と Datadog 連携用コンテナの起動
     docker-compose --profile datadog up -d
 
-    # Exastro OASE とメール連携用コンテナの起動
+    # 例6: Exastro OASE とメール連携用コンテナの起動
     docker-compose --profile mail up -d
 
-    # Exastro OASE と Exastro IT Automation コンテナ、及び、監視アプリケーション連携用コンテナの起動
+    # 例7: Exastro OASE と Exastro IT Automation コンテナ、及び、監視アプリケーション連携用コンテナの起動
     docker-compose --profile all up -d
 
-    # Exastro OASE と Exastro IT Automation コンテナ、及び、Zabbix 監視アプリケーション連携用コンテナの起動
+    # 例8: Exastro OASE と Exastro IT Automation コンテナ、及び、Zabbix 監視アプリケーション連携用コンテナの起動
     docker-compose --profile ita --profile zabbix up -d
 
 接続確認

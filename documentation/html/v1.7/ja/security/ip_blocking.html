@@ -4,7 +4,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -177,17 +178,17 @@
 <div class="body" role="main">
 
   <section id="ip">
-<h1><span class="section-number">6.2. </span>IP ブロック<a class="headerlink" href="#ip" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">6.2. </span>IP ブロック<a class="headerlink" href="#ip" title="Permalink to this heading">¶</a></h1>
 <div class="line-block">
 <div class="line">IP ブロックは、パスワードの認証の失敗によりアクセス元の IP アドレスからの接続を制限する機能です。</div>
 <div class="line">IP ブロックされた接続元は、ブロックされている IP アドレスとは別の IP アドレスからシステム管理者(Administrator)、もしくは、メール通知先ログインIDに登録されているユーザにより登録を解除することが可能です。</div>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">ちなみに</p>
+<p class="admonition-title">Tip</p>
 <p>接続元の IP アドレスの安全性が確認できている場合、事前にホワイトリストに登録しておくことを推奨します。</p>
 </div>
 <section id="id1">
-<h2>IP ブロックの設定<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>IP ブロックの設定<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">IP ブロックに関連する設定ついては、システム設定の <a class="reference internal" href="../system/password.html"><span class="doc">パスワード設定</span></a> の下記の項目を参考にして下さい。</div>
 </div>
@@ -202,7 +203,7 @@
 </div>
 </section>
 <section id="id2">
-<h2>ホワイトリスト<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>ホワイトリスト<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">ホワイトリストに IP アドレスを登録することで、 <strong>同一IP連続ログイン試行上限</strong> を超えてログインに失敗した場合にも、ブロックされることなく Exastro OASE にアクセスできます。</div>
 </div>
@@ -213,7 +214,7 @@
 <li><p>ホワイトリストの登録、更新、無効</p></li>
 </ul>
 <section id="id3">
-<h3>前提条件<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>前提条件<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">ホワイトリストの操作には、下記の条件を満たしている必要があります。</div>
 </div>
@@ -221,14 +222,14 @@
 <li><p>ホワイトリストの操作を行うユーザは、システム管理者(Administrator)、もしくは、メール通知先ログインIDであること。</p></li>
 </ul>
 <div class="admonition tip">
-<p class="admonition-title">ちなみに</p>
+<p class="admonition-title">Tip</p>
 <div class="line-block">
 <div class="line">メール通知先ログインID は、<a class="reference internal" href="../system/password.html"><span class="doc">パスワード設定</span></a> の <span class="menuselection">メール通知先ログインID</span> を参照して下さい。</div>
 </div>
 </div>
 </section>
 <section id="whitelist-manual">
-<span id="id4"></span><h3>操作手順<a class="headerlink" href="#whitelist-manual" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<span id="id4"></span><h3>操作手順<a class="headerlink" href="#whitelist-manual" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">画面上部のメニューから <span class="menuselection">管理 ‣ ホワイトリスト</span> を開きホワイトリストを一覧で表示します。</div>
 </div>
@@ -249,10 +250,6 @@
 </figure>
 <table class="docutils align-default" id="id12">
 <caption><span class="caption-number">表 6.1 </span><span class="caption-text">ホワイトリスト編集画面機能</span><a class="headerlink" href="#id12" title="このテーブルへのパーマリンク">¶</a></caption>
-<colgroup>
-<col style="width: 12%" />
-<col style="width: 88%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>構成要素</p></th>
 <th class="head"><p>説明</p></th>
@@ -302,7 +299,7 @@
 </section>
 </section>
 <section id="id5">
-<h2>ブラックリスト<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>ブラックリスト<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line"><strong>同一IP連続ログイン試行上限</strong> を超えてログインに失敗した場合に、接続元の IP アドレスがブラックリストに登録され、Exastro OASE への接続がブロックされます。</div>
 </div>
@@ -314,7 +311,7 @@
 <li><p>ブラックリストの自動登録</p></li>
 </ul>
 <section id="id6">
-<h3>前提条件<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>前提条件<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">ブラックリストの操作には、下記の条件を満たしている必要があります。</div>
 </div>
@@ -322,14 +319,14 @@
 <li><p>ブラックリストの操作を行うユーザは、システム管理者(Administrator)、もしくは、メール通知先ログインIDであること。</p></li>
 </ul>
 <div class="admonition tip">
-<p class="admonition-title">ちなみに</p>
+<p class="admonition-title">Tip</p>
 <div class="line-block">
 <div class="line">メール通知先ログインID は、<a class="reference internal" href="../system/password.html"><span class="doc">パスワード設定</span></a> の <strong class="program">メール通知先ログインID</strong> を参照して下さい。</div>
 </div>
 </div>
 </section>
 <section id="id7">
-<h3>操作手順<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>操作手順<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">画面上部のメニューから <span class="menuselection">管理 ‣ ブラックリスト</span> を開きブラックリストを一覧で表示します。</div>
 </div>
@@ -350,10 +347,6 @@
 </figure>
 <table class="docutils align-default" id="id15">
 <caption><span class="caption-number">表 6.2 </span><span class="caption-text">ブラックリスト編集画面機能</span><a class="headerlink" href="#id15" title="このテーブルへのパーマリンク">¶</a></caption>
-<colgroup>
-<col style="width: 12%" />
-<col style="width: 88%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>構成要素</p></th>
 <th class="head"><p>説明</p></th>
@@ -403,13 +396,13 @@
 </section>
 </section>
 <section id="id8">
-<h2>ブラックリストとホワイトリストの関係<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>ブラックリストとホワイトリストの関係<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">Exastro OASE ではブラックリストとホワイトリストに同じIPアドレスが登録されている場合、 <strong>ホワイトリストが優先</strong> されます。</div>
 </div>
 </section>
 <section id="id9">
-<h2>IP ブロックによりログインできなくなってしまった場合<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>IP ブロックによりログインできなくなってしまった場合<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">Django フレームワークの設定により IP ブロック機能を一時的に無効にした状態で、ホワイトリストに接続元の IP アドレスを追加します。</div>
 </div>
@@ -426,7 +419,7 @@
 <div class="line">Django フレームワークの設定ファイル: <code class="file docutils literal notranslate"><span class="pre">&lt;OASE_DIRECTORY&gt;/OASE/oase-root/confs/frameworkconfs/settings.py</span></code></div>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">ちなみに</p>
+<p class="admonition-title">Tip</p>
 <div class="line-block">
 <div class="line"><code class="file docutils literal notranslate"><span class="pre">&lt;OASE_DIRECTORY&gt;</span></code> は、インストール時に指定した Exastro OASE のインストール先のディレクトリです。</div>
 <div class="line">デフォルトでは、 <code class="file docutils literal notranslate"><span class="pre">/exastro/OASE/oase-root/confs/frameworkconfs/settings.py</span></code> となります。</div>

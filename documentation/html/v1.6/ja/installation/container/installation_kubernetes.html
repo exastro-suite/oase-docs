@@ -4,7 +4,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,7 @@
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
     <script src="../../../../_static/clipboard.min.js"></script>
     <script src="../../../../_static/copybutton.js"></script>
@@ -175,13 +176,13 @@
 <div class="body" role="main">
 
   <section id="kubernetes">
-<h1>Kubernetes<a class="headerlink" href="#kubernetes" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>Kubernetes<a class="headerlink" href="#kubernetes" title="Permalink to this heading">¶</a></h1>
 <div class="line-block">
 <div class="line">Kubernetes を利用した Docker 版 Exastro OASE の導入方法について説明します。</div>
 <div class="line">非コンテナ環境における導入の場合には、<a class="reference internal" href="../installer/installation_online.html"><span class="doc">オンラインインストーラ</span></a> か <a class="reference internal" href="../installer/installation_offline.html"><span class="doc">オフラインインストーラ</span></a> を参照して下さい。</div>
 </div>
 <section id="id1">
-<h2>前提条件<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>前提条件<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Kubernetes 環境が必要となります。</p></li>
 <li><p>kubectl コマンドが必要となります。</p></li>
@@ -189,13 +190,13 @@
 </ul>
 </section>
 <section id="id2">
-<h2>コンテナ起動(簡易版)<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>コンテナ起動(簡易版)<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">kubectl コマンドを使い GitHub にある Kubernetes マニフェストファイルをそのまま利用する方法について説明します。</div>
 <div class="line">簡単にデプロイできる一方で、データの永続化に hostPath を利用しているため、可用性や保守性が低下します。</div>
 </div>
 <section id="id3">
-<h3>永続データ用のディレクトリ作成<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>永続データ用のディレクトリ作成<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">永続データを格納するためのディレクトリを作成します。</div>
 </div>
@@ -206,7 +207,7 @@ chmod -R <span class="m">777</span> /tmp/oase
 </div>
 </section>
 <section id="id4">
-<h3>デプロイ<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>デプロイ<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Kubernetes クラスタ上に Exastro OASE をデプロイします。</div>
 </div>
@@ -216,13 +217,13 @@ chmod -R <span class="m">777</span> /tmp/oase
 </section>
 </section>
 <section id="id5">
-<h2>コンテナ起動(カスタム版)<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>コンテナ起動(カスタム版)<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">GitHub 上にある Kubernetes マニフェストを <a class="reference external" href="https://kustomize.io/">kustomize</a> を利用してユーザ環境に合わせてデプロイする方法を紹介します。</div>
 <div class="line">環境に合わせたストレージやネットワークの設定ができる一方で、ストレージの調達などの事前の準備が必要となります。</div>
 </div>
 <section id="id6">
-<h3>Kubernetes マニフェストの取得<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Kubernetes マニフェストの取得<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">GitHub から Kubernetes マニフェストを取得します。</div>
 </div>
@@ -231,14 +232,14 @@ chmod -R <span class="m">777</span> /tmp/oase
 </div>
 </section>
 <section id="id7">
-<h3>設定ファイルの更新<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>設定ファイルの更新<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">環境に合わせてマニフェストファイルを修正します。</div>
 <div class="line">kustomize を利用する際には、 <code class="file docutils literal notranslate"><span class="pre">oase-container/kubernetes/overlays</span></code> 配下に <code class="file docutils literal notranslate"><span class="pre">kustomization.yaml</span></code> を配置します。</div>
 </div>
 </section>
 <section id="id8">
-<h3>カスタム版のマニフェストファイルの適用<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>カスタム版のマニフェストファイルの適用<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Kustomize を使いカスタム版のマニフェストファイルを Kubernetes クラスタに適用します。</div>
 </div>
@@ -249,7 +250,7 @@ kubectl apply -k kubernetes/overlays
 </section>
 </section>
 <section id="id9">
-<h2>接続確認<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>接続確認<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">以下のURLより、ログイン画面にアクセスしてください。</div>
 </div>
@@ -277,10 +278,10 @@ http://&lt;ip_address_or_fqdn&gt;:&lt;port&gt;
 </div>
 </section>
 <section id="id10">
-<h2>環境情報<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>環境情報<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
 <section id="id11">
-<h3>環境変数<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<table class="colwidths-given docutils align-default">
+<h3>環境変数<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
 <colgroup>
 <col style="width: 24%" />
 <col style="width: 38%" />
@@ -397,7 +398,7 @@ http://&lt;ip_address_or_fqdn&gt;:&lt;port&gt;
 </table>
 </section>
 <section id="id12">
-<h3>コンフィグファイル設定<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>コンフィグファイル設定<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
 <p>なし</p>
 </section>
 </section>

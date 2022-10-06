@@ -4,7 +4,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -179,13 +180,13 @@
 <div class="body" role="main">
 
   <section id="id1">
-<h1><span class="section-number">3.5. </span>ルール作成とルール適用<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">3.5. </span>ルール作成とルール適用<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <div class="line-block">
 <div class="line">監視アプリケーションからのアラート情報に対して実施する対処(アクション)の定義のことをルールと言います。</div>
 <div class="line">本項では、ルールの作成方法とその適用方法について説明します。</div>
 </div>
 <section id="new-rule">
-<span id="id2"></span><h2>ルール作成<a class="headerlink" href="#new-rule" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<span id="id2"></span><h2>ルール作成<a class="headerlink" href="#new-rule" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">ルールの作成には、ディシジョンテーブルファイルを利用します。</div>
 <div class="line">ディシジョンテーブルファイルの取得は、画面上部のメニューの <span class="menuselection">ルール ‣ ディシジョンテーブル</span> から行います。</div>
@@ -232,10 +233,6 @@
 <div class="line">また、本項で扱う全ての項目は下記となります。</div>
 </div>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 67%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>ルール説明</p></td>
 <td><p>クイックスタート</p></td>
@@ -307,7 +304,7 @@
 </div>
 </section>
 <section id="id3">
-<h2>新規トークンの払い出し<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>新規トークンの払い出し<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">クイックスタートでは Exastro OASE で提供されている Web API を使ってアラート情報の投入を行います。本項では、Web API 利用で必要なトークンの払い出しを行います。</div>
 <div class="line">新規トークンの払い出しは、画面上部のメニューの <span class="menuselection">ルール ‣ トークン払い出し</span> から行います。</div>
@@ -345,7 +342,7 @@
 </div>
 </section>
 <section id="id4">
-<h2>ルールの検証<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>ルールの検証<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">ルールの設定は、画面上部のメニューの <span class="menuselection">ルール ‣ ルール</span> から行います。</div>
 <div class="line">画面上部にある <span class="guilabel"> ファイルを選択</span> をクリックし、 <a class="reference internal" href="../../../v1.7/ja/quickstart/rule.html#new-rule"><span class="std std-ref">ルール作成</span></a> で作成したディシジョンテーブルファイルを選択します。</div>
@@ -358,7 +355,7 @@
 <div class="line"><span class="menuselection">作業ステータス</span> が <strong class="program">ステージング適用完了</strong> になっていることを確認し、ルールの検証のために <span class="guilabel"> テストリクエスト</span> をクリックします。</div>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">ちなみに</p>
+<p class="admonition-title">Tip</p>
 <div class="line-block">
 <div class="line">ファイルアップロード時に何らかの問題が発生してエラーとなった場合は、 ダウンロードボタン <span class="guilabel"></span> をクリックし、ダウンロードした ZIP ファイルに梱包されているログファイルを確認して下さい。</div>
 </div>
@@ -412,7 +409,7 @@
 </div>
 </section>
 <section id="id5">
-<h2>ルールの本番適用<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>ルールの本番適用<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">ルールの本番適用は、画面上部のメニューの <span class="menuselection">ルール ‣ ルール</span> から行います。</div>
 <div class="line">画面上部の <span class="menuselection">ステージング適用ルール</span> にある適用ボタン <span class="guilabel"></span> をクリックします。</div>

@@ -4,7 +4,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -178,16 +179,16 @@
 <div class="body" role="main">
 
   <section id="active-directory">
-<h1><span class="section-number">4.4. </span>Active Directory連携<a class="headerlink" href="#active-directory" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">4.4. </span>Active Directory連携<a class="headerlink" href="#active-directory" title="Permalink to this heading">¶</a></h1>
 <div class="line-block">
 <div class="line">Exastro OASE における Active Directory連携（以降、「AD連携」と表記）機能を利用する為に必要なシステム構成と環境構築について説明します。</div>
 </div>
 <section id="id1">
-<h2>概要<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">AD連携機能は、以下の機能を提供します。</div>
 </div>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
 <col style="width: 23%" />
 <col style="width: 77%" />
@@ -208,7 +209,7 @@
 </table>
 </section>
 <section id="id2">
-<h2>システム構成<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>システム構成<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">AD連携機能は、ドメインを構成するドメインコントローラと連携します。</div>
 </div>
@@ -221,7 +222,7 @@
 </div>
 </section>
 <section id="id3">
-<h2>Active Directory 設定<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Active Directory 設定<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">危険</p>
 <div class="line-block">
@@ -239,7 +240,7 @@
 <p><span class="caption-number">図 4.26 </span><span class="caption-text">Active Directory 設定編集画面</span><a class="headerlink" href="#id5" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
-<table class="colwidths-given docutils align-default" id="id6">
+<table class="docutils align-default" id="id6">
 <caption><span class="caption-number">表 4.20 </span><span class="caption-text">Active Directory 設定項目</span><a class="headerlink" href="#id6" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
@@ -292,7 +293,7 @@
 </div>
 </section>
 <section id="id4">
-<h2>Active Directory 連携の有効・無効切り替え時の動作<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Active Directory 連携の有効・無効切り替え時の動作<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">Active Directory との連携を行う契機として、以下の3つが挙げられます。</div>
 </div>
@@ -305,7 +306,7 @@
 <div class="line">これらを契機に処理される連携関連の処理は、それぞれ異なる挙動をします。</div>
 </div>
 <section id="offon">
-<h3>OFFからONに切り替えた際の動作<a class="headerlink" href="#offon" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>OFFからONに切り替えた際の動作<a class="headerlink" href="#offon" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line"><span class="guilabel">OFF</span> から <span class="guilabel">ON</span> に切り替えた際、システム画面にて入力された「Active Directory設定」の各項目をDBに保存します。</div>
 <div class="line">その後、一台のサーバに対して、Active Directory連携の crontab を設定します。</div>
@@ -331,7 +332,7 @@
 </div>
 </section>
 <section id="onoff">
-<h3>ONからOFFに切り替えた際の動作<a class="headerlink" href="#onoff" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>ONからOFFに切り替えた際の動作<a class="headerlink" href="#onoff" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line"><span class="guilabel">ON</span> から <span class="guilabel">OFF</span> に切り替えた際、既存の「Active Directory設定」の各項目は初期化されます。</div>
 <div class="line">その後、Active Directory連携の crontab 設定が削除されます。</div>
@@ -347,7 +348,7 @@
 </figure>
 </section>
 <section id="ad">
-<h3>AD 連携時刻を迎えた際の動作<a class="headerlink" href="#ad" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>AD 連携時刻を迎えた際の動作<a class="headerlink" href="#ad" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Active Directory連携が <span class="guilabel">ON</span> の場合、「AD連携時刻」に設定された時刻に crontab による連携処理が行われます。</div>
 </div>

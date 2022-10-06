@@ -4,7 +4,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,7 @@
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
     <script src="../../../../_static/clipboard.min.js"></script>
     <script src="../../../../_static/copybutton.js"></script>
@@ -176,14 +177,14 @@
 <div class="body" role="main">
 
   <section id="docker-compose">
-<h1>Docker Compose<a class="headerlink" href="#docker-compose" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>Docker Compose<a class="headerlink" href="#docker-compose" title="Permalink to this heading">¶</a></h1>
 <div class="line-block">
 <div class="line">Docker Compose を利用した Docker 版 Exastro OASE の導入方法について説明します。</div>
 <div class="line">冗長構成には非対応のため、それらを必要とする場合、 <a class="reference internal" href="installation_kubernetes.html"><span class="doc">Kubernetes</span></a> 環境での利用を推奨します。</div>
 <div class="line">非コンテナ環境における導入の場合には、<a class="reference internal" href="../installer/installation_online.html"><span class="doc">オンラインインストーラ</span></a> か <a class="reference internal" href="../installer/installation_offline.html"><span class="doc">オフラインインストーラ</span></a> を参照して下さい。</div>
 </div>
 <section id="id1">
-<h2>前提条件<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>前提条件<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Docker 環境が必要となります。</p></li>
 <li><p>Docker Compose が必要となります。</p></li>
@@ -191,9 +192,9 @@
 </ul>
 </section>
 <section id="id2">
-<h2>コンテナ起動<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>コンテナ起動<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <section id="id3">
-<h3>資材の取得<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>資材の取得<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Git コマンドを利用して Docker Compose での起動に必要な資材を取得します。</div>
 </div>
@@ -202,7 +203,7 @@
 </div>
 </section>
 <section id="id4">
-<h3>Docker Compose を使ったコンテナ起動<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Docker Compose を使ったコンテナ起動<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">docker-compose を利用して Exastro OASE コンテナを最小構成で起動します。</div>
 </div>
@@ -213,6 +214,14 @@
 </div>
 </div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> oase-container
+
+<span class="c1"># networkを一つ作成</span>
+docker network create oase-monitoring
+
+<span class="c1"># logsディレクトリの権限を変更する</span>
+chmod <span class="m">777</span> -R logs/
+
+<span class="c1"># 例: Exastro OASE コンテナの起動</span>
 docker-compose up -d
 </pre></div>
 </div>
@@ -222,35 +231,41 @@ docker-compose up -d
 </div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> oase-container
 
-<span class="c1"># Exastro OASE と Exastro IT Automation コンテナの起動</span>
+<span class="c1"># networkを一つ作成</span>
+docker network create oase-monitoring
+
+<span class="c1"># logsディレクトリの権限を変更する</span>
+chmod <span class="m">777</span> -R logs/
+
+<span class="c1"># 例1: Exastro OASE と Exastro IT Automation コンテナの起動</span>
 docker-compose --profile ita up -d
 
-<span class="c1"># Exastro OASE と Zabbix 連携用コンテナの起動</span>
+<span class="c1"># 例2: Exastro OASE と Zabbix 連携用コンテナの起動</span>
 docker-compose --profile zabbix up -d
 
-<span class="c1"># Exastro OASE と Prometheus 連携用コンテナの起動</span>
+<span class="c1"># 例3: Exastro OASE と Prometheus 連携用コンテナの起動</span>
 docker-compose --profile prometheus up -d
 
-<span class="c1"># Exastro OASE と Grafana 連携用コンテナの起動</span>
+<span class="c1"># 例4: Exastro OASE と Grafana 連携用コンテナの起動</span>
 docker-compose --profile grafana up -d
 
-<span class="c1"># Exastro OASE と Datadog 連携用コンテナの起動</span>
+<span class="c1"># 例5: Exastro OASE と Datadog 連携用コンテナの起動</span>
 docker-compose --profile datadog up -d
 
-<span class="c1"># Exastro OASE とメール連携用コンテナの起動</span>
+<span class="c1"># 例6: Exastro OASE とメール連携用コンテナの起動</span>
 docker-compose --profile mail up -d
 
-<span class="c1"># Exastro OASE と Exastro IT Automation コンテナ、及び、監視アプリケーション連携用コンテナの起動</span>
+<span class="c1"># 例7: Exastro OASE と Exastro IT Automation コンテナ、及び、監視アプリケーション連携用コンテナの起動</span>
 docker-compose --profile all up -d
 
-<span class="c1"># Exastro OASE と Exastro IT Automation コンテナ、及び、Zabbix 監視アプリケーション連携用コンテナの起動</span>
+<span class="c1"># 例8: Exastro OASE と Exastro IT Automation コンテナ、及び、Zabbix 監視アプリケーション連携用コンテナの起動</span>
 docker-compose --profile ita --profile zabbix up -d
 </pre></div>
 </div>
 </section>
 </section>
 <section id="id5">
-<h2>接続確認<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>接続確認<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">以下のURLより、ログイン画面にアクセスしてください。</div>
 </div>
@@ -278,10 +293,10 @@ http://&lt;ip_address_or_fqdn&gt;:&lt;port&gt;
 </div>
 </section>
 <section id="id6">
-<h2>環境情報<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>環境情報<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
 <section id="id7">
-<h3>環境変数<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<table class="colwidths-given docutils align-default">
+<h3>環境変数<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default">
 <colgroup>
 <col style="width: 24%" />
 <col style="width: 38%" />
@@ -398,7 +413,7 @@ http://&lt;ip_address_or_fqdn&gt;:&lt;port&gt;
 </table>
 </section>
 <section id="id8">
-<h3>コンフィグファイル設定<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>コンフィグファイル設定<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
 <p>なし</p>
 </section>
 </section>

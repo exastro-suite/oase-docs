@@ -4,7 +4,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -180,13 +181,13 @@
 <div class="body" role="main">
 
   <section id="id1">
-<h1><span class="section-number">9.2. </span>ルール作成<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">9.2. </span>ルール作成<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <div class="line-block">
 <div class="line">監視アダプタや Web API により取得したメッセージに対する対処の紐付けをルールとして管理します。</div>
 <div class="line">ディシジョンテーブルファイルはこのルールを定義するためのスプレッドシートのことです。</div>
 </div>
 <section id="id2">
-<h2>ディシジョンテーブルファイルの取得<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>ディシジョンテーブルファイルの取得<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">新規追加したディシジョンテーブルのディシジョンテーブルファイルの取得には、<span class="menuselection">ルール ‣ ディシジョンテーブル</span> 画面を開き、作成対象のディシジョンテーブルの <span class="guilabel"></span> ボタンを押下します。</div>
 </div>
@@ -207,7 +208,7 @@
 </figure>
 </section>
 <section id="id3">
-<h2>ルールの記述とアクションの実行<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>ルールの記述とアクションの実行<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">あるメッセージがルールの条件にマッチした場合、アクション部で指定された対処を実施します。</div>
 <div class="line">あるメッセージが、復数のルールの条件にマッチした場合、通常はディシジョンテーブルの上部に記載のものから対処が実施されます。</div>
@@ -230,7 +231,7 @@
 <div class="line"><strong>パターン1</strong> : &quot;mysql is down&quot; というアラート名のメッセージを取得した場合、Rule 2 の条件のみにマッチするため、DB 障害発生メールが送信されます。</div>
 <div class="line"><strong>パターン2</strong> : &quot;httpd is down&quot; というアラート名のメッセージを取得した場合、Rule 1 と Rule 2 の両方の条件にマッチするため、Web 障害発生メールが送信され、メールの送信処理完了後、Rule 3 の対処である Apache の起動を実行されます。</div>
 </div>
-<table class="colwidths-given docutils align-default" id="rule-and-action">
+<table class="docutils align-default" id="rule-and-action">
 <caption><span class="caption-number">表 9.40 </span><span class="caption-text">疑似的なルール</span><a class="headerlink" href="#rule-and-action" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 21%" />
@@ -266,7 +267,7 @@
 </div>
 </section>
 <section id="id4">
-<h2>ディシジョンテーブルファイルの構成<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>ディシジョンテーブルファイルの構成<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">ディシジョンテーブルファイルは、2つのシートから構成されており、それぞれのシートの説明は下記の通りです。</div>
 </div>
@@ -282,7 +283,7 @@
 </dl>
 </section>
 <section id="id5">
-<h2>ルールの記載方法<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>ルールの記載方法<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <p>テストリクエストおよびルールマッチング結果によるアクションの実行を行うため、ディシジョンテーブルファイルのTablesシートに判定の基準となる条件を記述する必要があります。</p>
 <figure class="align-center" id="id12">
 <a class="reference internal image-reference" href="../../../_images/decision_table_20.png"><img alt="../../../_images/decision_table_20.png" src="../../../_images/decision_table_20.png" style="width: 1602.0px; height: 863.0px;" /></a>
@@ -290,7 +291,7 @@
 <p><span class="caption-number">図 9.74 </span><span class="caption-text">ディシジョンテーブルファイル(Tablesシート)</span><a class="headerlink" href="#id12" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
-<table class="colwidths-given docutils align-default" id="id13">
+<table class="docutils align-default" id="id13">
 <caption><span class="caption-number">表 9.41 </span><span class="caption-text">Tablesシート(ルール管理シート)の構成</span><a class="headerlink" href="#id13" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
@@ -320,7 +321,7 @@
 <div class="line">以降は、各項目について説明をします。</div>
 </div>
 <section id="id6">
-<h3>コメント部<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>コメント部<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line"><span class="menuselection">Tablesシート</span> の背景色緑色の箇所で、ユーザが任意に文字列を入力可能な項目です。</div>
 <div class="line">ここに記載した内容はシステムに一切の影響を与えません。</div>
@@ -331,7 +332,7 @@
 <p><span class="caption-number">図 9.75 </span><span class="caption-text">コメント部</span><a class="headerlink" href="#id14" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
-<table class="colwidths-given docutils align-default" id="id15">
+<table class="docutils align-default" id="id15">
 <caption><span class="caption-number">表 9.42 </span><span class="caption-text">コメント部の構成</span><a class="headerlink" href="#id15" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 14%" />
@@ -353,12 +354,12 @@
 </table>
 </section>
 <section id="id7">
-<h3>条件部<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>条件部<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line"><span class="menuselection">Tablesシート</span> の背景色水色の箇所で、アラートメッセージの評価対象となる条件式定義する項目です。</div>
 <div class="line">ディシジョンテーブルの新規作成時に設定した条件式と対応する項目が表示されます。</div>
 </div>
-<table class="colwidths-given docutils align-default" id="decision-table-conditions">
+<table class="docutils align-default" id="decision-table-conditions">
 <caption><span class="caption-number">表 9.43 </span><span class="caption-text">ディシジョンテーブル作成時に設定可能な条件式一覧</span><a class="headerlink" href="#decision-table-conditions" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 20%" />
@@ -461,7 +462,7 @@
 </div>
 </section>
 <section id="id8">
-<h3>アクション部<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>アクション部<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line"><span class="menuselection">Tablesシート</span> の背景色黄色の箇所で、対処内容について定義する項目です。</div>
 <div class="line">アクション部ではアクションに対して下記のような設定を加えることができます。</div>
@@ -483,7 +484,7 @@
 <div class="line"><a class="reference internal" href="action.html"><span class="doc">アクション定義</span></a>、 <a class="reference internal" href="suppression.html"><span class="doc">抑止機能 ※準備中</span></a> 、 <a class="reference internal" href="correlation.html"><span class="doc">コリレーション機能 ※準備中</span></a> については、次節以降を参照して下さい。</div>
 </div>
 </div>
-<table class="colwidths-given docutils align-default" id="action-part">
+<table class="docutils align-default" id="action-part">
 <caption><span class="caption-number">表 9.44 </span><span class="caption-text">アクション部の構成</span><a class="headerlink" href="#action-part" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 21%" />
@@ -565,7 +566,7 @@
 </table>
 </section>
 <section id="id9">
-<h3>アクション条件部<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>アクション条件部<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line"><span class="menuselection">Tablesシート</span> の背景色赤色の箇所で、ルールが有効・無効となる日時について定義する項目です。</div>
 </div>
@@ -578,7 +579,7 @@
 <div class="line-block">
 <div class="line">下記の <a class="reference internal" href="../../../v1.7/ja/rule_definition/rule_format.html#action-condition"><span class="std std-numref">表 9.9</span></a> にアクション部の各項目の概要を記載します。</div>
 </div>
-<table class="colwidths-given docutils align-default" id="action-condition">
+<table class="docutils align-default" id="action-condition">
 <caption><span class="caption-number">表 9.45 </span><span class="caption-text">アクション条件部の構成</span><a class="headerlink" href="#action-condition" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 21%" />

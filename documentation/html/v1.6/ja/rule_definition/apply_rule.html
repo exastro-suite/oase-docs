@@ -4,7 +4,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -182,7 +183,7 @@
 <div class="body" role="main">
 
   <section id="id1">
-<h1><span class="section-number">9.7. </span>ルール適用<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">9.7. </span>ルール適用<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <div class="line-block">
 <div class="line">本章では、OASE のルール画面の機能および操作方法について説明します。</div>
 <div class="line">ディシジョンテーブルへのルールの適用は下記の流れで行います。</div>
@@ -194,7 +195,7 @@
 <li><p>ルールの切り戻し</p></li>
 </ul>
 <section id="id2">
-<h2>ステージング環境とプロダクション環境<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>ステージング環境とプロダクション環境<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">Exastro OASE には、各ディシジョンテーブルに対して、ステージング環境とプロダクション環境を持ちます。</div>
 <div class="line">各環境についての説明は下記を参照して下さい。</div>
@@ -224,12 +225,12 @@
 </figure>
 <div style="clear:both;"></div></section>
 <section id="id3">
-<h2>ステージング環境に対するルールの適用<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>ステージング環境に対するルールの適用<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">Exastro OASE では、ルールを適用するために、一度ステージング環境でルールを適用してからプロダクション環境に適用する必要があります。ステージング環境での確認プロセスを経由することで、ユーザの意図しない対処の実施を未然に防止し、安全にルールをプロダクション環境に適用することを目的としています。</div>
 </div>
 <section id="id4">
-<h3>ディシジョンテーブルファイルのアップロード<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>ディシジョンテーブルファイルのアップロード<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">ディシジョンテーブルをステージング環境にアップロードするためには、 <span class="menuselection">ルール ‣ ルール</span> 画面を開き、 <span class="menuselection">ステージング適用ルール</span> フレームにある <span class="guilabel"> ファイルを選択</span> ボタンを押下し、ファイル選択ダイアログから作成済みのディシジョンテーブルファイルを選択します。</div>
 </div>
@@ -263,13 +264,13 @@
 </figure>
 </section>
 <section id="id5">
-<h3>ルール適用状況の確認<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>ルール適用状況の確認<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">ディシジョンテーブルファイルのアップロードをすると、ルールの適用プロセスが開始されます。</div>
 <div class="line">ディシジョンテーブルのルール適用状況は運用ステータスと作業ステータスから確認でき、運用ステータスが「検証未実施」となっていればステージング環境へのルール適用が完了です。</div>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">ちなみに</p>
+<p class="admonition-title">Tip</p>
 <div class="line-block">
 <div class="line">アップロードに失敗した場合は、ディシジョンテーブルファイルの記述に謝りがある可能性が高いです。</div>
 <div class="line">その場合は、<span class="menuselection">ステージング適用ルール</span> の該当するルールの <span class="guilabel"></span> ボタンからログファイルを取得することで原因を特定することができます。</div>
@@ -278,7 +279,7 @@
 <div class="line-block">
 <div class="line">ステージング適用ルールにおける、運用ステータスの詳細は下記の表のとおりです。</div>
 </div>
-<table class="colwidths-given docutils align-default" id="id18">
+<table class="docutils align-default" id="id18">
 <caption><span class="caption-number">表 9.30 </span><span class="caption-text">運用ステータス(ステージング適用ルール)</span><a class="headerlink" href="#id18" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
@@ -316,7 +317,7 @@
 <div class="line-block">
 <div class="line">ステージング適用ルールにおける、作業ステータスの詳細は下記の表のとおりです。</div>
 </div>
-<table class="colwidths-given docutils align-default" id="id19">
+<table class="docutils align-default" id="id19">
 <caption><span class="caption-number">表 9.31 </span><span class="caption-text">作業ステータス(ステージング適用ルール)</span><a class="headerlink" href="#id19" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
@@ -366,7 +367,7 @@
 </section>
 </section>
 <section id="id6">
-<h2>ルールの検証<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>ルールの検証<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">アップロードされたルールの検証を行う手段として、テストリクエストの機能が提供されています。</div>
 <div class="line">これは、アップロードしたルールがユーザの想定通り条件に一致するかを確認するための機能です。</div>
@@ -382,7 +383,7 @@
 </div>
 </div>
 <section id="id7">
-<h3>テスト実施(単発テスト)<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>テスト実施(単発テスト)<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">単発テストは、画面からの操作のみでテストを実行できるため簡単にテストを実施できるメリットがあります。</div>
 </div>
@@ -412,7 +413,7 @@
 <p><span class="caption-number">図 9.54 </span><span class="caption-text">テストリクエスト設定</span><a class="headerlink" href="#id22" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
-<table class="colwidths-given docutils align-default" id="id23">
+<table class="docutils align-default" id="id23">
 <caption><span class="caption-number">表 9.32 </span><span class="caption-text">テストリクエスト設定項目</span><a class="headerlink" href="#id23" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 23%" />
@@ -437,7 +438,7 @@
 </div>
 </section>
 <section id="id8">
-<h3>テスト実施(一括テスト)<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>テスト実施(一括テスト)<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">一括テストは、スプレッドシートに事前にテストで検証したい値のパターンを複数用意することで、一度に複数の検証を実施できるメリットがあります。</div>
 </div>
@@ -479,7 +480,7 @@
 </div>
 </section>
 <section id="id9">
-<h3>テスト実行結果の確認<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>テスト実行結果の確認<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">テストが開始されると、<span class="menuselection">実行ログ</span> 画面に遷移し、その実行状況が出力されます。</div>
 <div class="line">実行状況は定期的に取得され、随時ログの出力内容が更新されます。</div>
@@ -491,7 +492,7 @@
 <p><span class="caption-number">図 9.59 </span><span class="caption-text">実行ログ(単発テスト)</span><a class="headerlink" href="#id28" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
-<table class="colwidths-given docutils align-default" id="id29">
+<table class="docutils align-default" id="id29">
 <caption><span class="caption-number">表 9.33 </span><span class="caption-text">ログ出力内容(単発テスト)</span><a class="headerlink" href="#id29" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 6%" />
@@ -529,7 +530,7 @@
 <p><span class="caption-number">図 9.60 </span><span class="caption-text">実行ログ(一括テスト)</span><a class="headerlink" href="#id30" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
-<table class="colwidths-given docutils align-default" id="id31">
+<table class="docutils align-default" id="id31">
 <caption><span class="caption-number">表 9.34 </span><span class="caption-text">ログ出力内容(一括テスト)</span><a class="headerlink" href="#id31" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 6%" />
@@ -583,7 +584,7 @@
 </figure>
 </section>
 <section id="change-operatioin-status">
-<span id="id10"></span><h3>手動による運用ステータスの変更<a class="headerlink" href="#change-operatioin-status" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<span id="id10"></span><h3>手動による運用ステータスの変更<a class="headerlink" href="#change-operatioin-status" title="Permalink to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">ルールファイルの運用ステータスが「検証未実施」「検証実施中」「検証NG」「検証完了」のいずれかに該当、かつ、プロダクション環境へ適用していない場合、運用者の任意でステータスを変更できます。</div>
 <div class="line">ステージング環境へのアクセス権限が「更新可能」の場合のみ、運用ステータスの変更は押下することができます。</div>
@@ -597,7 +598,7 @@
 </section>
 </section>
 <section id="id11">
-<h2>プロダクション環境に対するルールの適用<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>プロダクション環境に対するルールの適用<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">ステージング適用ルールにおける運用ステータスが「検証完了」の場合、ルールをプロダクション環境へ適用させることができます。</div>
 <div class="line">適用させたい <span class="menuselection">ステージング適用ルール</span> の <span class="guilabel"></span> ボタンを押下することで、プロダクション環境にルールを適用します。</div>
@@ -633,7 +634,7 @@
 <div class="line-block">
 <div class="line">プロダクション適用ルールにおける運用ステータスは下記のとおりです。</div>
 </div>
-<table class="colwidths-given docutils align-default" id="id37">
+<table class="docutils align-default" id="id37">
 <caption><span class="caption-number">表 9.35 </span><span class="caption-text">運用ステータス(プロダクション適用ルール)</span><a class="headerlink" href="#id37" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
@@ -659,7 +660,7 @@
 <div class="line-block">
 <div class="line">プロダクション適用ルールにおける作業ステータスは下記のとおりです。</div>
 </div>
-<table class="colwidths-given docutils align-default" id="id38">
+<table class="docutils align-default" id="id38">
 <caption><span class="caption-number">表 9.36 </span><span class="caption-text">作業ステータス説明(プロダクション適用ルール)</span><a class="headerlink" href="#id38" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
@@ -684,7 +685,7 @@
 </table>
 </section>
 <section id="id12">
-<h2>ルールの切り戻し<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>ルールの切り戻し<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">ルールの記述に誤りがあった場合、Exastro OASE ではルールの適用履歴から過去のルールに戻すことが可能です。</div>
 </div>
@@ -710,7 +711,7 @@
 </figure>
 </section>
 <section id="id13">
-<h2>ルールの評価結果<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>ルールの評価結果<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">ルールの評価結果については、<a class="reference internal" href="../rule_maintenance/action_history.html"><span class="doc">アクション履歴</span></a> を参照してください。</div>
 </div>
