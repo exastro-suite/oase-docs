@@ -202,13 +202,13 @@ z-index: 10;
 }
 #quickStart .learnMapLink.learnMapLinkZabbix,
 #quickStart .learnMapLink.learnMapLinkPrometheus,
-#quickStart .learnMapLink.learnMapLinkCloudWatch {
+#quickStart .learnMapLink.learnMapLinkGrafana {
 width: 18.961%;
 left: 12.554%;
 }
 #quickStart .learnMapLink.learnMapLinkZabbix { top: 33.908%; }
 #quickStart .learnMapLink.learnMapLinkPrometheus { top: 59.040%; }
-#quickStart .learnMapLink.learnMapLinkCloudWatch { top: 84.173%; }
+#quickStart .learnMapLink.learnMapLinkGrafana { top: 84.173%; }
 
 
 #quickStart .learnMapComingSoon {
